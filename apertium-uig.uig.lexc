@@ -5,9 +5,12 @@
 Multichar_Symbols
 
 %<n%>             ! Noun
+%<post%>          ! Postposition
 %<v%>             ! Verb
 %<cnjcoo%>        ! 
 %<num%>           ! Numeral
+%<prn%>           !
+%<dem%>           !
 
 %<pl%>            ! Plural
 
@@ -29,6 +32,7 @@ Multichar_Symbols
 
 %<inf%>           !
 
+%<dem%>           ! Demonstrative
 %<ord%>           !
 
 %<sent%>          ! Sentence marker
@@ -56,6 +60,9 @@ Multichar_Symbols
 LEXICON Root
 
 Conjunctions ; 
+Postpositions ; 
+Pronouns ; 
+Determiners ;
 Numerals ; 
 Nouns ; 
 Verbs ;
@@ -93,6 +100,11 @@ LEXICON NUM
 %<num%>%<subst%>: POSSESSION ; ! FIXME: real subst lex
 %<num%>%<ord%>:%>ىنچى # ; 
 
+LEXICON PRON-DEM-BU
+
+%<prn%>%<dem%>: # ; ! FIXME: subst lex
+
+
 LEXICON V-COMMON
 
 %<inf%>:%>م%{A%}ق # ; ! FIXME: insert correct tag here
@@ -101,15 +113,38 @@ LEXICON V-IV
 
 %<v%>%<iv%>: V-COMMON ; 
 
+LEXICON DET-DEM 
+
+%<det%>%<dem%>: # ;
+
 LEXICON CC 
 
 %<cnjcoo%>: # ; 
+
+LEXICON POST 
+
+%<post%>: # ;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON Conjunctions 
 
+ۋە:ۋە CC ; ! "and"
 ھەم:ھەم CC ; ! "and"
+
+ياكى:ياكى CC ; ! "or"
+
+LEXICON Postpositions
+
+بىلەن:بىلەن POST ; ! "with, and"
+
+LEXICON Pronouns 
+
+بۇ:بۇ PRON-DEM-BU ; ! "this"
+
+LEXICON Determiners 
+
+بۇ:بۇ DET-DEM ; ! "this"
 
 LEXICON Numerals 
 
