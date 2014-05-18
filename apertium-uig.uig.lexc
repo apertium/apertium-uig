@@ -4,6 +4,10 @@ Multichar_Symbols
 
 %<n%>                 ! Noun
 
+%{G%}                 ! realised as گ or ك or غ or ق
+%{A%}                 ! realised as ا or ە or sometimes ى
+%{D%}                 ! realised as د or ت
+
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON Root
@@ -14,10 +18,24 @@ Nouns ;
 
 LEXICON N1 
 
-%<n%>: # ;
+%<n%>: POSSESSION ;
+
+LEXICON POSSESSION
+
+CASE ;
+%<px1sg%>:ىم CASE ;
+
+LEXICON CASE
+%<nom%>: # ;
+%<dat%>:%{G%}%{A%} ;
+%<acc%>:%{D%}%{A%} ;
+%<abl%>:%{D%}ىن ;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON Nouns 
 
-باش:باش N1 ; ! ""
+باش:باش N1 ; ! "head"
+قىز:قىز N1 ; ! "girl"
+بالا:بالا N1 ; ! "child/boy"
+ۆي:ۆي N1 ; ! "house"
