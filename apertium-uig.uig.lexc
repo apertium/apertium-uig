@@ -98,7 +98,7 @@ LEXICON NUM
 
 %<num%>: # ; 
 %<num%>%<subst%>: POSSESSION ; ! FIXME: real subst lex
-%<num%>%<ord%>:%>ىنچى # ; 
+%<num%>%<ord%>:%>ىنچى # ; ! FIXME: VH missing ?
 
 LEXICON PRON-DEM-BU
 
