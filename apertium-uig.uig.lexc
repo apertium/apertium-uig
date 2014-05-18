@@ -1,4 +1,6 @@
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!  M O R P O L O G I C A L · T R A N S D U C E R  · F O R · U Y G H U R   !!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 Multichar_Symbols
 
@@ -30,20 +32,18 @@ Multichar_Symbols
 
 LEXICON Root
 
+Conjunctions ; 
 Nouns ; 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-LEXICON N1 
 
-%<n%>: POSSESSION ;
+LEXICON CASE
 
-
-LEXICON NUMBER
-
-CASE ;
-%<pl%>:ل%{A%}ر CASE ;
-
+%<nom%>: # ;
+%<dat%>:%{G%}%{A%} ;
+%<acc%>:%{D%}%{A%} ;
+%<abl%>:%{D%}ىن ;
 
 LEXICON POSSESSION
 
@@ -52,14 +52,24 @@ CASE ;
 %<px2sg%>:%{i%}ڭ CASE ;
 %<px3sp%>:%{s%}ى%{n%} CASE ;
 
+LEXICON NUMBER
 
-LEXICON CASE
-%<nom%>: # ;
-%<dat%>:%{G%}%{A%} ;
-%<acc%>:%{D%}%{A%} ;
-%<abl%>:%{D%}ىن ;
+CASE ;
+%<pl%>:ل%{A%}ر CASE ;
+
+LEXICON N1 
+
+%<n%>: POSSESSION ;
+
+LEXICON CC 
+
+%<cnjcoo%>: # ; 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON Conjunctions 
+
+ھەم:ھەم CC ; ! "and"
 
 LEXICON Nouns 
 
