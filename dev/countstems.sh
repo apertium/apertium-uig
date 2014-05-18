@@ -1,6 +1,6 @@
 #!/bin/bash
 
-LEXC=../apertium-crh.crh.lexc
+LEXC=../apertium-uig.uig.lexc
 
 allcounts=`foma -e "read lexc $LEXC" -e "quit" | grep Root | sed 's/,/\n/g'`
 
