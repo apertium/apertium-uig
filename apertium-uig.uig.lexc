@@ -86,7 +86,19 @@ LEXICON Conjunctions
 
 LEXICON Numerals 
 
+نۆل:نۆل NUM ; ! "zero"
+ئىككى:ئىككى NUM ; ! "two"
 بىر:بىر NUM ; ! "one"
+ئۈچ:ئۈچ NUM ; ! "three"
+تۆت:تۆت NUM ; ! "four"
+بەش:بەش NUM ; ! "five"
+ئالتە:ئالتە NUM ; ! "six"
+يەتتە:يەتتە NUM ; ! "seven"
+سەككىز:سەككىز NUM ; ! "eight"
+
+ئون:ئون NUM ; ! "ten"
+
+يۈز:يۈز NUM ; ! "hundred"
 
 LEXICON Nouns 
 
