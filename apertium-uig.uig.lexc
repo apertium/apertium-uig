@@ -5,6 +5,8 @@
 Multichar_Symbols
 
 %<n%>                 ! Noun
+%<cnjcoo%>            ! 
+%<num%>               !
 
 %<pl%>                ! Plural
 
@@ -21,6 +23,8 @@ Multichar_Symbols
 %<gen%>               !
 %<acc%>               !
 
+%<ord%>               !
+
 %{G%}                 ! realised as گ or ك or غ or ق
 %{A%}                 ! realised as ا or ە or sometimes ى
 %{D%}                 ! realised as د or ت
@@ -28,11 +32,14 @@ Multichar_Symbols
 %{s%}                 ! realised as س or null
 %{n%}                 ! realised as ن or null
 
+%>                    ! Morpheme boundary
+
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON Root
 
 Conjunctions ; 
+Numerals ; 
 Nouns ; 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -41,25 +48,31 @@ Nouns ;
 LEXICON CASE
 
 %<nom%>: # ;
-%<dat%>:%{G%}%{A%} ;
-%<acc%>:%{D%}%{A%} ;
-%<abl%>:%{D%}ىن ;
+%<dat%>:%>%{G%}%{A%} ;
+%<acc%>:%>%{D%}%{A%} ;
+%<abl%>:%>%{D%}ىن ;
 
 LEXICON POSSESSION
 
 CASE ;
-%<px1sg%>:%{i%}م CASE ;
-%<px2sg%>:%{i%}ڭ CASE ;
-%<px3sp%>:%{s%}ى%{n%} CASE ;
+%<px1sg%>:%>%{i%}م CASE ;
+%<px2sg%>:%>%{i%}ڭ CASE ;
+%<px3sp%>:%>%{s%}ى%{n%} CASE ;
 
 LEXICON NUMBER
 
 CASE ;
-%<pl%>:ل%{A%}ر CASE ;
+%<pl%>:%>ل%{A%}ر CASE ;
 
 LEXICON N1 
 
 %<n%>: POSSESSION ;
+
+LEXICON NUM 
+
+%<num%>: # ; 
+%<num%>%<subst%>: POSSESSION ; ! FIXME: real subst lex
+%<num%>%<ord%>:%>ىنچى # ; 
 
 LEXICON CC 
 
@@ -70,6 +83,10 @@ LEXICON CC
 LEXICON Conjunctions 
 
 ھەم:ھەم CC ; ! "and"
+
+LEXICON Numerals 
+
+بىر:بىر NUM ; ! "one"
 
 LEXICON Nouns 
 
