@@ -4,32 +4,43 @@
 
 Multichar_Symbols
 
-%<n%>                 ! Noun
-%<v%>                 ! Verb
-%<cnjcoo%>            ! 
-%<num%>               !
+%<n%>             ! Noun
+%<v%>             ! Verb
+%<cnjcoo%>        ! 
+%<num%>           ! Numeral
 
-%<pl%>                ! Plural
+%<pl%>            ! Plural
 
-%<px1sg%>             !
-%<px2sg%>             !
-%<px3sp%>             !
-%<px1pl%>             !
-%<px2pl%>             !
+%<px1sg%>         !
+%<px2sg%>         !
+%<px3sp%>         !
+%<px1pl%>         !
+%<px2pl%>         !
 
-%<nom%>               !
-%<abl%>               !
-%<dat%>               !
-%<loc%>               !
-%<gen%>               !
-%<acc%>               !
+%<nom%>           !
+%<abl%>           !
+%<dat%>           !
+%<loc%>           !
+%<gen%>           !
+%<acc%>           !
 
-%<iv%>                ! 
-%<tv%>                !
+%<iv%>            ! 
+%<tv%>            !
 
-%<inf%>               !
+%<inf%>           !
 
-%<ord%>               !
+%<ord%>           !
+
+%<sent%>          ! Sentence marker
+%<guio%>          ! Hyphen
+%<cm%>            ! Comma
+%<apos%>          ! Apostrophe
+%<rquot%>         ! Quote marker (right)
+%<lquot%>         ! Quote marker (left)
+%<rpar%>          ! Parenthetical marker (right)
+%<lpar%>          ! Parenthetical marker (left)
+
+
 
 %{G%}                 ! realised as گ or ك or غ or ق
 %{A%}                 ! realised as ا or ە or sometimes ى
@@ -48,6 +59,7 @@ Conjunctions ;
 Numerals ; 
 Nouns ; 
 Verbs ;
+Punctuation ;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
@@ -128,6 +140,31 @@ LEXICON Verbs
 
 
 بول:بول V-IV ; ! "be"
+
+LEXICON Punctuation
+
+.%<sent%>:. # ;
+..%<sent%>:.. # ;
+...%<sent%>:... # ;
+%;%<sent%>:%; # ;
+%:%<sent%>:%: # ;
+%!%<sent%>:%! # ;
+%-%<guio%>:%- # ;
+%—%<guio%>:%— # ;
+,%<cm%>:, # ;
+%?%<sent%>:%? # ;
+%'%<apos%>:%' # ;
+%"%<sent%>:%" # ;
+%«%<lquot%>:%« # ;
+%»%<rquot%>:%» # ;
+%”%<rquot%>:%” # ;
+%“%<lquot%>:%“ # ;
+%(%<lpar%>:%( # ;
+%]%<rpar%>:%] # ;
+%[%<lpar%>:%[ # ;
+%)%<rpar%>:%) # ;
+%\%<sent%>:%\ # ;
+%/%<sent%>:%/ # ;
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -299,3 +336,5 @@ LEXICON Check
 جۈمە:جۈمە N1 ; ! "Friday prayer (at the mosque), Friday"
 شەنبە:شەنبە N1 ; ! "Saturday"
 يەكشەنبە:يەكشەنبە N1 ; ! "Sunday"
+
+
