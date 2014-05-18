@@ -1,3 +1,14 @@
 * text=auto !eol
+/AUTHORS -text
+/COPYING -text
+/ChangeLog -text
+/Makefile.am -text
+/NEWS -text
+/README -text
+/apertium-uig.pc.in -text
 /apertium-uig.uig.lexc -text
+/apertium-uig.uig.rlx -text
 /apertium-uig.uig.twol -text
+/autogen.sh -text
+/configure.ac -text
+/modes.xml -text

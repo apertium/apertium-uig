@@ -1,0 +1,42 @@
+DELIMITERS = "<.>" "<!>" "<?>" "<...>" "<¶>" "<:>";
+SOFT-DELIMITERS = "<,>";
+
+SETS
+
+LIST BOS = (>>>) (sent);
+LIST EOS = (<<<) (sent);
+
+LIST N = n ; 
+LIST Post = post ; 
+LIST Det = det ; 
+
+LIST Nom = nom ; 
+
+LIST Attr = attr ;
+
+LIST Punct = guio ; 
+
+LIST Gpr = gpr_past ; 
+
+LIST Ger = ger_past ;
+
+LIST Vfin = past aor ; 
+
+LIST CC = cnjcoo ; 
+
+SECTION
+
+
+REMOVE Post if (-1 BOS OR Punct);
+    ## Мен сизди анъламадым.
+
+SELECT Attr IF (0C Attr OR Nom) (1C N + Attr OR N + Nom);
+
+REMOVE Attr IF (1 EOS OR Vfin) ; 
+
+REMOVE Nom IF (1C Nom) ; 
+
+REMOVE Gpr IF (0C Gpr OR Ger OR Vfin) (1 EOS);
+
+REMOVE Det IF (1 CC);
+
