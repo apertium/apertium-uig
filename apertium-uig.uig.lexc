@@ -4,6 +4,21 @@ Multichar_Symbols
 
 %<n%>                 ! Noun
 
+%<pl%>                ! Plural
+
+%<px1sg%>             !
+%<px2sg%>             !
+%<px3sp%>             !
+%<px1pl%>             !
+%<px2pl%>             !
+
+%<nom%>               !
+%<abl%>               !
+%<dat%>               !
+%<loc%>               !
+%<gen%>               !
+%<acc%>               !
+
 %{G%}                 ! realised as گ or ك or غ or ق
 %{A%}                 ! realised as ا or ە or sometimes ى
 %{D%}                 ! realised as د or ت
@@ -35,7 +50,7 @@ LEXICON POSSESSION
 CASE ;
 %<px1sg%>:%{i%}م CASE ;
 %<px2sg%>:%{i%}ڭ CASE ;
-%<px3sg%>:%{s%}ى%{n%} CASE ;
+%<px3sp%>:%{s%}ى%{n%} CASE ;
 
 
 LEXICON CASE
