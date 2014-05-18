@@ -1,0 +1,38 @@
+
+Alphabet
+
+ ئ ا ە ب پ ت ج چ خ د ر ز ژ س ش غ ف ق ك گ ڭ ل م ن ھ و ۇ ۆ ۈ ۋ ې ى ي
+
+ ،
+
+%{G%}:غ
+%{A%}:ا
+%{D%}:د
+%{i%}:0
+%{s%}:0
+%{n%}:0
+
+Sets
+
+Vow = ا ە و ۇ ۆ ۈ ى ې ; ! a ä o u ö ü i e
+
+FrontVow = ە ۆ ۈ ۅ ;
+
+Cns =  ب پ ت ج چ خ د ر ز ژ س ش غ ف ق ك گ ڭ ل م ن ھ ۋ ي ;
+
+VoicelessCns = پ ت چ خ س ش ف ق ك ه ;
+
+
+Rules
+
+!! Epenthetic consonants
+
+"Insert {s} after a vowel"
+%{s%}:س <=> :Vow (:0) %>: _  ; 
+
+!! Vowel harmony
+
+"Devoice {D} after a voiceless consonant"
+%{D%}:ت <=> :VoicelessCns (:0) %>: _  ; 
+
+

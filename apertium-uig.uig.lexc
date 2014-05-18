@@ -7,6 +7,9 @@ Multichar_Symbols
 %{G%}                 ! realised as گ or ك or غ or ق
 %{A%}                 ! realised as ا or ە or sometimes ى
 %{D%}                 ! realised as د or ت
+%{i%}                 ! epenthetic ى : realised as ى or null
+%{s%}                 ! realised as س or null
+%{n%}                 ! realised as ن or null
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
@@ -20,10 +23,20 @@ LEXICON N1
 
 %<n%>: POSSESSION ;
 
+
+LEXICON NUMBER
+
+CASE ;
+%<pl%>:ل%{A%}ر CASE ;
+
+
 LEXICON POSSESSION
 
 CASE ;
-%<px1sg%>:ىم CASE ;
+%<px1sg%>:%{i%}م CASE ;
+%<px2sg%>:%{i%}ڭ CASE ;
+%<px3sg%>:%{s%}ى%{n%} CASE ;
+
 
 LEXICON CASE
 %<nom%>: # ;
