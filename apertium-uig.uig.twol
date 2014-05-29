@@ -45,8 +45,10 @@ Rules
 
 !! Vowel harmony
 
-"{A} becomes in front vowel contexts"
+"{A} becomes ە in front vowel contexts"
 %{A%}:ە <=> [ :FrontVow :Cns :Cns* ]/:0 _ ;
+        except
+            _ [ :Cns :Vow ]/:0 ;
 
 "{E} becomes in front vowel contexts"
 %{E%}:ە <=> [ :FrontVow :Cns :Cns* ]/:0 _ ;
@@ -54,7 +56,7 @@ Rules
             :Vow/:0 _ ;
 
 "{E} becomes ي after vowels"
-%{A%}:ە <=> :Vow/:0 _ ;
+%{E%}:ي <=> :Vow/:0 _ ;
 
 
 
@@ -91,6 +93,13 @@ Vx:ى <=> _ [ :Cns :Vow ]/:0 ;
          .#. [ [ :Cns* ]/:0 - :Vow ] _ ;
          _ [ [ :Cns ]*/:0 - :Vow ] .#. ;
      where Vx in ( ا ە ) ;
+
+"{A} becomes reduced vowel in non-initial and non-final open syllables"
+%{A%}:ى <=> _ [ :Cns :Vow ]/:0 ;
+     except
+         .#. [ [ :Cns* ]/:0 - :Vow ] _ ;
+         _ [ [ :Cns ]*/:0 - :Vow ] .#. ;
+
 
 !"test"
 !ا:ى <=> _ [ :Cns :Vow ]/:0 ;

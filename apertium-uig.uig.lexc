@@ -12,6 +12,7 @@ Multichar_Symbols
 %<prn%>           ! Pronoun
 %<dem%>           ! Demonstrative
 %<adv%>           ! Adverb
+%<adj%>           !
 
 %<p1%>            !
 %<p2%>            !
@@ -36,6 +37,8 @@ Multichar_Symbols
 %<subst%>         ! Substantitve
 %<advl%>          ! Adverbial
 
+%<pers%>          ! 
+
 %<iv%>            ! 
 %<tv%>            !
 
@@ -52,7 +55,13 @@ Multichar_Symbols
 %<past%>          ! Past general
 %<inf%>           !
 %<prc_perf%>      !
-%<abil%>          ! 
+%<abil%>          !
+%<aor%>           ! 
+%<prc_impf%>      ! 
+%<ger_past%>      !
+
+%<itg%>           ! 
+ 
 
 %<dem%>           ! Demonstrative
 %<ord%>           !
@@ -152,6 +161,10 @@ LEXICON PRON-DEM-CASE
 %<loc%>:ندا # ;
 %<dat%>:ڭا # ;
 
+LEXICON PRON-PERS-OLAR
+
+%<prn%>%<pers%>%<p3%>%<pl%>%<nom%>: # ; 
+
 LEXICON PRON-DEM-COMMON
 
 %<pl%>:ل%{A%}ر PRON-DEM-CASE ;
@@ -176,6 +189,9 @@ LEXICON V-IFI-PERS
 %<p2%>%<pl%>:ڭ%{I%}ز # ;
 %<p3%>%<pl%>: # ;
 
+LEXICON V-AOR-PERS 
+
+%<p3%>%<sg%>:%>دۇ # ; 
 
 LEXICON V-IFI
 
@@ -194,6 +210,10 @@ LEXICON V-PRC
 
 %<prc_perf%>:%>%{I%}پ # ;
 
+LEXICON V-GER
+
+%<ger_past%>:%>%{G%}%{A%}ن NP-COMMON ;
+
 LEXICON V-ABIL-COMMON
 V-IFI ;
 V-PAST ;
@@ -205,7 +225,11 @@ V-ABIL-COMMON ;
 
 LEXICON V-ABIL
 
-%<abil%>:%{E%}ال V-ABIL-NEG-POS ;
+%<abil%>:%>%{E%}ال V-ABIL-NEG-POS ;
+
+LEXICON V-AOR
+
+%<aor%>:%>%{E%} V-AOR-PERS ; 
 
 LEXICON V-COMMON
 
@@ -214,11 +238,16 @@ V-IFI ;
 V-PAST ;
 V-PRC ;
 V-ABIL ;
-
+V-AOR ; 
+V-GER ;
 
 LEXICON V-IV 
 
 %<v%>%<iv%>: V-COMMON ; 
+
+LEXICON V-TV 
+
+%<v%>%<tv%>: V-COMMON ; 
 
 LEXICON DET-DEM 
 
@@ -235,6 +264,10 @@ LEXICON POST
 LEXICON ADV
 
 %<adv%>: # ;
+
+LEXICON ADV-ITG 
+
+%<adv%>%<itg%>: # ;
 
 LEXICON A1 
 
@@ -271,6 +304,7 @@ LEXICON Postpositions
 
 LEXICON Pronouns 
 
+ئولار:ئولار PRON-PERS-OLAR ; ! ""
 بۇ:بۇ PRON-DEM-BU ; ! "this"
 شۇ:شۇ PRON-DEM-SHU ; ! "that"
 
@@ -324,8 +358,9 @@ Check ;
 LEXICON Verbs 
 
 بول:بول V-IV ; ! "be"
+ئوينا:ئوينا V-TV ; ! "play"
 ئوينا:ئوينا V-IV ; ! "play"
-ئامراق% بول:ئامراق% بول V-IV ; ! "love"
+ئامراق% بول:ئامراق% بول V-TV ; ! "love"
 
 LEXICON Copula
 
@@ -333,7 +368,7 @@ LEXICON Copula
 
 LEXICON Adjectives
 
-ياخشى:ياخشى A1 ; ! "good"
+ياقشى:ياقشى A1 ; ! "good"
 ئىللىق:ئىللىق A1 ; ! "warm" ! FIXME: check adjective class
 سوغۇق:سوغۇق A1 ; ! "cold" ! FIXME: check adjective class
 چوڭ:چوڭ A2 ; ! "big"
@@ -341,12 +376,14 @@ LEXICON Adjectives
 
 LEXICON Adverbs
 
+قايدا:قايدا ADV-ITG ; ! ""
+
 بۈگۈن:بۈگۈن ADV ; ! "today"
 بەك:بەك ADV ; ! "very"
-باھايىتى:باھايىتى ADV ; ! "very, really"
+باھايىتى:با%{☫%}ھا%{☫%}يىتى ADV ; ! "very, really"
 تۆنۈگۈن:تۆنۈگۈن ADV ; ! "yesterday"
-دائىم:دائىم ADV ; ! "always"
-
+دائىم:دا%{☫%}ئىم ADV ; ! "always"
+بىرگە:بىرگە ADV ; ! ""
 
 LEXICON Punctuation
 
