@@ -13,3 +13,4 @@
 /configure.ac -text
 dev/countstems.sh -text
 /modes.xml -text
+texts/story.txt -text svneol=unset#application/octet-stream
