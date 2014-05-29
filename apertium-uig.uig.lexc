@@ -9,8 +9,9 @@ Multichar_Symbols
 %<v%>             ! Verb
 %<cnjcoo%>        ! 
 %<num%>           ! Numeral
-%<prn%>           !
-%<dem%>           !
+%<prn%>           ! Pronoun
+%<dem%>           ! Demonstrative
+%<adv%>           ! Adverb
 
 %<pl%>            ! Plural
 
@@ -57,6 +58,8 @@ Multichar_Symbols
 %{i%}                 ! epenthetic ى : realised as ى or null
 %{s%}                 ! realised as س or null
 %{n%}                 ! realised as ن or null
+%{☫%}                 ! "loanword" - blocks certain processes
+                      ! needed after ا that doesn't change to ى
 
 %>                    ! Morpheme boundary
 
@@ -71,6 +74,8 @@ Determiners ;
 Numerals ; 
 Nouns ; 
 Verbs ;
+Adjectives ;
+Adverbs ;
 Punctuation ;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -90,18 +95,14 @@ CASE ;
 %<px2sg%>:%>%{i%}ڭ CASE ;
 %<px3sp%>:%>%{s%}ى%{n%} CASE ;
 
-LEXICON NUMBER
-
-NP-COMMON ;
-%<pl%>:%>ل%{A%}ر NP-COMMON ;
-
 LEXICON NP-COMMON
 
-CASE ;
+POSSESSION ;
 
 LEXICON N-COMMON
 
-POSSESSION ;
+NP-COMMON ;
+%<pl%>:%>ل%{A%}ر NP-COMMON ;
 
 LEXICON N1
 
@@ -118,12 +119,12 @@ LEXICON NP-ANT-F
 LEXICON NUM 
 
 %<num%>: # ; 
-%<num%>%<subst%>: POSSESSION ; ! FIXME: real subst lex
-%<num%>%<ord%>:%>ىنچى # ; ! FIXME: VH missing ?
+%<num%>%<subst%>: NP-COMMON ; ! FIXME: real subst lex
+%<num%>%<ord%>:%>ىنچى # ; ! 
 
 LEXICON PRON-DEM-BU
 
-%<prn%>%<dem%>: # ; ! FIXME: subst lex
+%<prn%>%<dem%>: NP-COMMON ; ! FIXME: subst lex
 
 
 LEXICON V-COMMON
@@ -145,6 +146,16 @@ LEXICON CC
 LEXICON POST 
 
 %<post%>: # ;
+
+LEXICON ADV
+
+%<adv%>: # ;
+
+LEXICON A1 
+
+%<adj%>: # ;
+%<adj%>%<advl%>: # ;
+%<adj%>%<subst%>: N-COMMON ;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
@@ -190,19 +201,33 @@ LEXICON Nouns
 بالا:بالا N1 ; ! "child/boy"
 ئۆي:ئۆي N1 ; ! "house"
 باقچا:باقچا N1 ; ! "garden"
+ھاۋا:ھاۋا N1 ; ! "weather, air"
 
 Check ; 
 
 
 !!! Proper nouns
 
-ئالىم:ئالىم NP-ANT-M ; ! "Alim"
+ئالىم:ئا%{☫%}لىم NP-ANT-M ; ! "Alim"
 ئيگۈل:ئيگۈل NP-ANT-F ; ! "Aygül"
 
 LEXICON Verbs 
 
 
 بول:بول V-IV ; ! "be"
+
+
+LEXICON Adjectives
+
+ياخشى:ياخشى A1 ; ! "good"
+ئىللىق:ئىللىق A1 ; ! "warm" ! FIXME: check adjective class
+
+
+LEXICON Adverbs
+
+بۈگۈن:بۈگۈن ADV ; ! "today"
+بەك:بەك ADV ; ! "very"
+باھايىتى:باھايىتى ADV ; ! "very, really"
 
 LEXICON Punctuation
 

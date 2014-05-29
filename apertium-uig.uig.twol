@@ -11,6 +11,7 @@ Alphabet
 %{i%}:0
 %{s%}:0
 %{n%}:0 
+%{☫%}:0
 
 %>:0 ; 
 
@@ -20,9 +21,9 @@ Vow = ا ە و ۇ ۆ ۈ ى ې ; ! a ä o u ö ü i e
 
 FrontVow = ە ۆ ۈ ې ; ! ä ö ü e
 
-Cns =  ب پ ت ج چ خ د ر ز ژ س ش غ ف ق ك گ ڭ ل م ن ھ ۋ ي ;
+Cns =  ب پ ت ج چ خ د ر ز ژ س ش غ ف ق ك گ ڭ ل م ن ھ ۋ ي ئ ;
 
-VoicelessCns = پ ت چ خ س ش ف ق ك ه ;
+VoicelessCns = پ ت چ خ س ش ف ق ك ھ ;
 
 
 Rules
@@ -48,15 +49,16 @@ Rules
 "ا and ە reduce to ى in non-initial and non-final open syllables"
 Vx:ى <=> _ [ :Cns :Vow ]/:0 ;
      except
-         .#. :Cns*/:0 _ ;
-         _ :Cns*/:0 .#. ;
-     where Vx in ( ا ە ) 
-         matched ;
+         .#. [ :Cns* ]/:0 _ ;
+         _ [ :Cns* ]/:0 .#. ;
+     where Vx in ( ا ە ) ;
 
 !"test"
 !ا:ى <=> _ [ :Cns :Vow ]/:0 ;
 
 "ا and ە to ي in initial open syllables preceding ى"
 ا:ي <=> .#. :Cns* _ [ :Cns :ى ]/:0 ;
+    except
+        _ %{☫%}:0 ; ! to user: put %{☫%} after ا to prevent it from turning to ى
 
 
