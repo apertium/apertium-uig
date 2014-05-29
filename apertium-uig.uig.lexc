@@ -32,6 +32,10 @@ Multichar_Symbols
 %<gen%>           !
 %<acc%>           !
 
+%<attr%>          ! Attributive
+%<subst%>         ! Substantitve
+%<advl%>          ! Adverbial
+
 %<iv%>            ! 
 %<tv%>            !
 
@@ -102,9 +106,10 @@ LEXICON CASE
 %<nom%>: # ;
 %<dat%>:%>%{G%}%{A%} # ;
 %<loc%>:%>%{D%}%{A%} # ;
-%<abl%>:%>%{D%}%{I%}ن # ;
-%<gen%>:%>ن%{I%}ڭ # ;
-%<acc%>:%>ن%{I%} # ;
+%<loc%>%<attr%>:%>%{D%}%{A%}كى # ;
+%<abl%>:%>%{D%}ىن # ;
+%<gen%>:%>نىڭ # ;
+%<acc%>:%>نى # ;
 
 LEXICON POSSESSION
 
@@ -238,8 +243,13 @@ LEXICON A1
 %<adj%>%<subst%>: N-COMMON ;
 !FIXME: COMP?
 
-!LEXICON A
-!
+LEXICON A2
+
+%<adj%>: # ;
+%<adj%>%<subst%>: N-COMMON ;
+!FIXME: COMP?
+
+
 LEXICON COP
 
 %<cop%>: V-IFI ;
@@ -300,6 +310,7 @@ Check ;
 سىرت:سىرت N1 ; ! "outside"
 ئىچ:ئىچ N1 ; ! "inside"
 ئارت:ئارت N1 ; ! "back"
+ئالد:ئالد N1 ; ! "front"
 ئاست:ئاست N1 ; ! "bottom"
 ئۈست:ئۈست N1 ; ! "top"
 
@@ -313,6 +324,7 @@ LEXICON Verbs
 
 بول:بول V-IV ; ! "be"
 ئوينا:ئوينا V-IV ; ! "play"
+ئامراق% بول:ئامراق% بول V-IV ; ! "love"
 
 LEXICON Copula
 
@@ -323,6 +335,7 @@ LEXICON Adjectives
 ياخشى:ياخشى A1 ; ! "good"
 ئىللىق:ئىللىق A1 ; ! "warm" ! FIXME: check adjective class
 سوغۇق:سوغۇق A1 ; ! "cold" ! FIXME: check adjective class
+چوڭ:چوڭ A2 ; ! "big"
 
 
 LEXICON Adverbs
@@ -331,6 +344,8 @@ LEXICON Adverbs
 بەك:بەك ADV ; ! "very"
 باھايىتى:باھايىتى ADV ; ! "very, really"
 تۆنۈگۈن:تۆنۈگۈن ADV ; ! "yesterday"
+دائىم:دائىم ADV ; ! "always"
+
 
 LEXICON Punctuation
 

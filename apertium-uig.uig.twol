@@ -40,6 +40,9 @@ Rules
 "Insert {s} after a vowel"
 %{s%}:س <=> :Vow (:0) %>: _  ; 
 
+"Insert {n} before before a case ending"
+%{n%}:ن <=> _ %>: [ %{G%}: | %{D%}: ] ;
+
 !! Vowel harmony
 
 "{A} becomes in front vowel contexts"
