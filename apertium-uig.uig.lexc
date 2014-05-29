@@ -13,6 +13,10 @@ Multichar_Symbols
 %<dem%>           ! Demonstrative
 %<adv%>           ! Adverb
 
+%<p1%>            !
+%<p2%>            !
+%<p3%>            !
+%<sg%>            ! Singular
 %<pl%>            ! Plural
 
 %<px1sg%>         !
@@ -31,12 +35,20 @@ Multichar_Symbols
 %<iv%>            ! 
 %<tv%>            !
 
+%<cop%>           ! Copula
+
+%<neg%>           !
+
 %<np%>            ! Proper noun
 %<ant%>           ! Anthroponym (personal name)
 %<m%>             ! Masculine
 %<f%>             ! Feminine
 
+%<ifi%>           ! Past eyewitness
+%<past%>          ! Past general
 %<inf%>           !
+%<prc_perf%>      !
+%<abil%>          ! 
 
 %<dem%>           ! Demonstrative
 %<ord%>           !
@@ -53,9 +65,12 @@ Multichar_Symbols
 
 
 %{G%}                 ! realised as گ or ك or غ or ق
+%{K%}                 ! realised as ك or ق
 %{A%}                 ! realised as ا or ە or sometimes ى
+%{E%}                 ! realised as ا or ە or sometimes ى and also ي
 %{D%}                 ! realised as د or ت
-%{i%}                 ! epenthetic ى : realised as ى or null
+%{i%}                 ! epenthetic ى : realised as ى/ۇ/ۈ or null
+%{I%}                 ! realised as ى/ۇ/ۈ
 %{s%}                 ! realised as س or null
 %{n%}                 ! realised as ن or null
 %{☫%}                 ! "loanword" - blocks certain processes
@@ -74,6 +89,7 @@ Determiners ;
 Numerals ; 
 Nouns ; 
 Verbs ;
+Copula ;
 Adjectives ;
 Adverbs ;
 Punctuation ;
@@ -86,14 +102,16 @@ LEXICON CASE
 %<nom%>: # ;
 %<dat%>:%>%{G%}%{A%} # ;
 %<loc%>:%>%{D%}%{A%} # ;
-%<abl%>:%>%{D%}ىن # ;
+%<abl%>:%>%{D%}%{I%}ن # ;
+%<gen%>:%>ن%{I%}ڭ # ;
+%<acc%>:%>ن%{I%} # ;
 
 LEXICON POSSESSION
 
 CASE ;
 %<px1sg%>:%>%{i%}م CASE ;
 %<px2sg%>:%>%{i%}ڭ CASE ;
-%<px3sp%>:%>%{s%}ى%{n%} CASE ;
+%<px3sp%>:%>%{s%}%{I%}%{n%} CASE ;
 
 LEXICON NP-COMMON
 
@@ -120,16 +138,78 @@ LEXICON NUM
 
 %<num%>: # ; 
 %<num%>%<subst%>: NP-COMMON ; ! FIXME: real subst lex
-%<num%>%<ord%>:%>ىنچى # ; ! 
+%<num%>%<ord%>:%>%{i%}نچ%{I%} # ; ! 
+
+LEXICON PRON-DEM-CASE
+
+%<nom%>: # ;
+%<gen%>:نىڭ # ;
+%<loc%>:ندا # ;
+%<dat%>:ڭا # ;
+
+LEXICON PRON-DEM-COMMON
+
+%<pl%>:ل%{A%}ر PRON-DEM-CASE ;
+PRON-DEM-CASE ;
 
 LEXICON PRON-DEM-BU
 
-%<prn%>%<dem%>: NP-COMMON ; ! FIXME: subst lex
+%<prn%>%<dem%>: PRON-DEM-COMMON ; ! FIXME: subst lex
 
+
+LEXICON PRON-DEM-SHU
+
+%<prn%>%<dem%>: PRON-DEM-COMMON ; ! FIXME: subst lex
+
+
+LEXICON V-IFI-PERS
+
+%<p1%>%<sg%>:م # ;
+%<p2%>%<sg%>:ڭ # ;
+%<p3%>%<sg%>: # ;
+%<p1%>%<pl%>:%{K%} # ;
+%<p2%>%<pl%>:ڭ%{I%}ز # ;
+%<p3%>%<pl%>: # ;
+
+
+LEXICON V-IFI
+
+%<ifi%>:%>%{D%}%{I%} V-IFI-PERS ;
+
+
+LEXICON V-PAST-PERS
+
+%<p3%>%<sg%>: # ;
+
+LEXICON V-PAST
+
+%<past%>:%>%{G%}%{A%}ن V-PAST-PERS ;
+
+LEXICON V-PRC
+
+%<prc_perf%>:%>%{I%}پ # ;
+
+LEXICON V-ABIL-COMMON
+V-IFI ;
+V-PAST ;
+
+LEXICON V-ABIL-NEG-POS
+
+%<neg%>:%>م%{A%} V-ABIL-COMMON ;
+V-ABIL-COMMON ;
+
+LEXICON V-ABIL
+
+%<abil%>:%{E%}ال V-ABIL-NEG-POS ;
 
 LEXICON V-COMMON
 
 %<inf%>:%>م%{A%}ق # ; ! FIXME: insert correct tag here
+V-IFI ;
+V-PAST ;
+V-PRC ;
+V-ABIL ;
+
 
 LEXICON V-IV 
 
@@ -156,6 +236,13 @@ LEXICON A1
 %<adj%>: # ;
 %<adj%>%<advl%>: # ;
 %<adj%>%<subst%>: N-COMMON ;
+!FIXME: COMP?
+
+!LEXICON A
+!
+LEXICON COP
+
+%<cop%>: V-IFI ;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
@@ -166,6 +253,8 @@ LEXICON Conjunctions
 
 ياكى:ياكى CC ; ! "or"
 
+ئەمما:ئەمما CC ; ! "but"  ! FIXME: not CC
+
 LEXICON Postpositions
 
 بىلەن:بىلەن POST ; ! "with, and"
@@ -173,6 +262,7 @@ LEXICON Postpositions
 LEXICON Pronouns 
 
 بۇ:بۇ PRON-DEM-BU ; ! "this"
+شۇ:شۇ PRON-DEM-SHU ; ! "that"
 
 LEXICON Determiners 
 
@@ -206,21 +296,33 @@ LEXICON Nouns
 Check ; 
 
 
+!!! Place nouns
+سىرت:سىرت N1 ; ! "outside"
+ئىچ:ئىچ N1 ; ! "inside"
+ئارت:ئارت N1 ; ! "back"
+ئاست:ئاست N1 ; ! "bottom"
+ئۈست:ئۈست N1 ; ! "top"
+
+
 !!! Proper nouns
 
 ئالىم:ئا%{☫%}لىم NP-ANT-M ; ! "Alim"
-ئيگۈل:ئيگۈل NP-ANT-F ; ! "Aygül"
+ئايگۈل:ئايگۈل NP-ANT-F ; ! "Aygül"
 
 LEXICON Verbs 
 
-
 بول:بول V-IV ; ! "be"
+ئوينا:ئوينا V-IV ; ! "play"
 
+LEXICON Copula
+
+ئى:ئى COP ;
 
 LEXICON Adjectives
 
 ياخشى:ياخشى A1 ; ! "good"
 ئىللىق:ئىللىق A1 ; ! "warm" ! FIXME: check adjective class
+سوغۇق:سوغۇق A1 ; ! "cold" ! FIXME: check adjective class
 
 
 LEXICON Adverbs
@@ -228,6 +330,7 @@ LEXICON Adverbs
 بۈگۈن:بۈگۈن ADV ; ! "today"
 بەك:بەك ADV ; ! "very"
 باھايىتى:باھايىتى ADV ; ! "very, really"
+تۆنۈگۈن:تۆنۈگۈن ADV ; ! "yesterday"
 
 LEXICON Punctuation
 

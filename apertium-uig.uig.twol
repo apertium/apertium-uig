@@ -6,9 +6,12 @@ Alphabet
  ،
 
 %{G%}:غ
+%{K%}:ق
 %{A%}:ا
+%{E%}:ا
 %{D%}:د
 %{i%}:0
+%{I%}:ى
 %{s%}:0
 %{n%}:0 
 %{☫%}:0
@@ -20,6 +23,10 @@ Sets
 Vow = ا ە و ۇ ۆ ۈ ى ې ; ! a ä o u ö ü i e
 
 FrontVow = ە ۆ ۈ ې ; ! ä ö ü e
+
+FrontRdVow = ۆ ۈ ;
+
+BackRdVow = ۇ و ;
 
 Cns =  ب پ ت ج چ خ د ر ز ژ س ش غ ف ق ك گ ڭ ل م ن ھ ۋ ي ئ ;
 
@@ -38,10 +45,39 @@ Rules
 "{A} becomes in front vowel contexts"
 %{A%}:ە <=> [ :FrontVow :Cns :Cns* ]/:0 _ ;
 
+"{E} becomes in front vowel contexts"
+%{E%}:ە <=> [ :FrontVow :Cns :Cns* ]/:0 _ ;
+        except
+            :Vow/:0 _ ;
+
+"{E} becomes ي after vowels"
+%{A%}:ە <=> :Vow/:0 _ ;
+
+
+
+"{i} vowel harmony"
+%{i%}:Vy <=> [ :Vx :Cns* :Cns ]/:0 _ ;  ! null after :Vow
+         where Vx in ( ا ە و ۇ ۆ ۈ ى ې )
+               Vy in ( ى ى ۇ ۇ ۈ ۈ ى ى )
+         matched ;
+
+"{I} vowel harmony"
+%{I%}:Vy <=> [ :Vx :Cns* :Cns ]/:0 _ ;  ! not necessarily null after :Vow ?
+         where Vx in ( ا ە و ۇ ۆ ۈ ى ې )
+               Vy in ( ى ى ۇ ۇ ۈ ۈ ى ى )
+         matched ;
+
+
+
 !! Consonant assimilation
 
 "Devoice {D} after a voiceless consonant"
 %{D%}:ت <=> :VoicelessCns (:0) %>: _  ; 
+
+!! Cons-vowel interaction
+
+"{K} to ك after front vowel"
+%{K%}:ك <=> :FrontVow/:0 _ ;
 
 
 !! Vowel reduction and regressive umlaut
@@ -49,8 +85,8 @@ Rules
 "ا and ە reduce to ى in non-initial and non-final open syllables"
 Vx:ى <=> _ [ :Cns :Vow ]/:0 ;
      except
-         .#. [ :Cns* ]/:0 _ ;
-         _ [ :Cns* ]/:0 .#. ;
+         .#. [ [ :Cns* ]/:0 - :Vow ] _ ;
+         _ [ [ :Cns ]*/:0 - :Vow ] .#. ;
      where Vx in ( ا ە ) ;
 
 !"test"
