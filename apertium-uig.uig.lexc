@@ -30,6 +30,11 @@ Multichar_Symbols
 %<iv%>            ! 
 %<tv%>            !
 
+%<np%>            ! Proper noun
+%<ant%>           ! Anthroponym (personal name)
+%<m%>             ! Masculine
+%<f%>             ! Feminine
+
 %<inf%>           !
 
 %<dem%>           ! Demonstrative
@@ -74,9 +79,9 @@ Punctuation ;
 LEXICON CASE
 
 %<nom%>: # ;
-%<dat%>:%>%{G%}%{A%} ;
-%<acc%>:%>%{D%}%{A%} ;
-%<abl%>:%>%{D%}ىن ;
+%<dat%>:%>%{G%}%{A%} # ;
+%<loc%>:%>%{D%}%{A%} # ;
+%<abl%>:%>%{D%}ىن # ;
 
 LEXICON POSSESSION
 
@@ -87,12 +92,28 @@ CASE ;
 
 LEXICON NUMBER
 
+NP-COMMON ;
+%<pl%>:%>ل%{A%}ر NP-COMMON ;
+
+LEXICON NP-COMMON
+
 CASE ;
-%<pl%>:%>ل%{A%}ر CASE ;
 
-LEXICON N1 
+LEXICON N-COMMON
 
-%<n%>: POSSESSION ;
+POSSESSION ;
+
+LEXICON N1
+
+%<n%>: N-COMMON ;
+
+LEXICON NP-ANT-M
+
+%<np%>%<ant%>%<m%>: NP-COMMON ;
+
+LEXICON NP-ANT-F
+
+%<np%>%<ant%>%<f%>: NP-COMMON ;
 
 LEXICON NUM 
 
@@ -167,9 +188,16 @@ LEXICON Nouns
 باش:باش N1 ; ! "head"
 قىز:قىز N1 ; ! "girl"
 بالا:بالا N1 ; ! "child/boy"
-ۆي:ۆي N1 ; ! "house"
+ئۆي:ئۆي N1 ; ! "house"
+باقچا:باقچا N1 ; ! "garden"
 
 Check ; 
+
+
+!!! Proper nouns
+
+ئالىم:ئالىم NP-ANT-M ; ! "Alim"
+ئيگۈل:ئيگۈل NP-ANT-F ; ! "Aygül"
 
 LEXICON Verbs 
 

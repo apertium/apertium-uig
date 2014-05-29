@@ -34,7 +34,29 @@ Rules
 
 !! Vowel harmony
 
+"{A} becomes in front vowel contexts"
+%{A%}:ە <=> [ :FrontVow :Cns :Cns* ]/:0 _ ;
+
+!! Consonant assimilation
+
 "Devoice {D} after a voiceless consonant"
 %{D%}:ت <=> :VoicelessCns (:0) %>: _  ; 
+
+
+!! Vowel reduction and regressive umlaut
+
+"ا and ە reduce to ى in non-initial and non-final open syllables"
+Vx:ى <=> _ [ :Cns :Vow ]/:0 ;
+     except
+         .#. :Cns*/:0 _ ;
+         _ :Cns*/:0 .#. ;
+     where Vx in ( ا ە ) 
+         matched ;
+
+!"test"
+!ا:ى <=> _ [ :Cns :Vow ]/:0 ;
+
+"ا and ە to ي in initial open syllables preceding ى"
+ا:ي <=> .#. :Cns* _ [ :Cns :ى ]/:0 ;
 
 
