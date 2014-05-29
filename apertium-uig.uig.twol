@@ -92,6 +92,7 @@ Vx:ى <=> _ [ :Cns :Vow ]/:0 ;
      except
          .#. [ [ :Cns* ]/:0 - :Vow ] _ ;
          _ [ [ :Cns ]*/:0 - :Vow ] .#. ;
+         _ %{☫%}:0 ; ! to user: put %{☫%} after ا to prevent it from turning to ى
      where Vx in ( ا ە ) ;
 
 "{A} becomes reduced vowel in non-initial and non-final open syllables"
