@@ -62,14 +62,14 @@ Rules
 
 "{i} vowel harmony"
 %{i%}:Vy <=> [ :Vx :Cns* :Cns ]/:0 _ ;  ! null after :Vow
-         where Vx in ( ا ە و ۇ ۆ ۈ ى ې )
-               Vy in ( ى ى ۇ ۇ ۈ ۈ ى ى )
+         where Vx in ( و ۇ ۆ ۈ )
+               Vy in ( ۇ ۇ ۈ ۈ )
          matched ;
 
 "{I} vowel harmony"
 %{I%}:Vy <=> [ :Vx :Cns* :Cns ]/:0 _ ;  ! not necessarily null after :Vow ?
-         where Vx in ( ا ە و ۇ ۆ ۈ ى ې )
-               Vy in ( ى ى ۇ ۇ ۈ ۈ ى ى )
+         where Vx in ( و ۇ ۆ ۈ )
+               Vy in ( ۇ ۇ ۈ ۈ )
          matched ;
 
 
@@ -104,8 +104,7 @@ Vx:ى <=> _ %>: :Cns [ :0 - %{☫%}: ]* :Vow ;
 !"test"
 !ا:ى <=> _ [ :Cns :Vow ]/:0 ;
 
-"ا and ە to ي in initial open syllables preceding ى"
-ا:ي <=> .#. :Cns* _ %>: :Cns :ى ;
-        .#. :Cns* _ :Cns %>: :ى ;
-
-
+"ا and ە to ې in initial open syllables preceding ى"
+Vx:ې <=> .#. :Cns*/:0 _ [ %>: :Cns [ :ى | %{I%}: ] ]/[ :0 - [ %{☫%}: | %>: ] ] ;
+         .#. :Cns*/:0 _ [ :Cns %>: [ :ى | %{I%}: ] ]/[ :0 - [ %{☫%}: | %>: ] ] ;
+     where Vx in ( ا ە ) ;

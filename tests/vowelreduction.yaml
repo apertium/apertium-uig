@@ -15,8 +15,20 @@ Tests:
     باقچا<n><loc> : باقچىدا
     بالا<n><px3sp><nom> : بالىسى
     بالا<n><loc> : بالىدا
+    بالا<n><pl><nom> : بالىلار
+
+ "[twol] ا doesn't reduce in closed syllables":
+    باقچا<n><px1sg><loc> : باقچامدا
 
  "[twol] ا doesn't reduce in (borrowed) stems":
     ئالىم<n><np><m><nom> : ئالىم
     دائىم<adv> : دائىم
     باھايىتى<adv> : باھايىتى
+
+ "[twol] {A} reduces in open syllables":
+    باقچا<n><pl><px3sp><nom> : باقچىلىرى
+
+ "[twol] {A} doesn't reduce in closed syllables":
+    باقچا<n><pl><acc> : باقچىلارنى
+
+
