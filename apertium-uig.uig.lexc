@@ -59,6 +59,7 @@ Multichar_Symbols
 %<aor%>           ! 
 %<prc_impf%>      ! 
 %<ger_past%>      !
+%<gna_cond%>      ! Conditional
 
 %<itg%>           ! 
  
@@ -186,6 +187,12 @@ LEXICON PRON-DEM-CASE
 %<loc%>:ندا # ;
 %<dat%>:ڭا # ;
 
+LEXICON PRON-PERS-U
+
+%<prn%>%<pers%>%<p3%>%<sg%>%<nom%>: # ; 
+%<prn%>%<pers%>%<p3%>%<sg%>%<gen%>:نىڭ # ; 
+
+
 LEXICON PRON-PERS-OLAR
 
 %<prn%>%<pers%>%<p3%>%<pl%>%<nom%>: # ; 
@@ -217,6 +224,16 @@ LEXICON V-IFI-PERS
 LEXICON V-AOR-PERS 
 
 %<p3%>%<sg%>:%>دۇ # ; 
+
+LEXICON V-COND-PERS
+
+%<p1%>%<sg%>:%>م # ; 
+%<p2%>%<sg%>:%>ڭ # ; 
+%<p3%>%<sg%>:%> # ; 
+%<p1%>%<sg%>:%>%{K%} # ; 
+%<p2%>%<sg%>:%>ڭىز # ; 
+%<p3%>%<pl%>:%> # ; 
+
 
 LEXICON V-IFI
 
@@ -256,6 +273,10 @@ LEXICON V-AOR
 
 %<aor%>:%>%{E%} V-AOR-PERS ; 
 
+LEXICON V-COND
+
+%<gna_cond%>:%>س%{A%} V-COND-PERS ;
+
 LEXICON V-COMMON
 
 %<inf%>:%>م%{A%}ق # ; ! FIXME: insert correct tag here
@@ -265,6 +286,7 @@ V-PRC ;
 V-ABIL ;
 V-AOR ; 
 V-GER ;
+V-COND ;
 
 LEXICON V-IV 
 
@@ -307,6 +329,11 @@ LEXICON A2
 %<adj%>%<subst%>: N-COMMON ;
 !FIXME: COMP?
 
+LEXICON A4
+
+%<adj%>: # ;
+
+
 
 LEXICON COP
 
@@ -329,6 +356,7 @@ LEXICON Postpositions
 
 LEXICON Pronouns 
 
+ئۇ:ئۇ PRON-PERS-U ; ! ""
 ئولار:ئولار PRON-PERS-OLAR ; ! ""
 بۇ:بۇ PRON-DEM-BU ; ! "this"
 شۇ:شۇ PRON-DEM-SHU ; ! "that"
@@ -361,6 +389,8 @@ LEXICON Nouns
 ئۆي:ئۆي N1 ; ! "house"
 باقچا:باقچا N1 ; ! "garden"
 ھاۋا:ھاۋا N1 ; ! "weather, air"
+يىل:يىل N1 ; ! "year"
+
 
 Check ; 
 
@@ -385,7 +415,8 @@ LEXICON Verbs
 بول:بول V-IV ; ! "be"
 ئوينا:ئوينا V-TV ; ! "play"
 ئوينا:ئوينا V-IV ; ! "play"
-ئامراق% بول:ئامراق% بول V-TV ; ! "love"
+قىل:قىل V-TV ; ! "do/make"
+!ئامراق% بول:ئامراق% بول V-TV ; ! "love"  ! Use/MT
 
 LEXICON Copula
 
@@ -398,6 +429,12 @@ LEXICON Adjectives
 سوغۇق:سوغۇق A2 ; ! "cold" ! FIXME: check adjective class
 چوڭ:چوڭ A2 ; ! "big"
 
+كۆپ:كۆپ A1 ; ! "a lot" ! FIXME: check
+
+
+ئامراق:ئامراق A4 ; ! "in love with / like"
+بار:بار A4 ; ! "exists"
+يوق:يوق A4 ; ! "doesn't exist / absent"
 
 LEXICON Adverbs
 
