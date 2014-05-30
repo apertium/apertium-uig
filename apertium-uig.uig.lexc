@@ -116,9 +116,21 @@ LEXICON CASE
 %<dat%>:%>%{G%}%{A%} # ;
 %<loc%>:%>%{D%}%{A%} # ;
 %<loc%>%<attr%>:%>%{D%}%{A%}%>كى # ;
+%<loc%>%<subst%>:%>%{D%}%{A%}%>كى SUBST-2 ;
 %<abl%>:%>%{D%}ىن # ;
 %<gen%>:%>نىڭ # ;
 %<acc%>:%>نى # ;
+
+LEXICON CASE-2
+
+%<nom%>: # ;
+%<dat%>:%>%{G%}%{A%} # ;
+%<loc%>:%>%{D%}%{A%} # ;
+%<loc%>%<attr%>:%>%{D%}%{A%}%>كى # ;
+%<abl%>:%>%{D%}ىن # ;
+%<gen%>:%>نىڭ # ;
+%<acc%>:%>نى # ;
+
 
 LEXICON POSSESSION
 
@@ -126,6 +138,19 @@ CASE ;
 %<px1sg%>:%>%{i%}م CASE ;
 %<px2sg%>:%>%{i%}ڭ CASE ;
 %<px3sp%>:%>%{s%}%{I%}%{n%} CASE ;
+%<px1pl%>:%>%{i%}م%{I%}ز CASE ;
+%<px2pl%>:%>%{i%}ڭ%{I%}ز CASE ;
+
+
+LEXICON SUBST-2
+
+CASE-2 ;
+%<px1sg%>:%>%{i%}م CASE-2 ;
+%<px2sg%>:%>%{i%}ڭ CASE-2 ;
+%<px3sp%>:%>%{s%}%{I%}%{n%} CASE-2 ;
+%<px1pl%>:%>%{i%}م%{I%}ز CASE-2 ;
+%<px2pl%>:%>%{i%}ڭ%{I%}ز CASE-2 ;
+
 
 LEXICON NP-COMMON
 
