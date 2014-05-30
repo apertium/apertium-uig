@@ -13,3 +13,4 @@
 /configure.ac -text
 dev/countstems.sh -text
 /modes.xml -text
+tests/vowelreduction.yaml -text

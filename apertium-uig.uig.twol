@@ -99,7 +99,6 @@ Vx:ى <=> _ [ :Cns :Vow ]/:0 ;
 %{A%}:ى <=> _ [ :Cns :Vow ]/:0 ;
      except
          .#. [ [ :Cns* ]/:0 - :Vow ] _ ;
-         _ [ [ :Cns ]*/:0 - :Vow ] .#. ;
 
 
 !"test"
