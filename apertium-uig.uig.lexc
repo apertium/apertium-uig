@@ -351,8 +351,8 @@ Check ;
 
 !!! Proper nouns
 
-ئازامات:ئا%{☫%}زا%{☫%}مات NP-ANT-M ; ! ""
-ئالىم:ئا%{☫%}لىم NP-ANT-M ; ! "Alim"
+ئازامات:ئازامات NP-ANT-M ; ! "Azamat" CHECK: no %{☫%} ?
+ئالىم:ئالىم NP-ANT-M ; ! "Alim"
 ئايگۈل:ئايگۈل NP-ANT-F ; ! "Aygül"
 
 LEXICON Verbs 
@@ -380,9 +380,9 @@ LEXICON Adverbs
 
 بۈگۈن:بۈگۈن ADV ; ! "today"
 بەك:بەك ADV ; ! "very"
-باھايىتى:با%{☫%}ھا%{☫%}يىتى ADV ; ! "very, really"
+باھايىتى:باھايىتى ADV ; ! "very, really"
 تۆنۈگۈن:تۆنۈگۈن ADV ; ! "yesterday"
-دائىم:دا%{☫%}ئىم ADV ; ! "always"
+دائىم:دائىم ADV ; ! "always"
 بىرگە:بىرگە ADV ; ! ""
 
 LEXICON Punctuation

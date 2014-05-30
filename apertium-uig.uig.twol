@@ -88,25 +88,24 @@ Rules
 !! Vowel reduction and regressive umlaut
 
 "ا and ە reduce to ى in non-initial and non-final open syllables"
-Vx:ى <=> _ [ :Cns :Vow ]/:0 ;
+Vx:ى <=> _ %>: :Cns [ :0 - %{☫%}: ]* :Vow ;
+         _ :Cns %>: [ :0 - %{☫%}: ]* :Vow ;
      except
-         .#. [ [ :Cns* ]/:0 - :Vow ] _ ;
-         _ [ [ :Cns ]*/:0 - :Vow ] .#. ;
-         _ %{☫%}:0 ; ! to user: put %{☫%} after ا to prevent it from turning to ى
+         .#. :Cns*/:0 _ ;
      where Vx in ( ا ە ) ;
 
 "{A} becomes reduced vowel in non-initial and non-final open syllables"
-%{A%}:ى <=> _ [ :Cns :Vow ]/:0 ;
+%{A%}:ى <=> _ %>: :Cns [ :0 - %{☫%}: ]* :Vow ;
+            _ :Cns %>: [ :0 - %{☫%}: ]* :Vow ;
      except
-         .#. [ [ :Cns* ]/:0 - :Vow ] _ ;
+         .#. :Cns*/:0 _ ;
 
 
 !"test"
 !ا:ى <=> _ [ :Cns :Vow ]/:0 ;
 
 "ا and ە to ي in initial open syllables preceding ى"
-ا:ي <=> .#. :Cns* _ [ :Cns :ى ]/:0 ;
-    except
-        _ %{☫%}:0 ; ! to user: put %{☫%} after ا to prevent it from turning to ى
+ا:ي <=> .#. :Cns* _ %>: :Cns :ى ;
+        .#. :Cns* _ :Cns %>: :ى ;
 
 
