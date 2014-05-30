@@ -28,6 +28,7 @@ Tests:
 
  "[twol] {A} reduces in open syllables":
     باقچا<n><pl><px3sp><nom> : باقچىلىرى
+    ئالد<n><px3sp><loc><attr> : ئالدىندىكى
 
  "[twol] {A} doesn't reduce in closed syllables":
     باقچا<n><pl><acc> : باقچىلارنى
