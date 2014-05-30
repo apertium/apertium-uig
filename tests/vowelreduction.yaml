@@ -21,7 +21,8 @@ Tests:
     باقچا<n><px1sg><loc> : باقچامدا
 
  "[twol] ا doesn't reduce in (borrowed) stems":
-    ئالىم<n><np><m><nom> : ئالىم
+    ئالىم<np><ant><m><nom> : ئالىم
+    ئالىم<np><ant><m><abl> : ئالىمدىن
     دائىم<adv> : دائىم
     باھايىتى<adv> : باھايىتى
 
