@@ -72,6 +72,8 @@ Rules
                Vy in ( ۇ ۇ ۈ ۈ )
          matched ;
 
+"Delete {I} after vowels"
+%{I%}:0 <=> :Vow/:0 _ ;
 
 
 !! Consonant assimilation
