@@ -256,6 +256,7 @@ LEXICON V-GER
 
 %<ger_past%>:%>%{G%}%{A%}ن NP-COMMON ;
 %<ger%>:%>%{i%}ش NP-COMMON ; 
+%<inf%>:%>م%{A%}%{K%} # ;
 
 LEXICON V-ABIL-COMMON
 V-IFI ;
