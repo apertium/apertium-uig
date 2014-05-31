@@ -61,13 +61,14 @@ Rules
 
 
 "{i} vowel harmony"
+! not actually needed?
 %{i%}:Vy <=> [ :Vx :Cns* :Cns ]/:0 _ ;  ! null after :Vow
          where Vx in ( و ۇ ۆ ۈ )
                Vy in ( ۇ ۇ ۈ ۈ )
          matched ;
 
-"{I} vowel harmony"
-%{I%}:Vy <=> [ :Vx :Cns* :Cns ]/:0 _ ;  ! not necessarily null after :Vow ?
+"{I} rounding harmony"
+%{I%}:Vy <=> [ :Vx :Cns* :Cns ]/:0 _ ;  ! null after :Vow 
          where Vx in ( و ۇ ۆ ۈ )
                Vy in ( ۇ ۇ ۈ ۈ )
          matched ;
@@ -101,6 +102,13 @@ Vx:ى <=> _ %>: :Cns [ :0 - %{☫%}: ]* :Vow ;
             _ :Cns %>: [ :0 - %{☫%}: ]* :Vow ;
      except
          .#. :Cns*/:0 _ ;
+
+"{E} becomes reduced vowel in non-initial and non-final open syllables"
+%{E%}:ى <=> _ %>: :Cns [ :0 - %{☫%}: ]* :Vow ;
+            _ :Cns %>: [ :0 - %{☫%}: ]* :Vow ;
+     except
+            [ :FrontVow :Cns :Cns* ]/:0 _ ;
+            :Vow/:0 _ ;
 
 
 !"test"
