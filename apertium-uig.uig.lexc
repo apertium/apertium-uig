@@ -290,6 +290,10 @@ V-AOR ;
 V-GER ;
 V-COND ;
 
+LEXICON V-AUX
+
+%<v%>%<vaux%>: V-COMMON ;
+
 LEXICON V-IV 
 
 %<v%>%<iv%>: V-COMMON ; 
