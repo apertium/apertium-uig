@@ -2021,6 +2021,8 @@ LEXICON Adjectives
 سوغۇق:سوغۇق A2 ; ! "cold" ! FIXME: check adjective class
 چوڭ:چوڭ A2 ; ! "big"
 
+باشقا:باشقا ; ! "different" ! FIXME: not DEM/PRN?
+
 كۆپ:كۆپ A1 ; ! "a lot" ! FIXME: check
 
 
@@ -2038,6 +2040,7 @@ LEXICON Adverbs
 تۆنۈگۈن:تۆنۈگۈن ADV ; ! "yesterday"
 دائىم:دائىم ADV ; ! "always"
 بىرگە:بىرگە ADV ; ! ""
+ئەڭ:ئەڭ ADV ; ! "most"
 
 LEXICON Punctuation
 
