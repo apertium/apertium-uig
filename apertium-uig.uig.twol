@@ -32,6 +32,8 @@ Cns =  ب پ ت ج چ خ د ر ز ژ س ش غ ف ق ك گ ڭ ل م ن ھ ۋ ي �
 
 VoicelessCns = پ ت چ خ س ش ف ق ك ھ ;
 
+VoicedCns = ي ۋ ر ل م ن ڭ ۋ ج ز ;
+
 
 Rules
 
@@ -86,6 +88,18 @@ Rules
 
 "{K} to ك after front vowel"
 %{K%}:ك <=> :FrontVow/:0 _ ;
+
+
+"{G} to گ after front vowel"
+%{G%}:گ <=> [ :FrontVow (:VoicedCns) ]/:0 _ ;
+            
+"{G} to ك after front vowel and voiceless consonant"
+%{G%}:ك <=> [ :FrontVow :Cns* :VoicelessCns]/:0 _ ;
+
+"{G} to ق after voiceless consonant"
+%{G%}:ق <=> :VoicelessCns/:0 _ ;
+        except
+            [ :FrontVow :Cns* ]/:0 _ ;
 
 
 !! Vowel reduction and regressive umlaut
