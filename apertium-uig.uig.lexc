@@ -15,6 +15,7 @@ Multichar_Symbols
 %<dem%>           ! Demonstrative
 %<adv%>           ! Adverb
 %<adj%>           !
+%<ij%>            ! Interjection
 
 %<p1%>            !
 %<p2%>            !
@@ -27,6 +28,7 @@ Multichar_Symbols
 %<px3sp%>         !
 %<px1pl%>         !
 %<px2pl%>         !
+%<frm%>           ! formal
 
 %<nom%>           !
 %<abl%>           !
@@ -110,6 +112,7 @@ Verbs ;
 Copula ;
 Adjectives ;
 Adverbs ;
+Interjections ;
 Punctuation ;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -142,9 +145,11 @@ LEXICON POSSESSION
 CASE ;
 %<px1sg%>:%>%{i%}م CASE ;
 %<px2sg%>:%>%{i%}ڭ CASE ;
+%<px2pl%>:%>%{i%}ڭل%{A%}ر CASE ;
 %<px3sp%>:%>%{s%}%{I%}%{n%} CASE ;
 %<px1pl%>:%>%{i%}م%{I%}ز CASE ;
-%<px2pl%>:%>%{i%}ڭ%{I%}ز CASE ;
+%<px2pl%>%<frm%>:%>%{i%}ڭ%{I%}ز CASE ;
+%<px2sg%>%<frm%>:%>%{i%}ڭ%{I%}ز CASE ;
 
 
 LEXICON SUBST-2
@@ -238,27 +243,43 @@ LEXICON PRON-DEM-SHU
 %<prn%>%<dem%>: PRON-DEM-COMMON ; ! FIXME: subst lex
 
 
+LEXICON PRON-DEM-U
+
+%<prn%>%<dem%>: PRON-DEM-COMMON ; ! FIXME: subst lex
+
+LEXICON CLITICS
+
+# ;
++مۇ%<qst%>:مۇ # ;
++چۇ%<qst%>:چۇ # ;
+
 LEXICON V-IFI-PERS
 
-%<p1%>%<sg%>:م # ;
-%<p2%>%<sg%>:ڭ # ;
-%<p3%>%<sg%>: # ;
-%<p1%>%<pl%>:%{K%} # ;
-%<p2%>%<pl%>:ڭ%{I%}ز # ;
-%<p3%>%<pl%>: # ;
+%<p1%>%<sg%>:م CLITICS ;
+%<p2%>%<sg%>:ڭ CLITICS ;
+%<p3%>%<sg%>: CLITICS ;
+%<p1%>%<pl%>:%{K%} CLITICS ;
+%<p2%>%<pl%>:ڭ%{I%}ز CLITICS ;
+%<p3%>%<pl%>: CLITICS ;
 
 LEXICON V-AOR-PERS 
 
-%<p3%>%<sg%>:%>دۇ # ; 
+%<p1%>%<sg%>:%>مەن CLITICS ; 
+%<p2%>%<sg%>:%>سەن CLITICS ; 
+%<p2%>%<sg%>%<frm%>:%>سىز CLITICS ; 
+%<p3%>%<sg%>:%>دۇ CLITICS ; 
+%<p1%>%<pl%>:%>مىز CLITICS ; 
+%<p2%>%<pl%>:%>سىلەر CLITICS ; 
+%<p3%>%<pl%>:%>دۇ CLITICS ; 
 
 LEXICON V-COND-PERS
 
-%<p1%>%<sg%>:%>م # ; 
-%<p2%>%<sg%>:%>ڭ # ; 
-%<p3%>%<sg%>:%> # ; 
-%<p1%>%<sg%>:%>%{K%} # ; 
-%<p2%>%<sg%>:%>ڭىز # ; 
-%<p3%>%<pl%>:%> # ; 
+%<p1%>%<sg%>:%>م CLITICS ; 
+%<p2%>%<sg%>:%>ڭ CLITICS ; 
+%<p3%>%<sg%>:%> CLITICS ; 
+%<p1%>%<sg%>:%>%{K%} CLITICS ; 
+%<p2%>%<sg%>:%>ڭىز CLITICS ; 
+%<p3%>%<pl%>:%> CLITICS ; 
 
 
 LEXICON V-IFI
@@ -268,12 +289,12 @@ LEXICON V-IFI
 
 LEXICON V-PAST-PERS
 
-%<p1%>%<sg%>:م%{A%}ن # ;
-%<p2%>%<sg%>:س%{A%}ن # ;
-%<p3%>%<sg%>: # ;
-%<p1%>%<pl%>:م%{I%}ز # ;
-%<p2%>%<pl%>:س%{I%}ز # ;
-%<p3%>%<pl%>: # ;
+%<p1%>%<sg%>:م%{A%}ن CLITICS ;
+%<p2%>%<sg%>:س%{A%}ن CLITICS ;
+%<p3%>%<sg%>: CLITICS ;
+%<p1%>%<pl%>:م%{I%}ز CLITICS ;
+%<p2%>%<pl%>:س%{I%}ز CLITICS ;
+%<p3%>%<pl%>: CLITICS ;
 
 
 LEXICON V-PAST
@@ -371,22 +392,28 @@ LEXICON ADV-ITG
 
 %<adv%>%<itg%>: # ;
 
+
+LEXICON INTERJ
+
+%<ij%>: # ;
+
+
 LEXICON A1 
 
-%<adj%>: # ;
-%<adj%>%<advl%>: # ;
+%<adj%>: CLITICS ;
+%<adj%>%<advl%>: CLITICS ;
 %<adj%>%<subst%>: N-COMMON ;
 !FIXME: COMP?
 
 LEXICON A2
 
-%<adj%>: # ;
+%<adj%>: CLITICS ;
 %<adj%>%<subst%>: N-COMMON ;
 !FIXME: COMP?
 
 LEXICON A4
 
-%<adj%>: # ;
+%<adj%>: CLITICS ;
 
 
 
@@ -419,14 +446,26 @@ LEXICON Pronouns
 
 مەن:مەن PRON-PERS-MEN ; ! "I/me"
 بىز:بىز PRON-PERS-BIZ ; ! "we/us"
-سىز:سىز PRON-PERS-SIZ ; ! "you (pl)"
+
+سەن:سەن PRON-PERS-SAN ; ! "you (sg)"
+سىلەر:سىلەر PRON-PERS-SILAR ; ! "you (pl)"
+سىز:سىز PRON-PERS-SIZ ; ! "you (polite sg/pl)"
+
+ئۇ:ئۇ PRON-PERS-U ; ! "he/she/it"
+ئۇلار:ئۇلار PRON-PERS-ULAR ; ! ""
+
 
 ئۆز:ئۆز PRON-PERS-REFL ; ! "own"
 
-ئۇ:ئۇ PRON-PERS-U ; ! ""
-ئولار:ئولار PRON-PERS-OLAR ; ! ""
+
 بۇ:بۇ PRON-DEM-BU ; ! "this"
-شۇ:شۇ PRON-DEM-SHU ; ! "that"
+ئۇ:ئۇ PRON-PERS-U ; ! "that (visible)"
+شۇ:شۇ PRON-DEM-SHU ; ! "that (distant / previously mentioned)"
+
+ماۋۇ:ماۋۇ PRON-DEM-U ; 
+ئاۋۇ:ئاۋۇ PRON-DEM-U ; 
+مۇشۇ:مۇشۇ PRON-DEM-U ; 
+ئاشۇ:ئاشۇ PRON-DEM-U ; 
 
 LEXICON Determiners 
 
@@ -443,12 +482,26 @@ LEXICON Numerals
 ئالتە:ئالتە NUM ; ! "six"
 يەتتە:يەتتە NUM ; ! "seven"
 سەككىز:سەككىز NUM ; ! "eight"
+توققۇز:توققۇز NUM ; ! "nine"
 
 ئون:ئون NUM ; ! "ten"
+يىگىرمە:يىگىرمە NUM ; ! "twenty"
+ئوتتۇز:ئوتتۇز NUM ; ! "thirty"
+قىرىق:قىرىق NUM ; ! "forty"
+ئەللىك:ئەللىك NUM ; ! "fifty"
+ئالتمىش:ئالتمىش NUM ; ! "sixty"
+يەتمىش:يەتمىش NUM ; ! "seventy"
+سەكسەن:سەكسەن NUM ; ! "eighty"
+توقسان:توقسان NUM ; ! "ninety"
 
 يۈز:يۈز NUM ; ! "hundred"
 
 مىڭ:مىڭ NUM ; ! "thousand"
+
+مىليون:مىليون NUM ; ! "million"
+مىليارد:مىليارد NUM ; ! "billion"
+
+يېرىم:يېرىم NUM ; ! "half"
 
 LEXICON Nouns 
 
@@ -2072,6 +2125,15 @@ LEXICON Adverbs
 بىرگە:بىرگە ADV ; ! ""
 ئەڭ:ئەڭ ADV ; ! "most"
 ھازىر:ھازىر ADV ; ! "now"
+ئەتە:ئەتە ADV ; ! "tomorrow"
+
+
+!=====================!
+ LEXICON Interjections
+!=====================!
+
+ياق:ياق INTERJ ; ! "no"
+
 
 
 LEXICON Punctuation
