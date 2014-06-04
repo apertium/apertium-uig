@@ -206,11 +206,11 @@ LEXICON PRON-PERS-MEN
 
 LEXICON PRON-PERS-BIZ
 
-%<prn%>%<pers%>%<p1%>%<pl%>%<nom%>: CASE ;
+%<prn%>%<pers%>%<p1%>%<pl%>: CASE ;
 
 LEXICON PRON-PERS-SIZ
 
-%<prn%>%<pers%>%<p2%>%<pl%>%<nom%>: CASE ;
+%<prn%>%<pers%>%<p2%>%<pl%>: CASE ;
 
 
 
@@ -221,12 +221,19 @@ LEXICON PRON-PERS-REFL
 LEXICON PRON-PERS-U
 
 %<prn%>%<pers%>%<p3%>%<sg%>%<nom%>: # ; 
+%<prn%>%<pers%>%<p3%>%<sg%>%<acc%>:نى # ; 
 %<prn%>%<pers%>%<p3%>%<sg%>%<gen%>:نىڭ # ; 
+%<prn%>%<pers%>%<p3%>%<sg%>%<dat%>:د%{I%} # ; 
+%<prn%>%<pers%>%<p3%>%<sg%>%<abl%>:د%{I%}ن # ; 
 
 
-LEXICON PRON-PERS-OLAR
+LEXICON PRON-PERS-ULAR
 
 %<prn%>%<pers%>%<p3%>%<pl%>%<nom%>: # ; 
+%<prn%>%<pers%>%<p3%>%<pl%>%<acc%>:نى # ; 
+%<prn%>%<pers%>%<p3%>%<pl%>%<gen%>:نىڭ # ; 
+%<prn%>%<pers%>%<p3%>%<pl%>%<dat%>:د%{I%} # ; 
+%<prn%>%<pers%>%<p3%>%<pl%>%<abl%>:د%{I%}ن # ; 
 
 LEXICON PRON-DEM-COMMON
 
@@ -436,11 +443,12 @@ LEXICON Conjunctions
 ! Sub-ordinating conjunctions
 !============================
 
-ھازىر:ھازىر CS ; ! "if"
+ئەگەر:ئەگەر CS ; ! "if"
 
 LEXICON Postpositions
 
 بىلەن:بىلەن POST ; ! "with, and"
+ئۈچۈن:ئۈچۈن POST ; ! "for"
 
 LEXICON Pronouns 
 
@@ -452,7 +460,7 @@ LEXICON Pronouns
 سىز:سىز PRON-PERS-SIZ ; ! "you (polite sg/pl)"
 
 ئۇ:ئۇ PRON-PERS-U ; ! "he/she/it"
-ئۇلار:ئۇلار PRON-PERS-ULAR ; ! ""
+ئۇلار:ئۇلار PRON-PERS-ULAR ; ! "they"
 
 
 ئۆز:ئۆز PRON-PERS-REFL ; ! "own"
@@ -515,6 +523,7 @@ LEXICON Nouns
 ئىش:ئىش N1 ; ! "job/work"
 كىشى:كىشى N1 ; ! "person"
 كىلومېتىر:كىلومېتىر N1 ; ! "kilometer"
+تەهەپ:تەهەپ N1 ; ! "direction"
 
 Check ; 
 
@@ -2100,6 +2109,7 @@ LEXICON Adjectives
 
 ياخشى:ياخشى A1 ; ! "good"
 ئىللىق:ئىللىق A1 ; ! "warm" ! FIXME: check adjective class
+يېڭى:يېڭى A1 ; ! "new"
 سوغۇق:سوغۇق A2 ; ! "cold" ! FIXME: check adjective class
 چوڭ:چوڭ A2 ; ! "big"
 
