@@ -92,7 +92,7 @@ Multichar_Symbols
 %{i%}                 ! epenthetic ى : realised as ى/ۇ/ۈ or null
 %{I%}                 ! realised as ى/ۇ/ۈ
 %{s%}                 ! realised as س or null
-%{n%}                 ! realised as ن or null
+!%{n%}                 ! realised as ن or null
 %{☫%}                 ! "loanword" - blocks certain processes
                       ! needed after ا that doesn't change to ى
 
@@ -146,7 +146,7 @@ CASE ;
 %<px1sg%>:%>%{i%}م CASE ;
 %<px2sg%>:%>%{i%}ڭ CASE ;
 %<px2pl%>:%>%{i%}ڭل%{A%}ر CASE ;
-%<px3sp%>:%>%{s%}%{I%}%{n%} CASE ;
+%<px3sp%>:%>%{s%}%{I%} CASE ;
 %<px1pl%>:%>%{i%}م%{I%}ز CASE ;
 %<px2pl%>%<frm%>:%>%{i%}ڭ%{I%}ز CASE ;
 %<px2sg%>%<frm%>:%>%{i%}ڭ%{I%}ز CASE ;
@@ -157,7 +157,7 @@ LEXICON SUBST-2
 CASE-2 ;
 %<px1sg%>:%>%{i%}م CASE-2 ;
 %<px2sg%>:%>%{i%}ڭ CASE-2 ;
-%<px3sp%>:%>%{s%}%{I%}%{n%} CASE-2 ;
+%<px3sp%>:%>%{s%}%{I%}% CASE-2 ;
 %<px1pl%>:%>%{i%}م%{I%}ز CASE-2 ;
 %<px2pl%>:%>%{i%}ڭ%{I%}ز CASE-2 ;
 
@@ -449,6 +449,9 @@ LEXICON Postpositions
 
 بىلەن:بىلەن POST ; ! "with, and"
 ئۈچۈن:ئۈچۈن POST ; ! "for"
+بويىچە:بويىچە POST ; ! "along, througout"
+قاتارلىق:قاتارلىق POST ; ! "such as"
+ئارقىلىق:ئارقىلىق POST ; ! "through"
 
 LEXICON Pronouns 
 
@@ -523,7 +526,8 @@ LEXICON Nouns
 ئىش:ئىش N1 ; ! "job/work"
 كىشى:كىشى N1 ; ! "person"
 كىلومېتىر:كىلومېتىر N1 ; ! "kilometer"
-تەهەپ:تەهەپ N1 ; ! "direction"
+تەهەپ:تەهەپ N1 ; ! "direction, side"
+دۆلەت:دۆلەت N1 ; ! "country"
 
 Check ; 
 
@@ -2112,6 +2116,7 @@ LEXICON Adjectives
 يېڭى:يېڭى A1 ; ! "new"
 سوغۇق:سوغۇق A2 ; ! "cold" ! FIXME: check adjective class
 چوڭ:چوڭ A2 ; ! "big"
+يۇقىرى:يۇقىرى A1 ; ! "high" ! FIXME: check adjective class
 
 باشقا:باشقا A2 ; ! "different" ! FIXME: not DEM/PRN?
 
@@ -2136,6 +2141,7 @@ LEXICON Adverbs
 ئەڭ:ئەڭ ADV ; ! "most"
 ھازىر:ھازىر ADV ; ! "now"
 ئەتە:ئەتە ADV ; ! "tomorrow"
+يەنە:يەنە ADV ; ! "again"
 
 
 !=====================!

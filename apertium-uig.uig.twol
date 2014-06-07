@@ -13,7 +13,7 @@ Alphabet
 %{i%}:0
 %{I%}:ى
 %{s%}:0
-%{n%}:0 
+!%{n%}:0 
 %{☫%}:0
 
 %>:0 ; 
@@ -42,8 +42,8 @@ Rules
 "Insert {s} after a vowel"
 %{s%}:س <=> :Vow (:0) %>: _  ; 
 
-"Insert {n} before before a case ending"
-%{n%}:ن <=> _ %>: [ %{G%}: | %{D%}: ] ;
+!"Insert {n} before before a case ending"
+!%{n%}:ن <=> _ %>: [ %{G%}: | %{D%}: ] ;
 
 !! Vowel harmony
 
