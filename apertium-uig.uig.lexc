@@ -200,40 +200,66 @@ LEXICON PRON-DEM-CASE
 %<loc%>:ندا # ;
 %<dat%>:ڭا # ;
 
-LEXICON PRON-PERS-MEN
+LEXICON PRON-PERS-AN
 
-%<prn%>%<pers%>%<p1%>%<sg%>%<nom%>: # ;
+%<nom%>:ەن # ;
+%<dat%>:اڭا # ;
+%<acc%>:ىنى # ;
+%<gen%>:ىنىڭ # ;
+%<abl%>:ەندىن # ;
+%<loc%>:ەندە # ;
 
-LEXICON PRON-PERS-BIZ
+LEXICON PRON-PERS-MAN
 
-%<prn%>%<pers%>%<p1%>%<pl%>: CASE ;
+%<prn%>%<pers%>%<p1%>%<sg%>: PRON-PERS-AN ;
+
+LEXICON PRON-PERS-SAN
+
+%<prn%>%<pers%>%<p2%>%<sg%>: PRON-PERS-AN ;
 
 LEXICON PRON-PERS-SIZ
 
-%<prn%>%<pers%>%<p2%>%<pl%>: CASE ;
+%<prn%>%<pers%>%<p2%>%<frm%>%<sg%>: CASE ;
 
+LEXICON PRON-PERS-SILI
 
-
-LEXICON PRON-PERS-REFL
-
-%<prn%>%<ref%>: NP-COMMON ;
+%<prn%>%<pers%>%<p2%>%<frm%>%<sg%>: CASE ;
 
 LEXICON PRON-PERS-U
 
 %<prn%>%<pers%>%<p3%>%<sg%>%<nom%>: # ; 
 %<prn%>%<pers%>%<p3%>%<sg%>%<acc%>:نى # ; 
 %<prn%>%<pers%>%<p3%>%<sg%>%<gen%>:نىڭ # ; 
-%<prn%>%<pers%>%<p3%>%<sg%>%<dat%>:د%{I%} # ; 
-%<prn%>%<pers%>%<p3%>%<sg%>%<abl%>:د%{I%}ن # ; 
+%<prn%>%<pers%>%<p3%>%<sg%>%<loc%>:نىڭدا # ; ! FIXME: also اندا
+%<prn%>%<pers%>%<p3%>%<sg%>%<abl%>:دىن # ; 
+%<prn%>%<pers%>%<p3%>%<sg%>%<dat%>:نىڭغا # ; 
 
+
+LEXICON PRON-PERS-BIZ
+
+%<prn%>%<pers%>%<p1%>%<pl%>: CASE ;
+
+LEXICON PRON-SANLAR
+
+%<prn%>%<pers%>%<p2%>%<pl%>: CASE ;
+
+LEXICON PRON-SILAR 
+
+%<prn%>%<pers%>%<p2%>%<frm%>%<pl%>: CASE ;
+
+LEXICON PRON-SIZLAR 
+
+%<prn%>%<pers%>%<p2%>%<frm%>%<pl%>: CASE ;
 
 LEXICON PRON-PERS-ULAR
 
-%<prn%>%<pers%>%<p3%>%<pl%>%<nom%>: # ; 
-%<prn%>%<pers%>%<p3%>%<pl%>%<acc%>:نى # ; 
-%<prn%>%<pers%>%<p3%>%<pl%>%<gen%>:نىڭ # ; 
-%<prn%>%<pers%>%<p3%>%<pl%>%<dat%>:د%{I%} # ; 
-%<prn%>%<pers%>%<p3%>%<pl%>%<abl%>:د%{I%}ن # ; 
+%<prn%>%<pers%>%<p3%>%<pl%>: CASE ; 
+
+
+LEXICON PRON-PERS-REFL
+
+%<prn%>%<ref%>: NP-COMMON ;
+
 
 LEXICON PRON-DEM-COMMON
 
@@ -296,11 +322,16 @@ LEXICON V-IFI
 
 LEXICON V-PAST-PERS
 
+V-COP-PERS ;
+
+LEXICON V-COP-PERS
+
 %<p1%>%<sg%>:م%{A%}ن CLITICS ;
 %<p2%>%<sg%>:س%{A%}ن CLITICS ;
+%<p2%>%<sg%>%<frm%>:س%{I%}ز CLITICS ;
 %<p3%>%<sg%>: CLITICS ;
 %<p1%>%<pl%>:م%{I%}ز CLITICS ;
-%<p2%>%<pl%>:س%{I%}ز CLITICS ;
+%<p2%>%<pl%>:س%{I%}ل%{A%}ر CLITICS ;
 %<p3%>%<pl%>: CLITICS ;
 
 
@@ -455,14 +486,17 @@ LEXICON Postpositions
 
 LEXICON Pronouns 
 
-مەن:مەن PRON-PERS-MEN ; ! "I/me"
-بىز:بىز PRON-PERS-BIZ ; ! "we/us"
-
-سەن:سەن PRON-PERS-SAN ; ! "you (sg)"
-سىلەر:سىلەر PRON-PERS-SILAR ; ! "you (pl)"
-سىز:سىز PRON-PERS-SIZ ; ! "you (polite sg/pl)"
-
+مەن:م PRON-PERS-MAN ; ! "I/me"
+سەن:س PRON-PERS-SAN ; ! "you (informal sg)"
+سىز:سىز PRON-PERS-SIZ ; ! "you (polite sg)"
+سىلى:سىلى PRON-PERS-SILI ; ! "you (esteemed sg)"
 ئۇ:ئۇ PRON-PERS-U ; ! "he/she/it"
+
+
+بىز:بىز PRON-PERS-BIZ ; ! "we/us"
+سەنلەر:سەنلەر PRON-PERS-SANLAR ; ! "you (informal pl)"
+سىلەر:سىلەر PRON-PERS-SILAR ; ! "you (polite pl)"
+سىزلەر:سىزلەر PRON-PERS-SIZLAR ; ! "you (very polite pl)"
 ئۇلار:ئۇلار PRON-PERS-ULAR ; ! "they"
 
 
@@ -528,6 +562,7 @@ LEXICON Nouns
 كىلومېتىر:كىلومېتىر N1 ; ! "kilometer"
 تەهەپ:تەهەپ N1 ; ! "direction, side"
 دۆلەت:دۆلەت N1 ; ! "country"
+!ھۆس%{y%}ن   ! "beauty"
 
 Check ; 
 
@@ -2108,6 +2143,8 @@ LEXICON Verbs
 LEXICON Copula
 
 ئى:ئى COP ;
+ئى%<cop%>%<neg%>:ئەمەس V-COP-PERS ;
+
 
 LEXICON Adjectives
 
@@ -2126,7 +2163,6 @@ LEXICON Adjectives
 ئامراق:ئامراق A4 ; ! "in love with / like"
 بار:بار A4 ; ! "exists"
 يوق:يوق A4 ; ! "doesn't exist / absent"
-ئەمەس:ئەمەس A4 ; ! "not"
 
 LEXICON Adverbs
 
@@ -2142,6 +2178,7 @@ LEXICON Adverbs
 ھازىر:ھازىر ADV ; ! "now"
 ئەتە:ئەتە ADV ; ! "tomorrow"
 يەنە:يەنە ADV ; ! "again"
+ئەمەس:ئەمەس ADV ; ! "not"
 
 
 !=====================!
