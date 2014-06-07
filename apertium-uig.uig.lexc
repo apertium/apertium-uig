@@ -326,12 +326,12 @@ V-COP-PERS ;
 
 LEXICON V-COP-PERS
 
-%<p1%>%<sg%>:م%{A%}ن CLITICS ;
-%<p2%>%<sg%>:س%{A%}ن CLITICS ;
-%<p2%>%<sg%>%<frm%>:س%{I%}ز CLITICS ;
+%<p1%>%<sg%>:مەن CLITICS ;
+%<p2%>%<sg%>:سەن CLITICS ;
+%<p2%>%<sg%>%<frm%>:سىز CLITICS ;
 %<p3%>%<sg%>: CLITICS ;
-%<p1%>%<pl%>:م%{I%}ز CLITICS ;
-%<p2%>%<pl%>:س%{I%}ل%{A%}ر CLITICS ;
+%<p1%>%<pl%>:مىز CLITICS ;
+%<p2%>%<pl%>:سىلەر CLITICS ;
 %<p3%>%<pl%>: CLITICS ;
 
 
