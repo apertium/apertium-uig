@@ -36,6 +36,7 @@ Multichar_Symbols
 %<loc%>           !
 %<gen%>           !
 %<acc%>           !
+%<ter%>           ! Terminative
 
 %<attr%>          ! Attributive
 %<subst%>         ! Substantitve
@@ -90,7 +91,8 @@ Multichar_Symbols
 %{E%}                 ! realised as ا or ە or sometimes ى and also ي
 %{D%}                 ! realised as د or ت
 %{i%}                 ! epenthetic ى : realised as ى/ۇ/ۈ or null
-%{I%}                 ! realised as ى/ۇ/ۈ
+%{I%}                 ! realised as ى
+%{U%}                 ! realised as ى/ۇ/ۈ
 %{s%}                 ! realised as س or null
 !%{n%}                 ! realised as ن or null
 %{☫%}                 ! "loanword" - blocks certain processes
@@ -130,6 +132,7 @@ LEXICON CASE
 %<abl%>:%>%{D%}ىن # ;
 %<gen%>:%>نىڭ # ;
 %<acc%>:%>نى # ;
+%<ter%>:%>%{G%}ىچە # ;
 
 LEXICON CASE-2
 
@@ -140,6 +143,7 @@ LEXICON CASE-2
 %<abl%>:%>%{D%}ىن # ;
 %<gen%>:%>نىڭ # ;
 %<acc%>:%>نى # ;
+%<ter%>:%>%{G%}ىچە # ;
 
 
 LEXICON POSSESSION
@@ -290,22 +294,35 @@ LEXICON CLITICS
 
 LEXICON V-IFI-PERS
 
-%<p1%>%<sg%>:م CLITICS ;
-%<p2%>%<sg%>:ڭ CLITICS ;
-%<p3%>%<sg%>: CLITICS ;
-%<p1%>%<pl%>:%{K%} CLITICS ;
-%<p2%>%<pl%>:ڭ%{I%}ز CLITICS ;
-%<p3%>%<pl%>: CLITICS ;
+%<p1%>%<sg%>:%{U%}م CLITICS ;
+%<p2%>%<sg%>:%{U%}ڭ CLITICS ;
+%<p2%>%<sg%>%<frm%>:ىڭىز CLITICS ;
+%<p3%>%<sg%>:ى CLITICS ;
+%<p1%>%<pl%>:ۇق CLITICS ;
+%<p2%>%<pl%>:%{U%}ڭلار CLITICS ;
+%<p3%>%<pl%>:ى CLITICS ;
 
 LEXICON V-AOR-PERS 
 
-%<p1%>%<sg%>:%>مەن CLITICS ; 
-%<p2%>%<sg%>:%>سەن CLITICS ; 
-%<p2%>%<sg%>%<frm%>:%>سىز CLITICS ; 
-%<p3%>%<sg%>:%>دۇ CLITICS ; 
-%<p1%>%<pl%>:%>مىز CLITICS ; 
-%<p2%>%<pl%>:%>سىلەر CLITICS ; 
-%<p3%>%<pl%>:%>دۇ CLITICS ; 
+%<p1%>%<sg%>:%>مەن CLITICS ; ! بارىمەنمۇ is a valid form, but not for other persons
+%<p2%>%<sg%>:%>سەن # ; 
+%<p2%>%<sg%>%<frm%>:%>سىز # ; 
+%<p3%>%<sg%>:%>دۇ # ; 
+%<p1%>%<pl%>:%>مىز # ; 
+%<p2%>%<pl%>:%>سىلەر # ; 
+%<p3%>%<pl%>:%>دۇ # ; 
+
+LEXICON V-AOR-QST-PERS 
+
+%<p1%>%<sg%>:%>دىمەن # ; 
+%<p1%>%<sg%>:%>دىم # ; ! Dir/LR
+%<p2%>%<sg%>:%>سەن # ; 
+%<p2%>%<sg%>%<frm%>:%>سىز # ; 
+%<p3%>%<sg%>:%>دۇ # ; 
+%<p1%>%<pl%>:%>دىمىز # ; 
+%<p1%>%<pl%>:%>دۇق # ; ! Dir/LR
+%<p2%>%<pl%>:%>سىلەر # ; 
+%<p3%>%<pl%>:%>دۇ # ; 
 
 LEXICON V-COND-PERS
 
@@ -319,7 +336,7 @@ LEXICON V-COND-PERS
 
 LEXICON V-IFI
 
-%<ifi%>:%>%{D%}%{I%} V-IFI-PERS ;
+%<ifi%>:%>%{D%} V-IFI-PERS ;
 
 
 LEXICON V-PAST-PERS
@@ -343,12 +360,12 @@ LEXICON V-PAST
 
 LEXICON V-PRC
 
-%<prc_perf%>:%>%{I%}پ # ;
+%<prc_perf%>:%>%{U%}پ # ;
 
 LEXICON V-GER
 
 %<ger_past%>:%>%{G%}%{A%}ن NP-COMMON ;
-%<ger%>:%>%{I%}ش NP-COMMON ; 
+%<ger%>:%>%{U%}ش NP-COMMON ; 
 %<inf%>:%>م%{A%}%{K%} # ;
 
 LEXICON V-ABIL-COMMON
@@ -367,6 +384,7 @@ LEXICON V-ABIL
 LEXICON V-AOR
 
 %<aor%>:%>%{E%} V-AOR-PERS ; 
+%<aor%>%<qst%>:%>%{A%}م V-AOR-QST-PERS ;
 
 LEXICON V-COND
 
