@@ -246,15 +246,15 @@ LEXICON PRON-PERS-BIZ
 
 %<prn%>%<pers%>%<p1%>%<pl%>: CASE ;
 
-LEXICON PRON-SANLAR
+LEXICON PRON-PERS-SANLAR
 
 %<prn%>%<pers%>%<p2%>%<pl%>: CASE ;
 
-LEXICON PRON-SILAR 
+LEXICON PRON-PERS-SILAR 
 
 %<prn%>%<pers%>%<p2%>%<frm%>%<pl%>: CASE ;
 
-LEXICON PRON-SIZLAR 
+LEXICON PRON-PERS-SIZLAR 
 
 %<prn%>%<pers%>%<p2%>%<frm%>%<pl%>: CASE ;
 
