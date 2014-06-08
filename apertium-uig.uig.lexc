@@ -164,7 +164,7 @@ LEXICON SUBST-2
 CASE-2 ;
 %<px1sg%>:%>%{i%}م CASE-2 ;
 %<px2sg%>:%>%{i%}ڭ CASE-2 ;
-%<px3sp%>:%>%{s%}%{I%}% CASE-2 ;
+%<px3sp%>:%>%{s%}%{I%} CASE-2 ;
 %<px1pl%>:%>%{i%}م%{I%}ز CASE-2 ;
 %<px2pl%>:%>%{i%}ڭ%{I%}ز CASE-2 ;
 
