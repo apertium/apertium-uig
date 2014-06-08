@@ -152,7 +152,7 @@ CASE ;
 %<px1sg%>:%>%{i%}م CASE ;
 %<px2sg%>:%>%{i%}ڭ CASE ;
 %<px2pl%>:%>%{i%}ڭل%{A%}ر CASE ;
-%<px3sp%>:%>%{s%}%{I%} CASE ;
+%<px3sp%>:%>%{s%}ى CASE ;
 %<px1pl%>:%>%{i%}م%{I%}ز CASE ;
 %<px2pl%>%<frm%>:%>%{i%}ڭ%{I%}ز CASE ;
 %<px2sg%>%<frm%>:%>%{i%}ڭ%{I%}ز CASE ;
@@ -394,14 +394,29 @@ LEXICON V-IMP
 
 %<imp%>: # ;
 
+LEXICON V-NEG
+
+%<neg%>:م%{A%} V-NEG-COMMON ;
+
+LEXICON V-NEG-COMMON
+
+V-IFI ;
+V-PAST ;
+V-AOR ;
+V-COND ;
+V-IMP ;
+
 LEXICON V-COMMON
+
+V-NEG ;
+V-ABIL ;
 
 %<inf%>:%>م%{A%}ق # ; ! FIXME: insert correct tag here
 V-IFI ;
 V-PAST ;
-V-PRC ;
-V-ABIL ;
 V-AOR ; 
+
+V-PRC ;
 V-GER ;
 V-COND ;
 V-IMP ;
@@ -580,7 +595,7 @@ LEXICON Nouns
 ئىش:ئىش N1 ; ! "job/work"
 كىشى:كىشى N1 ; ! "person"
 كىلومېتىر:كىلومېتىر N1 ; ! "kilometer"
-تەهەپ:تەهەپ N1 ; ! "direction, side"
+تەرەپ:تەرەپ N1 ; ! "direction, side"
 دۆلەت:دۆلەت N1 ; ! "country"
 !ھۆس%{y%}ن   ! "beauty"
 
@@ -1066,7 +1081,7 @@ Check ;
 تال:تال N1 ; ! ""
 تۇخۇم:تۇخۇم N1 ; ! ""
 قىرتىش:قىرتىش N1 ; ! ""
-كۈن:كۈن N1 ; ! ""
+كۈن:كۈن N1 ; ! "day"
 بور:بور N1 ; ! ""
 گىپس:گىپس N1 ; ! ""
 قوزا:قوزا N1 ; ! ""

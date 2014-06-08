@@ -99,6 +99,9 @@ Rules
 "Delete {I} after vowels"
 %{I%}:0 <=> :Vow/:0 _ ;
 
+"Delete {U} after vowels"
+%{U%}:0 <=> :Vow/:0 _ ;
+
 
 !! Consonant assimilation
 
