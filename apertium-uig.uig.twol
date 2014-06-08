@@ -12,9 +12,12 @@ Alphabet
 %{D%}:د
 %{i%}:0
 %{I%}:ى
+%{U%}:ى
 %{s%}:0
 !%{n%}:0 
 %{☫%}:0
+%{a%}:0
+%{e%}:0
 
 %>:0 ; 
 
@@ -34,6 +37,8 @@ VoicelessCns = پ ت چ خ س ش ف ق ك ھ ;
 
 VoicedCns = ي ۋ ر ل م ن ڭ ۋ ج ز ;
 
+Abstract = %{a%} %{e%} ;
+
 
 Rules
 
@@ -48,19 +53,27 @@ Rules
 !! Vowel harmony
 
 "{A} becomes ە in front vowel contexts"
-%{A%}:ە <=> [ :FrontVow :Cns :Cns* ]/:0 _ ;
+%{A%}:ە <=> [ :FrontVow [ :ى | :Cns ]* :Cns ]/[ :0 - Abstract: ] _ ;
+               [ %{e%}: [ :ى | :Cns ]* :Cns ]/[ :0 - Abstract: ] _ ; 
         except
             _ [ :Cns :Vow ]/:0 ;
 
-"{E} becomes in front vowel contexts"
-%{E%}:ە <=> [ :FrontVow :Cns :Cns* ]/:0 _ ;
+"{E} becomes ە in front vowel contexts"
+%{E%}:ە <=> [ :FrontVow [ :ى | :Cns ]* :Cns ]/[ :0 - Abstract: ] _ ;
+               [ %{e%}: [ :ى | :Cns ]* :Cns ]/[ :0 - Abstract: ] _ ; 
         except
+            ! except after a vowel, where it becomes ي
             :Vow/:0 _ ;
+            ! except in environments when it reduces to ى
+            _ %>: :Cns [ :0 - %{☫%}: ]* :Vow ;
+            _ :Cns %>: [ :0 - %{☫%}: ]* :Vow ;
+
 
 "{E} becomes ي after vowels"
 %{E%}:ي <=> :Vow/:0 _ ;
 
-
+"{A} deletes after vowels"
+%{A%}:0 <=> :Vow/:0 _ ;
 
 "{i} vowel harmony"
 ! not actually needed?
@@ -69,11 +82,19 @@ Rules
                Vy in ( ۇ ۇ ۈ ۈ )
          matched ;
 
-"{I} rounding harmony"
-%{I%}:Vy <=> [ :Vx :Cns* :Cns ]/:0 _ ;  ! null after :Vow 
+!"{I} rounding harmony"
+!%{I%}:Vy <=> [ :Vx :Cns* :Cns ]/:0 _ ;  ! null after :Vow 
+!         where Vx in ( و ۇ ۆ ۈ )
+!               Vy in ( ۇ ۇ ۈ ۈ )
+!         matched ;
+
+"{U} rounding harmony"
+%{U%}:Vy <=> [ :Vx :Cns* :Cns ]/:0 _ ;  ! null after :Vow 
          where Vx in ( و ۇ ۆ ۈ )
                Vy in ( ۇ ۇ ۈ ۈ )
          matched ;
+
+
 
 "Delete {I} after vowels"
 %{I%}:0 <=> :Vow/:0 _ ;
@@ -91,15 +112,19 @@ Rules
 
 
 "{G} to گ after front vowel"
-%{G%}:گ <=> [ :FrontVow (:VoicedCns) ]/:0 _ ;
-            
+%{G%}:گ <=> [ :FrontVow (:VoicedCns) ]/[ :0 - Abstract: ] _ ;
+                 [ %{e%}: :VoicedCns ]/[ :0 - Abstract: ] _ ;
+
 "{G} to ك after front vowel and voiceless consonant"
-%{G%}:ك <=> [ :FrontVow :Cns* :VoicelessCns]/:0 _ ;
+%{G%}:ك <=> [ :FrontVow [ :Cns | :ى ]* :VoicelessCns ]/[ :0 - Abstract: ] _ ;
+               [ %{e%}: [ :Cns | :ى ]* :VoicelessCns ]/[ :0 - Abstract: ] _ ;
 
 "{G} to ق after voiceless consonant"
-%{G%}:ق <=> :VoicelessCns/:0 _ ;
+%{G%}:ق <=> :VoicelessCns/[ :0 - Abstract: ] _ ;
+ [ %{a%}: :VoicelessCns ]/[ :0 - Abstract: ] _ ;
         except
-            [ :FrontVow :Cns* ]/:0 _ ;
+            [ :FrontVow [ :Cns | :ى ]* :VoicelessCns ]/[ :0 - Abstract: ] _ ;
+               [ %{e%}: [ :Cns | :ى ]* :VoicelessCns ]/[ :0 - Abstract: ] _ ;
 
 
 !! Vowel reduction and regressive umlaut
@@ -115,13 +140,16 @@ Vx:ى <=> _ %>: :Cns [ :0 - %{☫%}: ]* :Vow ;
 %{A%}:ى <=> _ %>: :Cns [ :0 - %{☫%}: ]* :Vow ;
             _ :Cns %>: [ :0 - %{☫%}: ]* :Vow ;
      except
+         ! except in initial syllables
          .#. :Cns*/:0 _ ;
+         ! except after vowels, where {A} deletes
+              :Vow/:0 _ ;
 
 "{E} becomes reduced vowel in non-initial and non-final open syllables"
 %{E%}:ى <=> _ %>: :Cns [ :0 - %{☫%}: ]* :Vow ;
             _ :Cns %>: [ :0 - %{☫%}: ]* :Vow ;
      except
-            [ :FrontVow :Cns :Cns* ]/:0 _ ;
+            ! except after a vowel, where it becomes ي
             :Vow/:0 _ ;
 
 

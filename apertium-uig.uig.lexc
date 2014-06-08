@@ -95,6 +95,8 @@ Multichar_Symbols
 !%{n%}                 ! realised as ن or null
 %{☫%}                 ! "loanword" - blocks certain processes
                       ! needed after ا that doesn't change to ى
+%{e%}                 ! forces front harmony
+%{a%}                 ! forces back harmony
 
 %>                    ! Morpheme boundary
 
@@ -569,7 +571,7 @@ Check ;
 
 !!! Place nouns
 سىرت:سىرت N1 ; ! "outside"
-ئىچ:ئىچ N1 ; ! "inside"
+ئىچ:ئىچ%{e%} N1 ; ! "inside"
 ئارت:ئارت N1 ; ! "back"
 ئالد:ئالد N1 ; ! "front"
 ئاست:ئاست N1 ; ! "bottom"
@@ -591,7 +593,7 @@ Check ;
 خۇدا:خۇدا N1 ; ! ""
 پەرىشتە:پەرىشتە N1 ; ! ""
 ئادەت:ئادەت N1 ; ! ""
-مەزگىل:مەزگىل N1 ; ! ""
+مەزگىل:مەزگىل N1 ; ! "season, time"
 ۋەقە:ۋەقە N1 ; ! ""
 دەلىل:دەلىل N1 ; ! ""
 پاھىشە:پاھىشە N1 ; ! ""
@@ -601,7 +603,7 @@ Check ;
 سېزىم:سېزىم N1 ; ! ""
 مىسال:مىسال N1 ; ! ""
 ئۈمىد:ئۈمىد N1 ; ! ""
-تىلەك:تىلەك N1 ; ! ""
+تىلەك:تىلەك N1 ; ! "wish"
 ئارمان:ئارمان N1 ; ! ""
 مەمەدانا:مەمەدانا N1 ; ! ""
 ئېچىنىش:ئېچىنىش N1 ; ! ""
@@ -1741,7 +1743,7 @@ LEXICON Verbs
 بول:بول V-IV ; ! "be"
 ئوينا:ئوينا V-TV ; ! "play"
 ئوينا:ئوينا V-IV ; ! "play"
-قىل:قىل V-TV ; ! "do/make"
+قىل:قىل%{a%} V-TV ; ! "do/make"
 !ئامراق% بول:ئامراق% بول V-TV ; ! "love"  ! Use/MT
 دە:دە V-TV ; ! "say"
 ئال:ئال V-TV ; ! "take"
@@ -1873,7 +1875,7 @@ LEXICON Verbs
 يىقىت:يىقىت V-TV ; ! ""
 ئەكەل:ئەكەل V-TV ; ! ""
 بىل:بىل V-TV ; ! ""
-تىل:تىل V-TV ; ! ""
+تىل:تىل V-TV ; ! "slice"
 يۇل:يۇل V-TV ; ! ""
 يېپىن:يېپىن V-TV ; ! ""
 قوللان:قوللان V-TV ; ! ""
@@ -2252,7 +2254,8 @@ LEXICON Check
 تۈلكە:تۈلكە N1 ; ! "fox"
 تېلېۋىزور:تېلېۋىزور N1 ; ! "television"
 تونۇر:تونۇر N1 ; ! "tandoor"
-تىل:تىل N1 ; ! "tongue, language"
+تىل:تىل%{a%} N1 ; ! "tongue, language"
+تىل:تىل%{e%} N1 ; ! "tongue, language" ! Dir/LR
 تىيىن:تىيىن N1 ; ! "squirrel"
 جەڭچى:جەڭچى N1 ; ! "soldier"
 جوزا:جوزا N1 ; ! "table, desk"
