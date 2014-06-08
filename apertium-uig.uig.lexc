@@ -99,6 +99,7 @@ Multichar_Symbols
                       ! needed after ا that doesn't change to ى
 %{e%}                 ! forces front harmony
 %{a%}                 ! forces back harmony
+%{L%}                 ! for passive: ل or ن
 
 %>                    ! Morpheme boundary
 
@@ -432,7 +433,7 @@ LEXICON V-IV
 LEXICON V-TV 
 
 %<v%>%<tv%>: V-COMMON ; 
-%<v%>%<tv%>%<pass%>:%{I%}ل V-COMMON ; 
+%<v%>%<tv%>%<pass%>:%{I%}%{L%} V-COMMON ; 
 
 LEXICON DET-DEM 
 
@@ -598,6 +599,7 @@ LEXICON Nouns
 تەرەپ:تەرەپ N1 ; ! "direction, side"
 دۆلەت:دۆلەت N1 ; ! "country"
 !ھۆس%{y%}ن   ! "beauty"
+يەر:يەر N1 ; ! "place, land"
 
 Check ; 
 
