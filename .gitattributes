@@ -12,5 +12,6 @@
 /autogen.sh -text
 /configure.ac -text
 dev/countstems.sh -text
+dev/spellrelax.twol -text
 /modes.xml -text
 tests/vowelreduction.yaml -text

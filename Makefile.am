@@ -12,12 +12,17 @@ TARGETS_COMMON = $(LANG1).automorf.hfst $(LANG1).autogen.hfst \
 	$(LANG1).automorf.att.gz $(LANG1).autogen.att.gz \
         $(LANG1).rlx.bin
 
+#	$(LANG1).autopgen.bin 
+
 # This include defines goals for install-modes, .deps/.d and .mode files:
 @ap_include@
 
 ###############################################################################
 ## Uyghur transducer
 ###############################################################################
+
+.deps/spellrelax.hfst: dev/spellrelax.twol .deps/.d
+	hfst-twolc $< -o $@
 
 .deps/$(LANG1).twol.hfst: $(BASENAME).$(LANG1).twol .deps/.d
 	hfst-twolc $< -o $@
@@ -29,10 +34,10 @@ TARGETS_COMMON = $(LANG1).automorf.hfst $(LANG1).autogen.hfst \
 	cat $< | grep -v 'Dir/RL' > $@
 
 .deps/$(LANG1).RL.lexc.hfst: .deps/$(LANG1).RL.lexc
-	hfst-lexc -v $< -o $@
+	hfst-lexc $< -o $@ -v
 
 .deps/$(LANG1).LR.lexc.hfst: .deps/$(LANG1).LR.lexc
-	hfst-lexc -v $< -o $@
+	hfst-lexc $< -o $@ -v
 
 .deps/$(LANG1).RL.hfst: .deps/$(LANG1).RL.lexc.hfst .deps/$(LANG1).twol.hfst
 	hfst-compose-intersect -1 .deps/$(LANG1).RL.lexc.hfst -2 .deps/$(LANG1).twol.hfst -o $@
@@ -43,8 +48,8 @@ TARGETS_COMMON = $(LANG1).automorf.hfst $(LANG1).autogen.hfst \
 $(LANG1).autogen.hfst: .deps/$(LANG1).RL.hfst
 	hfst-fst2fst -O $< -o $@
 
-$(LANG1).automorf.hfst: .deps/$(LANG1).LR.hfst
-	hfst-invert $< | hfst-fst2fst -O -o $@
+$(LANG1).automorf.hfst: .deps/$(LANG1).LR.hfst .deps/spellrelax.hfst
+	hfst-compose-intersect -1 $< -2 .deps/spellrelax.hfst | hfst-invert | hfst-fst2fst -O -o $@
 
 $(LANG1).autogen.att.gz: $(LANG1).autogen.hfst
 	hfst-fst2txt $< | gzip -9 -c -n > $@
@@ -68,18 +73,24 @@ debug: .deps/$(LANG1).LR-debug.hfst .deps/$(LANG1).lexc.hfst
 
 .deps/$(LANG1).LR-debug.hfst: $(BASENAME).$(LANG1).lexc .deps/.d
 	cat $< | grep -v 'Dir/RL' | grep -v 'Use/Circ' > .deps/$(LANG1).LR-debug.lexc
-	hfst-lexc -v .deps/$(LANG1).LR-debug.lexc -o .deps/$(LANG1).LR-debug.lexc.hfst
+	hfst-lexc .deps/$(LANG1).LR-debug.lexc -o .deps/$(LANG1).LR-debug.lexc.hfst -v
 	hfst-compose-intersect -1 .deps/$(LANG1).LR-debug.lexc.hfst -2 .deps/$(LANG1).twol.hfst -o $@
 
 .deps/$(LANG1).lexc.hfst: .deps/$(LANG1).RL.lexc.hfst
 	hfst-fst2fst -O -i $< -o $@
 
 ###############################################################################
+## Postgeneration
+###############################################################################
+$(LANG1).autopgen.bin: $(BASENAME).post-$(LANG1).dix
+	lt-comp lr $< $@
+
+###############################################################################
 ## Disambiguation rules
 ###############################################################################
 
-$(LANG1).rlx.bin: $(BASENAME).$(LANG1).rlx
-	cg-comp $< $@
+$(LANG1).rlx.bin: $(BASENAME).$(LANG1).rlx $(CGCOMP)
+	$(CGCOMP) $< $@
 
 ###############################################################################
 ## Spell checker
@@ -115,8 +126,9 @@ $(LANG1).zhfst: .deps/acceptor.default.hfst .deps/errmodel.default.hfst
 ## Distribution
 ###############################################################################
 EXTRA_DIST=$(BASENAME).$(LANG1).lexc \
-	   $(BASENAME).$(LANG1).twol  \
+	   $(BASENAME).$(LANG1).twol \
 	   $(BASENAME).$(LANG1).rlx  \
+	   $(BASENAME).post-$(LANG1).dix  \
 	   modes.xml
 
 ###############################################################################
@@ -147,6 +159,7 @@ install-data-local:
 	$(INSTALL_DATA) $(BASENAME).$(LANG1).lexc $(DESTDIR)$(apertium_uig_srcdir)
 	$(INSTALL_DATA) $(BASENAME).$(LANG1).twol $(DESTDIR)$(apertium_uig_srcdir)
 	$(INSTALL_DATA) $(BASENAME).$(LANG1).rlx $(DESTDIR)$(apertium_uig_srcdir)
+	$(INSTALL_DATA) $(BASENAME).post-$(LANG1).dix $(DESTDIR)$(apertium_uig_srcdir)
 
 ###############################################################################
 ## Cleanup
