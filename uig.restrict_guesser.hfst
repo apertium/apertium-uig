@@ -1,1 +1,1 @@
-~[?* "<guess>" [ "<n>" "<nom>" | "<vblex>" "<TD>" "<imp>" ] ]; 
+~[?* [ "<n>" "<nom>" | "<v>" "<TD>" "<imp>" ] "<guess>" ] .o. [  [..] -> "<guess>" || "<guess>" ?* _ .#. .o. "<guess>" -> 0 || _ ?* "<guess>" .#. ] ; 

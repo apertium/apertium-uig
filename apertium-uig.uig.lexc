@@ -7,6 +7,7 @@ Multichar_Symbols
 %<n%>             ! Noun
 %<post%>          ! Postposition
 %<v%>             ! Verb
+%<vaux%>
 %<cnjcoo%>        ! 
 %<cnjsub%>        ! 
 %<cnjadv%>        ! 
@@ -442,7 +443,7 @@ V-IMP ;
 
 LEXICON V-AUX
 
-%<v%>%<vaux%>: V-COMMON ;
+%<vaux%>: V-COMMON ;
 
 LEXICON V-IV 
 
@@ -1780,7 +1781,7 @@ GUESSNOUNSTEM%<guess%>:GUESSNOUNSTEM N1 ;
 
 LEXICON Verbs 
 
-GUESSVERBSTEM:GUESSVERBSTEM V-TD ; ! ""
+GUESSVERBSTEM%<guess%>:GUESSVERBSTEM V-TD ; ! ""
 
 ئال:ئال V-AUX ; !
 
