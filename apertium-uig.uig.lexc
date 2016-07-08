@@ -87,6 +87,8 @@ Multichar_Symbols
 %<rpar%>          ! Parenthetical marker (right)
 %<lpar%>          ! Parenthetical marker (left)
 
+GUESSNOUNSTEM     !
+GUESSVERBSTEM     !
 
 
 %{G%}                 ! realised as گ or ك or غ or ق
@@ -604,6 +606,8 @@ LEXICON Numerals
 يېرىم:يېرىم NUM ; ! "half"
 
 LEXICON Nouns 
+
+GUESSNOUNSTEM%<guess%>:GUESSNOUNSTEM N1 ;
 
 باش:باش N1 ; ! "head"
 قىز:قىز N1 ; ! "girl"
@@ -1773,6 +1777,8 @@ LEXICON Nouns
 شىنجاڭ:شىنجاڭ NP-TOP ; ! "Xinjiang"
 
 LEXICON Verbs 
+
+GUESSVERBSTEM:GUESSVERBSTEM V-TD ; ! ""
 
 ئال:ئال V-AUX ; !
 
