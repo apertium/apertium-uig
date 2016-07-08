@@ -37,7 +37,7 @@ TARGETS_COMMON = $(LANG1).automorf.hfst $(LANG1).autogen.hfst \
 	hfst-compose-intersect -1 .deps/$(LANG1)_guesser.lexc.hfst -2 .deps/$(LANG1).twol.hfst -o $@
 
 $(LANG1)_guesser.automorf.hfst: .deps/$(LANG1)_guesser.hfst .deps/spellrelax.hfst .deps/restrict_guesser.hfst
-	hfst-compose -1 $< -2 .deps/restrict_guesser.hfst | hfst-compose-intersect -1 - -2 .deps/spellrelax.hfst | hfst-invert | hfst-fst2fst -O -o $@
+	cat .deps/$(LANG1)_guesser.hfst | hfst-invert | hfst-compose -1 - -2 .deps/restrict_guesser.hfst | hfst-invert | hfst-compose-intersect -1 - -2 .deps/spellrelax.hfst | hfst-invert | hfst-fst2fst -O -o $@
 
 ## Spellrelax
 
