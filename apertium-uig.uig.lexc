@@ -15,6 +15,7 @@ Multichar_Symbols
 %<dem%>           ! Demonstrative
 %<adv%>           ! Adverb
 %<adj%>           !
+%<barb%>          ! Barbarisme
 %<ij%>            ! Interjection
 
 %<p1%>            !
@@ -2255,6 +2256,8 @@ LEXICON Punctuation
 %?%<sent%>:%? # ;
 %'%<apos%>:%' # ;
 %"%<sent%>:%" # ;
+‹‹%<lquot%>:‹‹ # ;
+››%<rquot%>:›› # ;
 %«%<lquot%>:%« # ;
 %»%<rquot%>:%» # ;
 %”%<rquot%>:%” # ;
@@ -7561,6 +7564,17 @@ LEXICON Check
 
 <[%0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9]+>  DIGITLEX ; ! Use/Circ
 
+<(a|á|à|ă|â|ǎ|ä|ā|æ|b|c|ć|č|ç|d|e|é|è|ê|ě|ë|ə|f|g|ğ|h|i|i̇|í|ì|ǐ|ï|ī|ı|j|k|l|m|n|ñ|o|ó|ò|ộ|ǒ|ö|ø|ō|p|q|r|s|ŝ|š|ş|t|ţ|u|ú|ù|û|ǔ|ü|ū|v|w|x|y|ý|z)+> BARB ;
+
+<(а|б|в|г|ғ|д|е|ә|ж|җ|з|и|й|к|қ|л|м|н|ң|о|ө|п|р|с|т|у|ү|ф|х|һ|ц|ч|ш|щ|ы|ь|э|ю|я)+> BARB ; 
+
 LEXICON DIGITLEX
 
 %<num%>: # ;
+
+LEXICON BARB
+
+%<barb%>: # ;
+
+
+
