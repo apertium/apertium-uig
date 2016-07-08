@@ -15,3 +15,5 @@ dev/countstems.sh -text
 dev/spellrelax.twol -text
 /modes.xml -text
 tests/vowelreduction.yaml -text
+/uig.guesser.hfst -text
+/uig.restrict_guesser.hfst -text
