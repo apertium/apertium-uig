@@ -2268,6 +2268,7 @@ LEXICON Punctuation
 %–%<guio%>:%– # ;
 ,%<cm%>:, # ;
 %?%<sent%>:%? # ;
+%؟%<sent%>:%؟ # ;
 %'%<apos%>:%' # ;
 %"%<sent%>:%" # ;
 ‹‹%<lquot%>:‹‹ # ;
