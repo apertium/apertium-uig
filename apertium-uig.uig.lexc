@@ -141,6 +141,8 @@ LEXICON CASE
 %<loc%>%<subst%>:%>%{D%}%{A%}%>كى SUBST-2 ;
 %<abl%>:%>%{D%}ىن # ;
 %<gen%>:%>نىڭ # ;
+%<gen%>%<attr%>:%>نىڭكى # ;
+%<gen%>%<subst%>:%>نىڭكى SUBST-2 ;
 %<acc%>:%>نى # ;
 %<ter%>:%>%{G%}ىچە # ;
 
@@ -553,6 +555,7 @@ LEXICON Pronouns
 
 بىز:بىز PRON-PERS-BIZ ; ! "we/us"
 سەنلەر:سەنلەر PRON-PERS-SANLAR ; ! "you (informal pl)"
+سهنلهر:سهنلهر PRON-PERS-SANLAR ; ! ""
 سىلەر:سىلەر PRON-PERS-SILAR ; ! "you (polite pl)"
 سىزلەر:سىزلەر PRON-PERS-SIZLAR ; ! "you (very polite pl)"
 ئۇلار:ئۇلار PRON-PERS-ULAR ; ! "they"

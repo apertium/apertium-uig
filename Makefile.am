@@ -10,6 +10,7 @@ BASENAME=apertium-$(LANG1)
 TARGETS_COMMON = $(LANG1).automorf.hfst $(LANG1).autogen.hfst \
 	$(LANG1)_guesser.automorf.hfst \
 	$(LANG1).automorf.bin $(LANG1).autogen.bin \
+	$(LANG1).automorf.bin $(LANG1)_guesser.automorf.bin $(LANG1).autogen.bin \
 	$(LANG1).automorf.att.gz $(LANG1).autogen.att.gz \
         $(LANG1).rlx.bin
 
@@ -38,6 +39,10 @@ TARGETS_COMMON = $(LANG1).automorf.hfst $(LANG1).autogen.hfst \
 
 $(LANG1)_guesser.automorf.hfst: .deps/$(LANG1)_guesser.hfst .deps/spellrelax.hfst .deps/restrict_guesser.hfst
 	cat .deps/$(LANG1)_guesser.hfst | hfst-invert | hfst-compose -1 - -2 .deps/restrict_guesser.hfst | hfst-invert | hfst-compose-intersect -1 - -2 .deps/spellrelax.hfst | hfst-invert | hfst-fst2fst -O -o $@
+
+$(LANG1)_guesser.automorf.bin: $(LANG1)_guesser.automorf.hfst .deps/.d
+	hfst-fst2txt $(LANG1).automorf.hfst   > .deps/$(LANG1)_guesser.autogen.att
+	lt-comp lr .deps/$(LANG1)_guesser.autogen.att $@
 
 ## Spellrelax
 
