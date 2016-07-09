@@ -10,6 +10,8 @@ LIST N = n ;
 LIST Post = post ; 
 LIST Det = det ; 
 
+LIST Guess = guess ;
+
 LIST Nom = nom ; 
 
 LIST Attr = attr ;
@@ -40,3 +42,4 @@ REMOVE Gpr IF (0C Gpr OR Ger OR Vfin) (1 EOS);
 
 REMOVE Det IF (1 CC);
 
+REMOVE Guess ;

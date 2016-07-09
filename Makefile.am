@@ -25,10 +25,10 @@ TARGETS_COMMON = $(LANG1).automorf.hfst $(LANG1).autogen.hfst \
 ## Guesser
 
 .deps/guesser.hfst: $(LANG1).guesser.hfst .deps/.d
-	hfst-xfst -e "source $<" -e "save stack $@" -e "hyvästi"
+	hfst-xfst -e "source $<" -e "save stack $@" -e "quit"
 
 .deps/$(LANG1)_guesser.lexc.hfst: .deps/$(LANG1).LR.lexc.hfst .deps/guesser.hfst .deps/.d 
-	hfst-substitute -i .deps/$(LANG1).LR.lexc.hfst -o $@ -f 'GUESSNOUNSTEM:GUESSNOUNSTEM' -T .deps/guesser.hfst
+	hfst-substitute -i .deps/$(LANG1).LR.lexc.hfst -o $@ -f '{🂡}:{🂡}' -T .deps/guesser.hfst
 
 .deps/restrict_guesser.hfst: $(LANG1).restrict_guesser.hfst .deps/.d
 	hfst-regexp2fst $< -o $@
