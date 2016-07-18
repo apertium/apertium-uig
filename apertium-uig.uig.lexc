@@ -530,6 +530,8 @@ LEXICON Conjunctions
 
 ئەمما:ئەمما CC ; ! "but"  ! FIXME: not CC
 لېكىن:لېكىن CC ; ! "but"
+چۈنكى:چۈنكى CA ; ! "because"
+بەلكى:بەلكى CC ; ! "but"
 
 
 ! Sub-ordinating conjunctions
@@ -544,6 +546,8 @@ LEXICON Postpositions
 بويىچە:بويىچە POST ; ! "along, througout"
 قاتارلىق:قاتارلىق POST ; ! "such as"
 ئارقىلىق:ئارقىلىق POST ; ! "through"
+ھەققىدە:ھەققىدە POST ; ! "about" 
+ئاساسەن:ئاساسەن POST ; ! "based on"
 
 LEXICON Pronouns 
 
@@ -578,6 +582,10 @@ LEXICON Determiners
 
 بۇ:بۇ DET-DEM ; ! "this"
 ما:ما DET-DEM ; ! "this"
+
+ھەممە:ھەممە DET-MISC ; ! "all kinds of"
+ئۇنداق:ئۇنداق DET-MISC ; ! "of that kind"
+ھەرقانداق:ھەرقانداق DET-MISC ; ! "of any kind"
 
 LEXICON Numerals 
 
@@ -20930,6 +20938,13 @@ LEXICON Check
 جان% ساقلى:جان% ساقلى V-TD ; ! "" ! Use/MWE
 تاماق% ئۈستىلى:تاماق% ئۈستىلى V-TD ; ! "" ! Use/MWE
 سالماق% پوزىتسىيە:سالماق% پوزىتسىيە V-TD ; ! "" ! Use/MWE
+
+ئاخىرى:ئاخىرى ADV ; ! ""
+زادى:زادى ADV ; ! ""
+ھامان:ھامان ADV ; ! ""
+
+ئىقتىسادىي:ئىقتىسادىي A1 ; ! ""
+
 
 
 !!!!!!!!!!!!!!!!!!!
