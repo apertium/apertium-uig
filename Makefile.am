@@ -23,6 +23,11 @@ TARGETS_COMMON = $(LANG1).automorf.hfst $(LANG1).autogen.hfst \
 ## Uyghur transducer
 ###############################################################################
 
+## Chinese 
+
+.deps/cjk.hfst: dev/cjk.lexc .deps/.d
+	hfst-lexc $< -o $@
+
 ## Guesser
 
 .deps/guesser.hfst: $(LANG1).guesser.hfst .deps/.d
@@ -73,8 +78,8 @@ $(LANG1)_guesser.automorf.bin: $(LANG1)_guesser.automorf.hfst .deps/.d
 $(LANG1).autogen.hfst: .deps/$(LANG1).RL.hfst
 	hfst-fst2fst -O $< -o $@
 
-$(LANG1).automorf.hfst: .deps/$(LANG1).LR.hfst .deps/spellrelax.hfst
-	hfst-compose-intersect -1 $< -2 .deps/spellrelax.hfst | hfst-invert | hfst-fst2fst -O -o $@
+$(LANG1).automorf.hfst: .deps/$(LANG1).LR.hfst .deps/spellrelax.hfst .deps/cjk.hfst
+	hfst-compose-intersect -1 $< -2 .deps/spellrelax.hfst |	hfst-substitute -f '{乚}:{乚}' -T .deps/cjk.hfst | hfst-invert | hfst-fst2fst -O -o $@
 
 $(LANG1).autogen.att.gz: $(LANG1).autogen.hfst
 	hfst-fst2txt $< | gzip -9 -c -n > $@

@@ -11,6 +11,7 @@
 /apertium-uig.uig.twol -text
 /autogen.sh -text
 /configure.ac -text
+dev/cjk.lexc -text
 dev/countstems.sh -text
 dev/spellrelax.twol -text
 /modes.xml -text
