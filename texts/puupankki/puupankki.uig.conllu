@@ -1,10 +1,15 @@
-1	لېكىن	لېكىن	_	cnjcoo	_	6	cc	_	_
+1	لېكىن	لېكىن	_	cnjcoo	_	6	cc @cc	_	_
 2	بۇنىڭ	بۇ	_	prn	dem|gen	3	nmod:poss	_	_
 3	مېھرى	مېھر	_	n	px3sp|nom	6	nsubj	_	_
 4	باشقىچە	باش	_	n	ter	6	nmod	_	_
 5	ئىسسىق	ئىسسىق	_	adj	advl	6	advmod	_	_
 6	بىلىندى	بىل	_	v	tv|pass|ifi|p3|sg	0	root	_	_
 7	.	.	_	sent	_	6	punct	_	_
+
+1	بۇ	بۇ	_	det	dem	2	det	_	_
+2	يىلغا	يىل	_	n	dat	3	nmod	_	_
+3	ياسىمىدىم	ياسى	_	v	tv|neg|ifi|p1|sg	0	root	_	_
+4	.	.	_	sent	_	3	punct	_	_
 
 1	ئاسماننى	ئاسمان	_	n	acc	19	conj>dobj:cau	_	_
 2	كۆپكۈك	كۆپكۈك	_	adj	_	19	conj>xcomp>xcomp	_	_
@@ -116,7 +121,7 @@
 6	_	مۇ	_	qst	_	5	aux:q	_	_
 7	؟	؟	_	sent	_	3	punct	_	_
 
-1	يا	يا	_	cnjcoo	_	6	cc:preconj	_	_
+1	يا	يا	_	cnjcoo	_	3	cc:preconj	_	_
 2	بېتىر	*بېتىر	_	np	ant|m|sg|nom	3	flat	_	_
 3	سىمىس	*سىمىس	_	np	cog|mf|sg|nom	6	conj	_	_
 4	يا	يا	_	cnjcoo	_	6	cc	_	_
@@ -160,6 +165,20 @@
 7	ئۆيدىن	ئۆي	_	n	abl	8	nmod	_	_
 8	ئايرىلدى	ئايرىل	_	v	iv|ifi|p3|pl	0	root	_	_
 9	.	.	_	sent	_	8	punct	_	_
+
+1	ئۇ	ئۇ	_	det	dem	2	det	_	_
+2	كۈنى	كۈن	_	n	px3sp|nom	6	nmod	_	_
+3	ئۇ	ئۇ	_	prn	pers|p3|sg|nom	5	nmod:poss	_	_
+4	ئەسلى	ئەسل	_	n	px3sp|nom	5	x	_	_
+5	چېچىنى	چاچ	_	n	px3sp|acc	6	dobj	_	_
+6	ياساتماقچى	*ياساتماقچى	_	v	tv|caus|FD	0	x	_	_
+7	ئىدى	ئى	_	cop	ifi|p3|sg	6	x	_	_
+8	،	،	_	cm	_	6	punct	_	_
+9	لېكىن	لېكىن	_	cnjcoo	_	12	cc	_	_
+10	مەلۇم	مەلۇم	_	adj	_	11	advmod	_	_
+11	سەۋەپلەردىن	*سەۋەپلەردىن	_	n	CD	12	nmod	_	_
+12	بارالمىدى	*بارالمىدى	_	v	TD|neg	6	x	_	_
+13	.	.	_	sent	_	6	punct	_	_
 
 1	ئۇنىڭغا	ئۇ	_	prn	pers|p3|sg|dat	2	nmod	_	_
 2	يېتىشەلمىدىم	*يېتىشەلمىدىم	_	v	iv|neg|past|p1|sg	0	root	_	_
