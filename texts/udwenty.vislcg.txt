@@ -12,24 +12,24 @@
 	"." sent @punct #6->5
 ¶
 "<يامغۇر>"
-	"يامغۇر" n nom @nsubj
+	"يامغۇر" n nom @nsubj #1->2
 "<يېغىشىنى>"
-	"*يېغىشىنى" @
+	"يېغ" v iv ger px3sp acc @ccomp #2->3
 "<ئويلۇدۇم>"
-	"*ئويلۇدۇم"
+	"*ئويلۇ" v tv aor p1 sg @root #3->0
 "<.>"
-	"." sent @punct
+	"." sent @punct #4->3
 ¶
 "<يامغۇر>"
-	"يامغۇر" n nom @nsubj
+	"يامغۇر" n nom @nsubj #1->2
 "<يېغىۋاتىدۇ>"
-	"*يېغىۋاتىدۇ"
+	"*يېغىۋاتىدۇ" v tv past p3 sg @ccomp #2->3
 "<دەپ>"
-	"دە" v tv gna_perf
+	"دە" v tv gna_perf @advcl #3->4
 "<ئويلۇدۇم>"
-	"*ئويلۇدۇم"
+	"*ئويلۇ" v tv aor p1 sg @root #4->0
 "<.>"
-	"." sent @punct
+	"." sent @punct #5->4
 ¶
 "<ئۇ>"
 	"ئۇ" prn pers p3 sg nom @nsubj #1->7
@@ -177,23 +177,22 @@
 	"." sent @punct #5->4
 ¶
 "<نىمىگە>"
-	"*نىمىگە"
+	"*نىمى" prn itg dat @nmod #1->2
 "<قاراۋاتىسەن>"
-	"*قاراۋاتىسەن"
+	"*قارا" v tv aor qst p2 sg @root #2->0
 "<؟>"
-	"؟" sent @punct
+	"؟" sent @punct #3->2
 ¶
 "<قاچان>"
-	"*قاچان"
+	"قاچان" adv itg @advmod #1->2
 "<كېلەي>"
-	"*كېلەي"
+	"كېل" v iv gna_perf @ccomp #2->3
 "<دەپ>"
-	"دە" v tv prc_perf
-	"دە" v tv gna_perf
+	"دە" v tv gna_perf @advcl #3->4
 "<ئويلاۋاتىسەن>"
-	"*ئويلاۋاتىسەن"
+	"*ئويلاۋاتىسەن" v tv aor p2 sg @root #4->0
 "<؟>"
-	"؟" sent @punct
+	"؟" sent @punct #5->4
 ¶
 "<ئۇ>"
 	"ئۇ" prn pers p3 sg nom @nsubj #1->3

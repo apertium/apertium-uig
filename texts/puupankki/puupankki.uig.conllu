@@ -39,6 +39,17 @@
 5	يازدى	ياز	_	v	tv|ifi|p3|sg	0	root	_	_
 6	.	.	_	sent	_	5	punct	_	_
 
+1	يامغۇر	يامغۇر	_	n	nom	2	nsubj	_	_
+2	يېغىشىنى	يېغ	_	v	iv|ger|px3sp|acc	3	ccomp	_	_
+3	ئويلۇدۇم	*ئويلۇ	_	v	tv|aor|p1|sg	0	root	_	_
+4	.	.	_	sent	_	3	punct	_	_
+
+1	يامغۇر	يامغۇر	_	n	nom	2	nsubj	_	_
+2	يېغىۋاتىدۇ	*يېغىۋاتىدۇ	_	v	tv|past|p3|sg	3	ccomp	_	_
+3	دەپ	دە	_	v	tv|gna_perf	4	advcl	_	_
+4	ئويلۇدۇم	*ئويلۇ	_	v	tv|aor|p1|sg	0	root	_	_
+5	.	.	_	sent	_	4	punct	_	_
+
 1	ئۇ	ئۇ	_	prn	pers|p3|sg|nom	7	nsubj	_	_
 2	تاماكا	تاماكا	_	n	nom	3	dobj	_	_
 3	چېكىش	چەك	_	v	tv|ger|nom	6	conj	_	_
@@ -119,6 +130,16 @@
 3	يازغىنىنى	ياز	_	v	tv|ger_past|px3sp|acc	4	ccomp	_	_
 4	بىلەلمىدى	*بىلەل	_	v	tv|aor|p3|pl	0	root	_	_
 5	.	.	_	sent	_	4	punct	_	_
+
+1	نىمىگە	*نىمى	_	prn	itg|dat	2	nmod	_	_
+2	قاراۋاتىسەن	*قارا	_	v	tv|aor|qst|p2|sg	0	root	_	_
+3	؟	؟	_	sent	_	2	punct	_	_
+
+1	قاچان	قاچان	_	adv	itg	2	advmod	_	_
+2	كېلەي	كېل	_	v	iv|gna_perf	3	ccomp	_	_
+3	دەپ	دە	_	v	tv|gna_perf	4	advcl	_	_
+4	ئويلاۋاتىسەن	*ئويلاۋاتىسەن	_	v	tv|aor|p2|sg	0	root	_	_
+5	؟	؟	_	sent	_	4	punct	_	_
 
 1	ئۇ	ئۇ	_	prn	pers|p3|sg|nom	3	nsubj	_	_
 2	ماشىنا	ماشىنا	_	n	nom	3	dobj	_	_
