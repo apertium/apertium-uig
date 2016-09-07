@@ -232,6 +232,8 @@
 "<.>"
 	"." sent @punct #9->8
 ¶
+#She should have been doing her hair but for some reason she would n't that day .
+#u kynı u ɛslı čečını jasatmaqčı ıdı، lekın mɛlum sɛwɛplɛrdın baralmıdı.
 "<ئۇ>"
 	"ئۇ" prn pers p3 sg nom
 "<كۈنى>"
@@ -264,23 +266,23 @@
 	"." sent @punct
 ¶
 "<ئۇنىڭغا>"
-	"ئۇ" prn pers p3 sg dat
+	"ئۇ" prn pers p3 sg dat @nmod #1->2
 "<يېتىشەلمىدىم>"
-	"*يېتىشەلمىدىم"
+	"*يېتىشەلمىدىم" v iv neg past p1 sg @root #2->0
 "<،>"
-	"،" cm @punct
+	"،" cm @punct #3->8
 "<چۈنكى>"
-	"چۈنكى" cnjadv
+	"چۈنكى" cnjadv @cc #4->8
 "<ئۇ>"
-	"ئۇ" prn pers p3 sg nom
+	"ئۇ" prn pers p3 sg nom @nsubj #5->8
 "<نەك>"
-	"*نەك"
+	"نەك" adv @advmod #6->7
 "<تېز>"
-	"تېز" n nom
+	"تېز" adj advl @advmod #7->8
 "<يۈگۈرىدىكەن>"
-	"*يۈگۈرىدىكەن"
+	"*يۈگۈرى" @advcl #8->2
 "<.>"
-	"." sent @punct
+	"." sent @punct #9->8
 ¶
 "<بۇ>"
 	"بۇ" det dem @det #1->2

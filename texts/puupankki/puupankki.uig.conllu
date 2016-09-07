@@ -161,6 +161,16 @@
 8	ئايرىلدى	ئايرىل	_	v	iv|ifi|p3|pl	0	root	_	_
 9	.	.	_	sent	_	8	punct	_	_
 
+1	ئۇنىڭغا	ئۇ	_	prn	pers|p3|sg|dat	2	nmod	_	_
+2	يېتىشەلمىدىم	*يېتىشەلمىدىم	_	v	iv|neg|past|p1|sg	0	root	_	_
+3	،	،	_	cm	_	8	punct	_	_
+4	چۈنكى	چۈنكى	_	cnjadv	_	8	cc	_	_
+5	ئۇ	ئۇ	_	prn	pers|p3|sg|nom	8	nsubj	_	_
+6	نەك	نەك	_	adv	_	7	advmod	_	_
+7	تېز	تېز	_	adj	advl	8	advmod	_	_
+8	يۈگۈرىدىكەن	*يۈگۈرى	_	_	_	2	advcl	_	_
+9	.	.	_	sent	_	8	punct	_	_
+
 1	بۇ	بۇ	_	det	dem	2	det	_	_
 2	خەت	خەت	_	n	nom	4	nsubj	_	_
 3	پېتىردىن	پېتىر	_	n	abl	4	nmod	_	_
