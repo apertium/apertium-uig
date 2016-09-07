@@ -6,6 +6,7 @@ Multichar_Symbols
 
 %<n%>             ! Noun
 %<post%>          ! Postposition
+%<det%>
 %<v%>             ! Verb
 %<vaux%>          ! Auxiliary verb
 %<cnjcoo%>        ! Co-ordinating conjunction
@@ -34,6 +35,7 @@ Multichar_Symbols
 %<px1pl%>         ! First person, plural possesssive
 %<px2pl%>         ! Second person, plural possessive
 %<frm%>           ! formal
+%<hon%>           ! deferential
 
 %<nom%>           ! Nominative
 %<abl%>           ! Ablative
@@ -46,6 +48,8 @@ Multichar_Symbols
 %<attr%>          ! Attributive
 %<subst%>         ! Substantitve
 %<advl%>          ! Adverbial
+
+%<top%>
 
 %<pers%>          ! Personal
 %<ref%>           ! Reflexive
@@ -67,11 +71,13 @@ Multichar_Symbols
 %<past%>          ! Past general
 %<inf%>           ! Infinitive -mAK
 %<prc_perf%>      ! Perfect participle
+%<gna_perf%>      ! Perfect verbal adverb
 %<abil%>          ! Abilitative
 %<aor%>           ! Aorist
 %<prc_impf%>      ! Imperfect participle
 %<ger%>           ! Gerund (aorist)
 %<ger_past%>      ! Past gerund
+%<gpr_past%>      ! Past gerund
 %<gna_cond%>      ! Conditional verbal adverb 
 %<imp%>           ! Imperative
 
@@ -132,20 +138,26 @@ Punctuation ;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
+LEXICON CLITICS
+
+# ;
++مۇ%<qst%>:مۇ # ;
++چۇ%<qst%>:چۇ # ;
+
 
 LEXICON CASE
 
-%<nom%>: # ;
+%<nom%>: CLITICS ;
 %<dat%>:%>%{G%}%{A%} # ;
-%<loc%>:%>%{D%}%{A%} # ;
+%<loc%>:%>%{D%}%{A%} CLITICS ;
 %<loc%>%<attr%>:%>%{D%}%{A%}%>كى # ;
 %<loc%>%<subst%>:%>%{D%}%{A%}%>كى SUBST-2 ;
-%<abl%>:%>%{D%}ىن # ;
+%<abl%>:%>%{D%}ىن CLITICS ;
 %<gen%>:%>نىڭ # ;
 %<gen%>%<attr%>:%>نىڭكى # ;
 %<gen%>%<subst%>:%>نىڭكى SUBST-2 ;
 %<acc%>:%>نى # ;
-%<ter%>:%>%{G%}ىچە # ;
+%<ter%>:%>%{G%}ىچە CLITICS ;
 
 LEXICON CASE-2
 
@@ -169,7 +181,7 @@ CASE ;
 %<px1pl%>:%>%{i%}م%{I%}ز CASE ;
 %<px2pl%>%<frm%>:%>%{i%}ڭ%{I%}ز CASE ;
 %<px2sg%>%<frm%>:%>%{i%}ڭ%{I%}ز CASE ;
-
+%<px3sg%>%<hon%>:%>‫لىرى‬ CASE ;
 
 LEXICON SUBST-2
 
@@ -211,6 +223,7 @@ LEXICON NUM
 %<num%>: # ; 
 %<num%>%<subst%>: NP-COMMON ; ! FIXME: real subst lex
 %<num%>%<ord%>:%>%{i%}نچ%{I%} # ; ! 
+%<num%>%<ord%>%<subst%>:%>%{i%}نچ%{I%} NP-COMMON ; ! FIXME: real subst lex
 
 LEXICON PRON-DEM-CASE
 
@@ -231,6 +244,8 @@ LEXICON PRON-PERS-AN
 LEXICON PRON-PERS-MAN
 
 %<prn%>%<pers%>%<p1%>%<sg%>: PRON-PERS-AN ;
+%<prn%>%<pers%>%<p1%>%<sg%>%<gen%>:ىنا # ;
+%<prn%>%<pers%>%<p1%>%<sg%>%<gen%>:ېنىڭ # ;
 
 LEXICON PRON-PERS-SAN
 
@@ -311,12 +326,6 @@ LEXICON DET-MISC
 
 %<det%>: # ;
 
-LEXICON CLITICS
-
-# ;
-+مۇ%<qst%>:مۇ # ;
-+چۇ%<qst%>:چۇ # ;
-
 LEXICON V-IFI-PERS
 
 %<p1%>%<sg%>:%{U%}م CLITICS ;
@@ -386,10 +395,13 @@ LEXICON V-PAST
 LEXICON V-PRC
 
 %<prc_perf%>:%>%{U%}پ # ;
+%<gna_perf%>:%>%{U%}پ # ;
 
 LEXICON V-GER
 
 %<ger_past%>:%>%{G%}%{A%}ن NP-COMMON ;
+%<gpr_past%>:%>%{G%}%{A%}ن #  ;
+%<gpr_past%>%<subst%>:%>%{G%}%{A%}ن NP-COMMON  ;
 %<ger%>:%>%{U%}ش NP-COMMON ; 
 %<inf%>:%>م%{A%}%{K%} # ;
 
@@ -1689,7 +1701,7 @@ LEXICON Nouns
 غەمسىز:غەمسىز N1 ; ! ""
 باياننامە:باياننامە N1 ; ! ""
 پېشقەدەم:پېشقەدەم N1 ; ! ""
-چوقۇم:چوقۇم N1 ; ! ""
+
 توسقۇنلۇق:توسقۇنلۇق N1 ; ! ""
 ئومۇم:ئومۇم N1 ; ! ""
 پوست:پوست N1 ; ! ""
@@ -2048,7 +2060,7 @@ LEXICON Verbs
 چاقىر:چاقىر V-TV ; ! ""
 ئۇت:ئۇت V-TV ; ! ""
 كۈت:كۈت V-TV ; ! ""
-قورقۇت:قورقۇت V-TV ; ! ""
+
 جەملى:جەملى V-TV ; ! ""
 يۇ:يۇ V-TV ; ! ""
 قوغلىۋەت:قوغلىۋەت V-TV ; ! ""
@@ -2129,7 +2141,7 @@ LEXICON Verbs
 زەئىپلەش:زەئىپلەش V-IV ; ! ""
 قىزىق:قىزىق V-IV ; ! ""
 يولۇق:يولۇق V-IV ; ! ""
-قورق:قورق V-IV ; ! ""
+
 ساقاي:ساقاي V-IV ; ! ""
 يوقال:يوقال V-IV ; ! ""
 ئايلان:ئايلان V-IV ; ! ""
@@ -3327,8 +3339,6 @@ LEXICON Check
 ئىنتىزام:ئىنتىزام N1 ; ! "discipline"
 لۇشيەن:لۇشيەن N1 ; ! "line"
 قەھەتچىلىك:قەھەتچىلىك N1 ; ! "famine"
-مىنا:مىنا N1 ; ! "mine"
-مېنىڭ:مېنىڭ N1 ; ! "mine"
 ئومۇرتقا:ئومۇرتقا N1 ; ! "spine"
 خلور:خلور N1 ; ! "chlorine"
 فتور:فتور N1 ; ! "fluorine"
@@ -5259,7 +5269,8 @@ LEXICON Check
 بىراق:بىراق POST ; ! "but"
 ئەڭ:ئەڭ DET-MISC ; ! "most"
 بىزنىڭ:بىزنىڭ DET-MISC ; ! "our"
-ئۇنىڭ:ئۇنىڭ DET-MISC ; ! "his"
+
+
 ھېچ:ھېچ DET-MISC ; ! "any"
 ھېچقايسى:ھېچقايسى DET-MISC ; ! "any"
 ماۋۇ:ماۋۇ DET-MISC ; ! "this"
@@ -6239,7 +6250,7 @@ LEXICON Check
 ۋەزمىنلەش:ۋەزمىنلەش V-TD ; ! ""
 تەييارلان:تەييارلان V-TD ; ! ""
 ۋاقىپلان:ۋاقىپلان V-TD ; ! ""
-قورق:قورق V-TD ; ! ""
+
 خەۋەرلەن:خەۋەرلەن V-TD ; ! ""
 تارتقۇچلى:تارتقۇچلى V-TD ; ! ""
 جۈسۈنلى:جۈسۈنلى V-TD ; ! ""
@@ -15059,7 +15070,7 @@ LEXICON Check
 قاششاق:قاششاق N1 ; ! ""
 ئەلەڭگۈلۈك:ئەلەڭگۈلۈك N1 ; ! ""
 ئىپپەت:ئىپپەت N1 ; ! ""
-شۇنداق:شۇنداق N1 ; ! ""
+
 مۇئاھىدە:مۇئاھىدە N1 ; ! ""
 داكا:داكا N1 ; ! ""
 ئاچال:ئاچال N1 ; ! ""
@@ -20277,7 +20288,7 @@ LEXICON Check
 كىنايىچى:كىنايىچى A1 ; !
 شيۇجېڭجۇيىچى:شيۇجېڭجۇيىچى A1 ; !
 بەتخۇي:بەتخۇي A1 ; !
-تېخى:تېخى A1 ; !
+
 بەدەۋى:بەدەۋى A1 ; !
 خۇددى:خۇددى A1 ; !
 جاھانكەزدى:جاھانكەزدى A1 ; !
@@ -21385,6 +21396,23 @@ LEXICON Check
 نېرى:نېرى ADV ; ! ""
 
 
+
+تىك:تىك N1 ; ! ""
+تىك:تىك A1 ; ! ""
+ئېغىر:ئېغىر A1 ; ! ""
+
+قورق:قورق V-TD ; ! ""
+قورق:قورق V-IV ; ! ""
+قورقۇت:قورقۇت V-TV ; ! ""
+
+شۇنداق:شۇنداق ADV ; ! ""
+چوقۇم:چوقۇم ADV ; ! ""
+دەل:دەل ADV ; ! ""
+تېخى:تېخى ADV ; !
+ئاستا%-ئاستا:ئاستا%-ئاستا ADV ; ! ""
+
+دوللار:دوللار N1 ; ! "dollar"
+
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON Punctuation
@@ -21397,6 +21425,8 @@ LEXICON Punctuation
 %،%<cm%>:%، # ;
 %!%<sent%>:%! # ;
 %-%<guio%>:%- # ;
+%--%<guio%>:%-- # ;
+%---%<guio%>:%--- # ;
 %—%<guio%>:%— # ;
 %–%<guio%>:%– # ;
 ,%<cm%>:, # ;
@@ -21430,6 +21460,7 @@ LEXICON Punctuation
 ：:：%<sent%> # ;
 。:。%<sent%> # ;
 ？:？%<sent%> # ;
+！:！%<sent%> # ;
 
 
 

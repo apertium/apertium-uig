@@ -1,5 +1,5 @@
 "<لېكىن>"
-	"لېكىن" cnjcoo @cc @cc #1->6
+	"لېكىن" cnjcoo @cc #1->6
 "<بۇنىڭ>"
 	"بۇ" prn dem gen @nmod:poss #2->3
 "<مېھرى>"
@@ -63,15 +63,15 @@
 "<ھەم>"
 	"ھەم" cnjcoo @cc <eng:and>
 "<جۇڭگودىكى>"
-	"جۇڭگو" np top loc attr <eng:China>
+	"جۇڭگو" np top loc attr @amod <eng:China>
 "<تىبەتلەرگە>"
-	"تىبەت" n pl dat <eng:Tibet>
+	"تىبەت" n pl dat @nmod <eng:Tibet>
 "<ئائىت>"
 	"ئائىت" post @case
 "<ئەڭ>"
-	"ئەڭ" det <eng:most> @det
+	"ئەڭ" det @det <eng:most>
 "<چوڭ>"
-	"چوڭ" adj <eng:large>
+	"چوڭ" adj @amod <eng:large>
 "<تور>"
 	"تور" n nom
 "<بەت>"
@@ -79,21 +79,21 @@
 "<بولۇش>"
 	"بول" v iv ger nom <eng:be>
 "<سۈپىتى>"
-	"سۈپەت" n px3sp nom <eng:quality>
+	"سۈپەت" n px3sp nom @nmod <eng:quality>
 "<بىلەن>"
-	"بىلەن" post <eng:with>
+	"بىلەن" post @case <eng:with>
 "<،>"
 	"،" cm @punct
 "<تىبەت>"
-	"تىبەت" np top nom <eng:Tibet>
+	"تىبەت" np top nom @nmod:poss <eng:Tibet>
 "<تورىنىڭ>"
 	"تور" n px3sp gen 
 "<ئەندىشىسى>"
 	"ئەندىشە" n px3sp nom <eng:worry>
 "<ئارتۇقچە>"
-	"ئارتۇقچە" adj
+	"ئارتۇقچە" adj @root 
 "<ئەمەس>"
-	"ئى" cop neg p3 sg
+	"ئى" cop neg p3 sg @cop
 "<.>"
 	"." sent @punct
 ¶
@@ -117,7 +117,7 @@
 	"." sent @punct
 ¶
 "<مەن>"
-	"مەن" prn pers p1 sg nom
+	"مەن" prn pers p1 sg nom @nsubj
 "<يىك>"
 	"يىك" n nom
 "<دېگەن>"
@@ -125,29 +125,29 @@
 "<گەپنىڭ>"
 	"گەپ" n gen
 "<مەنىسىنى>"
-	"مەنە" n px3sp acc
+	"مەنە" n px3sp acc @dobj
 "<چۈشەنمىدىم>"
-	"چۈشەن" v tv neg ifi p1 sg
+	"چۈشەن" v tv neg ifi p1 sg @root
 "<.>"
 	"." sent @punct
 ¶
 "<سېنى>"
 	"سان" n px3sp nom
 "<قانچە>"
-	"قانچە" det  @det
+	"قانچە" det X @det
 "<قېتىم>"
 	"قېتىم" n nom
 "<چاقىردىم>"
-	"چاقىر" v tv ifi p1 sg
+	"چاقىر" v tv ifi p1 sg @root
 "<؟>"
 	"؟" sent @punct
 ¶
 "<ئىككى>"
-	"ئىككى" num
+	"ئىككى" num 
 "<خانىمى>"
 	"خانىم" n px3sp nom
 "<بارمىدى>"
-	"بار" v iv neg ifi p3 pl
+	"بار" v iv neg ifi p3 pl @root
 "<؟>"
 	"؟" sent @punct
 ¶
@@ -158,7 +158,7 @@
 "<قولۇمغا>"
 	"قول" n px1sg dat
 "<ئالدىم>"
-	"ئال" v tv ifi p1 sg
+	"ئال" v tv ifi p1 sg @root
 "<.>"
 	"." sent @punct
 ¶
@@ -175,7 +175,7 @@
 "<بالىلار>"
 	"بالا" n pl nom
 "<ئالدىدىكى>"
-	"ئالد" n px3sp loc attr
+	"ئالد" n px3sp loc attr @amod
 "<سالاھىيەت>"
 	"سالاھىيەت" n nom
 "<بويىچە>"
@@ -211,24 +211,24 @@
 	"." sent @punct
 ¶
 "<سەن>"
-	"سەن" prn pers p2 sg nom
+	"سەن" prn pers p2 sg nom @nsubj #1->5
 "<نېمىشقا>"
-	"نېمىشقا" adv itg
+	"نېمىشقا" adv itg @x #2->5
 "<ماڭا>"
-	"مەن" prn pers p1 sg dat
+	"مەن" prn pers p1 sg dat @nmod #3->5
 "<مۇنداق>"
-	"مۇنداق" adv
+	"مۇنداق" adv @advmod #4->5
 "<گەپ_قىلىسەن>"
-	"گەپ_قىل" v iv aor p2 sg
+	"گەپ_قىل" v iv aor p2 sg @root #5->0
 "<؟>"
-	"؟" sent @punct
+	"؟" sent @punct #6->5
 ¶
 "<ئاپەت>"
-	"ئاپەت" n nom
+	"ئاپەت" n nom @x #1->2
 "<كەلدى>"
-	"كەل" v iv ifi p3 sg
+	"كەل" v iv ifi p3 sg @root #2->0
 "<!>"
-	"!" sent @punct
+	"!" sent @punct #3->2
 ¶
 "<ئىيۇلدىن>"
 	"ئىيۇل" n abl
@@ -245,7 +245,7 @@
 "<قازا>"
 	"قازا" n nom
 "<قىلدى>"
-	"قىل" v tv ifi p3 sg
+	"قىل" v tv ifi p3 sg @root
 "<.>"
 	"." sent @punct
 ¶
@@ -260,14 +260,14 @@
 "<»>"
 	"»" rquot @punct
 "<دېگەن>"
-	"دې" v tv past p3 sg
+	"دې" v tv past p3 sg @root
 "<.>"
 	"." sent @punct
 ¶
 "<مۇئەللىم>"
 	"مۇئەللىم" n nom
 "<ئۆلدى>"
-	"ئۆل" v iv ifi p3 sg
+	"ئۆل" v iv ifi p3 sg @root
 "<.>"
 	"." sent @punct
 ¶
@@ -280,7 +280,7 @@
 "<تەۋرىشتىن>"
 	"تەۋرىشتىن" n nom @x
 "<قورقىمەن>"
-	"قورق" v iv aor p1 sg
+	"قورق" v iv aor p1 sg @root
 "<...>"
 	"..." sent @punct
 ¶
@@ -321,7 +321,7 @@
 "<خاتىرجەملىككە>"
 	"خاتىرجەملىك" n dat <eng:tranquility>
 "<ئېرىشتى>"
-	"ئېرىش" v iv ifi p3 sg
+	"ئېرىش" v iv ifi p3 sg @root
 "<.>"
 	"." sent @punct
 ¶
@@ -362,7 +362,7 @@
 "<بىر>"
 	"بىر" num <eng:one>
 "<ئايلىنىپ>"
-	"ئايلان" v iv prc_perf 
+	"ئايلان" v iv prc_perf @root
 "<چىقىدۇ>"
 	"چىق" vaux aor p3 sg @aux
 "<.>"
@@ -428,7 +428,7 @@
 "<دەپ>"
 	"دە" v tv prc_perf @root
 "<بەردى>"
-	"بەر" vaux ifi p3 sg @aux @aux
+	"بەر" vaux ifi p3 sg @aux
 "<.>"
 	"." sent @punct
 ¶
@@ -467,7 +467,7 @@
 "<چەكلىنىپ>"
 	"چەكلى" v tv pass prc_perf @root
 "<كېتىسەن>"
-	"كەت" vaux aor p2 sg @aux @aux
+	"كەت" vaux aor p2 sg @aux
 "<.>"
 	"." sent @punct
 ¶

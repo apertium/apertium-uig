@@ -6,6 +6,17 @@
 6	بىلىندى	بىل	_	v	tv|pass|ifi|p3|sg	0	root	_	_
 7	.	.	_	sent	_	6	punct	_	_
 
+1	سەن	سەن	_	prn	pers|p2|sg|nom	5	nsubj	_	_
+2	نېمىشقا	نېمىشقا	_	adv	itg	5	x	_	_
+3	ماڭا	مەن	_	prn	pers|p1|sg|dat	5	nmod	_	_
+4	مۇنداق	مۇنداق	_	adv	_	5	advmod	_	_
+5	گەپ_قىلىسەن	گەپ_قىل	_	v	iv|aor|p2|sg	0	root	_	_
+6	؟	؟	_	sent	_	5	punct	_	_
+
+1	ئاپەت	ئاپەت	_	n	nom	2	x	_	_
+2	كەلدى	كەل	_	v	iv|ifi|p3|sg	0	root	_	_
+3	!	!	_	sent	_	2	punct	_	_
+
 1	بۇ	بۇ	_	det	dem	2	det	_	_
 2	يىلغا	يىل	_	n	dat	3	nmod	_	_
 3	ياسىمىدىم	ياسى	_	v	tv|neg|ifi|p1|sg	0	root	_	_
