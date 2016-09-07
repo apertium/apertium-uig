@@ -1,0 +1,320 @@
+"<قىزچاق>"
+	"قىزچاق" n nom @nsubj #1->5
+"<دوستىغا>"
+	"دوست" n px3sp dat @nmod #2->5
+"<پارچە>"
+	"پارچە" n attr @nmod:measure #3->4
+"<خەت>"
+	"خەت" n nom @dobj #4->5
+"<يازدى>"
+	"ياز" v tv ifi p3 sg @x #5->0
+"<.>"
+	"." sent @punct #6->5
+¶
+"<يامغۇر>"
+	"يامغۇر" n nom @nsubj
+"<يېغىشىنى>"
+	"*يېغىشىنى" @
+"<ئويلۇدۇم>"
+	"*ئويلۇدۇم"
+"<.>"
+	"." sent @punct
+¶
+"<يامغۇر>"
+	"يامغۇر" n nom @nsubj
+"<يېغىۋاتىدۇ>"
+	"*يېغىۋاتىدۇ"
+"<دەپ>"
+	"دە" v tv gna_perf
+"<ئويلۇدۇم>"
+	"*ئويلۇدۇم"
+"<.>"
+	"." sent @punct
+¶
+"<ئۇ>"
+	"ئۇ" prn pers p3 sg nom @nsubj #1->7
+"<تاماكا>"
+	"تاماكا" n nom @dobj #2->3
+"<چېكىش>"
+	"چەك" v tv ger nom @conj #3->6
+"<ۋە>"
+	"ۋە" cnjcoo @cc #4->6
+"<ھاراق>"
+	"ھاراق" n nom @dobj #5->6
+"<ئىچىشنى>"
+	"ئىچ" v tv ger acc @ccomp #6->7
+"<تاشلىماقچىتى>"
+	"تاشلى" v tv past p3 sg @root #7->0
+"<.>"
+	"." sent @punct #8->7
+¶
+
+"<بارامسەن>"
+	"بار" v iv aor qst p2 sg @root #1->0
+"<؟>"
+	"؟" sent @punct #2->1
+¶
+"<سام>"
+	"سام" np ant m sg nom @vocative #1->5
+"<،>"
+	"،" cm @punct #2->1
+"<دېرىزىنى>"
+	"دېرىزە" n acc @dobj #3->4
+"<ئېچىۋىتە>"
+	"ئېچ" v tv imp p3 frm sg @root #4->0
+"<!>"
+	"!" sent @root #5->4
+¶
+"<سام>"
+	"سام" np ant m sg nom @vocative #1->5
+"<،>"
+	"،" cm @punct #2->1
+"<دېرىزىنى>"
+	"دېرىزە" n acc @dobj #3->4
+"<ئاچ>"
+	"ئاچ" v tv imp @root #4->0
+"<!>"
+	"!" sent @punct #5->4
+¶
+"<ئۇ>"
+	"ئۇ" prn pers p3 sg nom @nsubj #1->5
+"<يولدىشىغا>"
+	"يولداش" n px3sp dat @nsubj:cau #2->5
+"<ماشىنىنى>"
+	"ماشىنا" n acc @dobj #3->4
+"<يۇدۇردى>"
+	"*يۇ" v tv caus aor p3 sg @root #4->0
+"<.>"
+	"." sent @punct #5->4
+¶
+"<پېتىرنىڭ>"
+	"پېتىر" np ant m sg nom @nmod:poss #1->2
+"<خوشنىسى>"
+	"خوشنى" n px3sp nom @nsubj #2->5
+"<چىتنى>"
+	"چىت" n acc @dobj #3->5
+"<قىزىل>"
+	"قىزىل" adj @xcomp #4->5
+"<سىرلىدى>"
+	"سىرلى" v tv ifi p3 sg @root #5->0
+"<.>" 
+	"." sent @punct #6->5
+¶
+"<دادام>"
+	"دادا" n px1sg nom @nsubj #1->3
+"<سېنىڭكىدىن>"
+	"سېنىڭكى" adj subst abl @nmod:comp #2->3
+"<قالتىسراق>"
+	"قالتىس" adj comp @root #3->0
+"<.>"
+	"." sent @punct #4->3
+¶
+"<مەري>"
+	"مەري" np ant f sg nom @conj>nsubj #1->12
+"<مىس>"
+	"مىس" n attr @compound #2->3
+"<مېدال>"
+	"مېدال" n nom @conj>dobj #3->12
+"<،>"
+	"،" cm @punct #4->3
+"<پېتىر>"
+	"پېتىر" np ant m sg nom @conj>nsubj #5->12
+"<كۈمۈش>"
+	"كۈمۈش" n attr @compound #6->7
+"<مېدال>"
+	"مېدال" n nom @conj>dobj #7->12
+"<،>" 
+	"،" cm @punct #8->7
+"<جېن>"
+	"جېن" np ant f sg nom @nsubj #9->12
+"<ئالتۇن>"
+	"ئالتۇن" n attr @compound #10->11
+"<مېدال>"
+	"مېدال" n nom @dobj #11->12
+"<ئالدى>"
+	"ئال" v tv ifi p3 sg @root #12->0
+"<.>"
+	"." sent @punct #13->12
+¶
+"<ئىگۇازۇ>"
+	"*ئىگۇازۇ"
+"<چوڭ>"
+	"چوڭ" adj
+"<دۆلەتمۇ>"
+	"دۆلەت" n nom
+		"مۇ" qst
+"<كىچىكمۇ>"
+	"كىچىك" adj
+		"مۇ" qst
+	"كىچىك" adj advl
+		"مۇ" qst
+	"كىچىك" adj subst nom
+		"مۇ" qst
+"<؟>"
+	"؟" sent @punct
+¶
+"<يا>"
+	"يا" cnjcoo @cc:preconj #1->6
+"<بېتىر>"
+	"*بېتىر" np ant m sg nom @fixed #2->3
+"<سىمىس>"
+	"*سىمىس" np cog mf sg nom @conj #3->6
+"<يا>"
+	"يا" cnjcoo @cc #4->6
+"<مەرىي>"
+	"مەرىي" np ant f sg nom @fixed #5->6
+"<بروۋىن>"
+	"بروۋىن" np cog mf sg nom @dobj #6->7
+"<سايلانمىدى>"
+	"*سايلانمىدى" v tv neg aor p3 sg @root #7->0
+"<.>"
+	"." sent @punct #8->7
+¶
+"<ئۇلاركىمنىڭ>"
+	"*ئۇلاركىمنىڭ"
+"<يازغىنىنى>"
+	"ياز" v tv ger_past px3sp acc
+"<بىلەلمىدى>"
+	"*بىلەلمىدى"
+"<.>"
+	"." sent @punct
+¶
+"<نىمىگە>"
+	"*نىمىگە"
+"<قاراۋاتىسەن>"
+	"*قاراۋاتىسەن"
+"<؟>"
+	"؟" sent @punct
+¶
+"<قاچان>"
+	"*قاچان"
+"<كېلەي>"
+	"*كېلەي"
+"<دەپ>"
+	"دە" v tv prc_perf
+	"دە" v tv gna_perf
+"<ئويلاۋاتىسەن>"
+	"*ئويلاۋاتىسەن"
+"<؟>"
+	"؟" sent @punct
+¶
+"<ئۇ>"
+	"ئۇ" prn pers p3 sg nom @nsubj #1->3
+"<ماشىنا>"
+	"ماشىنا" n nom @dobj #2->3
+"<ئالدى>"
+	"ئال" v tv ifi p3 sg @root #3->0
+"<،>"
+	"،" cm @punct #4->3
+"<لېكىن>"
+	"لېكىن" cnjcoo @cc #5->3
+"<ئاكىسى>"
+	"ئاكا" n px3sp nom @conj>nsubj #6->3
+"<ئاران>"
+	"ئاران" adv @advmod #7->8
+"<ۋېلسىپىت>"
+	"ۋېلسىپىت" n nom @conj->dobj #8->3
+"<.>"
+	"." sent @punct #9->3
+¶
+"<پېتىر>"
+	"پېتىر" np ant m sg nom @conj #1->3
+"<بىلەن>"
+	"بىلەن" cnjcoo @cc #2->3
+"<مەرى>"
+	"مەرى" np ant f sg nom @nsubj #3->5
+"<ئۆزئارا>"
+	"ئۆزئارا" adv @advmod #4->5
+"<قۇچاقلاشتى>"
+	"*قۇچاقلاشتى" v iv TD p3 pl @conj #5->8
+"<ھەم>"
+	"ھەم" cnjcoo @cc #6->8
+"<ئۆيدىن>"
+	"ئۆي" n abl @nmod #7->8
+"<ئايرىلدى>"
+	"ئايرىل" v iv ifi p3 pl @root #8->0
+"<.>"
+	"." sent @punct #9->8
+¶
+"<ئۇ>"
+	"ئۇ" prn pers p3 sg nom
+"<كۈنى>"
+	"كۈن" n px3sp nom
+"<ئۇ>"
+	"ئۇ" prn pers p3 sg nom
+"<ئەسلى>"
+	"ئەسل" n px3sp nom
+"<چېچىنى>"
+	"چاچ" n px3sp acc
+	"چېچەن" adj subst px3sp nom
+"<ياساتماقچى>"
+	"*ياساتماقچى"
+"<ئىدى>"
+	"ئى" cop ifi p3 sg
+	"ئى" cop ifi p3 pl
+"<،>"
+	"،" cm @punct
+"<لېكىن>"
+	"لېكىن" cnjcoo
+"<مەلۇم>"
+	"مەلۇم" adj
+	"مەلۇم" adj advl
+	"مەلۇم" adj subst nom
+"<سەۋەپلەردىن>"
+	"*سەۋەپلەردىن"
+"<بارالمىدى>"
+	"*بارالمىدى"
+"<.>"
+	"." sent @punct
+¶
+"<ئۇنىڭغا>"
+	"ئۇ" prn pers p3 sg dat
+"<يېتىشەلمىدىم>"
+	"*يېتىشەلمىدىم"
+"<،>"
+	"،" cm @punct
+"<چۈنكى>"
+	"چۈنكى" cnjadv
+"<ئۇ>"
+	"ئۇ" prn pers p3 sg nom
+"<نەك>"
+	"*نەك"
+"<تېز>"
+	"تېز" n nom
+"<يۈگۈرىدىكەن>"
+	"*يۈگۈرىدىكەن"
+"<.>"
+	"." sent @punct
+¶
+"<بۇ>"
+	"بۇ" det dem @det #1->2
+"<خەت>"
+	"خەت" n nom @nsubj #2->4
+"<پېتىردىن>"
+	"پېتىر" n abl @nmod #3->4
+"<كەلگەن>"
+	"كەل" v iv past p3 sg @root #4->0
+"<،>"
+	"،" cm @punct #5->4
+"<تۈنۈگۈن>"
+	"تۈنۈگۈن" adv @advmod #6->7
+"<يەتكۈزۈلدى>"
+	"يەتكۈز" v tv pass past p3 sg @parataxis #7->4
+"<.>"
+	"." sent @punct #8->4
+¶
+"<ئۇ>"
+	"ئۇ" prn pers p3 sg nom @nsubj #1->5
+"<فراىنسىيەنىڭ>"
+	"فراىنسىيە" np top gen @nmod:poss #2->3
+"<پايتەختى>"
+	"پايتەخت" n px3sp nom @appos #3->4
+"<پارىژدا>"
+	"پارىژ" np top loc @nmod #4->5
+"<چوڭ>"
+	"چوڭ" adj @root #5->0
+"<بولغان>"
+	"بول" v iv past p3 sg @cop #6->5
+"<.>"
+	"." sent @punct #7->5
+¶

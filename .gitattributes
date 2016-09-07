@@ -16,5 +16,8 @@ dev/countstems.sh -text
 dev/spellrelax.twol -text
 /modes.xml -text
 tests/vowelreduction.yaml -text
+texts/miscellaneous.vislcg.txt -text
+texts/puupankki/puupankki.uig.conllu -text
+texts/udwenty.vislcg.txt -text
 /uig.guesser.hfst -text
 /uig.restrict_guesser.hfst -text

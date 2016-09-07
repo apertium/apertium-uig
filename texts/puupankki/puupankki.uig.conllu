@@ -1,0 +1,143 @@
+1	لېكىن	لېكىن	_	cnjcoo	_	6	cc	_	_
+2	بۇنىڭ	بۇ	_	prn	dem|gen	3	nmod:poss	_	_
+3	مېھرى	مېھر	_	n	px3sp|nom	6	nsubj	_	_
+4	باشقىچە	باش	_	n	ter	6	nmod	_	_
+5	ئىسسىق	ئىسسىق	_	adj	advl	6	advmod	_	_
+6	بىلىندى	بىل	_	v	tv|pass|ifi|p3|sg	0	root	_	_
+7	.	.	_	sent	_	6	punct	_	_
+
+1	ئاسماننى	ئاسمان	_	n	acc	19	conj>dobj:cau	_	_
+2	كۆپكۈك	كۆپكۈك	_	adj	_	19	conj>xcomp>xcomp	_	_
+3	،	،	_	cm	_	2	punct	_	_
+4	دەريا	دەريا	_	n	nom	6	conj	_	_
+5	،	،	_	cm	_	6	punct	_	_
+6	كۆل	كۆل	_	n	nom	7	nmod:poss	_	_
+7	سۇلىرىنى	سۇ	_	n	pl|px3sp|acc	19	dobj:cau	_	_
+8	سۈپسۈزۈك	سۈپسۈزۈك	_	adj	_	9	xcomp	_	_
+9	تۇرۇشقا	تۇر	_	v	iv|ger|dat	19	conj>comp	_	_
+10	،	،	_	cm	_	9	punct	_	_
+11	دەل-دەرەخلەرنى	دەل-دەرەخ	_	n	pl|acc	19	conj>dobj:cau	_	_
+12	بۈك-باراقسان	بۈك-باراقسان	_	adj	subst|nom	19	conj>xcomp	_	_
+13	بولۇشقا	بول	_	v	iv|ger|dat	12	cop	_	_
+14	،	،	_	cm	_	19	punct	_	_
+15	ھايۋانلارنى	ھايۋان	_	n	pl|acc	19	dobj:cau	_	_
+16	ئەركىن	ئەركىن	_	adj	_	17	compound	_	_
+17	ئازادە	ئازادە	_	adj	_	18	xcomp	_	_
+18	ياشاشقا	ياشا	_	v	iv|ger|dat	19	ccomp	_	_
+19	ئىگە	ئىگە	_	n	nom	24	csubj	_	_
+20	قىلىش	قىل	_	v	tv|ger|nom	19	aux	_	_
+21	...	...	_	sent	_	24	punct	_	_
+22	بىزنىڭ	بىز	_	prn	pers|p1|pl|gen	24	nmod:poss	_	_
+23	ئورتاق	ئورتاق	_	adj	_	24	amod	_	_
+24	ئارزۇيىمىز	ئارزۇ	_	n	px1pl|nom	0	root	_	_
+25	.	.	_	sent	_	24	punct	_	_
+
+1	قىزچاق	قىزچاق	_	n	nom	5	nsubj	_	_
+2	دوستىغا	دوست	_	n	px3sp|dat	5	nmod	_	_
+3	پارچە	پارچە	_	n	attr	4	nmod:measure	_	_
+4	خەت	خەت	_	n	nom	5	dobj	_	_
+5	يازدى	ياز	_	v	tv|ifi|p3|sg	0	x	_	_
+6	.	.	_	sent	_	5	punct	_	_
+
+1	ئۇ	ئۇ	_	prn	pers|p3|sg|nom	7	nsubj	_	_
+2	تاماكا	تاماكا	_	n	nom	3	dobj	_	_
+3	چېكىش	چەك	_	v	tv|ger|nom	6	conj	_	_
+4	ۋە	ۋە	_	cnjcoo	_	6	cc	_	_
+5	ھاراق	ھاراق	_	n	nom	6	dobj	_	_
+6	ئىچىشنى	ئىچ	_	v	tv|ger|acc	7	ccomp	_	_
+7	تاشلىماقچىتى	تاشلى	_	v	tv|past|p3|sg	0	root	_	_
+8	.	.	_	sent	_	7	punct	_	_
+
+1	بارامسەن	بار	_	v	iv|aor|qst|p2|sg	0	root	_	_
+2	؟	؟	_	sent	_	1	punct	_	_
+
+1	سام	سام	_	np	ant|m|sg|nom	5	vocative	_	_
+2	،	،	_	cm	_	1	punct	_	_
+3	دېرىزىنى	دېرىزە	_	n	acc	4	dobj	_	_
+4	ئېچىۋىتە	ئېچ	_	v	tv|imp|p3|frm|sg	0	root	_	_
+5	!	!	_	sent	_	4	root	_	_
+
+1	سام	سام	_	np	ant|m|sg|nom	5	vocative	_	_
+2	،	،	_	cm	_	1	punct	_	_
+3	دېرىزىنى	دېرىزە	_	n	acc	4	dobj	_	_
+4	ئاچ	ئاچ	_	v	tv|imp	0	root	_	_
+5	!	!	_	sent	_	4	punct	_	_
+
+1	ئۇ	ئۇ	_	prn	pers|p3|sg|nom	5	nsubj	_	_
+2	يولدىشىغا	يولداش	_	n	px3sp|dat	5	nsubj:cau	_	_
+3	ماشىنىنى	ماشىنا	_	n	acc	4	dobj	_	_
+4	يۇدۇردى	*يۇ	_	v	tv|caus|aor|p3|sg	0	root	_	_
+5	.	.	_	sent	_	4	punct	_	_
+
+1	پېتىرنىڭ	پېتىر	_	np	ant|m|sg|nom	2	nmod:poss	_	_
+2	خوشنىسى	خوشنى	_	n	px3sp|nom	5	nsubj	_	_
+3	چىتنى	چىت	_	n	acc	5	dobj	_	_
+4	قىزىل	قىزىل	_	adj	_	5	xcomp	_	_
+5	سىرلىدى	سىرلى	_	v	tv|ifi|p3|sg	0	root	_	_
+6	.	.	_	sent	_	5	punct	_	_
+
+1	دادام	دادا	_	n	px1sg|nom	3	nsubj	_	_
+2	سېنىڭكىدىن	سېنىڭكى	_	adj	subst|abl	3	nmod:comp	_	_
+3	قالتىسراق	قالتىس	_	adj	comp	0	root	_	_
+4	.	.	_	sent	_	3	punct	_	_
+
+1	مەري	مەري	_	np	ant|f|sg|nom	12	conj>nsubj	_	_
+2	مىس	مىس	_	n	attr	3	compound	_	_
+3	مېدال	مېدال	_	n	nom	12	conj>dobj	_	_
+4	،	،	_	cm	_	3	punct	_	_
+5	پېتىر	پېتىر	_	np	ant|m|sg|nom	12	conj>nsubj	_	_
+6	كۈمۈش	كۈمۈش	_	n	attr	7	compound	_	_
+7	مېدال	مېدال	_	n	nom	12	conj>dobj	_	_
+8	،	،	_	cm	_	7	punct	_	_
+9	جېن	جېن	_	np	ant|f|sg|nom	12	nsubj	_	_
+10	ئالتۇن	ئالتۇن	_	n	attr	11	compound	_	_
+11	مېدال	مېدال	_	n	nom	12	dobj	_	_
+12	ئالدى	ئال	_	v	tv|ifi|p3|sg	0	root	_	_
+13	.	.	_	sent	_	12	punct	_	_
+
+1	يا	يا	_	cnjcoo	_	6	cc:preconj	_	_
+2	بېتىر	*بېتىر	_	np	ant|m|sg|nom	3	fixed	_	_
+3	سىمىس	*سىمىس	_	np	cog|mf|sg|nom	6	conj	_	_
+4	يا	يا	_	cnjcoo	_	6	cc	_	_
+5	مەرىي	مەرىي	_	np	ant|f|sg|nom	6	fixed	_	_
+6	بروۋىن	بروۋىن	_	np	cog|mf|sg|nom	7	dobj	_	_
+7	سايلانمىدى	*سايلانمىدى	_	v	tv|neg|aor|p3|sg	0	root	_	_
+8	.	.	_	sent	_	7	punct	_	_
+
+1	ئۇ	ئۇ	_	prn	pers|p3|sg|nom	3	nsubj	_	_
+2	ماشىنا	ماشىنا	_	n	nom	3	dobj	_	_
+3	ئالدى	ئال	_	v	tv|ifi|p3|sg	0	root	_	_
+4	،	،	_	cm	_	3	punct	_	_
+5	لېكىن	لېكىن	_	cnjcoo	_	3	cc	_	_
+6	ئاكىسى	ئاكا	_	n	px3sp|nom	3	conj>nsubj	_	_
+7	ئاران	ئاران	_	adv	_	8	advmod	_	_
+8	ۋېلسىپىت	ۋېلسىپىت	_	n	nom	3	conj->dobj	_	_
+9	.	.	_	sent	_	3	punct	_	_
+
+1	پېتىر	پېتىر	_	np	ant|m|sg|nom	3	conj	_	_
+2	بىلەن	بىلەن	_	cnjcoo	_	3	cc	_	_
+3	مەرى	مەرى	_	np	ant|f|sg|nom	5	nsubj	_	_
+4	ئۆزئارا	ئۆزئارا	_	adv	_	5	advmod	_	_
+5	قۇچاقلاشتى	*قۇچاقلاشتى	_	v	iv|TD|p3|pl	8	conj	_	_
+6	ھەم	ھەم	_	cnjcoo	_	8	cc	_	_
+7	ئۆيدىن	ئۆي	_	n	abl	8	nmod	_	_
+8	ئايرىلدى	ئايرىل	_	v	iv|ifi|p3|pl	0	root	_	_
+9	.	.	_	sent	_	8	punct	_	_
+
+1	بۇ	بۇ	_	det	dem	2	det	_	_
+2	خەت	خەت	_	n	nom	4	nsubj	_	_
+3	پېتىردىن	پېتىر	_	n	abl	4	nmod	_	_
+4	كەلگەن	كەل	_	v	iv|past|p3|sg	0	root	_	_
+5	،	،	_	cm	_	4	punct	_	_
+6	تۈنۈگۈن	تۈنۈگۈن	_	adv	_	7	advmod	_	_
+7	يەتكۈزۈلدى	يەتكۈز	_	v	tv|pass|past|p3|sg	4	parataxis	_	_
+8	.	.	_	sent	_	4	punct	_	_
+
+1	ئۇ	ئۇ	_	prn	pers|p3|sg|nom	5	nsubj	_	_
+2	فراىنسىيەنىڭ	فراىنسىيە	_	np	top|gen	3	nmod:poss	_	_
+3	پايتەختى	پايتەخت	_	n	px3sp|nom	4	appos	_	_
+4	پارىژدا	پارىژ	_	np	top|loc	5	nmod	_	_
+5	چوڭ	چوڭ	_	adj	_	0	root	_	_
+6	بولغان	بول	_	v	iv|past|p3|sg	5	cop	_	_
+7	.	.	_	sent	_	5	punct	_	_
+
