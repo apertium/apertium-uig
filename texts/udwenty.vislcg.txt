@@ -7,7 +7,7 @@
 "<خەت>"
 	"خەت" n nom @dobj #4->5
 "<يازدى>"
-	"ياز" v tv ifi p3 sg @x #5->0
+	"ياز" v tv ifi p3 sg @root #5->0
 "<.>"
 	"." sent @punct #6->5
 ¶
@@ -48,7 +48,6 @@
 "<.>"
 	"." sent @punct #8->7
 ¶
-
 "<بارامسەن>"
 	"بار" v iv aor qst p2 sg @root #1->0
 "<؟>"
@@ -137,47 +136,45 @@
 	"." sent @punct #13->12
 ¶
 "<ئىگۇازۇ>"
-	"*ئىگۇازۇ"
+	"ئىگۇازۇ" np top nom @nsubj #1->3
 "<چوڭ>"
-	"چوڭ" adj
+	"چوڭ" adj @amod #2->3
 "<دۆلەتمۇ>"
-	"دۆلەت" n nom
-		"مۇ" qst
+	"دۆلەت" n nom @root #3->0
+		"مۇ" qst @aux:q #4->3
 "<كىچىكمۇ>"
-	"كىچىك" adj
-		"مۇ" qst
-	"كىچىك" adj advl
-		"مۇ" qst
-	"كىچىك" adj subst nom
-		"مۇ" qst
+	"كىچىك" adj @conj #5->3
+		"مۇ" qst @aux:q #6->5
 "<؟>"
-	"؟" sent @punct
+	"؟" sent @punct #7->3
 ¶
 "<يا>"
 	"يا" cnjcoo @cc:preconj #1->6
 "<بېتىر>"
-	"*بېتىر" np ant m sg nom @fixed #2->3
+	"*بېتىر" np ant m sg nom @flat #2->3
 "<سىمىس>"
 	"*سىمىس" np cog mf sg nom @conj #3->6
 "<يا>"
 	"يا" cnjcoo @cc #4->6
 "<مەرىي>"
-	"مەرىي" np ant f sg nom @fixed #5->6
+	"مەرىي" np ant f sg nom @flat #5->6
 "<بروۋىن>"
 	"بروۋىن" np cog mf sg nom @dobj #6->7
 "<سايلانمىدى>"
-	"*سايلانمىدى" v tv neg aor p3 sg @root #7->0
+	"سايلان" v tv neg aor p3 sg @root #7->0
 "<.>"
 	"." sent @punct #8->7
 ¶
-"<ئۇلاركىمنىڭ>"
-	"*ئۇلاركىمنىڭ"
+"<ئۇلار>"
+	"ئۇلار" prn pers p3 pl nom @nsubj #1->4
+"<كىمنىڭ>"
+	"كىم" prn itg gen @nsubj #2->3
 "<يازغىنىنى>"
-	"ياز" v tv ger_past px3sp acc
+	"ياز" v tv ger_past px3sp acc @ccomp #3->4
 "<بىلەلمىدى>"
-	"*بىلەلمىدى"
+	"*بىلەل" v tv aor p3 pl @root #5->0
 "<.>"
-	"." sent @punct
+	"." sent @punct #5->4
 ¶
 "<نىمىگە>"
 	"*نىمىگە"
