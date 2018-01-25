@@ -230,8 +230,10 @@ LEXICON NUM
 LEXICON PRON-DEM-CASE
 
 %<nom%>: # ;
+%<acc%>:نى # ;
 %<gen%>:نىڭ # ;
 %<loc%>:ندا # ;
+%<abl%>:ندان # ;
 %<dat%>:ڭا # ;
 
 LEXICON PRON-PERS-AN
@@ -243,15 +245,20 @@ LEXICON PRON-PERS-AN
 %<abl%>:ەندىن # ;
 %<loc%>:ەندە # ;
 
+
+
 LEXICON PRON-PERS-MAN
 
 %<prn%>%<pers%>%<p1%>%<sg%>: PRON-PERS-AN ;
+%<prn%>%<pers%>%<p1%>%<sg%>%<acc%>:ېنى # ; ! FIXME: Check
 %<prn%>%<pers%>%<p1%>%<sg%>%<gen%>:ىنا # ;
 %<prn%>%<pers%>%<p1%>%<sg%>%<gen%>:ېنىڭ # ;
+
 
 LEXICON PRON-PERS-SAN
 
 %<prn%>%<pers%>%<p2%>%<sg%>: PRON-PERS-AN ;
+%<prn%>%<pers%>%<p2%>%<sg%>%<gen%>:ېنىڭ # ; ! FIXME: Check
 
 LEXICON PRON-PERS-SIZ
 
@@ -398,6 +405,7 @@ LEXICON V-PRC
 
 %<prc_perf%>:%>%{U%}پ # ;
 %<gna_perf%>:%>%{U%}پ # ;
+%<past%>%<evid%>:%>%{U%}پ%>ت%{U%} V-COP-PERS ; ! FIXME: Check / TTL:392
 
 LEXICON V-GER
 
@@ -1820,11 +1828,11 @@ LEXICON Verbs
 %{🂡%}%<guess%>:%{🂡%} V-TD ; ! ""
 
 ئال:ئال V-AUX ; !
-
 چىق:چىق V-AUX ; ! ""
 ئال:ئال V-AUX ; ! ""
 كەل:كەل V-AUX ; ! ""
 بول:بول V-AUX ; ! ""
+بول%<vaux%>%<past%>%<evid%>:%>بوپ%>ت%{U%} V-COP-PERS ; ! FIXME: Check
 بەر:بەر V-AUX ; ! ""
 بېجىر:بېجىر V-AUX ; ! ""
 كۆر:كۆر V-AUX ; ! ""
@@ -1838,11 +1846,14 @@ LEXICON Verbs
 
 
 بول:بول V-IV ; ! "be"
+بول%<v%>%<iv%>%<past%>%<evid%>:%>بوپ%>ت%{U%} V-COP-PERS ; ! FIXME: Check
 ئوينا:ئوينا V-TV ; ! "play"
 ئوينا:ئوينا V-IV ; ! "play"
 قىل:قىل%{a%} V-TV ; ! "do/make"
 !ئامراق% بول:ئامراق% بول V-TV ; ! "love"  ! Use/MT
+
 دە:دە V-TV ; ! "say"
+دە%<v%>%<tv%>%<past%>%<evid%>:%>دە%>ت%{U%} V-COP-PERS ; ! FIXME: Chec
 ئال:ئال V-TV ; ! "take"
 چىق:چىق V-IV ; ! "go out"
 كەل:كەل V-IV ; ! "come"
@@ -21471,7 +21482,7 @@ LEXICON Punctuation
 
 <[%0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9]+>  DIGITLEX ; ! Use/Circ
 
-<(a|á|à|ă|â|ǎ|ä|ā|æ|b|c|ć|č|ç|d|e|é|è|ê|ě|ë|ə|f|g|ğ|h|i|i̇|í|ì|ǐ|ï|ī|ı|j|k|l|m|n|ñ|o|ó|ò|ộ|ǒ|ö|ø|ō|p|q|r|s|ŝ|š|ş|t|ţ|u|ú|ù|û|ǔ|ü|ū|v|w|x|y|ý|z)+> BARB ;
+<(a|á|à|ă|â|ǎ|ä|ā|æ|b|c|ć|č|ç|d|e|é|è|ê|ě|ë|ə|f|g|ğ|h|i|í|ì|ǐ|ï|ī|ı|j|k|l|m|n|ñ|o|ó|ò|ộ|ǒ|ö|ø|ō|p|q|r|s|ŝ|š|ş|t|ţ|u|ú|ù|û|ǔ|ü|ū|v|w|x|y|ý|z)+> BARB ;
 
 <(а|б|в|г|ғ|д|е|ә|ж|җ|з|и|й|к|қ|л|м|н|ң|о|ө|п|р|с|т|у|ү|ф|х|һ|ц|ч|ш|щ|ы|ь|э|ю|я)+> BARB ; 
 
