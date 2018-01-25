@@ -1853,7 +1853,10 @@ LEXICON Verbs
 !ئامراق% بول:ئامراق% بول V-TV ; ! "love"  ! Use/MT
 
 دە:دە V-TV ; ! "say"
-دە%<v%>%<tv%>%<past%>%<evid%>:%>دە%>ت%{U%} V-COP-PERS ; ! FIXME: Chec
+
+دە%<v%>%<tv%>%<past%>%<evid%>:دەپ%>تۇ V-COP-PERS ; ! FIXME: Check
+
+
 ئال:ئال V-TV ; ! "take"
 چىق:چىق V-IV ; ! "go out"
 كەل:كەل V-IV ; ! "come"
