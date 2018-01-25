@@ -7,6 +7,9 @@ _	_	aor	_	_	_	VerbForm=Fin|Mood=Ind|Tense=Aor	_
 _	_	attr	_	_	_	Case=Nom	_
 _	_	cog	_	_	_	_	_
 _	prn	dem|qnt	_	_	PRON	PronType=Dem	_
+_	num	subst|nom	nummod	_	NUM	_	_
+_	adj	subst|nom	compound	_	ADJ	_	_
+_	adj	subst|nom	amod	_	ADJ	_	_
 _	num	_	amod	_	NUM	NumType=Ord	_
 _	num	coll|subst	_	_	NUM	NumType=Coll	_
 _	num	coll	_	_	NUM	NumType=Coll	_
@@ -39,6 +42,7 @@ _	_	gna_until	_	_	_	VerbForm=Conv	_
 _	_	gpr_fut	_	_	_	VerbForm=Part|Tense=Fut	_
 _	_	gpr_impf	_	_	_	VerbForm=Part|Aspect=Imp	_
 _	_	gpr_past	_	_	_	VerbForm=Part|Tense=Past	_
+_	_	gpr_past|subst|nom	acl	_	_	VerbForm=Part|Tense=Past	_
 _	_	gpr_pot	_	_	_	VerbForm=Part|Mood=Pot	_
 _	_	gpr_ppot	_	_	_	VerbForm=Part|Mood=Pot|Tense=Past	_
 _	_	ifi	_	_	_	VerbForm=Fin|Mood=Ind|Tense=Past	_
@@ -81,7 +85,7 @@ _	_	px2sg	_	_	_	Number[psor]=Sing|Person[psor]=2	_
 _	_	px3sg	_	_	_	Number[psor]=Sing|Person[psor]=3	_
 _	_	qnt	_	_	_	PronType=Qnt	_
 _	_	recip	_	_	_	PronType=Rcp	_
-_	_	ref	_	_	_	PronType=Ref	_
+_	_	ref	_	_	_	Reflexive=Yes	_
 _	_	sg	_	_	_	Number=Sing	_
 _	_	sim	_	_	_	_	_
 _	_	subst	_	_	_	_	_

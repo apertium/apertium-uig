@@ -23,6 +23,8 @@ Multichar_Symbols
 
 %<guess%>         ! Guess
 
+%<evid%>          ! 
+
 %<p1%>            ! First person
 %<p2%>            ! Second person
 %<p3%>            ! Third person
@@ -2241,11 +2243,13 @@ LEXICON Copula
 
 ئى:ئى COP ;
 ئى%<cop%>%<neg%>:ئەمەس V-COP-PERS ;
+ئى%<cop%>%<aor%>%<evid%>:ئىكەن # ; ! FIXME: personal forms?
 
 
 LEXICON Adjectives
 
 ياخشى:ياخشى A1 ; ! "good"
+قارا:قارا A1 ; ! "black"
 ئىللىق:ئىللىق A1 ; ! "warm" ! FIXME: check adjective class
 يېڭى:يېڭى A1 ; ! "new"
 سوغۇق:سوغۇق A2 ; ! "cold" ! FIXME: check adjective class

@@ -19,6 +19,7 @@ tests/vowelreduction.yaml -text
 texts/miscellaneous.vislcg.txt -text
 texts/puupankki/puupankki.uig.conllu -text
 texts/udwenty.vislcg.txt -text
+texts/uig-feat-rel.tsv -text
 texts/uig-feats.tsv -text
 /uig.guesser.hfst -text
 /uig.restrict_guesser.hfst -text
