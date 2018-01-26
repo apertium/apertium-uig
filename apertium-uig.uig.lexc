@@ -405,7 +405,7 @@ LEXICON V-PRC
 
 %<prc_perf%>:%>%{U%}پ # ;
 %<gna_perf%>:%>%{U%}پ # ;
-%<past%>%<evid%>:%>%{U%}پ%>ت%{U%} V-COP-PERS ; ! FIXME: Check / TTL:392
+%<ifi%>%<evid%>:%>%{U%}پ%>ت%{U%} V-COP-PERS ; ! FIXME: Check / TTL:392
 
 LEXICON V-GER
 
@@ -1832,7 +1832,7 @@ LEXICON Verbs
 ئال:ئال V-AUX ; ! ""
 كەل:كەل V-AUX ; ! ""
 بول:بول V-AUX ; ! ""
-بول%<vaux%>%<past%>%<evid%>:%>بوپ%>ت%{U%} V-COP-PERS ; ! FIXME: Check
+بول%<vaux%>%<ifi%>%<evid%>:%>بوپ%>ت%{U%} V-COP-PERS ; ! FIXME: Check
 بەر:بەر V-AUX ; ! ""
 بېجىر:بېجىر V-AUX ; ! ""
 كۆر:كۆر V-AUX ; ! ""
@@ -1846,7 +1846,7 @@ LEXICON Verbs
 
 
 بول:بول V-IV ; ! "be"
-بول%<v%>%<iv%>%<past%>%<evid%>:%>بوپ%>ت%{U%} V-COP-PERS ; ! FIXME: Check
+بول%<v%>%<iv%>%<ifi%>%<evid%>:%>بوپ%>ت%{U%} V-COP-PERS ; ! FIXME: Check
 ئوينا:ئوينا V-TV ; ! "play"
 ئوينا:ئوينا V-IV ; ! "play"
 قىل:قىل%{a%} V-TV ; ! "do/make"
@@ -1854,7 +1854,7 @@ LEXICON Verbs
 
 دە:دە V-TV ; ! "say"
 
-دە%<v%>%<tv%>%<past%>%<evid%>:دەپ%>تۇ V-COP-PERS ; ! FIXME: Check
+دە%<v%>%<tv%>%<ifi%>%<evid%>:دەپ%>تۇ V-COP-PERS ; ! FIXME: Check
 
 
 ئال:ئال V-TV ; ! "take"
