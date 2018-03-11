@@ -11,8 +11,12 @@ TARGETS_COMMON = $(LANG1).automorf.hfst $(LANG1).autogen.hfst \
 	$(LANG1)_guesser.automorf.hfst \
 	$(LANG1).automorf.bin $(LANG1).autogen.bin \
 	$(LANG1).automorf.bin $(LANG1)_guesser.automorf.bin $(LANG1).autogen.bin \
-	$(LANG1).automorf.att.gz $(LANG1).autogen.att.gz \
-        $(LANG1).rlx.bin
+	$(LANG1).automorf.att.gz $(LANG1).autogen.att.gz
+
+if HAVE_VISLCG3
+TARGETS_COMMON += $(LANG1).rlx.bin
+endif # HAVE_VISLCG3
+
 
 #	$(LANG1).autopgen.bin 
 

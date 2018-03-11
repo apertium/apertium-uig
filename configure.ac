@@ -18,6 +18,7 @@ AS_IF([test x$hfstospell = xyes], [
           CXXFLAGS="$CXXFLAGS $HFSTOSPELL_CFLAGS"
         ])
 AM_CONDITIONAL([HAVE_HFSTOSPELL], [test x$hfstospell = xyes])
+AM_CONDITIONAL([HAVE_VISLCG3], [test x$vislcg3 = xyes])
 
 
 m4_define([required_apertium_version], [3.3.0])
@@ -67,10 +68,13 @@ then
   AC_MSG_ERROR([You don't have hfst-twolc installed.])
 fi
 
+AC_DEFINE(HAVE_VISLCG3, 1)
+
 AC_PATH_PROG(CGCOMP, cg-comp, no)
 if test x$ac_cv_path_CGCOMP = x
 then
   AC_MSG_ERROR([You don't have cg-comp installed.])
+  AC_DEFINE(HAVE_VISLCG3, 0)
 fi
 if test x$ac_cv_path_CGPROC = xno
 then
