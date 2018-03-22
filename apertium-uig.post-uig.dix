@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dictionary>
+  <alphabet/>
+  <pardefs>
+    <pardef n="caracter_general">
+      <e>
+        <i>#</i>
+      </e>
+      <e>
+        <i>*</i>
+      </e>
+      <e>
+        <i>@</i>
+      </e>
+      <e>
+        <i><b/></i>
+      </e>
+    </pardef>
+  </pardefs>
+
+  <section id="main" type="standard">
+      <e>
+        <p><l><a/></l><r></r></p>
+        <re>[A-za-zğ]*[ie]+[bcdfgğhjklmnpqrstvxyzie]*</re>
+        <p>
+          <l><b/><a/>mı<b/></l>
+          <r><b/>mi<b/></r>
+        </p>
+      </e>
+      <e>
+        <p><l><a/></l><r></r></p>
+        <re>[A-za-zğ]*[öü]+[bcdfgğhjklmnpqrstvxyzöü]*</re>
+        <p>
+          <l><b/><a/>mı<b/></l>
+          <r><b/>mü<b/></r>
+        </p>
+      </e>
+      <e>
+        <p><l><a/></l><r></r></p>
+        <re>[A-za-zğ]*[ou]+[bcdfgğhjklmnpqrstvxyzou]*</re>
+        <p>
+          <l><b/><a/>mı<b/></l>
+          <r><b/>mu<b/></r>
+        </p>
+      </e>
+  </section>
+
+</dictionary>
