@@ -66,7 +66,9 @@ Multichar_Symbols
 
 %<np%>            ! Proper noun
 %<ant%>           ! Anthroponym (personal name)
+%<cog%>
 %<m%>             ! Masculine
+%<mf%>
 %<f%>             ! Feminine
 
 %<ifi%>           ! Past eyewitness
@@ -207,6 +209,10 @@ NP-COMMON ;
 LEXICON N1
 
 %<n%>: N-COMMON ;
+
+LEXICON NP-COG-MF
+
+%<np%>%<cog%>%<mf%>: NP-COMMON ;
 
 LEXICON NP-ANT-M
 
@@ -656,6 +662,7 @@ LEXICON Nouns
 
 %{🂡%}%<guess%>:%{🂡%} N1 ;
 
+ئىنگىلىزچە:ئىنگىلىزچە N1 ; ! "English"
 باش:باش N1 ; ! "head"
 قىز:قىز N1 ; ! "girl"
 بالا:بالا N1 ; ! "child/boy"
@@ -21245,6 +21252,10 @@ LEXICON Check
 ھاراق:ھاراق N1 ; ! "alcoholic beverage"
 
 
+ئەردۇغان:ئەردۇغان NP-COG-MF ; ! ""
+
+رەجەپ:رەجەپ NP-ANT-M ; ! ""
+تايىپ:تايىپ NP-ANT-M ; ! ""
 
 ئوسمان:ئوسمان NP-ANT-M ; ! ""
 ئىمام:ئىمام NP-ANT-M ; ! ""
