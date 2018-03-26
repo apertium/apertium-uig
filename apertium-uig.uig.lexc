@@ -654,7 +654,10 @@ LEXICON Numerals
 مىڭ:مىڭ NUM ; ! "thousand"
 
 مىليون:مىليون NUM ; ! "million"
-مىليارد:مىليارد NUM ; ! "billion"
+مىليارد:مىليارد NUM ; ! "milliard"
+
+!مىليارد:مىليارد N1 ; ! "billion"
+!مىليون:مىليون N1 ; ! "million"
 
 يېرىم:يېرىم NUM ; ! "half"
 
@@ -3981,8 +3984,6 @@ LEXICON Check
 دىن:دىن N1 ; ! "religion"
 باتالىيون:باتالىيون N1 ; ! "battalion"
 يىڭ:يىڭ N1 ; ! "battalion"
-مىليارد:مىليارد N1 ; ! "billion"
-مىليون:مىليون N1 ; ! "million"
 دومىنىئون:دومىنىئون N1 ; ! "dominion"
 چېمپىيون:چېمپىيون N1 ; ! "champion"
 چىمپىيون:چىمپىيون N1 ; ! "champion"
