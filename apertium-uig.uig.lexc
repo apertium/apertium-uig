@@ -1837,6 +1837,7 @@ LEXICON Nouns
 
 
 شىنجاڭ:شىنجاڭ NP-TOP ; ! "Xinjiang"
+ئاڧغانىستان:ئاڧغانىستان NP-TOP ; ! "Afghanistan"
 
 LEXICON Verbs 
 
@@ -1868,6 +1869,7 @@ LEXICON Verbs
 !ئامراق% بول:ئامراق% بول V-TV ; ! "love"  ! Use/MT
 
 دە:دە V-TV ; ! "say"
+دە%<v%>%<tv%>%<gna_perf%>:دەپ # ; ! "say"
 
 دە%<v%>%<tv%>%<ifi%>%<evid%>:دەپ%>تۇ V-COP-PERS ; ! FIXME: Check
 
