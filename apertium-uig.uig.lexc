@@ -655,7 +655,7 @@ LEXICON Numerals
 
 مىليون:مىليون NUM ; ! "million"
 مىليارد:مىليارد NUM ; ! "milliard"
-
+ترىليون:ترىليون NUM ; ! "billion"
 !مىليارد:مىليارد N1 ; ! "billion"
 !مىليون:مىليون N1 ; ! "million"
 
