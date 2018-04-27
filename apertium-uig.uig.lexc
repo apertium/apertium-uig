@@ -61,7 +61,7 @@ Multichar_Symbols
 %<TD%>            ! Unspecified transitivity
 
 %<cop%>           ! Copula
-
+%<dur%>           ! to-be copula
 %<neg%>           ! Negative
 
 %<np%>            ! Proper noun
@@ -99,6 +99,8 @@ Multichar_Symbols
 %<lquot%>         ! Quote marker (left)
 %<rpar%>          ! Parenthetical marker (right)
 %<lpar%>          ! Parenthetical marker (left)
+
+
 
 %{🂡%}             !
 %{乚%}
@@ -154,9 +156,11 @@ LEXICON CASE
 %<nom%>: CLITICS ;
 %<dat%>:%>%{G%}%{A%} # ;
 %<loc%>:%>%{D%}%{A%} CLITICS ;
+%<loc%>:%>%{D%}%{A%} Copula ; !doesn't work
 %<loc%>%<attr%>:%>%{D%}%{A%}%>كى # ;
 %<loc%>%<subst%>:%>%{D%}%{A%}%>كى SUBST-2 ;
 %<abl%>:%>%{D%}ىن CLITICS ;
+%<abl%>:%>%{D%}ىن Copula ; !doesn't work
 %<gen%>:%>نىڭ # ;
 %<gen%>%<attr%>:%>نىڭكى # ;
 %<gen%>%<subst%>:%>نىڭكى SUBST-2 ;
@@ -168,8 +172,10 @@ LEXICON CASE-2
 %<nom%>: # ;
 %<dat%>:%>%{G%}%{A%} # ;
 %<loc%>:%>%{D%}%{A%} # ;
+%<loc%>:%>%{D%}%{A%} Copula ; !doesn't work
 %<loc%>%<attr%>:%>%{D%}%{A%}%>كى # ;
 %<abl%>:%>%{D%}ىن # ;
+%<abl%>:%>%{D%}ىن Copula ; !doesn't work
 %<gen%>:%>نىڭ # ;
 %<acc%>:%>نى # ;
 %<ter%>:%>%{G%}ىچە # ;
@@ -177,6 +183,7 @@ LEXICON CASE-2
 
 LEXICON POSSESSION
 
+Copula ;
 CASE ;
 %<px1sg%>:%>%{i%}م CASE ;
 %<px2sg%>:%>%{i%}ڭ CASE ;
@@ -186,6 +193,14 @@ CASE ;
 %<px2pl%>%<frm%>:%>%{i%}ڭ%{I%}ز CASE ;
 %<px2sg%>%<frm%>:%>%{i%}ڭ%{I%}ز CASE ;
 %<px3sg%>%<hon%>:%>‫لىرى‬ CASE ;
+%<px1sg%>:%>%{i%}م Copula ;
+%<px2sg%>:%>%{i%}ڭ Copula ;
+%<px2pl%>:%>%{i%}ڭل%{A%}ر Copula ;
+%<px3sp%>:%>%{s%}ى Copula ;
+%<px1pl%>:%>%{i%}م%{I%}ز Copula ;
+%<px2pl%>%<frm%>:%>%{i%}ڭ%{I%}ز Copula ;
+%<px2sg%>%<frm%>:%>%{i%}ڭ%{I%}ز Copula ;
+%<px3sg%>%<hon%>:%>‫لىرى‬ Copula ;
 
 LEXICON SUBST-2
 
@@ -536,6 +551,7 @@ LEXICON INTERJ
 LEXICON A1 
 
 %<adj%>: CLITICS ;
+%<adj%>: Copula ;
 %<adj%>%<advl%>: CLITICS ;
 %<adj%>%<subst%>: N-COMMON ;
 !FIXME: COMP?
@@ -2271,7 +2287,7 @@ LEXICON Verbs
 
 
 LEXICON Copula
-
+%<dur%>:%>%{D%}ۇر # ;
 ئى:ئى COP ;
 ئى%<cop%>%<neg%>:ئەمەس V-COP-PERS ;
 ئى%<cop%>%<aor%>%<evid%>:ئىكەن # ; ! FIXME: personal forms?
