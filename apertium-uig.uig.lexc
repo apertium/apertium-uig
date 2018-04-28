@@ -435,6 +435,7 @@ LEXICON V-GER
 %<gpr_past%>%<subst%>:%>%{G%}%{A%}ن NP-COMMON  ;
 %<ger%>:%>%{U%}ش NP-COMMON ; 
 %<inf%>:%>م%{A%}%{K%} # ;
+%<inf%>:%>م%{A%}%{K%} CASE ;
 
 LEXICON V-ABIL-COMMON
 V-IFI ;
@@ -565,6 +566,7 @@ LEXICON A2
 LEXICON A4
 
 %<adj%>: CLITICS ;
+%<adj%>: Copula ;
 
 
 
