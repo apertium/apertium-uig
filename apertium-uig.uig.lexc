@@ -19,6 +19,7 @@ Multichar_Symbols
 %<adj%>           ! Adjective
 %<barb%>          ! Barbarisme
 %<ij%>            ! Interjection
+%<postadv%> !-dA equivalent
 %<qst%>           ! Question word
 
 %<guess%>         ! Guess
@@ -152,6 +153,7 @@ LEXICON CLITICS
 +چۇ%<qst%>:چۇ # ;
 
 
++مۇ%<postadv%>:مۇ # ;
 LEXICON CASE
 
 %<nom%>: CLITICS ;
