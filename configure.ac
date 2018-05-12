@@ -7,6 +7,7 @@ AC_PROG_AWK
 
 dnl HFST support
 AH_TEMPLATE(HAVE_HFSTOSPELL, [Have HFSTOSPELL])
+AH_TEMPLATE(HAVE_VISLCG3, [Have VISLCG3])
 AC_ARG_ENABLE(ospell, AC_HELP_STRING([--enable-ospell],
         [enable HFST spellchecking backend]),
         [hfstospell=${enableval}], [hfstospell=no])
@@ -68,13 +69,13 @@ then
   AC_MSG_ERROR([You don't have hfst-twolc installed.])
 fi
 
-AC_DEFINE(HAVE_VISLCG3, 1)
+AC_CHECK_PROG([vislcg3],[vislcg3],[yes],[no])
+AM_CONDITIONAL([HAVE_VISLCG3], [test "x$vislcg3" = xyes])
 
 AC_PATH_PROG(CGCOMP, cg-comp, no)
 if test x$ac_cv_path_CGCOMP = x
 then
   AC_MSG_ERROR([You don't have cg-comp installed.])
-  AC_DEFINE(HAVE_VISLCG3, 0)
 fi
 if test x$ac_cv_path_CGPROC = xno
 then
