@@ -18,11 +18,37 @@ LIST Attr = attr ;
 
 LIST Punct = guio ; 
 
-LIST Gpr = gpr_past ; 
+##LIST Gpr = gpr_past ; 
 
-LIST Ger = ger_past ;
+##LIST Ger = ger_past ;
 
-LIST Vfin = past aor ; 
+LIST Vfin = past aor fut ifi imp; 
+
+LIST Prc/perf = prc_perf ;
+LIST Prc/impf = prc_impf ;
+LIST Prc/fut = prc_fut ;
+LIST Prc/past = prc_past ;
+LIST Prc/cond = prc_cond ;
+LIST Gna/perf = gna_perf ;
+LIST Ger/past = ger_past ;
+LIST Ger/fut2 = ger_fut2 ;
+LIST Ger/fut = ger_fut ;
+LIST Gna/when = gna_when ;
+LIST Gpr/fut = gpr_fut ;
+LIST Gpr/past = gpr_past ;
+LIST Gpr/fut2 = gpr_fut2 ;
+
+
+SET Prc = Prc/perf | Prc/impf | Prc/fut | Prc/past | Prc/cond ; 
+SET Gpr = Gpr/fut | Gpr/fut2 | Gpr/past ;
+SET Gna = Gna/perf | Gna/when ; 
+SET Ger  = Ger/past | Ger/fut2 | Ger/fut ;
+
+
+SET Nonfin = Prc | Gna | Gpr | Ger ;
+LIST Fin = V - Nonfin ; 
+
+
 
 LIST CC = cnjcoo ; 
 
@@ -41,6 +67,8 @@ REMOVE Attr IF (1 EOS OR Vfin) ;
 SELECT N IF (1 Px3sp);
 
 REMOVE Nom IF (1C Nom) ; 
+
+REMOVE Nonfin IF (NOT -1* Fin) (1 EOS);
 
 REMOVE Gpr IF (0C Gpr OR Ger OR Vfin) (1 EOS);
 
