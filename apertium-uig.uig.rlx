@@ -26,6 +26,8 @@ LIST Vfin = past aor ;
 
 LIST CC = cnjcoo ; 
 
+LIST Px3sp = px3sp
+
 SECTION
 
 
@@ -35,6 +37,8 @@ REMOVE Post if (-1 BOS OR Punct);
 SELECT Attr IF (0C Attr OR Nom) (1C N + Attr OR N + Nom);
 
 REMOVE Attr IF (1 EOS OR Vfin) ; 
+
+SELECT N IF (1 Px3sp);
 
 REMOVE Nom IF (1C Nom) ; 
 
