@@ -9,6 +9,7 @@ LIST EOS = (<<<) (sent);
 LIST N = n ; 
 LIST Post = post ; 
 LIST Det = det ; 
+LIST V = v ;
 
 LIST Guess = guess ;
 
@@ -37,6 +38,7 @@ LIST Gna/when = gna_when ;
 LIST Gpr/fut = gpr_fut ;
 LIST Gpr/past = gpr_past ;
 LIST Gpr/fut2 = gpr_fut2 ;
+LIST rsub = gpr_rsub ; 
 
 
 SET Prc = Prc/perf | Prc/impf | Prc/fut | Prc/past | Prc/cond ; 
@@ -46,13 +48,14 @@ SET Ger  = Ger/past | Ger/fut2 | Ger/fut ;
 
 
 SET Nonfin = Prc | Gna | Gpr | Ger ;
-LIST Fin = V - Nonfin ; 
+
+SET Fin = V - Nonfin ; 
 
 
 
 LIST CC = cnjcoo ; 
 
-LIST Px3sp = px3sp
+LIST Px3sp = px3sp ; 
 
 SECTION
 
@@ -66,7 +69,10 @@ REMOVE Attr IF (1 EOS OR Vfin) ;
 
 SELECT N IF (1 Px3sp);
 
+SELECT rsub IF (1 N) ; 
+
 REMOVE Nom IF (1C Nom) ; 
+
 
 REMOVE Nonfin IF (NOT -1* Fin) (1 EOS);
 
