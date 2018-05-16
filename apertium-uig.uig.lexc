@@ -88,6 +88,10 @@ Multichar_Symbols
 %<gpr_past%>      ! Past gerund
 %<gna_cond%>      ! Conditional verbal adverb 
 %<imp%>           ! Imperative
+%<gpr_rsub%>     ! fiilden sıfat
+%<ger_pabs%>      ! bolghanlıq = yapmışlık
+%<gna_cond%>      ! Conditional verbal adverb 
+%<gna_when%>      ! -geç as in "seni görgeç utanmaz mı"
 
 %<itg%>           ! Interrogative
  
@@ -154,7 +158,7 @@ LEXICON CLITICS
 +مۇ%<qst%>:مۇ # ;
 +چۇ%<qst%>:چۇ # ;
 
-
+%<comp%>:%>ر%{A%}%{K%} # ; 
 +مۇ%<postadv%>:مۇ # ;
 LEXICON CASE
 
@@ -448,12 +452,14 @@ LEXICON V-PRC
 
 LEXICON V-GER
 
-%<ger_past%>:%>%{G%}%{A%}ن NP-COMMON ;
-%<gpr_past%>:%>%{G%}%{A%}ن #  ;
-%<gpr_past%>%<subst%>:%>%{G%}%{A%}ن NP-COMMON  ;
+%<gpr_rsub%>:%>%{G%}%{A%}ن NP-COMMON ; ! 
+%<gpr_past%>:%>%{G%}%{A%}ن # ; !
+%<ger_pabs%>:%>%{G%}%{A%}ن # ; ! 
+%<gpr_past%>%<subst%>:%>%{G%}%{A%}ن NP-COMMON ;
 %<ger%>:%>%{U%}ش NP-COMMON ; 
 %<inf%>:%>م%{A%}%{K%} # ;
 %<inf%>:%>م%{A%}%{K%} CASE ;
+
 
 LEXICON V-ABIL-COMMON
 V-IFI ;
@@ -486,6 +492,9 @@ LEXICON V-NEG
 
 %<neg%>:م%{A%} V-NEG-COMMON ;
 
+LEXICON V-WHEN
+%<gna_when%>:%>%{G%}%{A%}چ # ;
+
 LEXICON V-NEG-COMMON
 
 V-IFI ;
@@ -503,7 +512,7 @@ V-ABIL ;
 V-IFI ;
 V-PAST ;
 V-AOR ; 
-
+V-WHEN ;
 V-PRC ;
 V-GER ;
 V-COND ;
@@ -22263,10 +22272,10 @@ LEXICON Check
 كىچىك% ئاسىيا:كىچىك% ئاسىيا%{☫%} N1 ; !
 بىرلەشكەن% دۆلەتلەر% تەشكىلاتى:بىرلەشكەن% دۆلەتلەر% تەشكىلاتى N1 ; !
 قاچان:قاچان ADV-ITG ; !
-ۋەخپى:ۋەخپى NP-COG ; !
-غوجامبەردى:غوجامبەردى NP-COG ; !
-ئايۇپ:ئايۇپ NP-COG ; !
-يەنخەي:يەنخەي NP-COG ; !
+ۋەخپى:ۋەخپى NP-COG-MF ; !
+غوجامبەردى:غوجامبەردى NP-COG-MF ; !
+ئايۇپ:ئايۇپ NP-COG-MF ; !
+يەنخەي:يەنخەي NP-COG-MF ; !
 يۈزلىگەن:يۈزلىگەن A1 ; !
 بىرلا:بىرلا A1 ; !
 نۇرسۇلتان:نۇرسۇلتان NP-ANT-M ; !
@@ -22316,7 +22325,7 @@ LEXICON Check
 كىچىك% ئاسىيا:كىچىك% ئاسىيا N1 ; !
 ھەممىسى:ھەممىسى PRON-MISC ; !
 مىللىي:مىللىي A1 ; !
-ئابلىز:ئابلىز NP-COG ; !
+ئابلىز:ئابلىز NP-COG-MF; !
 ئېنېرگىيەلىك:ئېنېرگىيەلىك A1 ; !
 ېيڭى:ېيڭى A1 ; !
 ئىستراتېگىيەلىك:ئىستراتېگىيەلىك A1 ; !
