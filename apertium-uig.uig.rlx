@@ -7,9 +7,22 @@ LIST BOS = (>>>) (sent);
 LIST EOS = (<<<) (sent);
 
 LIST N = n ; 
-LIST Post = post ; 
+LIST V = v ; 
+LIST Prop = np ; 
+LIST Pron = prn ; 
+LIST Num = num ; 
+LIST A = adj ; 
 LIST Det = det ; 
-LIST V = v ;
+LIST Adv = adv ; 
+LIST CC = cnjcoo ; 
+LIST CS = cnjsub ; 
+LIST Interj = ij ; 
+LIST Post = post ; 
+LIST Cop = cop ; 
+LIST Qst = qst ; 
+LIST imp = imp ; 
+LIST pass = pass ;
+LIST neg = neg ; 
 
 LIST Guess = guess ;
 
@@ -69,15 +82,25 @@ REMOVE Attr IF (1 EOS OR Vfin) ;
 
 SELECT N IF (1 Px3sp);
 
+REMOVE pass + neg IF (1 Px3sp) ;
+  ## "qisqartilma adi"
+
 SELECT rsub IF (1 N) ; 
+	## gelen adam instead of gelmiş adam
 
 REMOVE Nom IF (1C Nom) ; 
 
+REMOVE A IF (1 A) ; 
 
-REMOVE Nonfin IF (NOT -1* Fin) (1 EOS);
+SELECT Adv IF (1 A) ; 
 
-REMOVE Gpr IF (0C Gpr OR Ger OR Vfin) (1 EOS);
+REMOVE Nonfin IF (NOT -1* Fin) (1 EOS) ;
 
-REMOVE Det IF (1 CC);
+REMOVE Gpr IF (0C Gpr OR Ger OR Vfin) (1 EOS) ;
+
+REMOVE Det IF (1 CC) ;
+
+REMOVE imp IF (-1 Ger) ;
+ ##giriş-çıkış
 
 REMOVE Guess ;
