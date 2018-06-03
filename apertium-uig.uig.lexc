@@ -75,6 +75,7 @@ Multichar_Symbols
 %<mf%>
 %<f%>             ! Feminine
 
+%<pcont%>         ! Present continous (-iyor)
 %<ifi%>           ! Past eyewitness
 %<past%>          ! Past general
 %<inf%>           ! Infinitive -mAK
@@ -88,8 +89,9 @@ Multichar_Symbols
 %<gpr_past%>      ! Past gerund
 %<gna_cond%>      ! Conditional verbal adverb 
 %<imp%>           ! Imperative
-%<gpr_rsub%>     ! fiilden sıfat
+%<gpr_rsub%>      ! fiilden sıfat
 %<gpr_rsub2%>     ! ^^^
+%<gpr_rsub3%>     ! ^^^
 %<ger_pabs%>      ! bolghanlıq = yapmışlık
 %<gna_cond%>      ! Conditional verbal adverb 
 %<gna_when%>      ! -geç as in "seni görgeç utanmaz mı"
@@ -97,6 +99,7 @@ Multichar_Symbols
 %<itg%>           ! Interrogative
 
 %<dek%>           !"x kadar"
+%<che%>           !"x kadar"  
  
 
 %<dem%>           ! Demonstrative
@@ -163,7 +166,7 @@ LEXICON CLITICS
 
 %<comp%>:%>ر%{A%}%{K%} # ; 
 %<dek%>:%>%{D%}ەك # ;
-
+%<che%>:%>چە # ;
 
 +مۇ%<postadv%>:مۇ # ;
 LEXICON CASE
@@ -460,6 +463,7 @@ LEXICON V-GER
 
 %<gpr_rsub%>:%>%{G%}%{A%}ن NP-COMMON ; ! 
 %<gpr_rsub2%>:%>%ىدى%{G%}{A%}ن NP-COMMON ; !
+%<gpr_rsub3%>:%>%{i%}ۋات%{G%}{A%}ن NP-COMMON ; !
 %<gpr_past%>:%>%{G%}%{A%}ن # ; !
 %<ger_pabs%>:%>%{G%}%{A%}ن # ; ! 
 %<gpr_past%>%<subst%>:%>%{G%}%{A%}ن NP-COMMON ;
@@ -490,6 +494,18 @@ LEXICON V-COND
 
 %<gna_cond%>:%>س%{A%} V-COND-PERS ;
 
+LEXICON V-PCONT
+%<pcont%>:%>%{i%}ۋاتى V-PCONT-PERS ;
+
+LEXICON V-PCONT-PERS
+%<p1%>%<sg%>:مەن CLITICS ;
+%<p2%>%<sg%>:سەن CLITICS ;
+%<p2%>%<sg%>%<frm%>:سىز CLITICS ;
+%<p3%>%<sg%>:دۇ CLITICS ;
+%<p1%>%<pl%>:مىز CLITICS ;
+%<p2%>%<pl%>:سىلەر CLITICS ;
+%<p3%>%<pl%>:دۇ CLITICS ;
+
 LEXICON V-IMP
 
 %<imp%>: # ;
@@ -509,6 +525,7 @@ V-PAST ;
 V-AOR ;
 V-COND ;
 V-IMP ;
+V-PCONT ; 
 
 LEXICON V-COMMON
 
@@ -524,6 +541,7 @@ V-PRC ;
 V-GER ;
 V-COND ;
 V-IMP ;
+V-PCONT ; 
 
 LEXICON V-AUX
 
@@ -729,7 +747,8 @@ LEXICON Nouns
 ھاۋا:ھاۋا N1 ; ! "weather, air"
 يىل:يىل N1 ; ! "year"
 ئىش:ئىش N1 ; ! "job/work"
-كىشى:كىشى N1 ; ! "person"
+كىشى:كىشى%{e%} N1 ; !
+كىشى:كىشى%{a%} N1 ; !
 جۇمھۇرباشقان:جۇمھۇرباشقان%{☫%} N1 ; ! "president"
 پرىزدېنت:پرىزدېنت N1 ; ! "president"
 باشباقان:باشباقان%{☫%} N1 ; ! ""
@@ -970,7 +989,8 @@ LEXICON Nouns
 ئارقان:ئارقان N1 ; ! ""
 كۆز:كۆز N1 ; ! ""
 تۆشۈك:تۆشۈك N1 ; ! ""
-ئېغىز:ئېغىز N1 ; ! ""
+ئېغىز:ئېغىز%{a%}   N1 ; ! ""
+ئېغىز:ئېغىز%{e%}   N1 ; ! ""
 ئوزۇق:ئوزۇق N1 ; ! ""
 نەتىجە:نەتىجە N1 ; ! ""
 سالتاڭ:سالتاڭ N1 ; ! ""
