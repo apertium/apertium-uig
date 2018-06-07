@@ -75,6 +75,7 @@ Multichar_Symbols
 %<mf%>
 %<f%>             ! Feminine
 
+%<fut%>           ! future, -ecek -acak (tho with a more "certain" mood)
 %<pcont%>         ! Present continous (-iyor)
 %<ifi%>           ! Past eyewitness
 %<past%>          ! Past general
@@ -99,7 +100,8 @@ Multichar_Symbols
 %<itg%>           ! Interrogative
 
 %<dek%>           !"x kadar"
-%<che%>           !"x kadar"  
+%<che%>           !"x kadar"
+%<rek%>           !"daha x"
  
 
 %<dem%>           ! Demonstrative
@@ -167,6 +169,7 @@ LEXICON CLITICS
 %<comp%>:%>ر%{A%}%{K%} # ; 
 %<dek%>:%>%{D%}ەك # ;
 %<che%>:%>چە # ;
+%<rek%>:%>رەك # ; 
 
 +مۇ%<postadv%>:مۇ # ;
 LEXICON CASE
@@ -497,6 +500,9 @@ LEXICON V-COND
 LEXICON V-PCONT
 %<pcont%>:%>%{i%}ۋاتى V-PCONT-PERS ;
 
+LEXICON V-FUT
+%<fut%>:%>%م%{A%}%{K%}چى V-COP-PERS ; 
+
 LEXICON V-PCONT-PERS
 %<p1%>%<sg%>:مەن CLITICS ;
 %<p2%>%<sg%>:سەن CLITICS ;
@@ -527,12 +533,13 @@ V-AOR ;
 V-COND ;
 V-IMP ;
 V-PCONT ; 
+V-FUT ; 
 
 LEXICON V-COMMON
 
 V-NEG ;
 V-ABIL ;
-
+V-FUT ;
 %<inf%>:%>م%{A%}ق # ; ! FIXME: insert correct tag here
 V-IFI ;
 V-PAST ;
@@ -2048,7 +2055,6 @@ LEXICON Verbs
 خىللى:خىللى V-TV ; ! ""
 ھېسابلى:ھېسابلى V-TV ; ! ""
 كۆيدۈر:كۆيدۈر V-TV ; ! ""
-ئىشلى:ئىشلى V-TV ; ! ""
 سۈرەتلى:سۈرەتلى V-TV ; ! ""
 ياز:ياز V-TV ; ! ""
 قاز:قاز V-TV ; ! ""
@@ -3588,7 +3594,7 @@ LEXICON Check
 ماكاكا:ماكاكا N1 ; ! "macaque"
 قېيىداشلىق:قېيىداشلىق N1 ; ! "pique"
 مەسچىت:مەسچىت N1 ; ! "mosque"
-جامە:جامە N1 ; ! "mosque"
+جامە:جامە%{☫%} N1 ; ! "mosque"
 قۇل:قۇل N1 ; ! "slave"
 گۆرىستان:گۆرىستان N1 ; ! "grave"
 ئوكتاۋا:ئوكتاۋا N1 ; ! "octave"
@@ -21539,6 +21545,7 @@ LEXICON Check
 بار:بار V-IV ; ! ""
 قورق:قورق V-TD ; ! ""
 قورق:قورق V-IV ; ! ""
+يېزىل:يېزىل%{a%} V-IV ; ! 
 قورقۇت:قورقۇت V-TV ; ! ""
 
 جايلاش:جايلاش V-IV ; ! ""
@@ -21726,7 +21733,8 @@ LEXICON Check
 باشلان:باشلان V-IV ; !
 ئالاقىلىش:ئالاقىلىش V-IV ; !
 شېرىكلىش:شېرىكلىش V-IV ; !
-ئىشلە:ئىشلە V-IV ; !
+ئىشلە:ئىشلە%{e%} V-TV ; !
+ئىشلە:ئىشلە%{e%} V-IV ; !
 اشۇر:اشۇر V-TV ; !
 يېز:يېز V-TV ; !
 رابىيە:رابىيە%{☫%} N1 ; !
@@ -21859,7 +21867,7 @@ LEXICON Check
 قارىتىل:قارىتىل V-IV ; !
 توختال:توختال V-IV ; !
 قاراتقان:قاراتقان V-IV ; !
-ئېيت:ئېيت V-TV ; !
+ئېيت:ئېيت%{a%} V-TV ; !
 تارت:تارت V-TV ; !
 خاتىرىلە:خاتىرىلە V-TV ; !
 كۆرسەت:كۆرسەت V-TV ; !
@@ -22080,7 +22088,7 @@ LEXICON Check
 خۇددى:خۇددى POST ; !
 قارىماي:قارىماي ADV ; !
 پاش:پاش INTERJ ; !
-بىر:بىر PRON-MISC ; !
+بىر:بىر%{a%} PRON-MISC ; !
 توپلاش:توپلاش N1 ; !
 كۈتۈۋېلىش:كۈتۈۋېلىش N1 ; !
 كېڭىش:كېڭىش N1 ; !
@@ -22915,7 +22923,6 @@ LEXICON Check
 يۇقۇرى:يۇقۇرى ADV ; !
 تول:تول V-IV ; !
 ئىشلىتىل:ئىشلىتىل V-IV ; !
-ئىشلىتىل:ئىشلىتىل V-IV ; !
 ئىزدەن:ئىزدەن V-IV ; !
 ئومۇملاش:ئومۇملاش V-IV ; !
 ئىزدە:ئىزدە V-TV ; !
@@ -23525,12 +23532,23 @@ mp3:mp3 N1 ; !
 ئا:ئا N1 ; !
 ق:ق N1 ; !
 بەرگۈچى:بەرگۈچى N1 ; !
-
-
 تۇرمۇھەممەت:تۇرمۇھەممەت NP-ANT-M ; !
 بولغاچ:بولغاچ N1 ; !
 س:س N1 ; !
 يېقىندا:يېقىندا ADV ; !
+داجېڭ:داجېڭ NP-COG-MF ; !
+ئا% ر:ئا% ر NP-ORG ; !
+پ:پ N1 ; !
+ت:ت N1 ; !
+ج:ج N1 ; !
+ر:ر N1 ; !
+ك:ك N1 ; !
+دۇچ% كەلگەنلىك:دۇچ% كەلگەنلىك N1 ; !
+ئىشلى:ئىشلى V-IV ; !
+ئا% پ:ئا% پ NP-ORG ; !
+ما:ما NP-ANT-M ; !
+ز:ز N1 ; !
+
 
 
 
