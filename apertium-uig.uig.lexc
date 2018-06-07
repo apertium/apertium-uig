@@ -381,7 +381,7 @@ LEXICON DET-MISC
 
 LEXICON PRON-QNT
 
-%<pron%>%<qnt%>: # ;
+%<prn%>%<qnt%>: # ;
 
 LEXICON DET-QNT
 
