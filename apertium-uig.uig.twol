@@ -76,6 +76,9 @@ Rules
 "{A} deletes after vowels"
 %{A%}:0 <=> :Vow/:0 _ ;
 
+"{i} epenthesis"
+%{i%}:ى <=> :Cns (:0) %>: _ ;
+
 "{i} vowel harmony"
 ! not actually needed?
 %{i%}:Vy <=> [ :Vx :Cns* :Cns ]/:0 _ ;  ! null after :Vow
