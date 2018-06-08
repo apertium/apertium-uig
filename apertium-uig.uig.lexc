@@ -79,6 +79,7 @@ Multichar_Symbols
 %<pcont%>         ! Present continous (-iyor)
 %<ifi%>           ! Past eyewitness
 %<past%>          ! Past general
+%<past2%>         ! -mış -miş but mostly for story telling
 %<inf%>           ! Infinitive -mAK
 %<prc_perf%>      ! Perfect participle
 %<gna_perf%>      ! Perfect verbal adverb
