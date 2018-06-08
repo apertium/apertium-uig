@@ -405,10 +405,11 @@ LEXICON V-AOR-PERS
 %<p1%>%<sg%>:%>مەن CLITICS ; ! بارىمەنمۇ is a valid form, but not for other persons
 %<p2%>%<sg%>:%>سەن # ; 
 %<p2%>%<sg%>%<frm%>:%>سىز # ; 
-%<p3%>%<sg%>:%>دۇ # ; 
+%<p3%>%<sg%>:%>%{D%}ۇ # ; 
 %<p1%>%<pl%>:%>مىز # ; 
 %<p2%>%<pl%>:%>سىلەر # ; 
-%<p3%>%<pl%>:%>دۇ # ; 
+%<p3%>%<pl%>:%>%{D%}ۇ # ; 
+
 
 LEXICON V-AOR-QST-PERS 
 
@@ -439,7 +440,15 @@ LEXICON V-IFI
 
 LEXICON V-PAST-PERS
 
-V-COP-PERS ;
+%<p1%>%<sg%>:%>مەن # ; 
+%<p1%>%<sg%>:%>تىمەن # ; ! Dir/LR
+%<p2%>%<sg%>:%>سەن # ; 
+%<p2%>%<sg%>%<frm%>:%>سىز # ; 
+%<p3%>%<sg%>:%>%{D%}ۇ # ; 
+%<p1%>%<pl%>:%>تىمىز # ; 
+%<p2%>%<pl%>:%>سىلەر # ; 
+%<p3%>%<pl%>:%>%{D%}ۇ # ;
+
 
 LEXICON V-COP-PERS
 
@@ -454,7 +463,8 @@ LEXICON V-COP-PERS
 
 LEXICON V-PAST
 
-%<past%>:%>%{G%}%{A%}ن V-PAST-PERS ;
+%<past%>:%>%{G%}%{A%}ن V-COP-PERS ;
+%<past2%>:%>%{U%}پ V-PAST-PERS ;
 
 LEXICON V-PRC
 
@@ -23549,6 +23559,13 @@ mp3:mp3 N1 ; !
 ئا% پ:ئا% پ NP-ORG ; !
 ما:ما NP-ANT-M ; !
 ز:ز N1 ; !
+ت% ج% گ:ت% ج% گ NP-ORG ; !
+EX360:EX360 N1 ; !
+د% ن% ئا:د% ن% ئا N1 ; !
+د:د N1 ; !
+س% ن% ن:س% ن% ن NP-ORG ; !
+ئوڭ:ئوڭ N1 ; !
+
 
 
 
