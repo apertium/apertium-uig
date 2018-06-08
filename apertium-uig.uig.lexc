@@ -525,10 +525,13 @@ LEXICON V-PCONT-PERS
 %<p2%>%<pl%>:سىلەر CLITICS ;
 %<p3%>%<pl%>:دۇ CLITICS ;
 
+LEXICON IMP-PERS
+%<p2%>%<sg%>: # ;
+%<p2%>%<frm%>:%>س%{U%}ن # ;
+
 LEXICON V-IMP
 
-%<imp%>: # ;
-%<imp%>:%>s%{U%}n # ;
+%<imp%>: IMP-PERS ;
 %<imp%>: SUBST-2 ; 
 
 LEXICON V-NEG
