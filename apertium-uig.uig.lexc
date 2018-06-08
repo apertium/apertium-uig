@@ -97,6 +97,7 @@ Multichar_Symbols
 %<ger_pabs%>      ! bolghanlıq = yapmışlık
 %<gna_cond%>      ! Conditional verbal adverb 
 %<gna_when%>      ! -geç as in "seni görgeç utanmaz mı"
+%<gna_neg%>       ! -madan
 
 %<itg%>           ! Interrogative
 
@@ -481,6 +482,7 @@ LEXICON V-GER
 %<gpr_past%>:%>%{G%}%{A%}ن # ; !
 %<ger_pabs%>:%>%{G%}%{A%}ن # ; ! 
 %<gpr_past%>%<subst%>:%>%{G%}%{A%}ن NP-COMMON ;
+%<gna_neg%>:%>م%{A%}ي # ; !
 %<ger%>:%>%{U%}ش NP-COMMON ; 
 %<inf%>:%>م%{A%}%{K%} # ;
 %<inf%>:%>م%{A%}%{K%} CASE ;
