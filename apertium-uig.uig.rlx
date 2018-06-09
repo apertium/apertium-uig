@@ -13,6 +13,7 @@ LIST Pron = prn ;
 LIST Num = num ; 
 LIST A = adj ; 
 LIST Det = det ; 
+LIST Dem = dem ; 
 LIST Adv = adv ; 
 LIST CC = cnjcoo ; 
 LIST CS = cnjsub ; 
@@ -23,6 +24,7 @@ LIST Qst = qst ;
 LIST imp = imp ; 
 LIST pass = pass ;
 LIST neg = neg ; 
+LIST TD = TD ; 
 
 LIST Guess = guess ;
 
@@ -52,6 +54,7 @@ LIST Gpr/fut = gpr_fut ;
 LIST Gpr/past = gpr_past ;
 LIST Gpr/fut2 = gpr_fut2 ;
 LIST rsub = gpr_rsub ; 
+LIST vaux = vaux ; 
 
 
 SET Prc = Prc/perf | Prc/impf | Prc/fut | Prc/past | Prc/cond ; 
@@ -64,14 +67,30 @@ SET Nonfin = Prc | Gna | Gpr | Ger ;
 
 SET Fin = V - Nonfin ; 
 
-
-
 LIST CC = cnjcoo ; 
 
-LIST Px3sp = px3sp ; 
+LIST Pers = (prn pers) ;  # Use e.g. Sg3 + Pers to match pronouns
+LIST Pl1 = (p1 pl) ;
+LIST Sg2 = (p2 sg) ;
+LIST Pl3 = (p3 pl) ;
+LIST Sg3 = (p3 sg) ;
+LIST Sg1 = (p1 sg) ;
+LIST Sg3 = (p3 sg) ; 
+LIST VPers = p1 p2 p3 ;
+
+LIST Pl = pl ;
+
+LIST Px3Sp = px3sg px3pl; 
+LIST Px3Sg = px3sg ; 
+LIST Px3Pl = px3pl ; 
+LIST Px2Sg = px2sg ; 
+LIST Px2Pl = px2pl ; 
+LIST Px1Pl = px1pl ; 
+LIST Px1Sg = px1sg ;
 
 SECTION
 
+REMOVE TD IF (0 TD ) ; 
 
 REMOVE Post if (-1 BOS OR Punct);
     ## Мен сизди анъламадым.
@@ -80,17 +99,21 @@ SELECT Attr IF (0C Attr OR Nom) (1C N + Attr OR N + Nom);
 
 REMOVE Attr IF (1 EOS OR Vfin) ; 
 
-SELECT N IF (1 Px3sp);
+SELECT N IF (1 Px3Sp);
 
-REMOVE pass + neg IF (1 Px3sp) ;
+REMOVE pass + neg IF (1 Px3Sp) ;
   ## "qisqartilma adi"
 
 SELECT rsub IF (1 N) ; 
 	## gelen adam instead of gelmiş adam
 
+
 REMOVE Nom IF (1C Nom) ; 
 
 REMOVE A IF (1 A) ; 
+
+SELECT A IF (-1 N) (1 N) ; 
+ ## bu öy qara taghqa ..
 
 SELECT Adv IF (1 A) ; 
 
@@ -100,7 +123,20 @@ REMOVE Gpr IF (0C Gpr OR Ger OR Vfin) (1 EOS) ;
 
 REMOVE Det IF (1 CC) ;
 
+REMOVE vaux IF (-1 N) ;
+
 REMOVE imp IF (-1 Ger) ;
  ##giriş-çıkış
 
+SELECT Dem IF (1 A) ; 
+  ## şu sebiy arzuliri..
+
+SELECT Pron IF (1 Post) ;
+ ## néme üçün.. 
+
+SELECT Sg3 IF (-1 Px3Sp) ; 
+ ## paytexti bolsa = başkenti olsa instead of olsalar
+
+SELECT Adv IF (-1 CC OR Post) (1 N) ; 
+  ## u bilen bille shunlargha  
 REMOVE Guess ;
