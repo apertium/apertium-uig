@@ -121,6 +121,7 @@ Rules
 "{G} to گ after front vowel"
 %{G%}:گ <=> [ :FrontVow (:VoicedCns) ]/[ :0 - Abstract: ] _ ;
                  [ %{e%}: :VoicedCns ]/[ :0 - Abstract: ] _ ;
+               :Vow %>: _ :FrontVow ;
 
 "{G} to ك after front vowel and voiceless consonant"
 %{G%}:ك <=> [ :FrontVow [ :Cns | :ى ]* :VoicelessCns ]/[ :0 - Abstract: ] _ ;
