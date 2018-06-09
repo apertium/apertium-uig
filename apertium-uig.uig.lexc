@@ -98,6 +98,7 @@ Multichar_Symbols
 %<gna_cond%>      ! Conditional verbal adverb 
 %<gna_when%>      ! -geç as in "seni görgeç utanmaz mı"
 %<gna_neg%>       ! -madan
+%<aorp%>          ! -ardı, -irdi
 
 %<itg%>           ! Interrogative
 
@@ -510,7 +511,22 @@ LEXICON V-COND
 
 %<gna_cond%>:%>س%{A%} V-COND-PERS ;
 
+LEXICON V-AORP
+
+%<aorp%>:%>%{A%}ت V-AORP-PERS ; 
+
+LEXICON V-AORP-PERS
+
+%<p1%>%<sg%>:تىم CLITICS ;
+%<p2%>%<sg%>:تىڭ CLITICS ;
+%<p2%>%<sg%>%<frm%>:تىڭىز CLITICS ;
+%<p3%>%<sg%>:تى CLITICS ;
+%<p1%>%<pl%>:تۇق CLITICS ;
+%<p2%>%<pl%>:تىڭلار CLITICS ;
+%<p3%>%<pl%>:تى CLITICS ;
+
 LEXICON V-PCONT
+
 %<pcont%>:%>%{i%}ۋاتى V-PCONT-PERS ;
 
 LEXICON V-FUT
@@ -551,6 +567,7 @@ LEXICON V-WHEN
 
 LEXICON V-NEG-COMMON
 
+V-AORP ;
 V-IFI ;
 V-PAST ;
 V-AOR ;
@@ -574,6 +591,7 @@ V-GER ;
 V-COND ;
 V-IMP ;
 V-PCONT ; 
+V-AORP ; 
 
 LEXICON V-AUX
 
