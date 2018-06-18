@@ -786,7 +786,7 @@ LEXICON Numerals
 يەتتە:يەتتە NUM ; ! "seven"
 سەككىز:سەككىز NUM ; ! "eight"
 توققۇز:توققۇز NUM ; ! "nine"
-
+مىڭ:مىڭ NUM ; ! "thousand"
 ئون:ئون NUM ; ! "ten"
 يىگىرمە:يىگىرمە NUM ; ! "twenty"
 ئوتتۇز:ئوتتۇز NUM ; ! "thirty"
@@ -796,11 +796,7 @@ LEXICON Numerals
 يەتمىش:يەتمىش NUM ; ! "seventy"
 سەكسەن:سەكسەن NUM ; ! "eighty"
 توقسان:توقسان NUM ; ! "ninety"
-
 يۈز:يۈز NUM ; ! "hundred"
-
-مىڭ:مىڭ NUM ; ! "thousand"
-
 مىليون:مىليون NUM ; ! "million"
 مىللىئون:مىللىئون NUM ; ! 
 مىليارد:مىليارد NUM ; ! "milliard"
@@ -3825,7 +3821,7 @@ LEXICON Check
 كرىستال:كرىستال N1 ; ! "crystal"
 ئىندىۋىدۇئال:ئىندىۋىدۇئال N1 ; ! "individual"
 كارنىۋال:كارنىۋال N1 ; ! "carnival"
-فېستىۋال:فېستىۋال N1 ; ! "festival"
+فېستىۋال:فېستىۋال%{☫%} N1 ; ! "festival"
 قوشۇلماسلىق:قوشۇلماسلىق N1 ; ! "disapproval"
 ئۇزۇنچاق:ئۇزۇنچاق N1 ; ! "oval"
 سوقىچاق:سوقىچاق N1 ; ! "oval"

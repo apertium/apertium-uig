@@ -88,6 +88,9 @@ LIST Px2Pl = px2pl ;
 LIST Px1Pl = px1pl ; 
 LIST Px1Sg = px1sg ;
 
+LIST Ming = "مىڭ" ;
+LIST Devlet = "خانىدانلىق" "سۇلالە" "دۇلات" "ئۆلكە" "دىيار" ;
+
 SECTION
 
 REMOVE TD IF (0 TD ) ; 
@@ -140,5 +143,9 @@ SELECT Sg3 IF (-1 Px3Sp) ;
  ## paytexti bolsa = başkenti olsa instead of olsalar
 
 SELECT Adv IF (-1 CC OR Post) (1 N) ; 
-  ## u bilen bille shunlargha  
+  ## u bilen bille shunlargha 
+
+SELECT N IF (0 Ming)(1 Devlet) ; 
+
+SELECT Num IF (0 Ming) ; 
 REMOVE Guess ;
