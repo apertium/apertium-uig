@@ -92,6 +92,8 @@ SECTION
 
 REMOVE TD IF (0 TD ) ; 
 
+REMOVE Prc/perf IF (0 Prc/perf) ; 
+
 REMOVE Post if (-1 BOS OR Punct);
     ## Мен сизди анъламадым.
 
