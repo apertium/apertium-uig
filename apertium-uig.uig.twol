@@ -104,10 +104,10 @@ Rules
 %{û%}:0 <=> _ Cns: %>: (:0) :Vow ;
 
 "{û}:u harmony"
-%{û%}:ۇ <=> BackRdVow: Cns: _ ;
+%{û%}:ۇ <=> BackRdVow: Cns: _ .#. ;
 
 "{û}:y harmony"
-%{û%}:ۈ <=> FrontRdVow: Cns: _ ;
+%{û%}:ۈ <=> FrontRdVow: Cns: _ .#. ;
 
 
 
