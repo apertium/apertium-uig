@@ -19,10 +19,12 @@ Alphabet
 %{a%}:0
 %{e%}:0
 %{L%}:ل
+%{û%}:ى
 
 %>:0 ; 
 
 Sets
+
 
 Vow = ا ە و ۇ ۆ ۈ ى ې ; ! a ä o u ö ü i e
 
@@ -98,6 +100,17 @@ Rules
                Vy in ( ۇ ۇ ۈ ۈ )
          matched ;
 
+"{û} deletion"
+%{û%}:0 <=> _ Cns: %>: (:0) :Vow ;
+
+"{û}:u harmony"
+%{û%}:ۇ <=> BackRdVow: Cns: _ ;
+
+"{û}:y harmony"
+%{û%}:ۈ <=> FrontRdVow: Cns: _ ;
+
+
+
 
 
 "Delete {I} after vowels"
@@ -105,6 +118,8 @@ Rules
 
 "Delete {U} after vowels"
 %{U%}:0 <=> :Vow/:0 _ ;
+
+
 
 
 !! Consonant assimilation
