@@ -25,6 +25,7 @@ LIST imp = imp ;
 LIST pass = pass ;
 LIST neg = neg ; 
 LIST TD = TD ; 
+LIST Top = top ;
 
 LIST Guess = guess ;
 
@@ -148,4 +149,9 @@ SELECT Adv IF (-1 CC OR Post) (1 N) ;
 SELECT N IF (0 Ming)(1 Devlet) ; 
 
 SELECT Num IF (0 Ming) ; 
+ ##15 ming
+
+REMOVE Top IF (0 Pl); 
+ ## xitaylar
+
 REMOVE Guess ;
