@@ -87,14 +87,14 @@ Multichar_Symbols
 %<aor%>           ! Aorist
 %<prc_impf%>      ! Imperfect participle
 %<ger%>           ! Gerund (aorist)
-%<ger_past%>      ! Past gerund
+%<ger_past%>      ! Past gerund bolghanliqini = olduğunu 
 %<gpr_past%>      ! Past gerund
 %<gna_cond%>      ! Conditional verbal adverb 
 %<imp%>           ! Imperative
 %<gpr_rsub%>      ! fiilden sıfat
 %<gpr_rsub2%>     ! ^^^
 %<gpr_rsub3%>     ! ^^^
-%<ger_pabs%>      ! bolghanlıq = yapmışlık
+%<ger_pabs%>      ! bol"ghan" = yap"mış"
 %<gna_cond%>      ! Conditional verbal adverb 
 %<gna_when%>      ! -geç as in "seni görgeç utanmaz mı"
 %<gna_neg%>       ! -madan
@@ -482,7 +482,7 @@ LEXICON V-GER
 %<gpr_rsub%>:%>%{G%}%{A%}ن NP-COMMON ; ! 
 %<gpr_rsub2%>:%>%ىدى%{G%}{A%}ن NP-COMMON ; !
 %<gpr_rsub3%>:%>%{i%}ۋات%{G%}{A%}ن NP-COMMON ; !
-%<gpr_past%>:%>%{G%}%{A%}نلى%{K%} # ; !
+%<ger_past%>:%>%{G%}%{A%}نلى%{K%} NP-COMMON ; !
 %<ger_pabs%>:%>%{G%}%{A%}ن # ; ! 
 %<gpr_past%>%<subst%>:%>%{G%}%{A%}ن NP-COMMON ;
 %<gna_neg%>:%>م%{A%}ي # ; !
@@ -21910,7 +21910,6 @@ LEXICON Check
 جىنپىڭ:جىنپىڭ N1 ; !
 پاختا:پاختا N1 ; !
 مىنىستىرلىق:مىنىستىرلىق N1 ; !
-بولغانلىق:بولغانلىق N1 ; !
 سېنتەبىر:سېنتەبىر N1 ; !
 ئەكرەم:ئەكرەم N1 ; !
 نويابىر:نويابىر N1 ; !
@@ -23650,10 +23649,6 @@ EX360:EX360 N1 ; !
 نېمىدېگەن:نېمىدېگەن ADV ; !
 نەدىن:نەدىن ADV ; !
 چاقنا:چاقنا V-IV ; !
-تۇرات:تۇرات V-IV ; !
-قالات:قالات V-IV ; !
-بولات:بولات V-IV ; !
-كېتەت:كېتەت V-IV ; !
 چۆكۈپ% كەت:چۆكۈپ% كەت V-IV ; !
 كېلەت:كېلەت V-IV ; !
 چۆچ:چۆچ V-IV ; !
