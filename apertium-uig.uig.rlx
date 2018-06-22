@@ -80,6 +80,7 @@ LIST Sg3 = (p3 sg) ;
 LIST VPers = p1 p2 p3 ;
 
 LIST Pl = pl ;
+LIST Sg = sg ;
 
 LIST Px3Sp = px3sg px3pl; 
 LIST Px3Sg = px3sg ; 
@@ -149,9 +150,12 @@ SELECT Adv IF (-1 CC OR Post) (1 N) ;
 SELECT N IF (0 Ming)(1 Devlet) ; 
 
 SELECT Num IF (0 Ming) ; 
- ##15 ming
+ ## 15 ming
 
-REMOVE Top IF (0 Pl); 
+SELECT Top IF (0 Sg) ;
+  ## Xitay bash ministeri..
+
+REMOVE Top IF (0 Pl) ; 
  ## xitaylar
 
 REMOVE Guess ;
