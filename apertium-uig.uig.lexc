@@ -76,7 +76,7 @@ Multichar_Symbols
 %<f%>             ! Feminine
 
 %<fut%>           ! future, -ecek -acak (tho with a more "certain" mood)
-%<pcont%>         ! Present continous (-iyor)
+%<prog%>         ! Present continous (-iyor)
 %<ifi%>           ! Past eyewitness
 %<past%>          ! Past general
 %<past2%>         ! -mış -miş but mostly for story telling
@@ -105,7 +105,7 @@ Multichar_Symbols
 
 %<dek%>           !"x kadar"
 %<che%>           !"x kadar"
-%<rek%>           !"daha x"
+
  
 
 %<dem%>           ! Demonstrative
@@ -174,7 +174,6 @@ LEXICON CLITICS
 %<comp%>:%>ر%{A%}%{K%} # ; 
 %<dek%>:%>%{D%}ەك # ;
 %<che%>:%>چە # ;
-%<rek%>:%>رەك # ; 
 
 +مۇ%<postadv%>:مۇ # ;
 LEXICON CASE
@@ -483,6 +482,7 @@ LEXICON V-GER
 %<gpr_rsub2%>:%>%ىدى%{G%}{A%}ن NP-COMMON ; !
 %<gpr_rsub3%>:%>%{i%}ۋات%{G%}{A%}ن NP-COMMON ; !
 %<ger_past%>:%>%{G%}%{A%}نلى%{K%} NP-COMMON ; !
+%<ger_past2%>:%>%{i%}ۋات%>%{G%}%{A%}نلى%{K%} NP-COMMON ; ! 
 %<ger_pabs%>:%>%{G%}%{A%}ن # ; ! 
 %<gpr_past%>%<subst%>:%>%{G%}%{A%}ن NP-COMMON ;
 %<gna_neg%>:%>م%{A%}ي # ; !
@@ -531,14 +531,14 @@ LEXICON V-AORP-PERS
 %<p2%>%<pl%>:تىڭلار CLITICS ;
 %<p3%>%<pl%>:تى CLITICS ;
 
-LEXICON V-PCONT
+LEXICON V-PROG
 
-%<pcont%>:%>%{i%}ۋاتى V-PCONT-PERS ;
+%<prog%>:%>%{i%}ۋاتى V-PROG-PERS ;
 
 LEXICON V-FUT
 %<fut%>:%>%م%{A%}%{K%}چى V-COP-PERS ; 
 
-LEXICON V-PCONT-PERS
+LEXICON V-PROG-PERS
 %<p1%>%<sg%>:مەن CLITICS ;
 %<p2%>%<sg%>:سەن CLITICS ;
 %<p2%>%<sg%>%<frm%>:سىز CLITICS ;
@@ -579,7 +579,7 @@ V-PAST ;
 V-AOR ;
 V-COND ;
 V-IMP ;
-V-PCONT ; 
+V-PROG ; 
 V-FUT ; 
 
 
@@ -598,7 +598,7 @@ V-PRC ;
 V-GER ;
 V-COND ;
 V-IMP ;
-V-PCONT ; 
+V-PROG ; 
 V-AORP ; 
 
 LEXICON V-AUX
