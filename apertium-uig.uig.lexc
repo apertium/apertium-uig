@@ -483,7 +483,7 @@ LEXICON V-GER
 %<gpr_rsub3%>:%>%{i%}ۋات%{G%}{A%}ن NP-COMMON ; !
 %<ger_past%>:%>%{G%}%{A%}نلى%{K%} NP-COMMON ; !
 %<ger_past2%>:%>%{i%}ۋات%>%{G%}%{A%}نلى%{K%} NP-COMMON ; ! 
-%<ger_pabs%>:%>%{G%}%{A%}ن # ; ! 
+%<ger_pabs%>:%>%{G%}%{A%}ن NP-COMMON ; ! 
 %<gpr_past%>%<subst%>:%>%{G%}%{A%}ن NP-COMMON ;
 %<gna_neg%>:%>م%{A%}ي # ; !
 %<gna_neg2%>:%>م%{A%}ستىن # ;
