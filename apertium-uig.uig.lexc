@@ -562,7 +562,7 @@ LEXICON IMP-PERS
 LEXICON V-IMP
 
 %<imp%>: IMP-PERS ;
-%<imp%>: SUBST-2 ; 
+!!%<imp%>: SUBST-2 ; 
 
 LEXICON V-NEG
 
