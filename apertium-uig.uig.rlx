@@ -7,7 +7,9 @@ LIST BOS = (>>>) (sent);
 LIST EOS = (<<<) (sent);
 
 LIST N = n ; 
-LIST V = v ; 
+LIST V = v ;
+LIST TV = tv ;
+LIST IV = iv ; 
 LIST Prop = np ; 
 LIST Pron = prn ; 
 LIST Num = num ; 
@@ -29,7 +31,8 @@ LIST Top = top ;
 
 LIST Guess = guess ;
 
-LIST Nom = nom ; 
+LIST Nom = nom ;
+LIST Abl = abl ;
 
 LIST Attr = attr ;
 
@@ -92,6 +95,7 @@ LIST Px1Sg = px1sg ;
 
 LIST Ming = "مىڭ" ;
 LIST Devlet = "خانىدانلىق" "سۇلالە" "دۇلات" "ئۆلكە" "دىيار" ;
+LIST Terep = "تەرەپ" ;
 
 SECTION
 
@@ -157,5 +161,10 @@ SELECT Top IF (0 Sg) ;
 
 REMOVE Top IF (0 Pl) ; 
  ## xitaylar
+
+SELECT Terep IF (0 Px3Sp + Abl) (1* TV BARRIER IV);
+ ## adem terıpıden .. uyushturuldı.
+
+
 
 REMOVE Guess ;
