@@ -81,12 +81,12 @@ Rules
 "{i} epenthesis"
 %{i%}:ى <=> :Cns (:0) %>: _ ;
 
-"{i} vowel harmony"
+!"{i} vowel harmony"
 ! not actually needed?
-%{i%}:Vy <=> [ :Vx :Cns* :Cns ]/:0 _ ;  ! null after :Vow
-         where Vx in ( و ۇ ۆ ۈ )
-               Vy in ( ۇ ۇ ۈ ۈ )
-         matched ;
+!%{i%}:Vy <=> [ :Vx :Cns* :Cns ]/:0 _ ;  ! null after :Vow
+!         where Vx in ( و ۇ ۆ ۈ )
+!               Vy in ( ۇ ۇ ۈ ۈ )
+!         matched ;
 
 !"{I} rounding harmony"
 !%{I%}:Vy <=> [ :Vx :Cns* :Cns ]/:0 _ ;  ! null after :Vow 
