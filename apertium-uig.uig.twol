@@ -185,5 +185,13 @@ Vx:ې <=> .#. :Cns*/:0 _ [ %>: :Cns [ :ى | %{I%}: ] ]/[ :0 - [ %{☫%}: | %>: ]
      where Vx in ( ا ە ) ;
 
 
-"{L} to ن after ل"
-%{L%}:ن <=> [ :ل :Vow ]/:0 _ ;
+!"{L} to ن after ل" what's this?
+!%{L%}:ن <=> [ :ل :Vow ]/:0 _ ;
+
+!"{U} deletion after {L}"
+!%{U%}:0 <=> %{L%}: _ ; 
+
+!"{L} deletion in -ptu context"
+!%{L%}:0 <=> _ %>: (:Vow) :VoicelessCns  ; 
+
+

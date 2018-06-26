@@ -145,7 +145,7 @@ SELECT Dem IF (1 A) ;
 SELECT Pron IF (1 Post) ;
  ## néme üçün.. 
 
-SELECT Sg3 IF (-1 Px3Sp) ; 
+SELECT Sg3 IF (0 Sg) ; 
  ## paytexti bolsa = başkenti olsa instead of olsalar
 
 SELECT Adv IF (-1 CC OR Post) (1 N) ; 
