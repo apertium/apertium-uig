@@ -34,6 +34,8 @@ FrontRdVow = ۆ ۈ ;
 
 BackRdVow = ۇ و ;
 
+FrontUrdVow = ې ; ! ä e
+
 Cns =  ب پ ت ج چ خ د ر ز ژ س ش غ ف ق ك گ ڭ ل م ن ھ ۋ ي ئ ک ;
 
 VoicelessCns = پ ت چ خ س ش ف ق ك ھ ;
@@ -108,6 +110,11 @@ Rules
 
 "{û}:y harmony"
 %{û%}:ۈ <=> FrontRdVow: Cns: _ .#. ;
+
+"{û}:e harmony"
+%{û%}:ە <=> FrontUrdVow: Cns: _ .#. ;
+
+
 
 
 
