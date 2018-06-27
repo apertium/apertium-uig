@@ -33,6 +33,7 @@ LIST Guess = guess ;
 
 LIST Nom = nom ;
 LIST Abl = abl ;
+LIST Loc = loc ; 
 
 LIST Attr = attr ;
 
@@ -59,6 +60,7 @@ LIST Gpr/past = gpr_past ;
 LIST Gpr/fut2 = gpr_fut2 ;
 LIST rsub = gpr_rsub ; 
 LIST vaux = vaux ; 
+LIST pabs = ger_pabs ;
 
 
 SET Prc = Prc/perf | Prc/impf | Prc/fut | Prc/past | Prc/cond ; 
@@ -164,6 +166,12 @@ REMOVE Top IF (0 Pl) ;
 
 SELECT Terep IF (0 Px3Sp + Abl) (1* TV BARRIER IV);
  ## adem terıpıden .. uyushturuldı.
+
+REMOVE rsub IF (0 Loc) ;
+ ## bolğanda -> olunca instead of olanda
+
+REMOVE pabs IF (0 Loc) ;
+ ## bolğanda -> olunca instead of olmuşta
 
 
 
