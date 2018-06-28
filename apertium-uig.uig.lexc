@@ -87,6 +87,7 @@ Multichar_Symbols
 %<aor%>           ! Aorist
 %<prc_impf%>      ! Imperfect participle
 %<ger%>           ! Gerund (aorist)
+%<ger_inf%>       !
 %<ger_past%>      ! Past gerund bolghanliqini = olduğunu 
 %<gpr_past%>      ! Past gerund
 %<gna_cond%>      ! Conditional verbal adverb 
@@ -489,7 +490,8 @@ LEXICON V-GER
 %<gna_neg2%>:%>م%{A%}ستىن # ;
 %<ger%>:%>%{U%}ش NP-COMMON ; 
 %<inf%>:%>م%{A%}%{K%} # ;
-%<inf%>:%>م%{A%}%{K%} CASE ;
+%<ger_inf%>:%>م%{A%}%{K%} CASE ;
+
 
 
 LEXICON V-ABIL-COMMON
