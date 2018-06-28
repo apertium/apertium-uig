@@ -28,6 +28,7 @@ LIST pass = pass ;
 LIST neg = neg ; 
 LIST TD = TD ; 
 LIST Top = top ;
+LIST Pass = pass ; 
 
 LIST Guess = guess ;
 
@@ -173,6 +174,7 @@ REMOVE rsub IF (0 Loc) ;
 REMOVE pabs IF (0 Loc) ;
  ## bolğanda -> olunca instead of olmuşta
 
-
+REMOVE IV IF (0 TV + Pass) ; 
+ ## tonushtur-ul instead of #tonushturul# (to better match tur.lexc structure)
 
 REMOVE Guess ;

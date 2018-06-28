@@ -62,7 +62,7 @@ Multichar_Symbols
 %<iv%>            ! Intransitive
 %<tv%>            ! Transitive
 %<TD%>            ! Unspecified transitivity
-
+%<pass%>          ! passive
 %<cop%>           ! Copula
 %<dur%>           ! to-be copula
 %<neg%>           ! Negative
@@ -613,7 +613,7 @@ LEXICON V-IV
 LEXICON V-TV 
 
 %<v%>%<tv%>: V-COMMON ; 
-%<v%>%<tv%>%<pass%>:%{I%}%{L%} V-COMMON ; 
+%<v%>%<tv%>%<pass%>:%{U%}%{L%} V-COMMON ; 
 
 LEXICON V-TD
 
