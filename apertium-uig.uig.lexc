@@ -590,6 +590,11 @@ V-COND ;
 V-IMP ;
 V-PROG ; 
 V-FUT ; 
+V-AOR ;
+V-WHEN ; 
+V-ABIL ; 
+V-GER ;
+V-PRC ; 
 
 
 LEXICON V-COMMON
