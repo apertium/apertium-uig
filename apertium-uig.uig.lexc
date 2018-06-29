@@ -214,7 +214,7 @@ LEXICON CASE-2
 
 
 LEXICON POSSESSION
-
+CLITICS ; 
 Copula ;
 CASE ;
 %<px1sg%>:%>%{i%}م CASE ;
@@ -23021,7 +23021,7 @@ LEXICON Check
 قورۇ:قورۇ V-TV ; !
 قورۇ:قورۇ V-TV ; !
 ئەسەد:ئەسەد NP-COG-MF ; !
-بىنالى:بىنالى NP-COG-MF ; !
+بىنالى:بىنالى NP-ANT-M ; !
 رۇھانى:رۇھانى NP-COG-MF ; !
 بەنى:بەنى NP-COG-MF ; !
 ئاتاتۈرك:ئاتاتۈرك NP-COG-MF ; !
