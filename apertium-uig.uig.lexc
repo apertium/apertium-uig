@@ -172,6 +172,7 @@ LEXICON CLITICS
 +مۇ%<qst%>:مۇ V-COP-PERS ;
 +چۇ%<qst%>:چۇ # ;
 
+%<dur%>:%>%{D%}ۇر # ;
 %<comp%>:%>ر%{A%}%{K%} # ; 
 %<dek%>:%>%{D%}ەك # ;
 %<che%>:%>چە # ;
@@ -181,16 +182,21 @@ LEXICON CASE
 
 %<nom%>: CLITICS ;
 %<dat%>:%>%{G%}%{A%} # ;
+%<dat%>:%>%{G%}%{A%} CLITICS ;
 %<loc%>:%>%{D%}%{A%} CLITICS ;
 %<loc%>:%>%{D%}%{A%} Copula ; !doesn't work
 %<loc%>%<attr%>:%>%{D%}%{A%}%>كى # ;
+%<loc%>%<attr%>:%>%{D%}%{A%}%>كى CLITICS ;
 %<loc%>%<subst%>:%>%{D%}%{A%}%>كى SUBST-2 ;
 %<abl%>:%>%{D%}ىن CLITICS ;
 %<abl%>:%>%{D%}ىن Copula ; !doesn't work
 %<gen%>:%>نىڭ # ;
+%<gen%>:%>نىڭ CLITICS ;
 %<gen%>%<attr%>:%>نىڭكى # ;
+%<gen%>%<attr%>:%>نىڭكى CLITICS ;
 %<gen%>%<subst%>:%>نىڭكى SUBST-2 ;
 %<acc%>:%>نى # ;
+%<acc%>:%>نى CLITICS ;
 %<ter%>:%>%{G%}ىچە CLITICS ;
 
 LEXICON CASE-2
@@ -2420,7 +2426,7 @@ LEXICON Verbs
 
 
 LEXICON Copula
-%<dur%>:%>%{D%}ۇر # ;
+
 ئى:ئى COP ;
 ئې:ئې COP ; 
 ئى%<cop%>%<neg%>:ئەمەس V-COP-PERS ; !
