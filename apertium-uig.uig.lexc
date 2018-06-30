@@ -357,7 +357,7 @@ LEXICON PRON-PERS-ULAR
 %<prn%>%<pers%>%<p3%>%<pl%>: CASE ; 
 
 
-LEXICON PRON-PERS-REFL
+LEXICON PRON-REFL
 
 %<prn%>%<ref%>: NP-COMMON ;
 
@@ -770,7 +770,7 @@ LEXICON Pronouns
 
 
 
-ئۆز:ئۆز PRON-PERS-REFL ; ! "own"
+ئۆز:ئۆز PRON-REFL ; ! "own"
 
 
 بۇ:بۇ PRON-DEM-BU ; ! "this"
