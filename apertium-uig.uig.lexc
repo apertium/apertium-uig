@@ -218,20 +218,28 @@ LEXICON POSSESSION
 Copula ;
 CASE ;
 %<px1sg%>:%>%{i%}م CASE ;
+%<px1sg%>:%>%{U%}م CASE ;
 %<px2sg%>:%>%{i%}ڭ CASE ;
-%<px2pl%>:%>%{i%}ڭل%{A%}ر CASE ;
+%<px2sg%>:%>%{U%}ڭ CASE ;
+%<px2pl%>:%>%{i%}ڭلار CASE ;
+%<px2pl%>:%>%{U%}ڭلار CASE ;
 %<px3sp%>:%>%{s%}ى CASE ;
 %<px1pl%>:%>%{i%}م%{I%}ز CASE ;
+%<px1pl%>:%>%{U%}م%{I%}ز CASE ;
 %<px2pl%>%<frm%>:%>%{i%}ڭ%{I%}ز CASE ;
-%<px2sg%>%<frm%>:%>%{i%}ڭ%{I%}ز CASE ;
+%<px2sg%>%<frm%>:%>%{U%}ڭ%{I%}ز CASE ;
 %<px3sg%>%<hon%>:%>‫لىرى‬ CASE ;
 %<px1sg%>:%>%{i%}م Copula ;
+%<px1sg%>:%>%{U%}م CASE ;
 %<px2sg%>:%>%{i%}ڭ Copula ;
-%<px2pl%>:%>%{i%}ڭل%{A%}ر Copula ;
+%<px2sg%>:%>%{U%}ڭ CASE ;
+%<px2pl%>:%>%{i%}ڭلار Copula ;
+%<px2pl%>:%>%{U%}ڭلار CASE ;
 %<px3sp%>:%>%{s%}ى Copula ;
 %<px1pl%>:%>%{i%}م%{I%}ز Copula ;
+%<px1pl%>:%>%{U%}م%{I%}ز Copula ;
 %<px2pl%>%<frm%>:%>%{i%}ڭ%{I%}ز Copula ;
-%<px2sg%>%<frm%>:%>%{i%}ڭ%{I%}ز Copula ;
+%<px2sg%>%<frm%>:%>%{U%}ڭ%{I%}ز Copula ;
 %<px3sg%>%<hon%>:%>‫لىرى‬ Copula ;
 
 LEXICON SUBST-2
