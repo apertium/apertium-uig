@@ -177,4 +177,8 @@ REMOVE pabs IF (0 Loc) ;
 REMOVE IV IF (0 TV + Pass) ; 
  ## tonushtur-ul instead of #tonushturul# (to better match tur.lexc structure)
 
+REMOVE A IF (0 Pron) (NOT 1* N BARRIER V) ;
+ ## öz = kendi
+
+
 REMOVE Guess ;
