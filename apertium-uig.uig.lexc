@@ -2044,7 +2044,8 @@ LEXICON Verbs
 دە%<v%>%<tv%>%<gna_perf%>:دەپ # ; ! "say"
 
 دە%<v%>%<tv%>%<ifi%>%<evid%>:دەپ%>تۇ V-COP-PERS ; ! FIXME: Check
-ئىكەنلىك:ئىكەنلىك V-IV-GER%_PAST ; !
+
+ئى%<v%>%<iv%>%<ger_past%>:ئىكەنلىك N-COMMON ; !
 ئى:ئى%{e%} V-IV ; ! ""
 ئال:ئال V-TV ; ! "take"
 چىق:چىق V-IV ; ! "go out"
