@@ -494,17 +494,17 @@ LEXICON V-PRC
 
 LEXICON V-GER
 
-%<gpr_rsub%>:%>%{G%}%{A%}ن NP-COMMON ; ! 
-%<gpr_rsub2%>:%>%ىدى%{G%}{A%}ن NP-COMMON ; !
-%<gpr_rsub3%>:%>%{i%}ۋات%{G%}{A%}ن NP-COMMON ; !
-%<ger_past%>:%>%{G%}%{A%}نلى%{K%} NP-COMMON ; !
-%<ger_past2%>:%>%{i%}ۋات%>%{G%}%{A%}نلى%{K%} NP-COMMON ; ! 
-%<ger_pabs%>:%>%{G%}%{A%}ن NP-COMMON ; ! 
-%<gpr_past%>%<subst%>:%>%{G%}%{A%}ن NP-COMMON ;
+%<gpr_rsub%>:%>%{G%}%{A%}ن N-COMMON ; ! 
+%<gpr_rsub2%>:%>%ىدى%{G%}{A%}ن N-COMMON ; !
+%<gpr_rsub3%>:%>%{i%}ۋات%{G%}{A%}ن N-COMMON ; !
+%<ger_past%>:%>%{G%}%{A%}نلى%{K%} N-COMMON ; !
+%<ger_past2%>:%>%{i%}ۋات%>%{G%}%{A%}نلى%{K%} N-COMMON ; ! 
+%<ger_pabs%>:%>%{G%}%{A%}ن N-COMMON ; ! 
+%<gpr_past%>%<subst%>:%>%{G%}%{A%}ن N-COMMON ;
 %<gna_neg%>:%>م%{A%}ي # ; !
 %<gna_neg2%>:%>م%{A%}ستىن # ;
-%<ger%>:%>%{U%}ش NP-COMMON ; 
-%<ger%>:%>ي%{U%}ش NP-COMMON ; 
+%<ger%>:%>%{U%}ش N-COMMON ; 
+%<ger%>:%>ي%{U%}ش N-COMMON ; 
 %<inf%>:%>م%{A%}%{K%} # ;
 %<ger_inf%>:%>م%{A%}%{K%} CASE ;
 
@@ -2044,8 +2044,8 @@ LEXICON Verbs
 دە%<v%>%<tv%>%<gna_perf%>:دەپ # ; ! "say"
 
 دە%<v%>%<tv%>%<ifi%>%<evid%>:دەپ%>تۇ V-COP-PERS ; ! FIXME: Check
-
-
+ئىكەنلىك:ئىكەنلىك V-IV-GER%_PAST ; !
+ئى:ئى%{e%} V-IV ; ! ""
 ئال:ئال V-TV ; ! "take"
 چىق:چىق V-IV ; ! "go out"
 كەل:كەل V-IV ; ! "come"
@@ -22755,7 +22755,6 @@ LEXICON Check
 مېدىيا:مېدىيا N1 ; !
 سۈرە:سۈرە N1 ; !
 ئاللاھ:ئاللاھ%{☫%} N1 ; !
-ئىكەنلىك:ئىكەنلىك N1 ; !
 شاخ:شاخ N1 ; !
 جۇمھۇر:جۇمھۇر N1 ; !
 پودكاست:پودكاست N1 ; !
