@@ -497,8 +497,8 @@ LEXICON V-GER
 %<gpr_rsub%>:%>%{G%}%{A%}ن N-COMMON ; ! 
 %<gpr_rsub2%>:%>%ىدى%{G%}{A%}ن N-COMMON ; !
 %<gpr_rsub3%>:%>%{i%}ۋات%{G%}{A%}ن N-COMMON ; !
-%<ger_past%>:%>%{G%}%{A%}نلى%{K%} N-COMMON ; !
-%<ger_past2%>:%>%{i%}ۋات%>%{G%}%{A%}نلى%{K%} N-COMMON ; ! 
+%<ger_past%>:%>%{G%}%{A%}ن%>لى%{K%} N-COMMON ; !
+%<ger_past2%>:%>%{i%}ۋات%>%{G%}%{A%}ن%>لى%{K%} N-COMMON ; ! 
 %<ger_pabs%>:%>%{G%}%{A%}ن N-COMMON ; ! 
 %<gpr_past%>%<subst%>:%>%{G%}%{A%}ن N-COMMON ;
 %<gna_neg%>:%>م%{A%}ي # ; !
