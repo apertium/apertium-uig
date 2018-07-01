@@ -500,7 +500,8 @@ LEXICON V-GER
 %<ger_past2%>:%>%{i%}ۋات%>%{G%}%{A%}ن%>لى%{K%} N-COMMON ; ! 
 %<ger_pabs%>:%>%{G%}%{A%}ن N-COMMON ; ! 
 %<gpr_past%>%<subst%>:%>%{G%}%{A%}ن N-COMMON ;
-%<gpr_fut%>:%>%{E%}%>دىغان N-COMMON ; 
+%<gpr_fut%>:%>%{E%}%>دىغان N-COMMON ;
+%<gpr_fut2%>:%>%{E%}%>دىغان%>لى%{K%} N-COMMON ;  
 %<gna_neg%>:%>م%{A%}ي # ; !
 %<gna_neg2%>:%>م%{A%}ستىن # ;
 %<ger%>:%>%{U%}ش N-COMMON ; 
