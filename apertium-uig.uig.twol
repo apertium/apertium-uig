@@ -106,13 +106,13 @@ Rules
 %{û%}:0 <=> _ Cns: %>: (:0) :Vow ;
 
 "{û}:u harmony"
-%{û%}:ۇ <=> BackRdVow: Cns: _ .#. ;
+%{û%}:ۇ <=> BackRdVow: Cns: _ Cns: .#. ;
 
 "{û}:y harmony"
-%{û%}:ۈ <=> FrontRdVow: Cns: _ .#. ;
+%{û%}:ۈ <=> FrontRdVow: Cns: _ Cns: .#. ;
 
 "{û}:e harmony"
-%{û%}:ە <=> FrontUrdVow: Cns: _ .#. ;
+%{û%}:ە <=> FrontUrdVow: Cns: _ Cns: .#. ;
 
 
 
@@ -138,7 +138,6 @@ Rules
 
 "{K} to ك after front vowel"
 %{K%}:ك <=> :FrontVow/:0 _ ;
-:FrontVow (:Cns) %>: :Cns :ى _ ; 
 
 
 "{G} to گ after front vowel"
