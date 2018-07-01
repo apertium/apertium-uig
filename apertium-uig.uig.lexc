@@ -500,7 +500,7 @@ LEXICON V-GER
 %<ger_past2%>:%>%{i%}ۋات%>%{G%}%{A%}ن%>لى%{K%} N-COMMON ; ! 
 %<ger_pabs%>:%>%{G%}%{A%}ن N-COMMON ; ! 
 %<gpr_past%>%<subst%>:%>%{G%}%{A%}ن N-COMMON ;
-%<gpr_fut%>:%>%{E%}دىغان N-COMMON ; 
+%<gpr_fut%>:%>%{E%}%>دىغان N-COMMON ; 
 %<gna_neg%>:%>م%{A%}ي # ; !
 %<gna_neg2%>:%>م%{A%}ستىن # ;
 %<ger%>:%>%{U%}ش N-COMMON ; 
@@ -555,7 +555,7 @@ LEXICON V-PROG
 
 LEXICON V-FUT
 %<fut%>:%>%م%{A%}%{K%}چى V-COP-PERS ;
-%<fut%>%<dub%>:%>%{E%}دىكەن V-COP-PERS ; 
+%<fut%>%<dub%>:%>%{E%}%>دىكەن V-COP-PERS ; 
 
 LEXICON V-PROG-PERS
 %<p1%>%<sg%>:مەن CLITICS ;
