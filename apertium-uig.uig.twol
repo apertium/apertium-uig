@@ -153,6 +153,7 @@ Rules
 "{G} to ق after voiceless consonant"
 %{G%}:ق <=> :VoicelessCns/[ :0 - Abstract: ] _ ;
  [ :VoicelessCns %{a%}: ]/[ :0 - Abstract: ] _ ;
+ :ق %>: _ ; 
         except
             [ :FrontVow [ :Cns | :ى ]* :VoicelessCns ]/[ :0 - Abstract: ] _ ;
                [ %{e%}: [ :Cns | :ى ]* :VoicelessCns ]/[ :0 - Abstract: ] _ ;
@@ -196,10 +197,9 @@ Vx:ې <=> .#. :Cns*/:0 _ [ %>: :Cns [ :ى | %{I%}: ] ]/[ :0 - [ %{☫%}: | %>: ]
 !"{L} to ن after ل" what's this?
 !%{L%}:ن <=> [ :ل :Vow ]/:0 _ ;
 
-!"{U} deletion after {L}"
-!%{U%}:0 <=> %{L%}: _ ; 
 
 !"{L} deletion in -ptu context"
-!%{L%}:0 <=> _ %>: (:Vow) :VoicelessCns  ; 
+!%{L%}:0 <=> _ %>: %{U%} :VoicelessCns %>: :VoicelessCns  ; 
 
-
+!"{U} deletion after {L}"
+!%{U%}:0 <=> %{L%}: %>: _ :VoicelessCns %>: :VoicelessCns ; 

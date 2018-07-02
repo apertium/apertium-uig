@@ -25,7 +25,6 @@ Multichar_Symbols
 
 %<guess%>         ! Guess
 
-%<evid%>          ! 
 %<dub%>           ! dubitative
 
 %<p1%>            ! First person
@@ -495,7 +494,6 @@ LEXICON V-PRC
 
 %<prc_perf%>:%>%{U%}پ # ;
 %<gna_perf%>:%>%{U%}پ # ;
-%<ifi%>%<evid%>:%>%{U%}پ%>ت%{U%} V-COP-PERS ; ! FIXME: Check / TTL:392
 
 LEXICON V-GER
 
@@ -2031,8 +2029,8 @@ LEXICON Verbs
 ئال:ئال%{☫%} V-AUX ; !
 چىق:چىق V-AUX ; ! ""
 كەل:كەل V-AUX ; ! ""
-بول:بول V-AUX ; ! ""
-بول%<vaux%>%<ifi%>%<evid%>:%>بوپ%>ت%{U%} V-COP-PERS ; ! FIXME: Check
+بول:بو%{L%} V-AUX ; ! ""
+
 بەر:بەر V-AUX ; ! ""
 بېجىر:بېجىر V-AUX ; ! ""
 كۆر:كۆر V-AUX ; ! ""
@@ -2046,7 +2044,6 @@ LEXICON Verbs
 
 
 بول:بول V-IV ; ! "be"
-بول%<v%>%<iv%>%<ifi%>%<evid%>:%>بوپ%>ت%{U%} V-COP-PERS ; ! FIXME: Check
 ئوينا:ئوينا V-TV ; ! "play"
 ئوينا:ئوينا V-IV ; ! "play"
 قىل:قىل%{a%} V-TV ; ! "do/make"
@@ -2056,7 +2053,6 @@ LEXICON Verbs
 دە:دى V-TV ; ! "say"
 دە%<v%>%<tv%>%<gna_perf%>:دەپ # ; ! "say"
 
-دە%<v%>%<tv%>%<ifi%>%<evid%>:دەپ%>تۇ V-COP-PERS ; ! FIXME: Check
 
 ئى%<v%>%<iv%>%<ger_past%>:ئىكەنلىك N-COMMON ; !
 ئى:ئى%{e%} V-IV ; ! ""
