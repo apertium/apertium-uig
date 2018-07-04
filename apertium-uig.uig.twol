@@ -145,10 +145,12 @@ Rules
 %{G%}:گ <=> [ :FrontVow (:VoicedCns) ]/[ :0 - Abstract: ] _ ;
                  [ :VoicedCns %{e%}: ]/[ :0 - Abstract: ] _ ;
                :Vow %>: _ :FrontVow ;
+:Vow %{e%}: %>: _ ; 
 
 "{G} to ك after front vowel and voiceless consonant"
 %{G%}:ك <=> [ :FrontVow [ :Cns | :ى ]* :VoicelessCns ]/[ :0 - Abstract: ] _ ;
                [ %{e%}: [ :Cns | :ى ]* :VoicelessCns ]/[ :0 - Abstract: ] _ ;
+:VoicelessCns %{e%}: %>: _ ;
 
 "{G} to ق after voiceless consonant"
 %{G%}:ق <=> :VoicelessCns/[ :0 - Abstract: ] _ ;
