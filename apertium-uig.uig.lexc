@@ -556,6 +556,7 @@ LEXICON V-AORP-PERS
 LEXICON V-PROG
 
 %<prog%>:%>%{U%}ۋاتى V-PROG-PERS ;
+%<prog2%>:%>%{U%}ۋاتات V-AORP-PERS ;
 
 LEXICON V-FUT
 %<fut%>:%>%م%{A%}%{K%}چى V-COP-PERS ;
