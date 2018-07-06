@@ -141,6 +141,7 @@ Multichar_Symbols
 %{e%}                 ! forces front harmony
 %{a%}                 ! forces back harmony
 %{L%}                 ! for passive: ل or ن
+%{l%}                 ! for l deletion 
 
 %>                    ! Morpheme boundary
 
@@ -2035,7 +2036,7 @@ LEXICON Verbs
 ئال:ئال%{☫%} V-AUX ; !
 چىق:چىق V-AUX ; ! ""
 كەل:كەل V-AUX ; ! ""
-بول:بو%{L%} V-AUX ; ! ""
+بول:بو%{l%} V-AUX ; ! ""
 
 بەر:بەر V-AUX ; ! ""
 بېجىر:بېجىر V-AUX ; ! ""
@@ -2049,10 +2050,11 @@ LEXICON Verbs
 
 
 
-بول:بول V-IV ; ! "be"
+بول:بو%{l%} V-IV ; ! "be"
 ئوينا:ئوينا V-TV ; ! "play"
 ئوينا:ئوينا V-IV ; ! "play"
 قىل:قىل%{a%} V-TV ; ! "do/make"
+قىل:قى%{l%} V-TV ; ! "do/make"
 !ئامراق% بول:ئامراق% بول V-TV ; ! "love"  ! Use/MT
 
 دە:دە%{e%} V-TV ; ! "say"
@@ -2063,8 +2065,9 @@ LEXICON Verbs
 ئى%<v%>%<iv%>%<ger_past%>:ئىكەنلىك N-COMMON ; !
 ئى:ئى%{e%} V-IV ; ! ""
 ئال:ئال%{☫%} V-TV ; ! "take"
+ئال:ئا%{l%} V-TV ; ! "take"
 چىق:چىق V-IV ; ! "go out"
-كەل:كەل V-IV ; ! "come"
+كەل:كە%{l%} V-IV ; ! "come"
 بەر:بەر V-TV ; ! "give"
 بېجىر:بېجىر V-TV ; ! "finish"
 يۈر:يۈر V-IV ; ! "go"
@@ -7847,7 +7850,6 @@ LEXICON Check
 بوغنۇق:بوغنۇق V-TD ; ! ""
 بولۇش:بولۇش V-TD ; ! ""
 بولغۇلۇق:بولغۇلۇق V-TD ; ! ""
-بولى:بولى V-TD ; ! ""
 بويسۇن:بويسۇن V-TD ; ! ""
 بويلى:بويلى V-TD ; ! ""
 بىۋاكلاش:بىۋاكلاش V-TD ; ! ""
@@ -20624,8 +20626,6 @@ LEXICON Check
 ھە:ھە V-TD ; ! ""
 تا:تا V-TD ; ! ""
 ھارامتا:ھارامتا V-TD ; ! ""
-قا:قا V-TD ; ! ""
-ماڭ:ماڭ V-TD ; ! ""
 يا:يا V-TD ; ! ""
 تاپ:تاپ V-TD ; ! ""
 چاپ:چاپ V-TD ; ! ""
@@ -20775,7 +20775,6 @@ LEXICON Check
 سىق:سىق V-TD ; ! ""
 تۆك:تۆك V-TV ; ! ""
 چەك:چەك V-TV ; ! ""
-كە:كە V-TD ; ! ""
 تۈگ:تۈگ V-TD ; ! ""
 ئەگ:ئەگ V-TD ; ! ""
 يۇتۇۋال:يۇتۇۋال V-TD ; ! ""
@@ -20783,7 +20782,7 @@ LEXICON Check
 سال:سال%{☫%} V-TV ; ! ""
 سال:سال V-TV ; ! ""
 قال:قال%{☫%} V-IV ; ! ""
-قال:قال V-IV ; ! ""
+قال:قا%{l%} V-IV ; ! ""
 يوقال:يوقال V-IV ; ! ""
 چايقال:چايقال V-TD ; ! ""
 سېتىۋال:سېتىۋال V-TD ; ! ""

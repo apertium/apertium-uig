@@ -19,6 +19,7 @@ Alphabet
 %{a%}:0
 %{e%}:0
 %{L%}:ل
+%{l%}:ل
 %{û%}:ى
 
 %>:0 ; 
@@ -196,12 +197,10 @@ Vx:ې <=> .#. :Cns*/:0 _ [ %>: :Cns [ :ى | %{I%}: ] ]/[ :0 - [ %{☫%}: | %>: ]
      where Vx in ( ا ە ) ;
 
 
-!"{L} to ن after ل" what's this?
-!%{L%}:ن <=> [ :ل :Vow ]/:0 _ ;
+"{L} to ن after ل"
+%{L%}:ن <=> [ :ل :Vow ]/:0 _ ;
 
 
-!"{L} deletion in -ptu context"
-!%{L%}:0 <=> _ %>: %{U%} :VoicelessCns %>: :VoicelessCns  ; 
+"{l} deletion in -ptu context"
+%{l%}:0 <=> _ %>: %{U%}:/:0 :پ %>: :ت  ; 
 
-!"{U} deletion after {L}"
-!%{U%}:0 <=> %{L%}: %>: _ :VoicelessCns %>: :VoicelessCns ; 
