@@ -61,12 +61,14 @@ Rules
 "{A} becomes ە in front vowel contexts"
 %{A%}:ە <=> [ :FrontVow [ :ى | :Cns ]* :Cns ]/[ :0 - Abstract: ] _ ;
  [ %{e%}: [ :ى | :Cns ]* :Cns ]/[ :0 - Abstract: ] _ ; 
+%{e%}: %>: (:Cns) _ ; 
        ! except FIX THIS
         !    _ [ :Cns :Vow ]/:0 ; FIX THIS 
 
 "{E} becomes ە in front vowel contexts"
 %{E%}:ە <=> [ :FrontVow [ :ى | :Cns ]* :Cns ]/[ :0 - Abstract: ] _ ;
-               [ %{e%}: [ :ى | :Cns ]* :Cns ]/[ :0 - Abstract: ] _ ; 
+               [ %{e%}: [ :ى | :Cns ]* :Cns ]/[ :0 - Abstract: ] _ ;
+%{e%}: %>: (:Cns) _ ;  
         except
             ! except after a vowel, where it becomes ي
             :Vow/:0 _ ;
