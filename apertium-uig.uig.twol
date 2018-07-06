@@ -60,9 +60,9 @@ Rules
 
 "{A} becomes ە in front vowel contexts"
 %{A%}:ە <=> [ :FrontVow [ :ى | :Cns ]* :Cns ]/[ :0 - Abstract: ] _ ;
-               [ %{e%}: [ :ى | :Cns ]* :Cns ]/[ :0 - Abstract: ] _ ; 
-        except
-            _ [ :Cns :Vow ]/:0 ;
+ [ %{e%}: [ :ى | :Cns ]* :Cns ]/[ :0 - Abstract: ] _ ; 
+       ! except FIX THIS
+        !    _ [ :Cns :Vow ]/:0 ; FIX THIS 
 
 "{E} becomes ە in front vowel contexts"
 %{E%}:ە <=> [ :FrontVow [ :ى | :Cns ]* :Cns ]/[ :0 - Abstract: ] _ ;
