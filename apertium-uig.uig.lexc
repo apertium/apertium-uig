@@ -375,7 +375,7 @@ LEXICON PRON-PERS-ULAR
 
 LEXICON PRON-REFL
 
-%<prn%>%<ref%>: NP-COMMON ;
+%<prn%>%<ref%>: N-COMMON ;
 
 
 LEXICON PRON-DEM-COMMON
@@ -1213,7 +1213,6 @@ LEXICON Nouns
 ئوغرى:ئوغرى N1 ; ! ""
 ئەرۋاھ:ئەرۋاھ N1 ; ! ""
 ئابروي:ئابروي N1 ; ! ""
-قاش:قاش N1 ; ! ""
 قېرىنداش:قېرىنداش N1 ; ! ""
 قۇيرۇق:قۇيرۇق N1 ; ! ""
 ھال:ھال%{☫%} N1 ; ! ""
@@ -2056,7 +2055,7 @@ LEXICON Verbs
 
 ئال:ئال%{☫%} V-AUX ; !
 چىق:چىق V-AUX ; ! ""
-كەل:كەل V-AUX ; ! ""
+كەل:كە%{l%} V-AUX ; ! ""
 بول:بو%{l%} V-AUX ; ! ""
 
 بەر:بەر V-AUX ; ! ""
@@ -2331,6 +2330,7 @@ LEXICON Verbs
 قۇرۇقدى:قۇرۇقدى V-IV ; ! ""
 قېلىنلى:قېلىنلى V-IV ; ! ""
 ماڭ:ماڭ%{☫%} V-IV ; ! ""
+ماڭ:ماڭ V-IV ; ! ""
 چىدى:چىدى V-IV ; ! ""
 دومىلى:دومىلى V-IV ; ! ""
 ۋارقىرى:ۋارقىرى V-IV ; ! ""
@@ -2615,7 +2615,7 @@ LEXICON Check
 شوخلا:شوخلا N1 ; ! "tomato"
 شىركەت:شىركەت N1 ; ! "company, firm"
 قاراچاي:قاراچاي N1 ; ! "brick tea"
-قاش:قاش N1 ; ! "eyebrow"
+قاش:قاش%{a%} N1 ; ! "eyebrow"
 قامۇس:قامۇس N1 ; ! "encyclopaedia"
 قان:قان N1 ; ! "blood"
 قۇدۇق:قۇدۇق N1 ; ! "well"
@@ -2933,7 +2933,6 @@ LEXICON Check
 مېھنەتچان:مېھنەتچان A1 ; ! "hard-working"
 ھاقارەتلىك:ھاقارەتلىك A1 ; ! "humiliating"
 قوغلىما:قوغلىما A1 ; ! "following"
-تۆۋەندىكى:تۆۋەندىكى A1 ; ! "following"
 چېخ:چېخ A1 ; ! "Czech"
 فرانسۇز:فرانسۇز A1 ; ! "French"
 ئىنگلىز:ئىنگلىز A1 ; ! "English"
@@ -3793,7 +3792,6 @@ LEXICON Check
 ئوۋچىلىق:ئوۋچىلىق N1 ; ! "hunting"
 مىننەتكارلىق:مىننەتكارلىق N1 ; ! "thanksgiving"
 قوغلىما:قوغلىما N1 ; ! "following"
-تۆۋەندىكى:تۆۋەندىكى N1 ; ! "following"
 ئىلەڭگۈچ:ئىلەڭگۈچ N1 ; ! "swing"
 ئىسقىرتقا:ئىسقىرتقا N1 ; ! "waxwing"
 ناخشا:ناخشا N1 ; ! "song"
@@ -5022,11 +5020,9 @@ LEXICON Check
 ھېچنېمە:ھېچنېمى PRON-NEG ; ! "anything"
 نېمىكى:نېمىكى PRON-MISC ; ! "whatever"
 كىمنىڭ:كىمنىڭ PRON-MISC ; ! "whose"
-ئۆزلىرىنى:ئۆزلىرىنى PRON-MISC ; ! "themselves"
 ئەڭ:ئەڭ PRON-MISC ; ! "most"
 ھېچ:ھېچ PRON-MISC ; ! "any"
 ھېچقايسى:ھېچقايسى PRON-MISC ; ! "any"
-ئۆزلىرىنى:ئۆزلىرىنى PRON-MISC ; ! "themselves"
 ئۆزىمىز:ئۆزىمىز PRON-MISC ; ! "ourselves"
 ماۋۇ:ماۋۇ PRON-MISC ; ! "this"
 ئۇشبۇ:ئۇشبۇ PRON-MISC ; ! "this"
@@ -23636,7 +23632,6 @@ EX360:EX360 N1 ; !
 نەدىن:نەدىن ADV ; !
 چاقنا:چاقنا V-IV ; !
 چۆكۈپ% كەت:چۆكۈپ% كەت V-IV ; !
-كېلەت:كېلەت V-IV ; !
 چۆچ:چۆچ V-IV ; !
 يۈگۈر:يۈگۈر V-IV ; !
 چۆك:چۆك V-IV ; !
