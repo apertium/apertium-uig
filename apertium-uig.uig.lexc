@@ -310,6 +310,7 @@ LEXICON PRON-DEM-CASE
 LEXICON PRON-PERS-AN
 
 %<nom%>:ەن # ;
+%<nom%>:ەن CLITICS ;
 %<dat%>:اڭا # ;
 %<acc%>:ىنى # ;
 %<gen%>:ىنىڭ # ;
