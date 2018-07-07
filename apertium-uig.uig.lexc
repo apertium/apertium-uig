@@ -144,7 +144,7 @@ Multichar_Symbols
 %{a%}                 ! forces back harmony
 %{L%}                 ! for passive: ل or ن
 %{l%}                 ! for l deletion 
-
+%{y%}                 ! realised as ي 
 %>                    ! Morpheme boundary
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -171,16 +171,15 @@ Punctuation ;
 LEXICON CLITICS
 
 # ;
-+مۇ%<qst%>:مۇ V-COP-PERS ;
-+چۇ%<qst%>:چۇ # ;
-
+%<qst%>:%>مۇ V-COP-PERS ;
+%<qst%>:%>چۇ # ;
 %<dur%>:%>%{D%}ۇر # ;
 %<comp%>:%>ر%{A%}%{K%} # ; 
 %<dek%>:%>%{D%}ەك # ;
 %<che%>:%>چە # ;
-%<dub%>:%>كەن V-COP-PERS ;
+%<dub%>:%>%{y%}كەن V-COP-PERS ;
+%<postadv%>:%>مۇ # ;
 
-+مۇ%<postadv%>:مۇ # ;
 LEXICON CASE
 %<nom%>: # ;
 %<nom%>: CLITICS ;

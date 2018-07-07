@@ -148,6 +148,12 @@ SELECT Dem IF (1 A) ;
 SELECT Pron IF (1 Post) ;
  ## néme üçün.. 
 
+##SELECT SUB:1 Padv ; 
+ ## menmu = ben de. Will write a specific rule for the question mark.
+
+SELECT Padv IF (0 Padv) ; 
+ ## menmu = ben de. Will write a specific rule for the question mark.
+
 SELECT Sg3 IF (0 Sg) ; 
  ## paytexti bolsa = başkenti olsa instead of olsalar
 
@@ -179,9 +185,5 @@ REMOVE IV IF (0 TV + Pass) ;
 
 REMOVE A IF (0 Pron) (NOT 1* N BARRIER V) ;
  ## öz = kendi
-
-SELECT SUB:1 Padv ; 
- ## menmu = ben de. Will write a specific rule for the question mark.
-
 
 REMOVE Guess ;
