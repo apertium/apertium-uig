@@ -21,7 +21,7 @@ Alphabet
 %{L%}:ل
 %{l%}:ل
 %{û%}:ى
-
+%{y%}:0
 %>:0 ; 
 
 Sets
@@ -52,6 +52,9 @@ Rules
 
 "Insert {s} after a vowel"
 %{s%}:س <=> :Vow (:0) %>: _  ; 
+
+"Insert {y} after a vowel"
+%{y%}:ي <=> :Vow (:0) %>: _  ; 
 
 !"Insert {n} before before a case ending"
 !%{n%}:ن <=> _ %>: [ %{G%}: | %{D%}: ] ;

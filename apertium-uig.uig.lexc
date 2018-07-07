@@ -178,7 +178,7 @@ LEXICON CLITICS
 %<comp%>:%>ر%{A%}%{K%} # ; 
 %<dek%>:%>%{D%}ەك # ;
 %<che%>:%>چە # ;
-%<dub%>:%>كەن # ;
+%<dub%>:%>كەن V-COP-PERS ;
 
 +مۇ%<postadv%>:مۇ # ;
 LEXICON CASE
