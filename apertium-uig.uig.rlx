@@ -37,7 +37,7 @@ LIST Abl = abl ;
 LIST Loc = loc ; 
 
 LIST Attr = attr ;
-
+LIST Padv = postadv ; 
 LIST Punct = guio ; 
 
 ##LIST Gpr = gpr_past ; 
@@ -179,6 +179,9 @@ REMOVE IV IF (0 TV + Pass) ;
 
 REMOVE A IF (0 Pron) (NOT 1* N BARRIER V) ;
  ## öz = kendi
+
+SELECT Padv IF (0 Padv) ; 
+ ## menmu = ben de. Will write a specific rule for the question mark.
 
 
 REMOVE Guess ;
