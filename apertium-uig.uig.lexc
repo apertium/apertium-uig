@@ -183,19 +183,14 @@ LEXICON CLITICS
 LEXICON CASE
 %<nom%>: # ;
 %<nom%>: CLITICS ;
-%<nom%>: N-PERS ;
 %<dat%>:%>%{G%}%{A%} # ;
 %<dat%>:%>%{G%}%{A%} CLITICS ;
-%<dat%>:%>%{G%}%{A%} N-PERS ;
 %<loc%>:%>%{D%}%{A%} CLITICS ;
-%<loc%>:%>%{D%}%{A%} N-PERS ;
 %<loc%>:%>%{D%}%{A%} Copula ; !doesn't work
 %<loc%>%<attr%>:%>%{D%}%{A%}%>كى # ;
 %<loc%>%<attr%>:%>%{D%}%{A%}%>كى CLITICS ;
-%<loc%>%<attr%>:%>%{D%}%{A%}%>كى N-PERS ;
 %<loc%>%<subst%>:%>%{D%}%{A%}%>كى SUBST-2 ;
 %<abl%>:%>%{D%}ىن CLITICS ;
-%<abl%>:%>%{D%}ىن N-PERS ;
 %<abl%>:%>%{D%}ىن Copula ; !doesn't work
 %<gen%>:%>نىڭ # ;
 %<gen%>:%>نىڭ CLITICS ;
@@ -496,19 +491,6 @@ LEXICON V-PAST-PERS
 %<p2%>%<pl%>:%>سىلەر # ; 
 %<p3%>%<pl%>:%>%{D%}ۇ # ;
 
-
- 
-LEXICON N-PERS
-
-%<p1%>%<sg%>:مەن CLITICS ;
-%<p2%>%<sg%>:سەن CLITICS ;
-%<p2%>%<sg%>%<frm%>:سىز CLITICS ;
-%<p3%>%<sg%>: CLITICS ;
-%<p3%>%<sg%>%<dur%>:%>%{D%}ۇر CLITICS ;
-%<p1%>%<pl%>:مىز CLITICS ;
-%<p2%>%<pl%>:سىلەر CLITICS ;
-%<p3%>%<pl%>: CLITICS ;
-%<p3%>%<pl%>%<dur%>:%>ل%{A%}ر%{D%}ۇر CLITICS ;
 
 LEXICON V-COP-PERS
 
