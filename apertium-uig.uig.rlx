@@ -102,6 +102,8 @@ LIST Terep = "تەرەپ" ;
 
 SECTION
 
+SELECT Pers IF (0 Pers) ;
+
 REMOVE TD IF (0 TD ) ; 
 
 REMOVE Prc/perf IF (0 Prc/perf) ; 
