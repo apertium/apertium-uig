@@ -173,7 +173,6 @@ LEXICON CLITICS
 # ;
 %<qst%>:%>مۇ V-COP-PERS ;
 %<qst%>:%>چۇ # ;
-%<dur%>:%>%{D%}ۇر # ;
 %<comp%>:%>ر%{A%}%{K%} # ; 
 %<dek%>:%>%{D%}ەك # ;
 %<che%>:%>چە # ;
@@ -200,10 +199,10 @@ LEXICON CASE
 %<acc%>:%>نى # ;
 %<acc%>:%>نى CLITICS ;
 %<ter%>:%>%{G%}ىچە CLITICS ;
-%<nom%>: V-COP-PERS ;
-%<dat%>:%>%{G%}%{A%} V-COP-PERS ;
-%<loc%>:%>%{D%}%{A%} V-COP-PERS ;
-%<abl%>:%>%{D%}ىن V-COP-PERS ;
+%<nom%>: N-PERS ;
+%<dat%>:%>%{G%}%{A%} N-PERS ;
+%<loc%>:%>%{D%}%{A%} N-PERS ;
+%<abl%>:%>%{D%}ىن N-PERS ;
 
 
 LEXICON CASE-2
@@ -508,6 +507,17 @@ LEXICON V-COP-PERS
 %<p2%>%<pl%>:سىلەر CLITICS ;
 %<p3%>%<pl%>: CLITICS ;
 
+LEXICON N-PERS
+
+%<p1%>%<sg%>:مەن CLITICS ;
+%<p2%>%<sg%>:سەن CLITICS ;
+%<p2%>%<sg%>%<frm%>:سىز CLITICS ;
+%<p3%>%<sg%>: CLITICS ;
+%<p3%>%<sg%>%<dur%>:%>%{D%}ۇر CLITICS ;
+%<p1%>%<pl%>:مىز CLITICS ;
+%<p2%>%<pl%>:سىلەر CLITICS ;
+%<p3%>%<pl%>: CLITICS ;
+%<p3%>%<pl%>%<dur%>:%>ل%{A%}ر%{D%}ۇر CLITICS ;
 
 LEXICON V-PAST
 
