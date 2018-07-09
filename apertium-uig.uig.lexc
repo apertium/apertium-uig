@@ -63,7 +63,7 @@ Multichar_Symbols
 %<TD%>            ! Unspecified transitivity
 %<pass%>          ! passive
 %<cop%>           ! Copula
-%<dur%>           ! to-be copula
+%<gm%>           ! to-be copula
 %<neg%>           ! Negative
 
 %<np%>            ! Proper noun
@@ -173,7 +173,7 @@ LEXICON CLITICS
 # ;
 %<qst%>:%>مۇ V-COP-PERS ;
 %<qst%>:%>چۇ # ;
-%<dur%>:%>%{D%}ۇر # ;
+!!%<gm%>:%>%{D%}ۇر # ;
 %<comp%>:%>ر%{A%}%{K%} # ; 
 %<dek%>:%>%{D%}ەك # ;
 %<che%>:%>چە # ;
@@ -181,13 +181,14 @@ LEXICON CLITICS
 %<postadv%>:%>مۇ # ;
 
 LEXICON CASE
-%<nom%>: # ;
+%<nom%>: N-PERS ;
 %<nom%>: CLITICS ;
-%<dat%>:%>%{G%}%{A%} # ;
+%<dat%>:%>%{G%}%{A%} N-PERS ;
 %<dat%>:%>%{G%}%{A%} CLITICS ;
 %<loc%>:%>%{D%}%{A%} CLITICS ;
+%<loc%>:%>%{D%}%{A%} N-PERS ;
 %<loc%>:%>%{D%}%{A%} Copula ; !doesn't work
-%<loc%>%<attr%>:%>%{D%}%{A%}%>كى # ;
+%<loc%>%<attr%>:%>%{D%}%{A%}%>كى N-PERS ;
 %<loc%>%<attr%>:%>%{D%}%{A%}%>كى CLITICS ;
 %<loc%>%<subst%>:%>%{D%}%{A%}%>كى SUBST-2 ;
 %<abl%>:%>%{D%}ىن CLITICS ;
@@ -490,6 +491,19 @@ LEXICON V-PAST-PERS
 %<p1%>%<pl%>:%>تىمىز # ; 
 %<p2%>%<pl%>:%>سىلەر # ; 
 %<p3%>%<pl%>:%>%{D%}ۇ # ;
+
+
+LEXICON N-PERS
+
+%<p1%>%<sg%>:مەن CLITICS ;
+%<p2%>%<sg%>:سەن CLITICS ;
+%<p2%>%<sg%>%<frm%>:سىز CLITICS ;
+%<p3%>%<sg%>: CLITICS ;
+%<p3%>%<sg%>%<gm%>:%>%{D%}ۇر CLITICS ;
+%<p1%>%<pl%>:مىز CLITICS ;
+%<p2%>%<pl%>:سىلەر CLITICS ;
+%<p3%>%<pl%>: CLITICS ;
+%<p3%>%<pl%>%<gm%>:%>ل%{A%}ر%{D%}ۇر CLITICS ;
 
 
 LEXICON V-COP-PERS
@@ -2508,15 +2522,18 @@ LEXICON Adjectives
 يېڭى:يېڭى A1 ; ! "new"
 سوغۇق:سوغۇق A2 ; ! "cold" ! FIXME: check adjective class
 چوڭ:چوڭ A2 ; ! "big"
+چوڭ:چوڭ A1 ; ! "big"
 يۇقىرى:يۇقىرى A1 ; ! "high" ! FIXME: check adjective class
-
+سوغۇق:سوغۇق A1 ; ! "cold" ! FIXME: check adjective class
 باشقا:باشقا A2 ; ! "different" ! FIXME: not DEM/PRN?
-
+باشقا:باشقا A1 ; ! "different" ! FIXME: not DEM/PRN?
 كۆپ:كۆپ A1 ; ! "a lot" ! FIXME: check
 ئوخشاش:ئوخشاش A1 ; ! "similar" ! FIXME: check
-
+ئامراق:ئامراق A1 ; ! "in love with / like"
 ئامراق:ئامراق A4 ; ! "in love with / like"
 بار:بار A4 ; ! "exists"
+بار:بار A1 ; ! "exists"
+يوق:يوق A1 ; ! "doesn't exist / absent"
 يوق:يوق A4 ; ! "doesn't exist / absent"
 ئەمەس:ئەمەس A2 ; ! "not"
 ئەمەس:ئەمەس A4 ; ! "not"
@@ -21784,7 +21801,6 @@ LEXICON Check
 قاياق:قاياق PRON-ITG ; !
 ناملىق:ناملىق A1 ; !
 دېكابىر:دېكابىر N1 ; !
-رامانجان:رامانجان N1 ; !
 نەپەر:نەپەر N1 ; !
 ئەۋەتىڭ:ئەۋەتىڭ N1 ; !
 بولۇشىچە:بولۇشىچە ADV ; !
@@ -21795,7 +21811,6 @@ LEXICON Check
 ئىشلە:ئىشلە%{e%} V-TV ; !
 اشۇر:اشۇر V-TV ; !
 يېز:يېز V-TV ; !
-رابىيە:رابىيە%{☫%} N1 ; !
 ياپونىيە:ياپونىيە%{☫%} NP-TOP ; !
 ياپونىيە:ياپونىيە NP-TOP ; !
 رۇسىيە:رۇسىيە%{☫%} NP-TOP ; !
@@ -21904,12 +21919,9 @@ LEXICON Check
 سېنتەبىر:سېنتەبىر N1 ; !
 ئەكرەم:ئەكرەم N1 ; !
 نويابىر:نويابىر N1 ; !
-ئەخمەتجان:ئەخمەتجان N1 ; !
 پىلانى:پىلانى N1 ; !
 چېن:چېن N1 ; !
-ھەسەن:ھەسەن N1 ; !
 ۋاشىنگتون:ۋاشىنگتون N1 ; !
-ئۆمەر:ئۆمەر N1 ; !
 بەلۋاغ:بەلۋاغ N1 ; !
 مۇھاجىرەت:مۇھاجىرەت N1 ; !
 مەمەت:مەمەت N1 ; !
@@ -21976,7 +21988,6 @@ LEXICON Check
 رادىيو:رادىيو N1 ; !
 تەسىس:تەسىس N1 ; !
 تەپسىلات:تەپسىلات%{☫%} N1 ; !
-ئەخمەت:ئەخمەت N1 ; !
 خۇ:خۇ N1 ; !
 دېگەندەك:دېگەندەك A1 ; !
 تەتقىقاتچى:تەتقىقاتچى N1 ; !
@@ -24526,7 +24537,6 @@ EX360:EX360 N1 ; !
 كەتمەنباي:كەتمەنباي NP-ANT-M ; !
 ساھابە:ساھابە N1 ; !
 غەرپ:غەرپ N1 ; !
-مىكروسوفت:مىكروسوفت N1 ; !
 تەكبىر:تەكبىر N1 ; !
 روس:روس N1 ; !
 كۆرەش:كۆرەش N1 ; !
