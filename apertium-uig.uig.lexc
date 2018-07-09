@@ -187,12 +187,10 @@ LEXICON CASE
 %<dat%>:%>%{G%}%{A%} CLITICS ;
 %<loc%>:%>%{D%}%{A%} CLITICS ;
 %<loc%>:%>%{D%}%{A%} N-PERS ;
-%<loc%>:%>%{D%}%{A%} Copula ; !doesn't work
 %<loc%>%<attr%>:%>%{D%}%{A%}%>كى N-PERS ;
 %<loc%>%<attr%>:%>%{D%}%{A%}%>كى CLITICS ;
 %<loc%>%<subst%>:%>%{D%}%{A%}%>كى SUBST-2 ;
 %<abl%>:%>%{D%}ىن CLITICS ;
-%<abl%>:%>%{D%}ىن Copula ; !doesn't work
 %<gen%>:%>نىڭ # ;
 %<gen%>:%>نىڭ CLITICS ;
 %<gen%>%<attr%>:%>نىڭكى # ;
@@ -207,10 +205,8 @@ LEXICON CASE-2
 %<nom%>: # ;
 %<dat%>:%>%{G%}%{A%} # ;
 %<loc%>:%>%{D%}%{A%} # ;
-%<loc%>:%>%{D%}%{A%} Copula ; !doesn't work
 %<loc%>%<attr%>:%>%{D%}%{A%}%>كى # ;
 %<abl%>:%>%{D%}ىن # ;
-%<abl%>:%>%{D%}ىن Copula ; !doesn't work
 %<gen%>:%>نىڭ # ;
 %<acc%>:%>نى # ;
 %<ter%>:%>%{G%}ىچە # ;
@@ -337,11 +333,11 @@ LEXICON PRON-PERS-SAN
 
 LEXICON PRON-PERS-SIZ
 
-%<prn%>%<pers%>%<p2%>%<frm%>%<sg%>: CASE ;
+%<prn%>%<pers%>%<p2%>%<frm%>%<sg%>: CASE-2 ;
 
 LEXICON PRON-PERS-SILI
 
-%<prn%>%<pers%>%<p2%>%<frm%>%<sg%>: CASE ;
+%<prn%>%<pers%>%<p2%>%<frm%>%<sg%>: CASE-2 ;
 
 LEXICON PRON-PERS-U
 %<prn%>%<pers%>%<p3%>%<sg%>%<nom%>: CLITICS ; 
@@ -355,24 +351,24 @@ LEXICON PRON-PERS-U
 
 LEXICON PRON-PERS-BIZ
 
-%<prn%>%<pers%>%<p1%>%<pl%>: CASE ;
-%<prn%>%<pers%>%<p1%>%<pl%>:%>لەر CASE ;
+%<prn%>%<pers%>%<p1%>%<pl%>: CASE-2 ;
+%<prn%>%<pers%>%<p1%>%<pl%>:%>لەر CASE-2 ;
 
 LEXICON PRON-PERS-SANLAR
 
-%<prn%>%<pers%>%<p2%>%<pl%>: CASE ;
+%<prn%>%<pers%>%<p2%>%<pl%>: CASE-2 ;
 
 LEXICON PRON-PERS-SILAR 
 
-%<prn%>%<pers%>%<p2%>%<frm%>%<pl%>: CASE ;
+%<prn%>%<pers%>%<p2%>%<frm%>%<pl%>: CASE-2 ;
 
 LEXICON PRON-PERS-SIZLAR 
 
-%<prn%>%<pers%>%<p2%>%<frm%>%<pl%>: CASE ;
+%<prn%>%<pers%>%<p2%>%<frm%>%<pl%>: CASE-2 ;
 
 LEXICON PRON-PERS-ULAR
 
-%<prn%>%<pers%>%<p3%>%<pl%>: CASE ; 
+%<prn%>%<pers%>%<p3%>%<pl%>: CASE-2 ; 
 
 
 LEXICON PRON-REFL
@@ -427,7 +423,7 @@ LEXICON DET-MISC
 LEXICON PRON-QNT
 
 %<prn%>%<qnt%>: # ;
-%<prn%>%<qnt%>: N-COMMON ;
+%<prn%>%<qnt%>: CASE-2 ;
 
 LEXICON DET-QNT
 
@@ -693,7 +689,9 @@ LEXICON DET-ITG
 
 LEXICON DET-DEM 
 
-%<det%>%<dem%>: N-COMMON ;
+%<det%>%<dem%>%<pl%>:لار CASE-2 ;
+%<det%>%<dem%>: CASE-2 ;
+%<det%>%<dem%>%<pl%>:لار # ;
 %<det%>%<dem%>: # ;
 
 LEXICON CC 
@@ -787,37 +785,34 @@ LEXICON Postpositions
 LEXICON Pronouns 
 
 مەن:م PRON-PERS-MAN ; ! "I/me"
-مەن:م CLITICS ; ! "I/me"
 
 سەن:س PRON-PERS-SAN ; ! "you (informal sg)"
-سەن:س CLITICS; ! "you (informal sg)"
+
 
 سىز:سىز%{e%} PRON-PERS-SIZ ; ! "you (polite sg)"
-سىز:سىز%{e%} CLITICS ; ! "you (polite sg)"
+
 
 سىلى:سىلى PRON-PERS-SILI ; ! "you (esteemed sg)"
-سىلى:سىلى CLITICS ; ! "you (esteemed sg)"
+
 
 ئۇ:ئۇ PRON-PERS-U ; ! "he/she/it"
-ئۇ:ئۇ CLITICS ; ! "he/she/it"
 ئۇ:ئو PRON-PERS-U ; ! "he/she/it"
-ئۇ:ئو CLITICS ; ! "he/she/it"
 
 
 بىز:بىز%{e%} PRON-PERS-BIZ ; ! "we/us"
-بىز:بىز%{e%} CLITICS ; ! "we/us"
+
 
 سەنلەر:سەنلەر PRON-PERS-SANLAR ; ! "you (informal pl)"
-سەنلەر:سەنلەر CLITICS ; ! "you (informal pl)"
+
 
 سىلەر:سىلەر PRON-PERS-SILAR ; ! "you (polite pl)"
-سىلەر:سىلەر CLITICS ; ! "you (polite pl)"
+
 
 سىزلەر:سىزلەر PRON-PERS-SIZLAR ; ! "you (very polite pl)"
-سىزلەر:سىزلەر CLITICS ; ! "you (very polite pl)"
+
 
 ﺉۆﺰﻟﻯﺭﻯ:ﺉۆﺰﻟﻯﺭﻯ PRON-PERS-SIZ ; ! ""
-ﺉۆﺰﻟﻯﺭﻯ:ﺉۆﺰﻟﻯﺭﻯ CLITICS ; ! ""
+
 
 
 ئۇلار:ئۇلار PRON-PERS-ULAR ; ! "they"
@@ -825,8 +820,8 @@ LEXICON Pronouns
 
 
 
-ئۆز:ئۆز PRON-REFL ; ! "own"
-ئۆز:ئۈز PRON-REFL ; ! "own"
+ئۆز:ئۆز%{e%} PRON-REFL ; ! "own"
+ئۆز:ئۈز%{e%} PRON-REFL ; ! "own"
 
 
 بۇ:بۇ PRON-DEM-BU ; ! "this"
@@ -23272,7 +23267,7 @@ LEXICON Check
 خوجالى:خوجالى NP-TOP ; !
 ئىيوردانىيە:ئىيوردانىيە NP-TOP ; !
 ماكېدونىيە:ماكېدونىيە NP-TOP ; !
-بىرسى:بىرسى PRON-PERS-U ; !
+بىرسى:بىرسى PRON-PERS ; !
 كەلتۈرۈل:كەلتۈرۈل V-IV ; !
 چۆرى:چۆرى V-TV ; !
 ئامانەت:ئامانەت A1 ; !
