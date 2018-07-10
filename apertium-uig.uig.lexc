@@ -81,7 +81,6 @@ Multichar_Symbols
 %<past2%>         ! -mış -miş but mostly for story telling
 %<past3%>         ! ^^
 %<past4%>         ! -mışmış
-%<inf%>           ! Infinitive -mAK
 %<prc_perf%>      ! Perfect participle
 %<gna_perf%>      ! Perfect verbal adverb
 %<abil%>          ! Abilitative
@@ -539,10 +538,9 @@ LEXICON V-GER
 %<gpr_fut2%>:%>%{E%}%>دىغان%>لى%{K%} N-COMMON ;  
 %<gna_neg%>:%>م%{A%}ي # ; !
 %<gna_neg2%>:%>م%{A%}ستىن # ;
-%<ger%>:%>%{U%}ش N-COMMON ; 
-%<ger%>:%>ي%{U%}ش N-COMMON ; 
-%<inf%>:%>م%{A%}%{K%} # ;
-%<ger_inf%>:%>م%{A%}%{K%} CASE ;
+%<ger%>:%>%{U%}ش SUBST-2 ; 
+%<ger%>:%>ي%{U%}ش SUBST-2 ; 
+%<ger_inf%>:%>م%{A%}%{K%} CASE-2 ;
 
 
 
@@ -653,7 +651,6 @@ V-AOR-NEG;
 V-NEG ;
 V-ABIL ;
 V-FUT ;
-%<inf%>:%>م%{A%}ق # ; ! FIXME: insert correct tag here
 V-IFI ;
 V-PAST ;
 V-AOR ; 
