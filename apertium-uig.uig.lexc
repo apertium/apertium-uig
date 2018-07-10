@@ -228,11 +228,11 @@ CASE ;
 %<px2sg%>%<frm%>:%>%{U%}ڭ%{I%}ز CASE ;
 %<px3sg%>%<hon%>:%>‫لىرى‬ CASE ;
 %<px1sg%>:%>%{i%}م Copula ;
-%<px1sg%>:%>%{U%}م CASE ;
+%<px1sg%>:%>%{U%}م Copula ;
 %<px2sg%>:%>%{i%}ڭ Copula ;
-%<px2sg%>:%>%{U%}ڭ CASE ;
+%<px2sg%>:%>%{U%}ڭ Copula ;
 %<px2pl%>:%>%{i%}ڭلار Copula ;
-%<px2pl%>:%>%{U%}ڭلار CASE ;
+%<px2pl%>:%>%{U%}ڭلار Copula ;
 %<px3sp%>:%>%{s%}ى Copula ;
 %<px1pl%>:%>%{i%}م%{I%}ز Copula ;
 %<px1pl%>:%>%{U%}م%{I%}ز Copula ;
@@ -240,14 +240,34 @@ CASE ;
 %<px2sg%>%<frm%>:%>%{U%}ڭ%{I%}ز Copula ;
 %<px3sg%>%<hon%>:%>‫لىرى‬ Copula ;
 
-LEXICON SUBST-2
 
+LEXICON SUBST-2
+Copula ; 
 CASE-2 ;
 %<px1sg%>:%>%{i%}م CASE-2 ;
+%<px1sg%>:%>%{U%}م CASE-2 ;
 %<px2sg%>:%>%{i%}ڭ CASE-2 ;
-%<px3sp%>:%>%{s%}%{I%} CASE-2 ;
+%<px2sg%>:%>%{U%}ڭ CASE-2 ;
+%<px2pl%>:%>%{i%}ڭلار CASE-2 ;
+%<px2pl%>:%>%{U%}ڭلار CASE-2 ;
+%<px3sp%>:%>%{s%}ى CASE-2 ;
 %<px1pl%>:%>%{i%}م%{I%}ز CASE-2 ;
-%<px2pl%>:%>%{i%}ڭ%{I%}ز CASE-2 ;
+%<px1pl%>:%>%{U%}م%{I%}ز CASE-2 ;
+%<px2pl%>%<frm%>:%>%{i%}ڭ%{I%}ز CASE-2 ;
+%<px2sg%>%<frm%>:%>%{U%}ڭ%{I%}ز CASE-2 ;
+%<px3sg%>%<hon%>:%>‫لىرى‬ CASE-2 ;
+%<px1sg%>:%>%{i%}م Copula ;
+%<px1sg%>:%>%{U%}م Copula ;
+%<px2sg%>:%>%{i%}ڭ Copula ;
+%<px2sg%>:%>%{U%}ڭ Copula ;
+%<px2pl%>:%>%{i%}ڭلار Copula ;
+%<px2pl%>:%>%{U%}ڭلار Copula ;
+%<px3sp%>:%>%{s%}ى Copula ;
+%<px1pl%>:%>%{i%}م%{I%}ز Copula ;
+%<px1pl%>:%>%{U%}م%{I%}ز Copula ;
+%<px2pl%>%<frm%>:%>%{i%}ڭ%{I%}ز Copula ;
+%<px2sg%>%<frm%>:%>%{U%}ڭ%{I%}ز Copula ;
+%<px3sg%>%<hon%>:%>‫لىرى‬ Copula ;
 
 
 LEXICON NP-COMMON
@@ -528,14 +548,14 @@ LEXICON V-PRC
 
 LEXICON V-GER
 
-%<gpr_rsub%>:%>%{G%}%{A%}ن N-COMMON ; ! 
+%<gpr_rsub%>:%>%{G%}%{A%}ن  N-COMMON ; ! 
 %<gpr_rsub3%>:%>%{U%}ۋات%{G%}{A%}ن N-COMMON ; !
 %<ger_past%>:%>%{G%}%{A%}ن%>لى%{K%} N-COMMON ; !
-%<ger_past2%>:%>%{i%}ۋات%>%{G%}%{A%}ن%>لى%{K%} N-COMMON ; ! 
+%<ger_past2%>:%>%{U%}ۋات%>%{G%}%{A%}ن%>لى%{K%} N-COMMON ; ! 
 %<ger_pabs%>:%>%{G%}%{A%}ن N-COMMON ; ! 
 %<gpr_past%>%<subst%>:%>%{G%}%{A%}ن N-COMMON ;
-%<gpr_fut%>:%>%{E%}%>دىغان N-COMMON ;
-%<gpr_fut2%>:%>%{E%}%>دىغان%>لى%{K%} N-COMMON ;  
+%<gpr_fut%>:%>%{E%}%>دىغان SUBST-2 ;
+%<gpr_fut2%>:%>%{E%}%>دىغان%>لى%{K%} SUBST-2 ;  
 %<gna_neg%>:%>م%{A%}ي # ; !
 %<gna_neg2%>:%>م%{A%}ستىن # ;
 %<ger%>:%>%{U%}ش SUBST-2 ; 
@@ -617,7 +637,6 @@ LEXICON IMP-PERS
 LEXICON V-IMP
 
 %<imp%>: IMP-PERS ;
-!!%<imp%>: SUBST-2 ; 
 
 LEXICON V-NEG
 
@@ -945,6 +964,7 @@ LEXICON Nouns
 مەلۇمات:مەلۇمات N1 ; ! ""
 ئايلىق:ئايلىق N1 ; ! ""
 ماقالە:ماقالە%{e%} N1 ; ! ""
+ماقالە:ماقالى%{e%} N1 ; ! ""
 ماقال:ماقال%{☫%} N1 ; ! ""
 ئارسىز:ئارسىز N1 ; ! ""
 مەڭگۈلۈك:مەڭگۈلۈك N1 ; ! ""
@@ -2327,7 +2347,7 @@ LEXICON Verbs
 ئاچ:ئاچ V-TV ; ! ""
 چاچ:چاچ V-TV ; ! ""
 كەچ:كەچ V-TV ; ! ""
-ئىچ:ئىچ V-TV ; ! ""
+ئىچ:ئىچ%{e%} V-TV ; ! ""
 پىچىۋەت:پىچىۋەت V-TV ; ! ""
 سانجى:سانجى V-TV ; ! ""
 مارى:مارى V-TV ; ! ""
@@ -5505,7 +5525,7 @@ LEXICON Check
 تەسلىك:تەسلىك N1 ; ! "difficulty"
 گارانتى:گارانتى N1 ; ! "warranty"
 ناھىيە:ناھىيە%{☫%} N1 ; ! "county"
-ناھىيە:ناھىيە%{e%} N1 ; ! "county"
+ناھىيە:ناھىيى%{e%} N1 ; ! "county"
 يوقسۇزلۇق:يوقسۇزلۇق N1 ; ! "poverty"
 يوقسۇللۇق:يوقسۇللۇق N1 ; ! "poverty"
 نامراتلىق:نامراتلىق N1 ; ! "poverty"
@@ -8453,7 +8473,6 @@ LEXICON Check
 سىغىش:سىغىش V-IV ; ! ""
 سىقىل:سىقىل V-TD ; ! ""
 سىك:سىك V-TD ; ! ""
-سىگناللىق:سىگناللىق V-TD ; ! ""
 سىلكىشتۈر:سىلكىشتۈر V-TD ; ! ""
 سىلكىشلى:سىلكىشلى V-TV ; ! ""
 سىلكى:سىلكى V-TD ; ! ""
@@ -20684,7 +20703,7 @@ LEXICON Check
 سىرت:سىرت V-TD ; ! ""
 چىغىرت:چىغىرت V-TD ; ! ""
 تۈزەت:تۈزەت V-TD ; ! ""
-كۆزەت:كۆزەت V-TD ; ! ""
+كۆزەت:كۆزەت V-TV ; ! ""
 ئوقۇت:ئوقۇت V-TD ; ! ""
 ئۆگەت:ئۆگەت V-TD ; ! ""
 ئەسلەت:ئەسلەت V-TD ; ! ""
