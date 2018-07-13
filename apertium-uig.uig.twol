@@ -62,7 +62,8 @@ Rules
 
 "{A} becomes ە in front vowel contexts"
 %{A%}:ە <=> [ :FrontVow [ :ى | :Cns ]* :Cns ]/[ :0 - Abstract: ] _ ;
- [ %{e%}: [ :ى | :Cns ]* :Cns ]/[ :0 - Abstract: ] _ ; 
+ [ %{e%}: [ :ى | :Cns ]* :Cns ]/[ :0 - Abstract: ] _ ;
+%{e%}: %>: _ ; 
        except
           _ [ :Cns :Vow ]/:0 ;
 
