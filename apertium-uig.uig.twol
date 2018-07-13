@@ -3,8 +3,7 @@ Alphabet
 
  ئ ا ە ب پ ت ج چ خ د ر ز ژ س ش غ ف ق ك گ ڭ ل م ن ھ و ۇ ۆ ۈ ۋ ې ى ي ک
 
- ،
-
+%{q%}:0
 %{G%}:غ
 %{K%}:ق
 %{A%}:ا
@@ -40,7 +39,7 @@ FrontUrdVow = ې ; ! ä e
 Cns =  ب پ ت ج چ خ د ر ز ژ س ش غ ف ق ك گ ڭ ل م ن ھ ۋ ي ئ ک ;
 
 VoicelessCns = پ ت چ خ س ش ف ق ك ھ ;
-
+ 
 VoicedCns = ي ۋ ر ل م ن ڭ ۋ ج ز ;
 
 Abstract = %{a%} %{e%} ;
@@ -137,6 +136,7 @@ Rules
 
 "Devoice {D} after a voiceless consonant"
 %{D%}:ت <=> :VoicelessCns (:0) %>: _  ; 
+%{q%}: %>: _ ; 
 
 !! Cons-vowel interaction
 
@@ -159,7 +159,7 @@ Rules
 "{G} to ق after voiceless consonant"
 %{G%}:ق <=> :VoicelessCns/[ :0 - Abstract: ] _ ;
  [ :VoicelessCns %{a%}: ]/[ :0 - Abstract: ] _ ;
- :ق %>: _ ; 
+%{q%}: %>: _ ; 
         except
             [ :FrontVow [ :Cns | :ى ]* :VoicelessCns ]/[ :0 - Abstract: ] _ ;
                [ %{e%}: [ :Cns | :ى ]* :VoicelessCns ]/[ :0 - Abstract: ] _ ;
