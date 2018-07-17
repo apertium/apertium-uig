@@ -19,6 +19,7 @@ Multichar_Symbols
 %<adj%>           ! Adjective
 %<barb%>          ! Barbarisme
 %<ij%>            ! Interjection
+%<sym%>           ! Symbol
 %<postadv%> !-dA equivalent
 %<qst%>           ! Question word
 %<qnt%>           ! quantifier 
@@ -163,6 +164,7 @@ Copula ;
 Adjectives ;
 Adverbs ;
 Interjections ;
+Symbols ;
 Punctuation ;
 
 
@@ -741,6 +743,12 @@ LEXICON CA
 ! 
 ! make Uyghur
 %<cnjadv%>: # ;
+
+
+
+LEXICON SYM
+
+%<sym%>: # ;
 
 
 
@@ -24955,6 +24963,11 @@ EX360:EX360 N1 ; !
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON Symbols
+
+
+%%:%% SYM ; 
 
 LEXICON Punctuation
 
