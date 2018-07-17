@@ -577,6 +577,10 @@ LEXICON V-GER
 LEXICON V-ABIL-COMMON
 V-IFI ;
 V-PAST ;
+V-GER ; 
+V-AOR ; 
+V-PROG ; 
+V-FUT ;
 
 LEXICON V-ABIL-NEG-POS
 
@@ -585,7 +589,7 @@ V-ABIL-COMMON ;
 
 LEXICON V-ABIL
 
-%<abil%>:%>%{E%}ال V-ABIL-NEG-POS ;
+%<abil%>:%>%{A%}ل V-ABIL-NEG-POS ;
 
 LEXICON V-AOR
 
@@ -10946,7 +10950,7 @@ LEXICON Check
 زاراتلىق:زاراتلىق N1 ; ! ""
 تاماشا:تاماشا N1 ; ! ""
 ۋاقتانىۋاق:ۋاقتانىۋاق N1 ; ! ""
-ھادىسە:ھادىسە N1 ; ! ""
+ھادىسە:ھادىسە%{e%} N1 ; ! ""
 ئەھيا:ئەھيا N1 ; ! ""
 ماددىيلىق:ماددىيلىق N1 ; ! ""
 مەنبەشۇناس:مەنبەشۇناس N1 ; ! ""
