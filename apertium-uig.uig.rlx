@@ -111,18 +111,22 @@ REMOVE Prc/perf IF (0 Prc/perf) ;
 REMOVE Post if (-1 BOS OR Punct);
     ## Мен сизди анъламадым.
 
+SELECT Post IF (0 Post) ; 
+
 SELECT Attr IF (0C Attr OR Nom) (1C N + Attr OR N + Nom);
 
 REMOVE Attr IF (1 EOS OR Vfin) ; 
 
-SELECT N IF (1 Px3Sp);
+SELECT N IF (1 Px3Sp) ;
 
 REMOVE pass + neg IF (1 Px3Sp) ;
   ## "qisqartilma adi"
 
+SELECT rsub IF (0 Loc) ; 
+ ## bolğanda = olanda, not olmuşta
+
 SELECT rsub IF (1 N) ; 
 	## gelen adam instead of gelmiş adam
-
 
 REMOVE Nom IF (1C Nom) ; 
 
@@ -156,9 +160,6 @@ SELECT Pron IF (1 Post) ;
 SELECT Padv IF (0 Padv) ; 
  ## menmu = ben de. Will write a specific rule for the question mark.
 
-SELECT Sg3 IF (0 Sg) ; 
- ## paytexti bolsa = başkenti olsa instead of olsalar
-
 SELECT Adv IF (-1 CC OR Post) (1 N) ; 
   ## u bilen bille shunlargha 
 
@@ -187,5 +188,8 @@ REMOVE IV IF (0 TV + Pass) ;
 
 REMOVE A IF (0 Pron) (NOT 1* N BARRIER V) ;
  ## öz = kendi
+
+SELECT Sg3 IF (0 Sg3) ; 
+ ## paytexti bolsa = başkenti olsa instead of olsalar
 
 REMOVE Guess ;

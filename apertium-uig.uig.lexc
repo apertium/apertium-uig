@@ -566,7 +566,7 @@ LEXICON V-GER
 %<ger_past%>:%>%{G%}%{A%}ن%>لى%{K%} N-COMMON ; !
 %<ger_past2%>:%>%{U%}ۋات%>%{G%}%{A%}ن%>لى%{K%} N-COMMON ; ! 
 %<ger_pabs%>:%>%{G%}%{A%}ن N-COMMON ; ! 
-%<gpr_past%>%<subst%>:%>%{G%}%{A%}ن N-COMMON ;
+%<gpr_rsub%>%<subst%>:%>%{G%}%{A%}ن N-COMMON ;
 %<gpr_fut%>:%>%{E%}%>دىغان SUBST-2 ;
 %<gpr_fut2%>:%>%{E%}%>دىغان%>لى%{K%} SUBST-2 ;  
 %<gna_neg%>:%>م%{A%}ي # ; !
@@ -2234,8 +2234,7 @@ LEXICON Verbs
 بۇلى:بۇلى V-TV ; ! ""
 جىرى:جىرى V-TV ; ! ""
 قۇر:قۇر V-TV ; ! ""
-قارى:قارى V-TV ; ! ""
-ئاقلى:ئاقلى V-TV ; ! ""
+ئاقلا:ئاقلا V-TV ; ! ""
 ئېنىقلى:ئېنىقلى V-TV ; ! ""
 ئاجرىتىۋەت:ئاجرىتىۋەت V-TV ; ! ""
 ماختى:ماختى V-TV ; ! ""
