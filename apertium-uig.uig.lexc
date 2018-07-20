@@ -101,6 +101,7 @@ Multichar_Symbols
 %<gna_when%>      ! -geç as in "seni görgeç utanmaz mı"
 %<gna_neg%>       ! -madan
 %<gna_neg2%>      ! ^^ 
+%<gna_neg3%>      ! -m{A}sli{K} = neg gerund (ketmeslik = gitmeme)
 %<aorp%>          ! -ardı, -irdi "geçmiş zamanın hikayesi"
 
 %<itg%>           ! Interrogative
