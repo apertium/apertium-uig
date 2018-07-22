@@ -431,24 +431,24 @@ LEXICON PRON-DEM-U
 
 LEXICON PRON-MISC
 
-%<prn%>: PRON-DEM-COMMON ;
+%<prn%>: CASE-2 ;
 
 LEXICON PRON-PERS
 
-%<prn%>: PRON-DEM-COMMON ;
+%<prn%>: CASE-2 ;
 
 LEXICON PRON-NEG
 
-%<prn%>: PRON-DEM-COMMON ;
+%<prn%>: CASE-2 ;
 
 LEXICON PRON-ADV
 
-%<prn%>: PRON-DEM-COMMON ;
+%<prn%>: CASE-2 ;
 
 
 LEXICON PRON-ITG
 
-%<prn%>%<itg%>: PRON-DEM-COMMON ; !!! needs to be redone
+%<prn%>%<itg%>: CASE-2 ;
 
 LEXICON DET-MISC
 
