@@ -435,11 +435,11 @@ LEXICON PRON-MISC
 
 LEXICON PRON-PERS
 
-%<prn%>: CASE-2 ;
+%<prn%>%<pers%>: CASE-2 ;
 
 LEXICON PRON-NEG
 
-%<prn%>: CASE-2 ;
+%<prn%>%<neg%>: CASE-2 ;
 
 LEXICON PRON-ADV
 
@@ -456,7 +456,6 @@ LEXICON DET-MISC
 
 LEXICON PRON-QNT
 
-%<prn%>%<qnt%>: # ;
 %<prn%>%<qnt%>: CASE-2 ;
 
 LEXICON DET-QNT
@@ -5111,7 +5110,7 @@ LEXICON Check
 گارشوك:گارشوك N1 ; ! "spittoon"
 بىراۋ:بىراۋ PRON-MISC ; ! "someone"
 پالانچى:پالانچى PRON-MISC ; ! "someone"
-ھېچكىم:ھېچكىم PRON-QNT ; ! "anyone"
+ھېچكىم:ھېچكىم%{e%} PRON-QNT ; ! "anyone"
 ھېچنېمە:ھېچنېمە PRON-NEG ; ! "anything"
 ھېچنېمە:ھېچنېمى PRON-NEG ; ! "anything"
 نېمىكى:نېمىكى PRON-MISC ; ! "whatever"
@@ -9631,7 +9630,7 @@ LEXICON Check
 بۇزغۇنچىلىق:بۇزغۇنچىلىق N1 ; ! ""
 روي:روي N1 ; ! ""
 ئوسۇڭلۇق:ئوسۇڭلۇق N1 ; ! ""
-بۇل:بۇل N1 ; ! ""
+بۇل:بۇل V-IV ; ! ""
 ئالپىنىزم:ئالپىنىزم N1 ; ! ""
 تەرغىپ:تەرغىپ N1 ; ! ""
 چو:چو N1 ; ! ""
@@ -16651,7 +16650,7 @@ LEXICON Check
 خارلىق:خارلىق N1 ; ! ""
 ئۆرۈملۈك:ئۆرۈملۈك N1 ; ! ""
 كونسېرۋاتىپلىق:كونسېرۋاتىپلىق N1 ; ! ""
-بۇل:بۇل N1 ; ! ""
+
 باستۇرۇق:باستۇرۇق N1 ; ! ""
 نەشپۈتلۈك:نەشپۈتلۈك N1 ; ! ""
 دوتسېنت:دوتسېنت N1 ; ! ""
@@ -22691,7 +22690,6 @@ LEXICON Check
 كىيىن:كىيىن POST ; !
 ﺑﯩﻠﻪﻥ:ﺑﯩﻠﻪﻥ POST ; !
 ھازىرغىچە:ھازىرغىچە ADV ; !
-بۇلا:بۇلا V-TV ; !
 بۇلا:بۇلا V-TV ; !
 ئەلەيھىسسالام:ئەلەيھىسسالام N1 ; !
 نوپۇس% جايلاخكان:نوپۇس% جايلاخكان A1 ; !
