@@ -177,12 +177,15 @@ LEXICON CLITICS
 %+مۇ%<qst%>:%>مۇ V-COP-PERS ;
 %+چۇ%<qst%>:%>چۇ # ;
 !!%<gm%>:%>%{D%}ۇر # ;
-%<comp%>:%>ر%{A%}%{K%} # ; 
+
 %<dek%>:%>%{D%}ەك # ;
 %+چە%<che%>:%>چە # ;
 %<dub%>:%>%{y%}كەن V-COP-PERS ;
 %+مۇ%<postadv%>:%>مۇ # ;
 %+كى%<cnjadv%>:%>كى # ; ! 
+
+LEXICON COMP
+%<comp%>:%>ر%{A%}%{K%} # ; 
 
 LEXICON CASE
 %<nom%>: N-PERS ;
@@ -764,6 +767,7 @@ LEXICON POST
 LEXICON ADV
 
 %<adv%>: # ;
+%<adv%>: COMP ; 
 
 LEXICON ADV-ITG 
 
@@ -781,18 +785,19 @@ LEXICON A1
 %<adj%>: Copula ;
 %<adj%>%<advl%>: CLITICS ;
 %<adj%>%<subst%>: N-COMMON ;
-!FIXME: COMP?
+%<adj%>: COMP ; 
 
 LEXICON A2
 
 %<adj%>: CLITICS ;
 %<adj%>%<subst%>: N-COMMON ;
-!FIXME: COMP?
+%<adj%>: COMP ; 
 
 LEXICON A4
 
 %<adj%>: CLITICS ;
 %<adj%>: Copula ;
+%<adj%>: COMP ; 
 
 
 
@@ -19503,7 +19508,6 @@ LEXICON Check
 شاتراق:شاتراق A1 ; !
 ئولتۇراق:ئولتۇراق A1 ; !
 بىرۋاق:بىرۋاق A1 ; !
-ياخشىراق:ياخشىراق A1 ; !
 ئۇزاق:ئۇزاق A1 ; !
 ئالىپاساق:ئالىپاساق A1 ; !
 ساق:ساق A1 ; !
