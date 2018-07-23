@@ -174,14 +174,14 @@ Punctuation ;
 LEXICON CLITICS
 
 # ;
-%<qst%>:%>مۇ V-COP-PERS ;
-%<qst%>:%>چۇ # ;
+%+مۇ%<qst%>:%>مۇ V-COP-PERS ;
+%+چۇ%<qst%>:%>چۇ # ;
 !!%<gm%>:%>%{D%}ۇر # ;
 %<comp%>:%>ر%{A%}%{K%} # ; 
 %<dek%>:%>%{D%}ەك # ;
-%<che%>:%>چە # ;
+%+چە%<che%>:%>چە # ;
 %<dub%>:%>%{y%}كەن V-COP-PERS ;
-%<postadv%>:%>مۇ # ;
+%+مۇ%<postadv%>:%>مۇ # ;
 %+كى%<cnjadv%>:%>كى # ; ! 
 
 LEXICON CASE
