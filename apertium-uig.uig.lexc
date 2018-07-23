@@ -182,7 +182,7 @@ LEXICON CLITICS
 %<che%>:%>چە # ;
 %<dub%>:%>%{y%}كەن V-COP-PERS ;
 %<postadv%>:%>مۇ # ;
-%<cnjadv%>:%>كى # ; !
+%+كى%<cnjadv%>:%>كى # ; ! 
 
 LEXICON CASE
 %<nom%>: N-PERS ;
