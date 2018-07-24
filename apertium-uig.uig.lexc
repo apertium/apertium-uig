@@ -188,13 +188,13 @@ LEXICON COMP
 %<comp%>:%>ر%{A%}%{K%} # ; 
 
 LEXICON CASE
-%<nom%>: N-PERS ;
+%<nom%>: Copula ;
 %<nom%>: CLITICS ;
-%<dat%>:%>%{G%}%{A%} N-PERS ;
+%<dat%>:%>%{G%}%{A%} Copula ;
 %<dat%>:%>%{G%}%{A%} CLITICS ;
 %<loc%>:%>%{D%}%{A%} CLITICS ;
-%<loc%>:%>%{D%}%{A%} N-PERS ;
-%<loc%>%<attr%>:%>%{D%}%{A%}%>كى N-PERS ;
+%<loc%>:%>%{D%}%{A%} Copula ;
+%<loc%>%<attr%>:%>%{D%}%{A%}%>كى Copula ;
 %<loc%>%<attr%>:%>%{D%}%{A%}%>كى CLITICS ;
 %<loc%>%<subst%>:%>%{D%}%{A%}%>كى SUBST-2 ;
 %<abl%>:%>%{D%}ىن CLITICS ;
@@ -221,7 +221,6 @@ LEXICON CASE-2
 
 LEXICON POSSESSION
 
-Copula ;
 CASE ;
 %<px1sg%>:%>%{i%}م CASE ;
 %<px1sg%>:%>%{U%}م CASE ;
@@ -235,22 +234,21 @@ CASE ;
 %<px2pl%>%<frm%>:%>%{i%}ڭ%{I%}ز CASE ;
 %<px2sg%>%<frm%>:%>%{U%}ڭ%{I%}ز CASE ;
 %<px3sg%>%<hon%>:%>‫لىرى‬ CASE ;
-%<px1sg%>:%>%{i%}م Copula ;
-%<px1sg%>:%>%{U%}م Copula ;
-%<px2sg%>:%>%{i%}ڭ Copula ;
-%<px2sg%>:%>%{U%}ڭ Copula ;
-%<px2pl%>:%>%{i%}ڭلار Copula ;
-%<px2pl%>:%>%{U%}ڭلار Copula ;
-%<px3sp%>:%>%{s%}ى Copula ;
-%<px1pl%>:%>%{i%}م%{I%}ز Copula ;
-%<px1pl%>:%>%{U%}م%{I%}ز Copula ;
-%<px2pl%>%<frm%>:%>%{i%}ڭ%{I%}ز Copula ;
-%<px2sg%>%<frm%>:%>%{U%}ڭ%{I%}ز Copula ;
-%<px3sg%>%<hon%>:%>‫لىرى‬ Copula ;
+%<px1sg%>:%>%{i%}م CLITICS ;
+%<px1sg%>:%>%{U%}م CLITICS ;
+%<px2sg%>:%>%{i%}ڭ CLITICS ;
+%<px2sg%>:%>%{U%}ڭ CLITICS ;
+%<px2pl%>:%>%{i%}ڭلار CLITICS ;
+%<px2pl%>:%>%{U%}ڭلار CLITICS ;
+%<px3sp%>:%>%{s%}ى CLITICS ;
+%<px1pl%>:%>%{i%}م%{I%}ز CLITICS ;
+%<px1pl%>:%>%{U%}م%{I%}ز CLITICS ;
+%<px2pl%>%<frm%>:%>%{i%}ڭ%{I%}ز CLITICS ;
+%<px2sg%>%<frm%>:%>%{U%}ڭ%{I%}ز CLITICS ;
+%<px3sg%>%<hon%>:%>‫لىرى‬ CLITICS ;
 
 
 LEXICON SUBST-2
-Copula ; 
 CASE-2 ;
 %<px1sg%>:%>%{i%}م CASE-2 ;
 %<px1sg%>:%>%{U%}م CASE-2 ;
@@ -264,18 +262,18 @@ CASE-2 ;
 %<px2pl%>%<frm%>:%>%{i%}ڭ%{I%}ز CASE-2 ;
 %<px2sg%>%<frm%>:%>%{U%}ڭ%{I%}ز CASE-2 ;
 %<px3sg%>%<hon%>:%>‫لىرى‬ CASE-2 ;
-%<px1sg%>:%>%{i%}م Copula ;
-%<px1sg%>:%>%{U%}م Copula ;
-%<px2sg%>:%>%{i%}ڭ Copula ;
-%<px2sg%>:%>%{U%}ڭ Copula ;
-%<px2pl%>:%>%{i%}ڭلار Copula ;
-%<px2pl%>:%>%{U%}ڭلار Copula ;
-%<px3sp%>:%>%{s%}ى Copula ;
-%<px1pl%>:%>%{i%}م%{I%}ز Copula ;
-%<px1pl%>:%>%{U%}م%{I%}ز Copula ;
-%<px2pl%>%<frm%>:%>%{i%}ڭ%{I%}ز Copula ;
-%<px2sg%>%<frm%>:%>%{U%}ڭ%{I%}ز Copula ;
-%<px3sg%>%<hon%>:%>‫لىرى‬ Copula ;
+%<px1sg%>:%>%{i%}م CLITICS ;
+%<px1sg%>:%>%{U%}م CLITICS ;
+%<px2sg%>:%>%{i%}ڭ CLITICS ;
+%<px2sg%>:%>%{U%}ڭ CLITICS ;
+%<px2pl%>:%>%{i%}ڭلار CLITICS ;
+%<px2pl%>:%>%{U%}ڭلار CLITICS ;
+%<px3sp%>:%>%{s%}ى CLITICS ;
+%<px1pl%>:%>%{i%}م%{I%}ز CLITICS ;
+%<px1pl%>:%>%{U%}م%{I%}ز CLITICS ;
+%<px2pl%>%<frm%>:%>%{i%}ڭ%{I%}ز CLITICS ;
+%<px2sg%>%<frm%>:%>%{U%}ڭ%{I%}ز CLITICS ;
+%<px3sg%>%<hon%>:%>‫لىرى‬ CLITICS ;
 
 
 LEXICON NP-COMMON
@@ -804,7 +802,8 @@ LEXICON A4
 
 LEXICON COP
 
-%<cop%>: V-IFI ;
+%<cop%>%<ifi%>: V-IFI ;
+%<cop%>%<aor%>: N-PERS ; 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
@@ -2583,6 +2582,7 @@ LEXICON Verbs
 
 LEXICON Copula
 
+%+ئى: COP ; 
 ئى:ئى COP ;
 ئې:ئې COP ; 
 ئى%<cop%>%<neg%>:ئەمەس V-COP-PERS ; !
@@ -18184,7 +18184,7 @@ LEXICON Check
 بوپ:بوپ N1 ; !
 توپ:توپ N1 ; !
 گىرىپ:گىرىپ N1 ; !
-ئىزاھات:ئىزاھات N1 ; !
+ئىزاھات:ئىزاھات%{☫%} N1 ; !
 قاباھەت:قاباھەت N1 ; !
 پات:پات N1 ; !
 قۇززات:قۇززات N1 ; !
@@ -21047,6 +21047,7 @@ LEXICON Check
 ناۋادا:ناۋادا ADV ; ! ""
 ئائىت:ئائىت POST ; ! ""
 ھەربىر:ھەربىر DET-QNT ; ! ""
+ھەربىر:ھەربىر PRON-QNT ; ! ""
 بارا:بارا N1 ; ! ""
 خالاس:خالاس POST ; ! ""
 ئەدەبىي:ئەدەبىي A1 ; ! ""
@@ -25093,6 +25094,33 @@ EX360:EX360 N1 ; !
 ئۇ:ئۇ DET-DEM ; !
 ئادەمئاتا:ئادەمئاتا NP-ANT-M ; !
 ھامىلىدار:ھامىلىدار N1 ; !
+ساراھ:ساراھ NP-ANT-F ; !
+بىسلىق:بىسلىق A1 ; !
+زەدەكىيا:زەدەكىيا NP-ANT-M ; !
+ئېلىخۇ:ئېلىخۇ NP-ANT-M ; !
+ئاموس:ئاموس NP-ANT-M ; !
+ئابىمەلەك:ئابىمەلەك NP-ANT-M ; !
+بالائام:بالائام NP-ANT-M ; !
+يەروبوئام:يەروبوئام NP-ANT-M ; !
+گىدېئون:گىدېئون NP-ANT-M ; !
+ھاگاي:ھاگاي NP-ANT-M ; !
+ھەمدۇسانا:ھەمدۇسانا N1 ; !
+ياھۋەھ:ياھۋەھ N1 ; !
+مىسىرلىق:مىسىرلىق N1 ; !
+ئاراملىق:ئاراملىق N1 ; !
+ئىنسانئوغلى:ئىنسانئوغلى N1 ; !
+سۇرىيە:سۇرىيە NP-TOP ; !
+گالىلىيە:گالىلىيە NP-TOP ; !
+ئەبەدىلئەبەدگىچە:ئەبەدىلئەبەدگىچە ADV ; !
+كىمدەكىم:كىمدەكىم ADV ; !
+چاقىرت:چاقىرت V-TV ; !
+ئەستەر:ئەستەر NP-ANT-F ; !
+ئەللىك:ئەللىك A1 ; !
+بېجىرىم:بېجىرىم A1 ; !
+ئورما:ئورما N1 ; !
+تىرىلىش:تىرىلىش N1 ; !
+ۋەيرانە:ۋەيرانە N1 ; !
+بەجا% قىل:بەجا% قىل V-TV ; !
 
 
 
