@@ -142,6 +142,7 @@ Multichar_Symbols
 %{☫%}                 ! "loanword" - blocks certain processes
                       ! needed after ا that doesn't change to ى
 %{q%}		      ! for loanwords, devoicing suffixes
+%{ğ%}                 ! ^^ opposite
 %{e%}                 ! forces front harmony
 %{a%}                 ! forces back harmony
 %{L%}                 ! for passive: ل or ن
@@ -12945,6 +12946,7 @@ LEXICON Check
 بەرھەم:بەرھەم N1 ; ! ""
 لامپا:لامپا N1 ; ! ""
 جاھات:جاھات N1 ; ! ""
+تالاڭ:تالاڭ N1 ; !
 تەستىقنامە:تەستىقنامە N1 ; ! ""
 جىندىي:جىندىي N1 ; ! ""
 جارچى:جارچى N1 ; ! ""
@@ -24460,6 +24462,7 @@ EX360:EX360 N1 ; !
 پۇتۇن:پۇتۇن N1 ; !
 تېلفون:تېلفون N1 ; !
 ياخۇي:ياخۇي N1 ; !
+مەسىھ:مەسىھ%{ğ%} N1 ; !
 مەسىھ:مەسىھ N1 ; !
 ھەنەفىي:ھەنەفىي N1 ; !
 چۇنكى:چۇنكى CC ; !
