@@ -235,18 +235,6 @@ CASE ;
 %<px2pl%>%<frm%>:%>%{i%}ڭ%{I%}ز CASE ;
 %<px2sg%>%<frm%>:%>%{U%}ڭ%{I%}ز CASE ;
 %<px3sg%>%<hon%>:%>‫لىرى‬ CASE ;
-%<px1sg%>:%>%{i%}م CLITICS ;
-%<px1sg%>:%>%{U%}م CLITICS ;
-%<px2sg%>:%>%{i%}ڭ CLITICS ;
-%<px2sg%>:%>%{U%}ڭ CLITICS ;
-%<px2pl%>:%>%{i%}ڭلار CLITICS ;
-%<px2pl%>:%>%{U%}ڭلار CLITICS ;
-%<px3sp%>:%>%{s%}ى CLITICS ;
-%<px1pl%>:%>%{i%}م%{I%}ز CLITICS ;
-%<px1pl%>:%>%{U%}م%{I%}ز CLITICS ;
-%<px2pl%>%<frm%>:%>%{i%}ڭ%{I%}ز CLITICS ;
-%<px2sg%>%<frm%>:%>%{U%}ڭ%{I%}ز CLITICS ;
-%<px3sg%>%<hon%>:%>‫لىرى‬ CLITICS ;
 
 
 LEXICON SUBST-2
@@ -263,18 +251,7 @@ CASE-2 ;
 %<px2pl%>%<frm%>:%>%{i%}ڭ%{I%}ز CASE-2 ;
 %<px2sg%>%<frm%>:%>%{U%}ڭ%{I%}ز CASE-2 ;
 %<px3sg%>%<hon%>:%>‫لىرى‬ CASE-2 ;
-%<px1sg%>:%>%{i%}م CLITICS ;
-%<px1sg%>:%>%{U%}م CLITICS ;
-%<px2sg%>:%>%{i%}ڭ CLITICS ;
-%<px2sg%>:%>%{U%}ڭ CLITICS ;
-%<px2pl%>:%>%{i%}ڭلار CLITICS ;
-%<px2pl%>:%>%{U%}ڭلار CLITICS ;
-%<px3sp%>:%>%{s%}ى CLITICS ;
-%<px1pl%>:%>%{i%}م%{I%}ز CLITICS ;
-%<px1pl%>:%>%{U%}م%{I%}ز CLITICS ;
-%<px2pl%>%<frm%>:%>%{i%}ڭ%{I%}ز CLITICS ;
-%<px2sg%>%<frm%>:%>%{U%}ڭ%{I%}ز CLITICS ;
-%<px3sg%>%<hon%>:%>‫لىرى‬ CLITICS ;
+
 
 
 LEXICON NP-COMMON
