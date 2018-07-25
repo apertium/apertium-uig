@@ -210,14 +210,14 @@ LEXICON CASE
 
 LEXICON CASE-2
 
-%<nom%>: # ;
-%<dat%>:%>%{G%}%{A%} # ;
-%<loc%>:%>%{D%}%{A%} # ;
-%<loc%>%<attr%>:%>%{D%}%{A%}%>كى # ;
-%<abl%>:%>%{D%}ىن # ;
-%<gen%>:%>نىڭ # ;
-%<acc%>:%>نى # ;
-%<ter%>:%>%{G%}ىچە # ;
+%<nom%>: CLITICS ;
+%<dat%>:%>%{G%}%{A%} CLITICS ;
+%<loc%>:%>%{D%}%{A%} CLITICS ;
+%<loc%>%<attr%>:%>%{D%}%{A%}%>كى CLITICS ;
+%<abl%>:%>%{D%}ىن CLITICS ;
+%<gen%>:%>نىڭ CLITICS ;
+%<acc%>:%>نى CLITICS ;
+%<ter%>:%>%{G%}ىچە CLITICS ;
 
 
 LEXICON POSSESSION
@@ -326,40 +326,38 @@ LEXICON NUM
 
 LEXICON PRON-DEM-CASE
 
-%<nom%>: # ;
-%<acc%>:نى # ;
-%<gen%>:نىڭ # ;
-%<loc%>:ندا # ;
-%<loc%>:نىڭدا # ;
-%<abl%>:ندىن # ;
-%<abl%>:نىڭدىن # ;
-%<dat%>:ڭا # ;
-%<dat%>:نىڭغا # ;
+%<nom%>: CLITICS ;
+%<acc%>:نى CLITICS ;
+%<gen%>:نىڭ CLITICS ;
+%<loc%>:ندا CLITICS ;
+%<loc%>:نىڭدا CLITICS ;
+%<abl%>:ندىن CLITICS ;
+%<abl%>:نىڭدىن CLITICS ;
+%<dat%>:ڭا CLITICS ;
+%<dat%>:نىڭغا CLITICS ;
 
 LEXICON PRON-PERS-AN
 
-%<nom%>:ەن # ;
 %<nom%>:ەن CLITICS ;
-%<dat%>:اڭا # ;
-%<acc%>:ىنى # ;
-%<gen%>:ىنىڭ # ;
-%<abl%>:ەندىن # ;
-%<loc%>:ەندە # ;
-
+%<dat%>:اڭا CLITICS ;
+%<acc%>:ىنى CLITICS ;
+%<gen%>:ىنىڭ CLITICS ;
+%<abl%>:ەندىن CLITICS ;
+%<loc%>:ەندە CLITICS ;
 
 
 LEXICON PRON-PERS-MAN
 
 %<prn%>%<pers%>%<p1%>%<sg%>: PRON-PERS-AN ;
-%<prn%>%<pers%>%<p1%>%<sg%>%<acc%>:ېنى # ; ! FIXME: Check
-%<prn%>%<pers%>%<p1%>%<sg%>%<gen%>:ىنا # ;
-%<prn%>%<pers%>%<p1%>%<sg%>%<gen%>:ېنىڭ # ;
+%<prn%>%<pers%>%<p1%>%<sg%>%<acc%>:ېنى CLITICS ; ! FIXME: Check
+%<prn%>%<pers%>%<p1%>%<sg%>%<gen%>:ىنا CLITICS ;
+%<prn%>%<pers%>%<p1%>%<sg%>%<gen%>:ېنىڭ CLITICS ;
 
 
 LEXICON PRON-PERS-SAN
 
 %<prn%>%<pers%>%<p2%>%<sg%>: PRON-PERS-AN ;
-%<prn%>%<pers%>%<p2%>%<sg%>%<gen%>:ېنىڭ # ; ! FIXME: Check
+%<prn%>%<pers%>%<p2%>%<sg%>%<gen%>:ېنىڭ CLITICS ; ! FIXME: Check
 
 LEXICON PRON-PERS-SIZ
 
@@ -370,19 +368,18 @@ LEXICON PRON-PERS-SILI
 %<prn%>%<pers%>%<p2%>%<frm%>%<sg%>: CASE-2 ;
 
 LEXICON PRON-PERS-U
-%<prn%>%<pers%>%<p3%>%<sg%>%<nom%>: CLITICS ; 
-%<prn%>%<pers%>%<p3%>%<sg%>%<nom%>: # ; 
-%<prn%>%<pers%>%<p3%>%<sg%>%<acc%>:نى # ; 
-%<prn%>%<pers%>%<p3%>%<sg%>%<gen%>:نىڭ # ; 
-%<prn%>%<pers%>%<p3%>%<sg%>%<loc%>:نىڭدا # ; ! 
-%<prn%>%<pers%>%<p3%>%<sg%>%<abl%>:دىن # ; 
-%<prn%>%<pers%>%<p3%>%<sg%>%<dat%>:نىڭغا # ;
+
+%<prn%>%<pers%>%<p3%>%<sg%>%<acc%>:نى CLITICS ; 
+%<prn%>%<pers%>%<p3%>%<sg%>%<gen%>:نىڭ CLITICS ; 
+%<prn%>%<pers%>%<p3%>%<sg%>%<loc%>:نىڭدا CLITICS ; ! 
+%<prn%>%<pers%>%<p3%>%<sg%>%<abl%>:دىن CLITICS ; 
+%<prn%>%<pers%>%<p3%>%<sg%>%<dat%>:نىڭغا CLITICS ;
 
 LEXICON PRON-PERS-U2
  
-%<prn%>%<pers%>%<p3%>%<sg%>%<loc%>:ندا # ; ! 
-%<prn%>%<pers%>%<p3%>%<sg%>%<abl%>:ندىن # ; 
-%<prn%>%<pers%>%<p3%>%<sg%>%<dat%>:ڭا # ;
+%<prn%>%<pers%>%<p3%>%<sg%>%<loc%>:ندا CLITICS ; ! 
+%<prn%>%<pers%>%<p3%>%<sg%>%<abl%>:ندىن CLITICS ; 
+%<prn%>%<pers%>%<p3%>%<sg%>%<dat%>:ڭا CLITICS ;
 
 
 LEXICON PRON-PERS-BIZ
