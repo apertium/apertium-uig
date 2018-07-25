@@ -29,6 +29,7 @@ LIST neg = neg ;
 LIST TD = TD ; 
 LIST Top = top ;
 LIST Pass = pass ; 
+LIST Qnt = qnt ; 
 
 LIST Guess = guess ;
 
@@ -191,5 +192,7 @@ REMOVE A IF (0 Pron) (NOT 1* N BARRIER V) ;
 
 SELECT Sg3 IF (0 Sg3) ; 
  ## paytexti bolsa = başkenti olsa instead of olsalar
+
+SELECT Nom IF (0 Qnt) ;
 
 REMOVE Guess ;
