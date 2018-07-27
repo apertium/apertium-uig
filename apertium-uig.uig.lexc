@@ -96,6 +96,7 @@ Multichar_Symbols
 %<gpr_rsub%>      ! fiilden sıfat
 %<gpr_rsub2%>     ! ^^^
 %<gpr_rsub3%>     ! ^^^
+%<gpr_rsub4%>     ! kötürghüchi = götüren
 %<ger_pabs%>      ! bol"ghan" = yap"mış"
 %<gna_cond%>      ! Conditional verbal adverb 
 %<gna_when%>      ! -geç as in "seni görgeç utanmaz mı"
@@ -137,6 +138,7 @@ Multichar_Symbols
 %{û%}                 ! for unepenthesis in isim, orun etc.
 %{I%}                 ! realised as ى
 %{U%}                 ! realised as ى/ۇ/ۈ
+%{ü%}                 ! realised as ۇ/ۈ
 %{s%}                 ! realised as س or null
 !%{n%}                 ! realised as ن or null
 %{☫%}                 ! "loanword" - blocks certain processes
@@ -546,6 +548,7 @@ LEXICON V-GER
 %<gpr_rsub%>:%>%{G%}%{A%}ن  N-COMMON ; ! 
 %<gpr_rsub3%>:%>%{U%}ۋات%{G%}{A%}ن N-COMMON ; !
 %<gpr_rsub3%>:%>%{i%}ۋات%{G%}{A%}ن N-COMMON ; !
+%<gpr_rsub4%>:%>%{G%}%{ü%}چى N-COMMON ; !
 %<ger_past%>:%>%{G%}%{A%}ن%>لى%{K%} N-COMMON ; !
 %<ger_past2%>:%>%{U%}ۋات%>%{G%}%{A%}ن%>لى%{K%} N-COMMON ; ! 
 %<ger_pabs%>:%>%{G%}%{A%}ن N-COMMON ; ! 
@@ -865,7 +868,7 @@ LEXICON Pronouns
 
 
 بۇ:بۇ PRON-DEM-BU ; ! "this"
-ئۇ:ئۇ PRON-PERS-U ; ! "that (visible)"
+ئۇ:ئۇ PRON-DEM-U ; ! "that (visible)"
 شۇ:شۇ PRON-DEM-SHU ; ! "that (distant / previously mentioned)"
 
 ماۋۇ:ماۋۇ PRON-DEM-U ; 
@@ -1366,7 +1369,7 @@ LEXICON Nouns
 تەربىيە:تەربىيە N1 ; ! ""
 رومال:رومال N1 ; ! ""
 تەقدىر:تەقدىر N1 ; ! ""
-ۋىجدان:ۋىجدان N1 ; ! ""
+ۋىجدان:ۋىجدان%{☫%} N1 ; ! ""
 ئەركىنلىك:ئەركىنلىك N1 ; ! ""
 سالام:سالام N1 ; ! ""
 دەرمان:دەرمان N1 ; ! ""
@@ -14252,6 +14255,7 @@ LEXICON Check
 مۇلايىم:مۇلايىم N1 ; ! ""
 جىمجىتلىق:جىمجىتلىق N1 ; ! ""
 دىۋە:دىۋە N1 ; ! ""
+دىۋى:دىۋى N1 ; ! ""
 چىگرىن:چىگرىن N1 ; ! ""
 ۋەسۋەسە:ۋەسۋەسە N1 ; ! ""
 ئىشارە:ئىشارە N1 ; ! ""
@@ -20977,6 +20981,7 @@ LEXICON Check
 بەلكى:بەلكى ADV ; ! ""
 شۇنداقلا:شۇنداقلا ADV ; ! ""
 كىم:كىم%{e%} PRON-ITG ; ! ""
+كىم%<%prn%>%<itg%>%>pl%>:كىملەر CASE-2 ; !
 ھەقىقەتەن:ھەقىقەتەن ADV ; ! ""
 ئاساسەن:ئاساسەن POST ; ! ""
 سەل:سەل N1 ; ! ""
@@ -25024,6 +25029,7 @@ EX360:EX360 N1 ; !
 يوھاننا:يوھاننا%{☫%} NP-ANT-M ; !
 ھەزەكىيا:ھەزەكىيا%{☫%} NP-ANT-M ; !
 يوئاب:يوئاب%{☫%} NP-ANT-M ; !
+يوئاب:يوئاب%{q%} NP-ANT-M ; !
 ھېرود:ھېرود NP-ANT-M ; !
 نېبوقادنەسار:نېبوقادنەسار%{☫%} NP-ANT-M ; !
 ماناسسەھ:ماناسسەھ%{☫%} NP-ANT-M ; !
@@ -25229,7 +25235,6 @@ EX360:EX360 N1 ; !
 تەكەببۇرلەش:تەكەببۇرلەش V-IV ; !
 پايلا:پايلا V-TV ; !
 مەدھىيىلە:مەدھىيىلە V-TV ; !
-ئۇ:ئۇ PRON-DEM ; !
 يەھۇدا:يەھۇدا%{☫%} N1 ; !
 بەجا:بەجا%{☫%} NP-TOP ; !
 خۇلاسە% قىل:خۇلاسە% قىل V-TV ; !
@@ -25289,7 +25294,6 @@ EX360:EX360 N1 ; !
 ئېتىزلىق:ئېتىزلىق N1 ; !
 بېقىندى:بېقىندى N1 ; !
 ئۇش:ئۇش NP-TOP ; !
-ئۇ:ئۇ PRON-PERS ; !
 ھىچبىر:ھىچبىر PRON-QNT ; !
 ئىككىيلەن:ئىككىيلەن ADV ; !
 مارتا:مارتا NP-ANT-F ; !

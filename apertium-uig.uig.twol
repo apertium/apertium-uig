@@ -22,6 +22,7 @@ Alphabet
 %{l%}:ل
 %{û%}:ى
 %{y%}:0
+%{ü%}:ۈ
 %>:0 ; 
 
 Sets
@@ -36,6 +37,8 @@ FrontRdVow = ۆ ۈ ;
 BackRdVow = ۇ و ;
 
 FrontUrdVow = ې ; ! ä e
+
+BackCns = ق غ ;
 
 Cns =  ب پ ت ج چ خ د ر ز ژ س ش غ ف ق ك گ ڭ ل م ن ھ ۋ ي ئ ک ;
 
@@ -78,6 +81,8 @@ Rules
             _ %>: :Cns [ :0 - %{☫%}: ]* :Vow ;
             _ :Cns %>: [ :0 - %{☫%}: ]* :Vow ;
 
+"{ü} becomes [u] after back vowels/cns"
+%{ü%}:ۇ <=> :BackCns _ ;
 
 "{E} becomes ي after vowels"
 %{E%}:ي <=> :Vow/:0 _ ;
