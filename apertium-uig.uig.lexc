@@ -704,7 +704,7 @@ LEXICON V-IV
 LEXICON V-TV 
 
 %<v%>%<tv%>: V-COMMON ; 
-%<v%>%<tv%>%<pass%>:%{U%}%{L%} V-COMMON ; 
+%<v%>%<tv%>%<pass%>:%>%{U%}%{L%} V-COMMON ; 
 
 LEXICON V-TD
 
@@ -1991,6 +1991,7 @@ LEXICON Nouns
 لەۋز:لەۋز N1 ; ! ""
 قالۇن:قالۇن N1 ; ! ""
 مىللىي:مىللىي N1 ; ! ""
+مىللىي:مىللي N1 ; ! "" Dir/LR
 ۋىنو:ۋىنو N1 ; ! ""
 شىۋاق:شىۋاق N1 ; ! ""
 يىغىن:يىغىن N1 ; ! ""
