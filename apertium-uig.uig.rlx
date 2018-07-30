@@ -29,7 +29,9 @@ LIST neg = neg ;
 LIST TD = TD ; 
 LIST Top = top ;
 LIST Pass = pass ; 
-LIST Qnt = qnt ; 
+LIST Qnt = qnt ;
+LIST Che = che ; 
+LIST Frm = frm ; 
 
 LIST Guess = guess ;
 
@@ -60,7 +62,7 @@ LIST Gna/when = gna_when ;
 LIST Gpr/fut = gpr_fut ;
 LIST Gpr/past = gpr_past ;
 LIST Gpr/fut2 = gpr_fut2 ;
-LIST rsub = gpr_rsub ; 
+LIST rsub = gpr_rsub gpr_rsub2 gpr_rsub3 gpr_rsub4; 
 LIST vaux = vaux ; 
 LIST pabs = ger_pabs ;
 
@@ -194,5 +196,11 @@ SELECT Sg3 IF (0 Sg3) ;
  ## paytexti bolsa = başkenti olsa instead of olsalar
 
 SELECT Nom IF (0 Qnt) ;
+
+REMOVE Top IF (0 Che) ; 
+## hitayche = çince, not ÇİN+che
+
+REMOVE rsub IF (0 N) ; 
+## közetküchi = gözetmen instead of gözeten
 
 REMOVE Guess ;
