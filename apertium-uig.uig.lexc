@@ -192,7 +192,7 @@ LEXICON COMP
 %<comp%>:%>ر%{A%}%{K%} # ; 
 
 LEXICON SIZ 
-%+سىز%<post%>:%>س%{U%}ز # ;
+%+سىز%<post%>:%>سىز # ;
 
 LEXICON CASE
 %<nom%>: Copula ;
