@@ -101,6 +101,7 @@ LIST Px1Sg = px1sg ;
 
 LIST Ming = "مىڭ" ;
 LIST Devlet = "خانىدانلىق" "سۇلالە" "دۇلات" "ئۆلكە" "دىيار" ;
+LIST Lang = "تۈركچە" "خەنزۇچە" "جۇڭگوچە" "خەنسۇچە" "خىتايچە" "ئىنگىلىزچە" "ئېنگلىزچە" "فرانسۇزچە" "ئېنگىلىزچە" "ئەرەبچە" "ئۇيغۇرچە" ;
 LIST Terep = "تەرەپ" ;
 
 SECTION
@@ -108,6 +109,8 @@ SECTION
 SELECT Pers IF (0 Pers) ;
 
 REMOVE TD IF (0 TD ) ; 
+
+SELECT Lang IF (0 Lang) ; 
 
 REMOVE Prc/perf IF (0 Prc/perf) ; 
 
@@ -177,7 +180,7 @@ SELECT Top IF (0 Sg) ;
 REMOVE Top IF (0 Pl) ; 
  ## xitaylar
 
-SELECT Terep IF (0 Px3Sp + Abl) (1* TV BARRIER IV);
+SELECT Terep IF (0 Px3Sp + Abl) (1* TV BARRIER IV) ;
  ## adem terıpıden .. uyushturuldı.
 
 REMOVE rsub IF (0 Loc) ;
@@ -196,9 +199,6 @@ SELECT Sg3 IF (0 Sg3) ;
  ## paytexti bolsa = başkenti olsa instead of olsalar
 
 SELECT Nom IF (0 Qnt) ;
-
-REMOVE Top IF (0 Che) ; 
-## hitayche = çince, not ÇİN+che
 
 REMOVE rsub IF (0 N) ; 
 ## közetküchi = gözetmen instead of gözeten
