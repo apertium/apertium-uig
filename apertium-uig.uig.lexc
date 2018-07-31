@@ -544,7 +544,7 @@ LEXICON V-PAST
 
 LEXICON V-PRC
 
-%<prc_perf%>:%>%{U%}پ CLITICS ;
+%<prc_perf%>:%>%{U%}پ  ;
 %<gna_perf%>:%>%{U%}پ CLITICS ;
 %<gna_perf%>:%>%{U%}پلا CLITICS ;
 
@@ -21011,7 +21011,6 @@ LEXICON Check
 جانابى% ئاللاھ:جانابى% ئاللاھ N1 ; !
 شۇنچە:شۇنچە ADV ; ! ""
 شۇنچە:شۇنچە DET-MISC ; ! ""
-بولۇپمۇ:بولۇپمۇ ADV ; ! ""
 تارتىپ:تارتىپ POST ; ! ""
 ئاخىرى:ئاخىرى ADV ; ! ""
 ئاستا:ئاستا ADV ; ! ""
