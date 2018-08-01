@@ -32,6 +32,7 @@ LIST Pass = pass ;
 LIST Qnt = qnt ;
 LIST Che = che ; 
 LIST Frm = frm ; 
+LIST Dub = dub ; 
 
 LIST Guess = guess ;
 
@@ -65,7 +66,7 @@ LIST Gpr/fut2 = gpr_fut2 ;
 LIST rsub = gpr_rsub gpr_rsub2 gpr_rsub3 gpr_rsub4; 
 LIST vaux = vaux ; 
 LIST pabs = ger_pabs ;
-
+LIST Past = past ; 
 
 SET Prc = Prc/perf | Prc/impf | Prc/fut | Prc/past | Prc/cond ; 
 SET Gpr = Gpr/fut | Gpr/fut2 | Gpr/past ;
@@ -202,5 +203,8 @@ SELECT Nom IF (0 Qnt) ;
 
 REMOVE rsub IF (0 N) ; 
 ## közetküchi = gözetmen instead of gözeten
+
+REMOVE Dub IF (0 Past) ;
+## erishken = erish-ken, not eri-sh-ken
 
 REMOVE Guess ;
