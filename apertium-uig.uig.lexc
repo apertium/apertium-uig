@@ -309,6 +309,15 @@ LEXICON NUM
 %<num%>%<ord%>:%>%{i%}نچ%{I%} # ; ! 
 %<num%>%<ord%>%<subst%>:%>%{i%}نچ%{I%} NP-COMMON ; ! FIXME: real subst lex
 
+LEXICON PRON-DEM-CASE-PL
+
+%<nom%>: CLITICS ;
+%<acc%>:نى CLITICS ;
+%<gen%>:نىڭ CLITICS ;
+%<loc%>:دا CLITICS ;
+%<abl%>:دىن CLITICS ;
+%<dat%>:غا CLITICS ;
+
 LEXICON PRON-DEM-CASE
 
 %<nom%>: CLITICS ;
@@ -405,7 +414,7 @@ LEXICON PRON-REFL
 
 LEXICON PRON-DEM-COMMON
 
-%<pl%>:ل%{A%}ر PRON-DEM-CASE ;
+%<pl%>:ل%{A%}ر PRON-DEM-CASE-PL ;
 PRON-DEM-CASE ;
 
 LEXICON PRON-DEM-BU
