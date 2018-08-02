@@ -363,11 +363,18 @@ LEXICON PRON-PERS-U
 %<prn%>%<pers%>%<p3%>%<sg%>%<dat%>:نىڭغا CLITICS ;
 
 LEXICON PRON-PERS-U2
- 
+
+%<prn%>%<pers%>%<p3%>%<sg%>%<gen%>:نىڭ CLITICS ; 
 %<prn%>%<pers%>%<p3%>%<sg%>%<loc%>:ندا CLITICS ; ! 
 %<prn%>%<pers%>%<p3%>%<sg%>%<abl%>:ندىن CLITICS ; 
 %<prn%>%<pers%>%<p3%>%<sg%>%<dat%>:ڭا CLITICS ;
 
+LEXICON PRON-PERS-U3
+
+%<prn%>%<pers%>%<p3%>%<sg%>%<gen%>:نىڭ CLITICS ;  
+%<prn%>%<pers%>%<p3%>%<sg%>%<loc%>:دا CLITICS ; ! 
+%<prn%>%<pers%>%<p3%>%<sg%>%<abl%>:دىن CLITICS ; 
+%<prn%>%<pers%>%<p3%>%<sg%>%<dat%>:غا CLITICS ;
 
 LEXICON PRON-PERS-BIZ
 
@@ -544,7 +551,7 @@ LEXICON V-PAST
 
 LEXICON V-PRC
 
-%<prc_perf%>:%>%{U%}پ  ;
+%<prc_perf%>:%>%{U%}پ # ;
 %<gna_perf%>:%>%{U%}پ CLITICS ;
 %<gna_perf%>:%>%{U%}پلا CLITICS ;
 
@@ -842,6 +849,7 @@ LEXICON Pronouns
 ئۇ:ئۇ PRON-PERS-U ; ! "he/she/it"
 ئۇ:ئو PRON-PERS-U ; ! "he/she/it"
 ئا:ئا PRON-PERS-U2 ; !
+ئول:ئول PRON-PERS-U3 ; !
 
 
 
@@ -24539,7 +24547,6 @@ EX360:EX360 N1 ; !
 ھىسابلات:ھىسابلات V-TV ; !
 ھەيدە:ھەيدە V-TV ; !
 كامىل:كامىل NP-ANT-M ; !
-ئېيتىش:ئېيتىش N1 ; !
 بۇلىش:بۇلىش N1 ; !
 جاۋا:جاۋا NP-TOP ; !
 كۆپىيىپ:كۆپىيىپ ADV ; !
@@ -24581,9 +24588,9 @@ EX360:EX360 N1 ; !
 كومېتەت:كومېتەت N1 ; !
 رەكەت:رەكەت N1 ; !
 سەۋەپلىك:سەۋەپلىك N1 ; !
-ن:ن N1 ; !
 ھۇن:ھۇن N1 ; !
 مۇرجىئىي:مۇرجىئىي N1 ; !
+لى:لى NP-ANT-M ; !
 كۆپۈنچە:كۆپۈنچە ADV ; !
 ئارتۇقچە:ئارتۇقچە ADV ; !
 ئەپسۇس:ئەپسۇس ADV ; !
@@ -24652,7 +24659,6 @@ EX360:EX360 N1 ; !
 سۇنەن:سۇنەن NP-TOP ; !
 جوڭگو:جوڭگو NP-TOP ; !
 بۇيۇك% برىتانىيە:بۇيۇك% برىتانىيە NP-TOP ; !
-ئول:ئول PRON-PERS-U ; !
 توغۇرلۇق:توغۇرلۇق POST ; !
 ئارقىلىقلا:ئارقىلىقلا ADV ; !
 قوللىنىل:قوللىنىل V-IV ; !
@@ -25748,7 +25754,7 @@ EX360:EX360 N1 ; !
 مۇبارەكلە:مۇبارەكلە V-TV ; !
 باقى:باقى NP-COG-MF ; !
 ۋەتەنسىز:ۋەتەنسىز A1 ; !
-نى:نى NP-ANT-M ; !
+نى:نى NP-ANT-F ; !
 مەۋلۇت:مەۋلۇت N1 ; !
 تەربىيەلەش:تەربىيەلەش N1 ; !
 
@@ -25854,7 +25860,8 @@ LEXICON Punctuation
 
 LEXICON DIGITLEX
 
-%<num%>: # ;
+%<num%>: # ; 
+%<num%>%<subst%>: SUBST-2 ;
 
 LEXICON BARB
 
