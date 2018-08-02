@@ -107,6 +107,9 @@ LIST Terep = "تەرەپ" ;
 
 SECTION
 
+REMOVE Pers IF (0 Che) ; 
+##meningche = adverb
+
 SELECT Pers IF (0 Pers) ;
 
 REMOVE TD IF (0 TD ) ; 
