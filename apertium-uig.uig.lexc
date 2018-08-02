@@ -183,7 +183,7 @@ LEXICON CLITICS
 
 %<dek%>:%>%{D%}ەك # ;
 %<che%>:%>چە # ;
-%<dub%>:%>%{y%}كەن V-COP-PERS ;
+
 
 %+مۇ%<postadv%>:%>مۇ # ;
 %+كى%<cnjadv%>:%>كى # ; ! 
@@ -798,7 +798,7 @@ LEXICON A4
 
 
 LEXICON COP
-
+%<cop%>%<dub%>%<aor%>:%>%{y%}كەن V-COP-PERS ;
 %<cop%>%<ifi%>: V-IFI ;
 %<cop%>%<aor%>: N-PERS ; 
 
