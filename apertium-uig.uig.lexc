@@ -240,7 +240,7 @@ CASE ;
 %<px1pl%>:%>%{i%}م%{I%}ز CASE ;
 %<px1pl%>:%>%{U%}م%{I%}ز CASE ;
 %<px2pl%>%<frm%>:%>%{i%}ڭ%{I%}ز CASE ;
-%<px2sg%>%<frm%>:%>%{U%}ڭ%{I%}ز CASE ;
+%<px2pl%>%<frm%>:%>%{U%}ڭ%{I%}ز CASE ;
 %<px3sg%>%<hon%>:%>‫لىرى‬ CASE ;
 
 
