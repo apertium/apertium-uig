@@ -201,7 +201,6 @@ LEXICON CASE
 %<dat%>:%>%{G%}%{A%} CLITICS ;
 %<loc%>:%>%{D%}%{A%} CLITICS ;
 %<loc%>:%>%{D%}%{A%} Copula ;
-%<loc%>%<attr%>:%>%{D%}%{A%}%>كى Copula ;
 %<loc%>%<attr%>:%>%{D%}%{A%}%>كى CLITICS ;
 %<loc%>%<subst%>:%>%{D%}%{A%}%>كى SUBST-2 ;
 %<loc%>%<subst%>%<pl%>:%>%{D%}%{A%}%>كى%>ل%{A%}ر  SUBST-2 ;
@@ -902,10 +901,23 @@ LEXICON Determiners
 
 بۇ:بۇ DET-DEM ; ! "this"
 ما:ما DET-DEM ; ! "this"
-
-ھەممە:ھەممە DET-MISC ; ! "all kinds of"
-ئۇنداق:ئۇنداق DET-MISC ; ! "of that kind"
-ھەرقانداق:ھەرقانداق DET-MISC ; ! "of any kind"
+اۋۇ:ماۋۇ DET-DEM ; ! "this"
+ئۇشبۇ:ئۇشبۇ DET-DEM ; ! "this"
+مۇشۇ:مۇشۇ DET-DEM ; ! "this"
+ئاشۇ:ئاشۇ DET-DEM ; ! "that"
+بارچە:بارچە DET-DEM ; !
+ھېچ:ھېچ DET-DEM ; ! "any"
+ھېچقايسى:ھېچقايسى DET-DEM ; ! "any"
+ماۋۇ:ماۋۇ DET-DEM ; ! "this"
+ئۇشبۇ:ئۇشبۇ DET-DEM ; ! "this"
+مۇشۇ:مۇشۇ DET-DEM ; ! "this"
+ئاشۇ:ئاشۇ DET-DEM ; ! "that"
+نەچچە:نەچچە DET-QNT ; ! ""
+قايسى:قايسى DET-ITG ; ! ""
+ھەر:ھەر DET-DEM ; ! "each""
+ھەممە:ھەممە DET-QNT ; ! "all kinds of"
+ئۇنداق:ئۇنداق DET-QNT ; ! "of that kind"
+ھەرقانداق:ھەرقانداق DET-QNT ; ! "of any kind"
 
 LEXICON Numerals 
 
@@ -5158,12 +5170,7 @@ LEXICON Check
 ئەڭ:ئەڭ PRON-MISC ; ! "most"
 ھېچ:ھېچ PRON-MISC ; ! "any"
 ھېچقايسى:ھېچقايسى PRON-QNT ; ! "any"
-ئۆزىمىز:ئۆزىمىز PRON-MISC ; ! "ourselves"
-ماۋۇ:ماۋۇ PRON-MISC ; ! "this"
-ئۇشبۇ:ئۇشبۇ DET-DEM ; ! "this"
-مۇشۇ:مۇشۇ PRON-MISC ; ! "this"
-ئاشۇ:ئاشۇ PRON-MISC ; ! "that"
-كى:كى PRON-MISC ; ! "that"
+
 سىىلوس:سىىلوس N1 ; ! "silage"
 ياپون:ياپون N1 ; ! "Japanese"
 فرانسۇز:فرانسۇز N1 ; ! "French"
@@ -5654,18 +5661,10 @@ LEXICON Check
 سوڭرە:سوڭرە POST ; ! "after"
 ئەمما:ئەمما POST ; ! "but"
 بىراق:بىراق POST ; ! "but"
-ئەڭ:ئەڭ DET-MISC ; ! "most"
-بىزنىڭ:بىزنىڭ DET-MISC ; ! "our"
 
 
-ھېچ:ھېچ DET-DEM ; ! "any"
-ھېچقايسى:ھېچقايسى DET-dem ; ! "any"
-ماۋۇ:ماۋۇ DET-DEM ; ! "this"
-ئۇشبۇ:ئۇشبۇ DET-DEM ; ! "this"
-مۇشۇ:مۇشۇ DET-DEM ; ! "this"
-ئاشۇ:ئاشۇ DET-DEM ; ! "that"
 كى:كى CC ; ! "that"
-ھەر:ھەر DET-DEM ; ! "each""
+
 ئارقىدا:ئارقىدا ADV ; ! "behind"
 ئىككىنچى:ئىككىنچى ADV ; ! "second"
 دومىلاق:دومىلاق ADV ; ! "round"
@@ -21001,9 +21000,7 @@ LEXICON Check
 مۇنداق:مۇنداق ADV ; ! ""
 رەھمەت:رەھمەت INTERJ ; ! ""
 بولسۇن:بولسۇن INTERJ ; ! ""
-ھەممە:ھەممە DET-MISC ; ! ""
-نەچچە:نەچچە DET-QNT ; ! ""
-قايسى:قايسى DET-ITG ; ! ""
+
 ھەققىدە:ھەققىدە POST ; ! ""
 جۇڭگو:جۇڭگو NP-TOP ; ! ""
 قايتا:قايتا ADV ; ! ""
@@ -21012,8 +21009,7 @@ LEXICON Check
 ئامېرىكا:ئامېرىكا NP-TOP ; ! ""
 ئامېرىكا:ئامېرىكا%{☫%} NP-TOP ; ! ""
 ئامېرىكا:ئامېرىكى%{a%} NP-TOP ; ! ""
-ئۇنداق:ئۇنداق DET-MISC ; ! ""
-ئۇنداق:ئۇنداق DET-MISC ; ! ""
+
 بەلكى:بەلكى CC ; ! ""
 بەلكى:بەلكى ADV ; ! ""
 شۇنداقلا:شۇنداقلا ADV ; ! ""
