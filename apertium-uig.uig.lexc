@@ -472,7 +472,7 @@ LEXICON V-IFI-PERS
 %<p3%>%<sg%>:ى CLITICS ;
 %<p1%>%<pl%>:ۇق CLITICS ;
 %<p2%>%<pl%>:%{U%}ڭلار CLITICS ;
-%<p3%>%<pl%>:ى CLITICS ;
+%<p3%>%<pl%>:ىلار CLITICS ;
 
 LEXICON V-AOR-PERS 
 
@@ -482,7 +482,7 @@ LEXICON V-AOR-PERS
 %<p3%>%<sg%>:%>%{D%}ۇ CLITICS ; 
 %<p1%>%<pl%>:%>مىز CLITICS ; 
 %<p2%>%<pl%>:%>سىلەر CLITICS ; 
-%<p3%>%<pl%>:%>%{D%}ۇ CLITICS ; 
+%<p3%>%<pl%>:%>%{D%}ۇلار CLITICS ; 
 
 
 LEXICON V-AOR-QST-PERS 
@@ -495,7 +495,7 @@ LEXICON V-AOR-QST-PERS
 %<p1%>%<pl%>:%>دىمىز CLITICS ; 
 %<p1%>%<pl%>:%>دۇق CLITICS ; ! Dir/LR
 %<p2%>%<pl%>:%>سىلەر CLITICS ; 
-%<p3%>%<pl%>:%>دۇ CLITICS ; 
+%<p3%>%<pl%>:%>دۇلار CLITICS ; 
 
 LEXICON V-COND-PERS
 
@@ -505,7 +505,7 @@ LEXICON V-COND-PERS
 %<p1%>%<sg%>:%>%{K%} CLITICS ; 
 %<p2%>%<sg%>:%>ڭىز CLITICS ; 
 %<p2%>%<pl%>:%>ڭلار CLITICS ; 
-%<p3%>%<pl%>: CLITICS ; 
+%<p3%>%<pl%>:%>ل%{A%}ر CLITICS ; 
 
 
 LEXICON V-IFI
@@ -522,7 +522,7 @@ LEXICON V-PAST-PERS
 %<p3%>%<sg%>:%>%{D%}ۇ CLITICS ; 
 %<p1%>%<pl%>:%>تىمىز CLITICS ; 
 %<p2%>%<pl%>:%>سىلەر CLITICS ; 
-%<p3%>%<pl%>:%>%{D%}ۇ CLITICS ;
+%<p3%>%<pl%>:%>%{D%}ۇلار CLITICS ;
 
 
 LEXICON N-PERS
@@ -534,7 +534,7 @@ LEXICON N-PERS
 %<p3%>%<sg%>%<gm%>:%>%{D%}ۇر CLITICS ;
 %<p1%>%<pl%>:مىز CLITICS ;
 %<p2%>%<pl%>:سىلەر CLITICS ;
-%<p3%>%<pl%>: CLITICS ;
+%<p3%>%<pl%>:%>ل%{A%}ر CLITICS ;
 %<p3%>%<pl%>%<gm%>:%>ل%{A%}ر%{D%}ۇر CLITICS ;
 
 
@@ -546,7 +546,7 @@ LEXICON V-COP-PERS
 %<p3%>%<sg%>: CLITICS ;
 %<p1%>%<pl%>:مىز CLITICS ;
 %<p2%>%<pl%>:سىلەر CLITICS ;
-%<p3%>%<pl%>: CLITICS ;
+%<p3%>%<pl%>:%>ل%{A%}ر CLITICS ;
 
 
 LEXICON V-PAST
@@ -629,7 +629,7 @@ LEXICON V-AORP-PERS
 %<p3%>%<sg%>:تى CLITICS ;
 %<p1%>%<pl%>:تۇق CLITICS ;
 %<p2%>%<pl%>:تىڭلار CLITICS ;
-%<p3%>%<pl%>:تى CLITICS ;
+%<p3%>%<pl%>:تىلار  CLITICS ;
 
 LEXICON V-PROG
 
@@ -649,7 +649,7 @@ LEXICON V-PROG-PERS
 %<p3%>%<sg%>:دۇ CLITICS ;
 %<p1%>%<pl%>:مىز CLITICS ;
 %<p2%>%<pl%>:سىلەر CLITICS ;
-%<p3%>%<pl%>:دۇ CLITICS ;
+%<p3%>%<pl%>:دۇلار CLITICS ;
 
 LEXICON IMP-PERS
 %<p1%>%<sg%>:%>%{A%}ي CLITICS ;
@@ -664,7 +664,7 @@ LEXICON IMP-PERS
 %<p3%>%<sg%>:%>%{G%}%{A%}ي CLITICS ;
 %<p1%>%<pl%>:%>%{A%}يلى CLITICS ;
 %<p2%>%<pl%>:%>%{U%}ڭلار CLITICS ; ! Dir/LR
-%<p3%>%<pl%>:%>سۇن CLITICS ;
+%<p3%>%<pl%>:%>سۇنلار CLITICS ;
 %<p3%>%<pl%>:%>%{U%}شسۇن CLITICS ;
 
 LEXICON V-IMP
@@ -21369,7 +21369,6 @@ LEXICON Check
 موڭغۇلىيە:موڭغۇلىيە%{☫%} NP-TOP ; ! ""
 ئارايۇلتۇز:ئارايۇلتۇز NP-TOP ; ! ""
 ئالاتاۋ:ئالاتاۋ NP-TOP ; ! ""
-ئا:ئا NP-TOP ; ! ""
 ئەركەشتام:ئەركەشتام NP-TOP ; ! ""
 ھىندىستان:ھىندىستان NP-TOP ; ! ""
 
@@ -23117,7 +23116,6 @@ LEXICON Check
 كۆرىنىش:كۆرىنىش N1 ; !
 تراكيا:تراكيا NP-TOP ; !
 ئىتالىيە:ئىتالىيە NP-TOP ; !
-بەكرەك:بەكرەك ADV ; !
 ئىمزالان:ئىمزالان V-IV ; !
 ئاخىرلاشاتۇر:ئاخىرلاشاتۇر V-TV ; !
 ئاخىرلاشاتۇر:ئاخىرلاشاتۇر V-TV ; !
@@ -24185,7 +24183,6 @@ EX360:EX360 N1 ; !
 ئاس:ئاس ADV ; !
 ئەمىسە:ئەمىسە ADV ; !
 زومچەك:زومچەك ADV ; !
-كۆپرەك:كۆپرەك ADV ; !
 كەمچىل:كەمچىل ADV ; !
 تالاي:تالاي ADV ; !
 ئۆچ:ئۆچ V-IV ; !
@@ -24577,7 +24574,6 @@ EX360:EX360 N1 ; !
 بويلا:بويلا V-TV ; !
 رەزىل:رەزىل A1 ; !
 تۈرلى:تۈرلى A1 ; !
-ئا:ئا PRON-PERS ; !
 بېك:بېك ADV ; !
 بەكرى:بەكرى NP-COG-MF ; !
 بەيدۇ:بەيدۇ NP-ORG ; !
@@ -24600,6 +24596,7 @@ EX360:EX360 N1 ; !
 لى:لى NP-ANT-M ; !
 كۆپۈنچە:كۆپۈنچە ADV ; !
 ئارتۇقچە:ئارتۇقچە ADV ; !
+يۆتكەل:يۆتكەل V-IV ; !
 ئەپسۇس:ئەپسۇس ADV ; !
 ھېيىت:ھېيىت NP-COG-MF ; !
 شەرئىي:شەرئىي A1 ; !
@@ -24949,7 +24946,7 @@ EX360:EX360 N1 ; !
 رەزىياللاھۇ% ئەنھۇ:رەزىياللاھۇ% ئەنھۇ N1 ; !
 تەسبىھ:تەسبىھ N1 ; !
 ماۋرا% ئۈنەھرى:ماۋرا% ئۈنەھرى NP-TOP ; !
-بىرەرسى:بىرەرسى PRON-PERS ; !
+بىرەرسى:بىرەرسى PRON-QNT ; !
 ئۆزىلا:ئۆزىلا ADV ; !
 ھەتتاكى:ھەتتاكى ADV ; !
 ھەركۈنى:ھەركۈنى ADV ; !

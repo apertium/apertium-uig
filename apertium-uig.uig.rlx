@@ -33,6 +33,7 @@ LIST Qnt = qnt ;
 LIST Che = che ; 
 LIST Frm = frm ; 
 LIST Dub = dub ; 
+LIST Abil = abil ; 
 
 LIST Guess = guess ;
 
@@ -116,6 +117,9 @@ REMOVE TD IF (0 TD ) ;
 
 SELECT Lang IF (0 Lang) ; 
 
+REMOVE rsub IF (0 Abil) ; 
+##atalğan = atal-ğan, not at-al-ğan
+
 REMOVE Prc/perf IF (0 Prc/perf) ; 
 
 REMOVE Post if (-1 BOS OR Punct);
@@ -158,6 +162,9 @@ REMOVE vaux IF (-1 N) ;
 REMOVE imp IF (-1 Ger) ;
  ##giriş-çıkış
 
+SELECT A IF (0 rsub) ; 
+##atalğan = adı geçen, not anlandırılan
+
 SELECT Dem IF (1 A) ; 
   ## şu sebiy arzuliri..
 
@@ -199,9 +206,6 @@ REMOVE IV IF (0 TV + Pass) ;
 REMOVE A IF (0 Pron) (NOT 1* N BARRIER V) ;
  ## öz = kendi
 
-SELECT Sg3 IF (0 Sg3) ; 
- ## paytexti bolsa = başkenti olsa instead of olsalar
-
 SELECT Nom IF (0 Qnt) ;
 
 REMOVE rsub IF (0 N) ; 
@@ -209,5 +213,6 @@ REMOVE rsub IF (0 N) ;
 
 REMOVE Dub IF (0 Past) ;
 ## erishken = erish-ken, not eri-sh-ken
+
 
 REMOVE Guess ;
