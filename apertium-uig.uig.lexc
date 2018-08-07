@@ -207,8 +207,7 @@ LEXICON CASE
 %<abl%>:%>%{D%}ىن CLITICS ;
 %<gen%>:%>نىڭ # ;
 %<gen%>:%>نىڭ CLITICS ;
-%<gen%>%<subst%>:%>نىڭكى # ;
-%<gen%>%<subst%>:%>نىڭكى CLITICS ;
+%<gen%>%<subst%>:%>نىڭكى SUBST-2 ;
 %<gen%>%<subst%>%<pl%>:%>نىڭكى%>ل%{A%}ر SUBST-2 ;
 %<acc%>:%>نى # ;
 %<acc%>:%>نى CLITICS ;
