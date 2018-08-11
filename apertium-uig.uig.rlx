@@ -34,6 +34,8 @@ LIST Che = che ;
 LIST Frm = frm ; 
 LIST Dub = dub ; 
 LIST Abil = abil ; 
+LIST Ant = ant ; 
+LIST Cog = cog ; 
 
 LIST Guess = guess ;
 
@@ -124,6 +126,12 @@ REMOVE TD IF (0 TD ) ;
 SELECT Lang IF (0 Lang) ; 
 
 SELECT Name IF (0 Name) ;
+
+SELECT Cog IF (-1 Ant) ;
+##Abdurrahim Ötkür, not Abdurrahim keskin  
+
+SELECT Past IF (1 EOS OR Punct) ; 
+##ئاتا-ئانىسىدىن كىچىكىدىلا ئايرىلىپ، يېتىم قالغان = .. yetim kalmış, not yetim kalan.
 
 REMOVE rsub IF (0 Abil) ; 
 ##atalğan = atal-ğan, not at-al-ğan
