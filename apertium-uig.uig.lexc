@@ -648,7 +648,7 @@ LEXICON V-PROG
 
 LEXICON V-FUT
 %<fut%>:%>%م%{A%}%{K%}چى V-COP-PERS ;
-%<fut%>%<dub%>:%>%{E%}%>دىكەن V-COP-PERS ; 
+%<fut%>%<dub%>:%>%{E%}%>دى%{G%}%{A%}ن V-COP-PERS ; 
 
 LEXICON V-PROG-PERS
 %<p1%>%<sg%>:مەن CLITICS ;
