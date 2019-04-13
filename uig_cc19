@@ -2,15 +2,12 @@
 	"«" lquot
 "<ئىنجىل>"
 	"ئىنجىل" n nom
-		"ئى" cop aor p3 sg
 "<»>"
 	"»" rquot
 "<خرىستىئان>"
 	"خرىستىئان" n nom
-		"ئى" cop aor p3 sg
 "<دىنى>"
 	"دىن" n px3sp nom
-		"ئى" cop aor p3 sg
 "<كىتابلىرىنىڭ>"
 	"كىتاب" n pl px3sp gen
 "<توپلىمى>"
@@ -18,38 +15,31 @@
 		"ئى" cop aor p3 sg
 
 
+
+
 "<رىۋايەت>"
 	"رىۋايەت" n nom
-		"ئى" cop aor p3 sg
 "<قىلىنىشىچە>"
 	"قىل" v tv pass ger px3sp nom che
-
 "<،>"
 	"،" cm
 "<ئەيساغا>"
 	"ئەيسا" np ant m dat
-		"ئى" cop aor p3 sg
 "<بېرىلگەن>"
 ;	"بېرىلگەن" adj subst nom SELECT:158
-;		"ئى" cop aor p3 sg
 "<ئۆلۈم>"
 	"ئۆلۈم" n nom
-		"ئى" cop aor p3 sg
 "<جازاسىمۇ>"
-
 	"جازا" n px3sp nom
-		"ئى" cop aor p3 sg
 			"مۇ" postadv
 "<كرېستقا>"
 	"كرېست" n dat
-		"ئى" cop aor p3 sg
 "<مىخلاش>"
 	"مىخلا" v tv ger nom
 "<ئارقىلىق>"
 	"ئارقىلىق" post
 "<ئىجرا>"
 	"ئىجرا" n nom
-		"ئى" cop aor p3 sg
 "<قىلىنغانىكەن>"
 	"قىل" v tv pass past5 p3 sg
 
@@ -57,32 +47,25 @@
 
 "<ئىسا>"
 	"ئىسا" np ant m nom
-		"ئى" cop aor p3 sg
 "<ھەزرىتى>"
-
 	"ھەزرىتى" adj
-		"ئى" cop aor p3 sg
 	
 "<مەريەمنىڭ>"
 	"مەريەم" np ant f gen
 "<ئوغلى>"
 	"ئوغۇل" n px3sp nom
-		"ئى" cop aor p3 sg
 "<بۇلۇپ>"
 	"بۇل" v iv gna_perf
 "<،>"
 	"،" cm
 "<بەنى>"
 	"بەنى" np cog mf nom
-		"ئى" cop aor p3 sg
 "<ئىسرائىل>"
 	"ئىسرائىل" n nom
-		"ئى" cop aor p3 sg
 "<پەيغەمبەرلەرنىڭ>"
 	"پەيغەمبەر" n pl gen
 "<ئاخىرقىسى>"
 	"ئاخىرقى" adj subst px3sp nom
-		"ئى" cop aor p3 sg
 "<ئىدى>"
 	"ئى" cop ifi p3 sg
 
@@ -93,52 +76,41 @@
 	"تۈركىيە" np top gen
 "<81>"
 	"81" num
-
 "<ۋىلايىتىدىن>"
 	"ۋىلايەت" n px3sp abl
 "<بىرى>"
-
 	"بىر" num subst px3sp nom
 		"ئى" cop aor p3 sg
 "<ۋە>"
 	"ۋە" cnjcoo
 "<تۈركىيەدە>"
 	"تۈركىيە" np top loc
-		"ئى" cop aor p3 sg
 "<نۇپۇسى>"
 	"نۇپۇس" n px3sp nom
-		"ئى" cop aor p3 sg
 "<ئەڭ>"
 	"ئەڭ" adv SELECT:168
 
 "<كۆپ>"
 	"كۆپ" adj
-		"ئى" cop aor p3 sg
 "<،>"
 	"،" cm
 "<ئىقتىساد>"
 	"ئىقتىساد" n nom
-		"ئى" cop aor p3 sg
 "<ۋە>"
 	"ۋە" cnjcoo
 "<ئىجتىمائىي>"
 	"ئىجتىمائىي" adj
-		"ئى" cop aor p3 sg
 	
 "<->"
 	"-" guio
 "<مەدەنىي>"
 	"مەدەنىي" adj
-		"ئى" cop aor p3 sg
-
 "<جەھەتتە>"
 	"جەھەت" n loc
-		"ئى" cop aor p3 sg
 "<ئەڭ>"
 	"ئەڭ" adv SELECT:168
 "<چوڭ>"
 	"چوڭ" adj
-		"ئى" cop aor p3 sg
 "<شەھرىدۇر>"
 	"شەھىر" n px3sp nom
 		"ئى" cop aor p3 sg gm
@@ -146,7 +118,6 @@
 	"ۋە" cnjcoo
 "<نىھايەت>"
 	"نىھايەت" adv
-
 "<1453>"
 	"1453" num
 
@@ -159,19 +130,14 @@
 	"-" guio
 "<يىللىرى>"
 	"يىل" n pl px3sp nom
-		"ئى" cop aor p3 sg
 "<ئاراسى>"
 	"ئارا" n px3sp nom
-		"ئى" cop aor p3 sg
 "<ئوسمانلى>"
-
 	"ئوسمانلى" n nom
-		"ئى" cop aor p3 sg
 "<دۆلەتنىڭ>"
 	"دۆلەت" n gen
 "<پايتەختى>"
 	"پايتەخت" n px3sp nom
-		"ئى" cop aor p3 sg
 "<بولدى>"
 	"بول" v iv ifi p3 sg
 
@@ -180,46 +146,32 @@
 
 "<مارمارا>"
 	"مارمارا" np top nom
-		"ئى" cop aor p3 sg
 "<ئارىلىدا>"
 	"ئارال" n px3sp loc
-		"ئى" cop aor p3 sg
 "<مول>"
 	"مول" adj
-		"ئى" cop aor p3 sg
 "<مىقداردا>"
 	"مىقدار" n loc
-	"مىقدار" n loc
-		"ئى" cop aor p3 sg
 "<مەرمەر>"
-
 	"مەرمەر" n nom
-		"ئى" cop aor p3 sg
 "<بولغانلىقى>"
 	"بول" v iv ger_past px3sp nom
-		"ئى" cop aor p3 sg
 "<يۈزىدىن>"
 	"يۈز" n px3sp abl
-	
 "<ئارالغا>"
 	"ئارال" n dat
-		"ئى" cop aor p3 sg
 "<ۋە>"
 	"ۋە" cnjcoo
 "<دېڭىزغا>"
 	"دېڭىز" n dat
-		"ئى" cop aor p3 sg
 "<،>"
 	"،" cm
 "<يۇنانچە>"
 	"يۇنانچە" n nom
-		"ئى" cop aor p3 sg
 "<مەرمەر>"
 	"مەرمەر" n nom
-		"ئى" cop aor p3 sg
 "<مەنىسىدىكى>"
 	"مەنە" n px3sp loc
-		"ئى" cop aor p3 sg
 			"كى" cnjadv
 "<">"
 	""" sent
@@ -235,15 +187,12 @@
 
 "<ئاۋسترالىيە>"
 	"ئاۋسترالىيە" np top nom
-		"ئى" cop aor p3 sg
 "<بولسا>"
 	"بولسا" cnjcoo
 "<جايلاشقان>"
 	"جايلاش" v iv gpr_rsub nom
-		"ئى" cop aor p3 sg
 "<بىر>"
 	"بىر" adj
-		"ئى" cop aor p3 sg
 "<دۇلات>"
 	"دۇلات" n nom
 		"ئى" cop aor p3 sg
@@ -251,13 +200,11 @@
 	"بۇ" det dem
 "<دۆلەت>"
 	"دۆلەت" n nom
-		"ئى" cop aor p3 sg
 "<1931>"
 	"1931" num
 
 "<يىلى>"
 	"يىل" n px3sp nom
-		"ئى" cop aor p3 sg
 "<12>"
 	"12" num
 
@@ -268,21 +215,17 @@
 
 "<كۇنى>"
 	"كۇن" n px3sp nom
-		"ئى" cop aor p3 sg
 "<مۇستاككىل>"
 	"مۇستاككىل" adj
-		"ئى" cop aor p3 sg
 "<بولغان>"
-	"بول" v iv gpr_rsub subst nom
-		"ئى" cop aor p3 sg
+        "بول" v iv past p3 sg SELECT:133
+
 "<،>"
 	"،" cm
 "<يەر>"
 	"يەر" n nom
-		"ئى" cop aor p3 sg
 "<مايدانى>"
 	"مايدان" n px3sp nom
-		"ئى" cop aor p3 sg
 "<268>"
 	"268" num
 
@@ -294,15 +237,12 @@
 
 "<كۋادرات>"
 	"كۋادرات" n nom
-		"ئى" cop aor p3 sg
 "<كىلومېتىر>"
 	"كىلومېتىر" n nom
-		"ئى" cop aor p3 sg
 "<،>"
 	"،" cm
 "<نوپۇسى>"
 	"نوپۇس" n px3sp nom
-		"ئى" cop aor p3 sg
 "<4>"
 	"4" num
 
@@ -320,28 +260,21 @@
 
 
 "<ئىسلام>"
-
 	"ئىسلام" n nom
-		"ئى" cop aor p3 sg
 "<دىنىنىڭ>"
 	"دىن" n px3sp gen
 "<مۇقەددەس>"
 	"مۇقەددەس" adj
-		"ئى" cop aor p3 sg
 "<كىتابى>"
 	"كىتاب" n px3sp nom
-		"ئى" cop aor p3 sg
 "<بولمىش>"
 	"بولمىش" adj
-		"ئى" cop aor p3 sg
 "<قۇرئان كەرىم>"
 	"قۇرئان كەرىم" n nom
-		"ئى" cop aor p3 sg
 "<،>"
 	"،" cm
 "<ئەرەبچە>"
 	"ئەرەبچە" n nom SELECT:126
-		"ئى" cop aor p3 sg
 "<يېزىلغاندۇر>"
 	"يېزىل" v iv gpr_rsub nom
 		"ئى" cop aor p3 sg gm
@@ -351,54 +284,40 @@
 
 "<دىنىي>"
 	"دىنىي" adj
-		"ئى" cop aor p3 sg
 "<ئېتىقاد>"
 	"ئېتىقاد" n nom
-		"ئى" cop aor p3 sg
 "<:>"
 	":" sent
 "<كۆپ>"
 	"كۆپ" adj
-		"ئى" cop aor p3 sg
 "<قىسمى>"
 	"قىسىم" n px3sp nom
-		"ئى" cop aor p3 sg
 "<ئىسلام>"
 	"ئىسلام" n nom
-		"ئى" cop aor p3 sg
 "<دىنىنىڭ>"
 	"دىن" n px3sp gen
 "<ھەنەفىي>"
 	"ھەنەفىي" n nom
-		"ئى" cop aor p3 sg
 "<مەزھىپىگە>"
 	"مەزھەپ" n px3sp dat
-		"ئى" cop aor p3 sg
 "<،>"
 	"،" cm
 "<ئاز>"
 	"ئاز" adj
-		"ئى" cop aor p3 sg
 "<قىسمى>"
 	"قىسىم" n px3sp nom
-		"ئى" cop aor p3 sg
 "<كاتولىك>"
 	"كاتولىك" n nom
-		"ئى" cop aor p3 sg
 "<مەزھىپىگە>"
 	"مەزھەپ" n px3sp dat
-		"ئى" cop aor p3 sg
 "<،>"
 	"،" cm
 "<ئاز>
 	"ئاز" adj
-		"ئى" cop aor p3 sg
 "<قىسمى>"
 	"قىسىم" n px3sp nom
-		"ئى" cop aor p3 sg
 "<ئاتىزمغا>"
 	"ئاتىزم" n dat
-		"ئى" cop aor p3 sg
 "<ئىشىنىدۇ>"
 	"ئىشەن" v tv aor p3 sg
  
@@ -407,12 +326,10 @@
 
 "<ئىنگىلىزچە>"
 	"ئىنگىلىزچە" n nom SELECT:126
-		"ئى" cop aor p3 sg
 "<كۈنىمىزدە>"
 	"كۈنىمىزدە" adv SELECT:168
 "<خەلقئارالىق>"
 	"خەلقئارالىق" adj SELECT:165
-		"ئى" cop aor p3 sg
 "<تىل>"
 	"تىل" n nom
 		"ئى" cop aor p3 sg
@@ -420,52 +337,37 @@
 	"،" cm
 "<ئۇچۇر>"
 	"ئۇچۇر" n nom
-		"ئى" cop aor p3 sg
-
 "<->"
 	"-" guio
 "<ئالاقە>"
 	"ئالاقە" n nom
-		"ئى" cop aor p3 sg
 "<تىلى>"
 	"تىل" n px3sp nom
-		"ئى" cop aor p3 sg
 "<ياكى>"
 	"ياكى" cnjcoo
 "<دۇنيا>"
-
 	"دۇنيا" n nom
-		"ئى" cop aor p3 sg
 "<تىلى>"
 	
 	"تىل" n px3sp nom
-		"ئى" cop aor p3 sg
 "<دەپ>"
 	"دەپ" adv
 
 "<.>"
 	"." sent
  
-
-
 "<دۇنيادا>"
 	"دۇنيا" n loc
-		"ئى" cop aor p3 sg
 "<رەسمىي>"
 	"رەسمىي" adj SELECT:165
-		"ئى" cop aor p3 sg
-
 "<تىل>"
 	"تىل" n nom
-		"ئى" cop aor p3 sg
 "<سۈپىتىدە>"
 	"سۈپەت" n px3sp loc
-		"ئى" cop aor p3 sg
 "<ئەڭ>"
 	"ئەڭ" adv SELECT:168
 "<كۆپ>"
 	"كۆپ" adv
-
 "<قوللىنىلغان>"
 	"قوللان" v tv pass gpr_rsub nom
 		"ئى" cop aor p3 sg
@@ -479,22 +381,18 @@
 
 "<چوڭ>"
 	"چوڭ" adj
-		"ئى" cop aor p3 sg
 "<تىل>"
 	"تىل" n nom
-		"ئى" cop aor p3 sg
 "<بولۇشىغا>"
 	"بول" v iv ger px3sp dat
 "<قارىماي>"
 	"قارىماي" adv
 "<دۇنيادا>"
 	"دۇنيا" n loc
-		"ئى" cop aor p3 sg
 "<ئەڭ>"
 	"ئەڭ" adv SELECT:168
 "<كۆپ>"
 	"كۆپ" adj
-		"ئى" cop aor p3 sg
 "<1>"
 	"1" num
 
@@ -513,21 +411,16 @@
 
 "<ئانا>"
 	"ئانا" n nom
-		"ئى" cop aor p3 sg
 "<تىلى>"
 	"تىل" n px3sp nom
-		"ئى" cop aor p3 sg
 "<ئىنگلىزچە>"
 ;	"ئىنگلىزچە" n nom 
-;		"ئى" cop aor p3 sg
 "<بولغانلار>"
 	"بول" v iv gpr_rsub pl nom SELECT:158
-		"ئى" cop aor p3 sg
 "<ئەڭ>"
 	"ئەڭ" adv SELECT:168
 "<كۆپ>"
 	"كۆپ" adj
-		"ئى" cop aor p3 sg
 "<ياشايدۇ>"
 	"ياشا" v iv aor p3 sg
 "<.>"
@@ -535,28 +428,24 @@
  
 
 
+
+
 "<ۋاشىنگتون>"
 	"ۋاشىنگتون" np top nom
-		"ئى" cop aor p3 sg
 "<شەھىرىدە>"
 	"شەھەر" n px3sp loc
-		"ئى" cop aor p3 sg
 "<«>"
 	"«" lquot
 "<ئۇيغۇر>"
 	"ئۇيغۇر" n nom
-		"ئى" cop aor p3 sg
 "<ئەركىنلىك>"
 	"ئەركىنلىك" n nom
-		"ئى" cop aor p3 sg
 "<مارشى>"
 	"مارش" n px3sp nom
-		"ئى" cop aor p3 sg
 "<»>"
 	"»" rquot
 "<تەنتەنىلىك>"
 	"تەنتەنىلىك" adj
-		"ئى" cop aor p3 sg
 "<ئۆتكۈزۈلدى>"
 	"ئۆتكۈز" v tv pass ifi p3 sg
 
@@ -572,35 +461,28 @@
 	"«" lquot
 "<تۈرك>"
 	"تۈرك" n nom
-		"ئى" cop aor p3 sg
 "<مانتىسى>"
 	"مانتى" n px3sp nom
-		"ئى" cop aor p3 sg
 "<»>"
 	"»" rquot
 "<ئوتتۇرا>"
 	"ئوتتۇرا" n nom
-		"ئى" cop aor p3 sg
 "<ئاسىيا>"
 	"ئاسىيا" np top nom
-		"ئى" cop aor p3 sg
 "<ئەللىرىدە>"
-
 	"ئەل" n pl px3sp loc
-		"ئى" cop aor p3 sg
 "<ئېتىلىدىغان>"
 	"ئات" v tv pass gpr_fut nom
-
 "<مانتىغا>"
 	"مانتى" n dat
-		"ئى" cop aor p3 sg
 "<قارىغاندا>"
 	"قارىغاندا" post SELECT:144
 "<ناھايىتى>"
 	"ناھايىتى" adv
 "<كىچىكتۇر>"
-	"كىچىك" adj
-		"ئى" cop aor p3 sg gm
+        "كىچىك" adj
+                "ئى" cop aor p3 sg gm
+
 	
 
 
@@ -609,19 +491,14 @@
 	"سەھىپە" n px1pl gen
 "<بۈگۈنكى>"
 	"بۈگۈنكى" adj SELECT:165
-		"ئى" cop aor p3 sg
 "<سانىدا>"
 	"سانى" n loc
-		"ئى" cop aor p3 sg
 "<رىۋاندا>"
 	"رىۋاندا" np top nom
-		"ئى" cop aor p3 sg
 "<ئىرقىي>"
 	"ئىرقىي" adj
-		"ئى" cop aor p3 sg
 "<قىرغىنچىلىقى>"
 	"قىرغىنچىلىق" n px3sp nom
-		"ئى" cop aor p3 sg
 "<ھەققىدە>"
 	"ھەققىدە" post SELECT:144
 "<توختىلىپ>"
@@ -636,7 +513,6 @@
 	"ئەنگلىيە" np top gen
 "<ياۋروپا>"
 	"ياۋروپا" np top nom
-		"ئى" cop aor p3 sg
 "<ئىتتىپاقىدىن>"
 	"ئىتتىپاق" n px3sp abl
 "<ئايرىلىش>"
@@ -644,7 +520,6 @@
 ;	"ئايرىل" v iv ger nom 
 "<ۋاقتى>"
 	"ۋاقت" n px3sp nom
-		"ئى" cop aor p3 sg
 	
 "<31>"
 	"31" num
@@ -653,7 +528,6 @@
 	"–" guio
 "<ئۆكتەبىر>"
 	"ئۆكتەبىر" n nom
-		"ئى" cop aor p3 sg
 "<كېچىكتۈرۈلدى>"
 	"كېچىكتۈر" v tv pass ifi p3 sg
 
@@ -667,37 +541,27 @@
 "<نەپەر>"
 
 	"نەپەر" n nom
-		"ئى" cop aor p3 sg
 "<ئامېرىكا>"
 
 	"ئامېرىكا" np top nom
-		"ئى" cop aor p3 sg
 "<دۆلەت>"
 	"دۆلەت" n nom
-		"ئى" cop aor p3 sg
 "<مەجلىسى>"
 	"مەجلىس" n px3sp nom
-		"ئى" cop aor p3 sg
 "<ئەزاسى>"
 	"ئەزا" n px3sp nom
-		"ئى" cop aor p3 sg
 "<ترامپ>"
 	"ترامپ" np cog mf nom
-		"ئى" cop aor p3 sg
 "<ھۆكۈمىتىدىن>"
 	"ھۆكۈمەت" n px3sp abl
 "<ئۇيغۇر>"
 	"ئۇيغۇر" n nom
-		"ئى" cop aor p3 sg
 "<مەسىلىسىدە>"
 	"مەسىلە" n px3sp loc
-		"ئى" cop aor p3 sg
 "<ئەمەلىي>"
 	"ئەمەلىي" adj
-		"ئى" cop aor p3 sg
 "<ھەرىكەت>"
 	"ھەرىكەت" n nom
-		"ئى" cop aor p3 sg
 "<قوللىنىشنى>"
 	"قوللان" v tv ger acc
 "<تەلەپ قىلدى>"
@@ -708,27 +572,20 @@
 
 "<خىتاي>"
 	"خىتاي" np top nom
-		"ئى" cop aor p3 sg
 "<ھۆكۈمىتى>"
 	"ھۆكۈمەت" n px3sp nom
-		"ئى" cop aor p3 sg
 "<رابىيە>"
 	"رابىيە" np ant f nom
-		"ئى" cop aor p3 sg
 "<خانىمنىڭ>"
 	"خانىم" n gen
 "<تەيۋەن>"
 	"تەيۋەن" np top nom
-		"ئى" cop aor p3 sg
 "<زىيارىتىگە>"
 	"زىيارەت" n px3sp dat
-		"ئى" cop aor p3 sg
 "<جىددىي>"
 	"جىددىي" adj
-		"ئى" cop aor p3 sg
 "<ئىنكاس>"
 	"ئىنكاس" n nom
-		"ئى" cop aor p3 sg
 "<قايتۇردى>"
 	"قايتۇر" v tv ifi p3 sg
  
@@ -738,21 +595,16 @@
 
 "<مۇستافا>"
 	"مۇستافا" np ant m nom
-		"ئى" cop aor p3 sg
 "<كەمال>"
 	"كەمال" np ant m nom
-		"ئى" cop aor p3 sg
 "<ئاتاتۈركنىڭ>"
 	"ئاتاتۈرك" np cog mf gen
 "<بىر>"
 	"بىر" adj
-		"ئى" cop aor p3 sg
 "<گېئومېتىرىيە>"
 	"گېئومېتىرىيە" n nom
-		"ئى" cop aor p3 sg
 "<كىتابى>"
 	"كىتاب" n px3sp nom
-		"ئى" cop aor p3 sg
 "<يازغانلىقىنى>"
 	"ياز" v tv ger_past px3sp acc
 "<ئاڭلىغانمەن>"
