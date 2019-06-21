@@ -165,6 +165,10 @@ SELECT rsub IF (0 Loc) ;
 SELECT rsub IF (1 N) ; 
 	## gelen adam instead of gelmiş adam
 
+
+REMOVE Interj IF (NOT -1 BOS) (NOT 1 EOS) ;
+ #yoq, bar
+
 REMOVE Nom IF (1C Nom) ; 
 
 REMOVE A IF (1 A) ; 
@@ -239,6 +243,7 @@ REMOVE rsub IF (0 N) ;
 
 REMOVE Dub IF (0 Past) ;
 ## erishken = erish-ken, not eri-sh-ken
+
 
 
 REMOVE Guess ;
