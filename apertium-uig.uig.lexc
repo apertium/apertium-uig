@@ -103,7 +103,7 @@ Multichar_Symbols
 %<gna_neg2%>      ! ^^ 
 %<gna_neg3%>      ! -m{A}sli{K} = neg gerund (ketmeslik = gitmeme)
 %<aorp%>          ! -ardı, -irdi "geçmiş zamanın hikayesi"
-
+%<iver%>		! suffix conveying ease/speed of action
 %<itg%>           ! Interrogative
 
 %<dek%>           !"x kadar"
@@ -680,6 +680,11 @@ LEXICON V-IMP
 
 %<imp%>: IMP-PERS ;
 
+LEXICON V-IVER
+
+%<iver%>:%>%{i%}ۋەر V-COMMON ; 
+%<iver%>:%>%{i%}ۋېر V-COMMON ; 
+
 LEXICON V-NEG
 
 %<neg%>:م%{A%} V-NEG-COMMON ;
@@ -702,7 +707,8 @@ V-AOR ;
 V-WHEN ; 
 V-ABIL ; 
 V-GER ;
-V-PRC ; 
+V-PRC ;
+V-IVER ; 
 
 
 
@@ -722,6 +728,7 @@ V-IMP ;
 V-PROG ; 
 V-AORP ; 
 V-PRC ; 
+V-IVER ;
 
 LEXICON V-AUX
 
@@ -2592,6 +2599,7 @@ LEXICON Verbs
 ئېرى:ئېرى V-IV ; ! ""
 ئۆزگەر:ئۆزگەر V-IV ; ! ""
 كىر:كىر%{e%} V-TV ; ! ""
+كىر:كىر%{e%} V-IV ; ! ""
 كېكىر:كېكىر V-IV ; ! ""
 سەكرى:سەكرى V-IV ; ! ""
 چۈشكۈر:چۈشكۈر V-IV ; ! ""
@@ -18178,6 +18186,7 @@ LEXICON Check
 توڭرا:توڭرا N1 ; !
 كامفورا:كامفورا N1 ; !
 جازا:جازا%{☫%} N1 ; !
+جازا:جازا N1 ; !
 چازا:چازا N1 ; !
 رىزا:رىزا N1 ; !
 ھاسا:ھاسا N1 ; !
@@ -20502,7 +20511,7 @@ LEXICON Check
 بەتخۇي:بەتخۇي A1 ; !
 
 بەدەۋى:بەدەۋى A1 ; !
-خۇددى:خۇددى A1 ; !
+خۇددى:خۇددى ADV ; !
 جاھانكەزدى:جاھانكەزدى A1 ; !
 ئارىسالدى:ئارىسالدى A1 ; !
 ئاسراندى:ئاسراندى A1 ; !
@@ -20975,7 +20984,7 @@ LEXICON Check
 چوڭچىلىق% قىل:چوڭچىلىق% قىل V-IV ; ! "" ! Use/MWE
 ئاسىيلىق% قىل:ئاسىيلىق% قىل V-IV ; ! "" ! Use/MWE
 خىيال% قىل:خىيال% قىل V-IV ; ! "" ! Use/MWE
-قوبۇل% قىل:قوبۇل% قىل V-IV ; ! "" ! Use/MWE
+قوبۇل% قىل:قوبۇل% قىل V-TV ; ! "" ! Use/MWE
 ھەل% قىل:ھەل% قىل V-IV ; ! "" ! Use/MWE
 ئەمەل% قىل:ئەمەل% قىل V-IV ; ! "" ! Use/MWE
 ئىلىم% تەھسىل% قىل:ئىلىم% تەھسىل% قىل V-IV ; ! "" ! Use/MWE
@@ -22084,7 +22093,6 @@ LEXICON Check
 چىڭ:چىڭ N1 ; !
 يۈرۈش:يۈرۈش N1 ; !
 بىڭتۇەن:بىڭتۇەن%{☫%} NP-TOP ; !
-خۇددى:خۇددى POST ; !
 قارىماي:قارىماي ADV ; !
 پاش:پاش INTERJ ; !
 بىر:بىر%{a%} PRON-MISC ; !
