@@ -149,6 +149,9 @@ REMOVE Attr IF (1 EOS OR Vfin) ;
 
 SELECT N IF (1 Px3Sp) ;
 
+SELECT A IF (-1 Num) (1 N) ; 
+ ## yette bashliq yalmawuz 
+
 REMOVE pass + neg IF (1 Px3Sp) ;
   ## "qisqartilma adi"
 
