@@ -171,7 +171,7 @@ REMOVE Interj IF (NOT -1 BOS) (NOT 1 EOS) ;
 
 REMOVE Nom IF (1C Nom) ; 
 
-REMOVE A IF (1 A) ; 
+
 
 SELECT A IF (-1 N) (1 N) ; 
  ## bu öy qara taghqa ..
@@ -244,6 +244,6 @@ REMOVE rsub IF (0 N) ;
 REMOVE Dub IF (0 Past) ;
 ## erishken = erish-ken, not eri-sh-ken
 
-
+REMOVE A IF (1 A) ; 
 
 REMOVE Guess ;
