@@ -58,6 +58,7 @@ LIST Prc/impf = prc_impf ;
 LIST Prc/fut = prc_fut ;
 LIST Prc/past = prc_past ;
 LIST Prc/cond = prc_cond ;
+LIST Gna/cond = gna_cond ;
 LIST Gna/perf = gna_perf ;
 LIST Ger/past = ger_past ;
 LIST Ger/fut2 = ger_fut2 ;
@@ -133,6 +134,9 @@ SELECT Cog IF (-1 Ant) ;
 SELECT Past IF (1 EOS OR Punct) ; 
 ##ئاتا-ئانىسىدىن كىچىكىدىلا ئايرىلىپ، يېتىم قالغان = .. yetim kalmış, not yetim kalan.
 
+SELECT V IF (0 Gna/cond) ; 
+ # bolsa
+
 REMOVE rsub IF (0 Abil) ; 
 ##atalğan = atal-ğan, not at-al-ğan
 
@@ -167,6 +171,9 @@ REMOVE A IF (1 A) ;
 
 SELECT A IF (-1 N) (1 N) ; 
  ## bu öy qara taghqa ..
+
+SELECT A IF (1 Cop) ; 
+ ## qorqunchluq idi
 
 SELECT Adv IF (1 A) ; 
 
