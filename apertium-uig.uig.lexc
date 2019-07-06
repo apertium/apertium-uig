@@ -190,7 +190,7 @@ LEXICON CLITICS
 LEXICON COMP
 %<comp%>:%>ر%{A%}%{K%} # ; 
 
-LEXICON SIZ 
+LEXICON POST-SUFFIX 
 %+سىز%<post%>:%>سىز # ;
 +لىق%<post%>:%>لى%{K%} # ;
 
@@ -268,7 +268,7 @@ LEXICON N-COMMON
 
 NP-COMMON ;
 %<pl%>:%>ل%{A%}ر NP-COMMON ;
-SIZ ; 
+POST-SUFFIX ; 
 
 LEXICON N1
 
