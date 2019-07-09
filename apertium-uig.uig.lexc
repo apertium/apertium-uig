@@ -191,8 +191,8 @@ LEXICON COMP
 %<comp%>:%>ر%{A%}%{K%} # ; 
 
 LEXICON POST-SUFFIX 
-%+سىز%<post%>:%>سىز # ;
-+لىق%<post%>:%>لى%{K%} # ;
+%+سىز%<post%>:%>سىز PP-PERS ;
++لىق%<post%>:%>لى%{K%} PP-PERS ;
 
 
 LEXICON CASE
@@ -555,6 +555,17 @@ LEXICON V-COP-PERS
 %<p2%>%<sg%>:سەن CLITICS ;
 %<p2%>%<sg%>%<frm%>:سىز CLITICS ;
 %<p3%>%<sg%>: CLITICS ;
+%<p1%>%<pl%>:مىز CLITICS ;
+%<p2%>%<pl%>:سىلەر CLITICS ;
+%<p3%>%<pl%>:%>ل%{A%}ر CLITICS ;
+
+
+LEXICON PP-PERS
+# ;
+%<p1%>%<sg%>:مەن CLITICS ;
+%<p2%>%<sg%>:سەن CLITICS ;
+%<p2%>%<sg%>%<frm%>:سىز CLITICS ;
+%<p3%>%<sg%>:%>%{D%}ۇر CLITICS ;
 %<p1%>%<pl%>:مىز CLITICS ;
 %<p2%>%<pl%>:سىلەر CLITICS ;
 %<p3%>%<pl%>:%>ل%{A%}ر CLITICS ;
