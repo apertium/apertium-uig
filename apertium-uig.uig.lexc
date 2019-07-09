@@ -2241,16 +2241,16 @@ LEXICON Verbs
 بول:بو%{l%} V-IV ; ! "be"
 ئوينا:ئوينا V-TV ; ! "play"
 ئوينا:ئوينا V-IV ; ! "play"
-قىل:قىل%{a%} V-TV ; ! "do/make"
-قىل:كىل%{a%} V-TV ; ! "do/make"
-قىل:قى%{l%} V-TV ; ! "do/make"
-قىل:كى%{l%} V-TV ; ! "do/make"
+قىل:قىل%{a%} V-TV ; ! "do/make" 
+قىل:كىل%{a%} V-TV ; ! "do/make" Dir/LR
+قىل:قى%{l%} V-TV ; ! "do/make" Dir/LR
+قىل:كى%{l%} V-TV ; ! "do/make" Dir/LR
 !ئامراق% بول:ئامراق% بول V-TV ; ! "love"  ! Use/MT
 
 دە:دە%{e%} V-TV ; ! "say"
-دە:دې%{e%} V-TV ; ! "say"
-دە:دى%{e%} V-TV ; ! "say"
-دە%<v%>%<tv%>%<gna_perf%>:دەپ # ; ! "say"
+دە:دې%{e%} V-TV ; ! "say" Dir/LR
+دە:دى%{e%} V-TV ; ! "say" Dir/LR
+دە%<v%>%<tv%>%<gna_perf%>:دەپ # ; ! "say" 
 
 ئى%<v%>%<iv%>%<ger_past%>:ئىكەنلىگ SUBST-2 ; !
 ئى%<v%>%<iv%>%<ger_past%>:ئىكەنلىك SUBST-2 ; !
@@ -2259,7 +2259,7 @@ LEXICON Verbs
 ئال:ئا%{l%} V-TV ; ! "take"
 چىق:چىق V-IV ; ! "go out"
 كەل:كە%{l%} V-IV ; ! "come"
-كەل:كېل%{e%} V-IV ; ! "come"
+كەل:كېل%{e%} V-IV ; ! "come" Dir/LR
 بەر:بەر V-TV ; ! "give"
 بەر:بىر%{e%} V-TV ; ! "give"
 بېجىر:بېجىر V-TV ; ! "finish"
@@ -2268,8 +2268,8 @@ LEXICON Verbs
 ئولتۇر:ئولتۇر V-IV ; ! "sit"
 يات:يات V-IV ; ! "lie"
 كەت:كەت V-IV ; ! "leave"
-كەت:كېت%{e%} V-IV ; ! "leave"
-كەت:كىت%{e%} V-IV ; ! "leave"
+كەت:كېت%{e%} V-IV ; ! "leave" Dir/LR
+كەت:كىت%{e%} V-IV ; ! "leave" Dir/LR
 تۈگى:تۈگى V-IV ; ! "finish"
 قارا:قارا V-IV ; ! "look at"
 
