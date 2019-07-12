@@ -249,4 +249,6 @@ REMOVE Dub IF (0 Past) ;
 
 REMOVE A IF (1 A) ; 
 
+REMOVE Px3Pl IF (NOT -1* Pl3 BARRIER N) ;
+
 REMOVE Guess ;
