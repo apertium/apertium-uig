@@ -229,35 +229,35 @@ LEXICON CASE-2
 LEXICON POSSESSION
 
 CASE ;
-%<px1sg%>:%>%{i%}م CASE ;
-%<px1sg%>:%>%{U%}م CASE ;
-%<px2sg%>:%>%{i%}ڭ CASE ;
-%<px2sg%>:%>%{U%}ڭ CASE ;
-%<px2pl%>:%>%{i%}ڭلار CASE ;
-%<px2pl%>:%>%{U%}ڭلار CASE ;
+%<px1sg%>:%>%{i%}م CASE ; ! Dir/LR
+%<px1sg%>:%>%{U%}م CASE ; 
+%<px2sg%>:%>%{i%}ڭ CASE ; ! Dir/LR
+%<px2sg%>:%>%{U%}ڭ CASE ; 
+%<px2pl%>:%>%{i%}ڭلار CASE ; ! Dir/LR
+%<px2pl%>:%>%{U%}ڭلار CASE ; 
 %<px3sp%>:%>%{s%}ى CASE ;
-%<px1pl%>:%>%{i%}م%{I%}ز CASE ;
-%<px1pl%>:%>%{U%}م%{I%}ز CASE ;
-%<px2pl%>%<frm%>:%>%{i%}ڭ%{I%}ز CASE ;
-%<px2pl%>%<frm%>:%>%{U%}ڭ%{I%}ز CASE ;
-%<px3sg%>%<hon%>:%>‫لىرى‬ CASE ;
-
+%<px1pl%>:%>%{i%}م%{I%}ز CASE ; ! Dir/LR
+%<px1pl%>:%>%{U%}م%{I%}ز CASE ; 
+%<px2pl%>%<frm%>:%>%{i%}ڭ%{I%}ز CASE ; ! Dir/LR
+%<px2pl%>%<frm%>:%>%{U%}ڭ%{I%}ز CASE ; 
+%<px3sg%>%<frm%>:%>‫لىرى‬ CASE ;
+%<px3pl%>:%>‫لىرى‬ CASE ;
 
 LEXICON SUBST-2
 CASE-2 ;
-%<px1sg%>:%>%{i%}م CASE-2 ;
+%<px1sg%>:%>%{i%}م CASE-2 ; ! Dir/LR
 %<px1sg%>:%>%{U%}م CASE-2 ;
-%<px2sg%>:%>%{i%}ڭ CASE-2 ;
+%<px2sg%>:%>%{i%}ڭ CASE-2 ; ! Dir/LR
 %<px2sg%>:%>%{U%}ڭ CASE-2 ;
-%<px2pl%>:%>%{i%}ڭلار CASE-2 ;
+%<px2pl%>:%>%{i%}ڭلار CASE-2 ; ! Dir/LR
 %<px2pl%>:%>%{U%}ڭلار CASE-2 ;
 %<px3sp%>:%>%{s%}ى CASE-2 ;
-%<px1pl%>:%>%{i%}م%{I%}ز CASE-2 ;
+%<px1pl%>:%>%{i%}م%{I%}ز CASE-2 ; ! Dir/LR
 %<px1pl%>:%>%{U%}م%{I%}ز CASE-2 ;
-%<px2pl%>%<frm%>:%>%{i%}ڭ%{I%}ز CASE-2 ;
+%<px2pl%>%<frm%>:%>%{i%}ڭ%{I%}ز CASE-2 ; ! Dir/LR
 %<px2pl%>%<frm%>:%>%{U%}ڭ%{I%}ز CASE-2 ;
-%<px3sg%>%<hon%>:%>‫لىرى‬ CASE-2 ;
-
+%<px3sg%>%<frm%>:%>‫لىرى‬ CASE-2 ;
+%<px3pl%>:%>‫لىرى‬ CASE ;
 
 
 LEXICON NP-COMMON
@@ -305,7 +305,7 @@ LEXICON NUM
 %<num%>: # ; 
 %<num%>%<subst%>: NP-COMMON ; ! FIXME: real subst lex
 %<num%>%<ord%>:%>%{U%}نچ%{I%} # ; ! 
-%<num%>%<ord%>:%>%{i%}نچ%{I%} # ; ! 
+%<num%>%<ord%>:%>%{i%}نچ%{I%} # ; ! Dir/LR
 %<num%>%<ord%>%<subst%>:%>%{i%}نچ%{I%} NP-COMMON ; ! FIXME: real subst lex
 
 LEXICON PRON-DEM-CASE-PL
@@ -333,8 +333,8 @@ LEXICON PRON-PERS-AN
 
 %<nom%>:ەن CLITICS ;
 %<dat%>:اڭا CLITICS ;
-%<acc%>:ىنى CLITICS ;
-%<gen%>:ىنىڭ CLITICS ;
+%<acc%>:ىنى CLITICS ; ! Dir/LR
+%<gen%>:ىنىڭ CLITICS ; ! Dir/LR
 %<abl%>:ەندىن CLITICS ;
 %<loc%>:ەندە CLITICS ;
 %<abl%>:ېنىڭدىن CLITICS ;
@@ -344,7 +344,7 @@ LEXICON PRON-PERS-MAN
 
 %<prn%>%<pers%>%<p1%>%<sg%>: PRON-PERS-AN ;
 %<prn%>%<pers%>%<p1%>%<sg%>%<acc%>:ېنى CLITICS ; ! FIXME: Check
-%<prn%>%<pers%>%<p1%>%<sg%>%<gen%>:ىنا CLITICS ;
+%<prn%>%<pers%>%<p1%>%<sg%>%<gen%>:ىنا CLITICS ; ! Dir/LR
 %<prn%>%<pers%>%<p1%>%<sg%>%<gen%>:ېنىڭ CLITICS ;
 
 
@@ -352,6 +352,7 @@ LEXICON PRON-PERS-MAN
 LEXICON PRON-PERS-SAN
 
 %<prn%>%<pers%>%<p2%>%<sg%>: PRON-PERS-AN ;
+%<prn%>%<pers%>%<p2%>%<sg%>%<acc%>:ېنى CLITICS ; ! FIXME: Check
 %<prn%>%<pers%>%<p2%>%<sg%>%<gen%>:ېنىڭ CLITICS ; ! FIXME: Check
 
 LEXICON PRON-PERS-SIZ
@@ -387,7 +388,7 @@ LEXICON PRON-PERS-U3
 LEXICON PRON-PERS-BIZ
 
 %<prn%>%<pers%>%<p1%>%<pl%>: CASE-2 ;
-%<prn%>%<pers%>%<p1%>%<pl%>:%>لەر CASE-2 ;
+%<prn%>%<pers%>%<p1%>%<pl%>:%>لەر CASE-2 ; ! Dir/LR
 
 LEXICON PRON-PERS-SANLAR
 
@@ -20647,7 +20648,7 @@ LEXICON Check
 ئەپسانىۋىي:ئەپسانىۋىي A1 ; !
 
 
-تاپ:تاپ V-TV ; ! ""
+تاپ:تاپ V-TV ; ! "" Dir/LR
 چاپ:چاپ V-TV ; ! ""
 ياپ:ياپ V-TV ; ! ""
 توختات:توختات V-TV ; ! ""
