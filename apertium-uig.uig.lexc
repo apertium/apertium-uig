@@ -240,8 +240,8 @@ CASE ;
 %<px1pl%>:%>%{U%}م%{I%}ز CASE ; 
 %<px2pl%>%<frm%>:%>%{i%}ڭ%{I%}ز CASE ; ! Dir/LR
 %<px2pl%>%<frm%>:%>%{U%}ڭ%{I%}ز CASE ; 
-%<px3sg%>%<frm%>:%>‫لىرى‬ CASE ;
-%<px3pl%>:%>‫لىرى‬ CASE ;
+!%<px3sg%>%<frm%>:%>‫لىرى CASE ;
+%<px3pl%>:%>لىرى CASE ;
 
 LEXICON SUBST-2
 CASE-2 ;
@@ -256,8 +256,8 @@ CASE-2 ;
 %<px1pl%>:%>%{U%}م%{I%}ز CASE-2 ;
 %<px2pl%>%<frm%>:%>%{i%}ڭ%{I%}ز CASE-2 ; ! Dir/LR
 %<px2pl%>%<frm%>:%>%{U%}ڭ%{I%}ز CASE-2 ;
-%<px3sg%>%<frm%>:%>‫لىرى‬ CASE-2 ;
-%<px3pl%>:%>‫لىرى‬ CASE ;
+!%<px3sg%>%<frm%>:%>‫لىرى CASE-2 ;
+%<px3pl%>:%>لىرى CASE ;
 
 
 LEXICON NP-COMMON
