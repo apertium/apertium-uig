@@ -201,7 +201,7 @@ SELECT Dem IF (1 A) ;
 SELECT Pron IF (1 Post) ;
  ## néme üçün.. 
 
-REMOVE Padv IF (1 EOS) ; 
+##REMOVE Padv IF (1 EOS) ; 
 ## قىزىم كاۋا ئالاتتىڭىزمۇ ؟!
 
 ##SELECT SUB:1 Padv ; 
