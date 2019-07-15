@@ -206,7 +206,7 @@ LEXICON CASE
 %<loc%>%<subst%>:%>%{D%}%{A%}%>كى SUBST-2 ;
 %<loc%>%<subst%>%<pl%>:%>%{D%}%{A%}%>كى%>ل%{A%}ر SUBST-2 ;
 %<abl%>:%>%{D%}ىن CLITICS ;
-%<gen%>:%>نىڭ # ;
+%<gen%>:%>نىڭ Copula ;
 %<gen%>:%>نىڭ CLITICS ;
 %<gen%>%<subst%>:%>نىڭكى SUBST-2 ;
 %<gen%>%<subst%>%<pl%>:%>نىڭكى%>ل%{A%}ر SUBST-2 ;
@@ -2661,7 +2661,7 @@ LEXICON Verbs
 LEXICON Copula
 
 %+ئى: COP ; 
-!ئى:ئى COP ;
+!ئى:ئى COP ; !!!" FIXME"
 ئې:ئې COP ; ! Dir/LR
 ئى%<cop%>%<neg%>:ئەمەس V-COP-PERS ; !
 ئى%<cop%>%<dub%>:ئىكەن V-COP-PERS ; ! 
