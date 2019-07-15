@@ -2661,10 +2661,11 @@ LEXICON Verbs
 LEXICON Copula
 
 %+ئى: COP ; 
-ئى:ئى COP ;
+!ئى:ئى COP ;
 ئې:ئې COP ; ! Dir/LR
 ئى%<cop%>%<neg%>:ئەمەس V-COP-PERS ; !
 ئى%<cop%>%<dub%>:ئىكەن V-COP-PERS ; ! 
+ئى%<cop%>:ئى V-IFI ; ! 
 
 
 LEXICON Adjectives
