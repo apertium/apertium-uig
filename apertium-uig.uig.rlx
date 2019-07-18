@@ -192,6 +192,9 @@ REMOVE vaux IF (-1 N) ;
 REMOVE imp IF (-1 Ger) ;
  ##giriş-çıkış
 
+REMOVE Sub:1 Post (0 A) ; 
+#tatlı, not tat+lı
+
 SELECT A IF (0 rsub) ; 
 ##atalğan = adı geçen, not anlandırılan
 
@@ -247,8 +250,14 @@ REMOVE rsub IF (0 N) ;
 REMOVE Dub IF (0 Past) ;
 ## erishken = erish-ken, not eri-sh-ken
 
+REMOVE Sub:1 Pl1 IF (0 Px1Pl) ;
+#harwamız = our car, not 'we are car'
+
 REMOVE A IF (1 A) ; 
 
 REMOVE Px3Pl IF (NOT -1* Pl3 BARRIER N) ;
+
+SELECT A IF (-1 N) (0 Post) (1 N); 
+# yol
 
 REMOVE Guess ;
