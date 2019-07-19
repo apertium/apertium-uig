@@ -362,7 +362,7 @@ LEXICON PRON-PERS-SIZ
 
 LEXICON PRON-PERS-SILI
 
-%<prn%>%<pers%>%<p2%>%<frm%>%<sg%>: CASE-2 ;
+%<prn%>%<pers%>%<p2%>%<frm%>%<sg%>: CASE-2 ; 
 
 LEXICON PRON-PERS-U
 
@@ -393,11 +393,11 @@ LEXICON PRON-PERS-BIZ
 
 LEXICON PRON-PERS-SANLAR
 
-%<prn%>%<pers%>%<p2%>%<pl%>: CASE-2 ;
+%<prn%>%<pers%>%<p2%>%<pl%>: CASE-2 ; 
 
 LEXICON PRON-PERS-SILAR 
 
-%<prn%>%<pers%>%<p2%>%<frm%>%<pl%>: CASE-2 ;
+%<prn%>%<pers%>%<p2%>%<pl%>: CASE-2 ;
 
 LEXICON PRON-PERS-SIZLAR 
 
@@ -880,7 +880,7 @@ LEXICON Pronouns
 سىلى:سىلى%{e%} PRON-PERS-SIZ ; !
 
 
-سىلى:سىلى PRON-PERS-SILI ; ! "you (esteemed sg)"
+سىلى:سىلى PRON-PERS-SILI ; ! "you (esteemed sg)" Dir/LR
 
 
 ئۇ:ئۇ PRON-PERS-U ; ! "he/she/it"
@@ -894,7 +894,7 @@ LEXICON Pronouns
 بىز:بىز%{e%} PRON-PERS-BIZ ; ! "we/us"
 
 
-سەنلەر:سەنلەر PRON-PERS-SANLAR ; ! "you (informal pl)"
+سەنلەر:سەنلەر PRON-PERS-SANLAR ; ! "you (informal pl)" Dir/LR
 
 
 سىلەر:سىلەر PRON-PERS-SILAR ; ! "you (polite pl)"
