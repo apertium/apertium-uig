@@ -632,9 +632,7 @@ LEXICON V-AOR
 %<aor%>:%>%{E%} V-AOR-PERS ; 
 %<aor%>%<qst%>:%>%{A%}م V-AOR-QST-PERS ;
 %<aor2%>:%>%{A%}ر V-COP-PERS ; 
-
-LEXICON V-AOR-NEG
-%<neg%>%<aor%>:%>م%{A%}س V-COP-PERS ;
+%<neg%>%<aor%>:%>م%{A%}س V-COP-PERS ; ! Dir/LR
 
 LEXICON V-COND
 
@@ -729,7 +727,6 @@ V-IVER ;
 
 LEXICON V-COMMON
 
-V-AOR-NEG;
 V-NEG ;
 V-ABIL ;
 V-FUT ;
