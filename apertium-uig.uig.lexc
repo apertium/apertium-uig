@@ -513,7 +513,7 @@ LEXICON V-AOR-QST-PERS
 LEXICON V-COND-PERS
 
 %<p1%>%<sg%>:%>م CLITICS ; 
-%<p2%>%<sg%>:%>ڭ CLITICS ; 
+%<p2%>%<sg%>:%>ڭ CLITICS ; ! Dir/LR
 %<p3%>%<sg%>: CLITICS ; 
 %<p1%>%<sg%>:%>%{K%} CLITICS ; 
 %<p2%>%<sg%>:%>ڭىز CLITICS ; 
@@ -20708,7 +20708,7 @@ LEXICON Check
 باشقۇر:باشقۇر V-TV ; ! ""
 تۈكۈر:تۈكۈر V-TV ; ! ""
 كۆر:كۆر V-TV ; ! ""
-كۆر:كۈر V-TV ; ! ""
+كۆر:كۈر V-TV ; ! "" Dir/LR
 قىس:قىس V-TV ; ! 
 ئەر:ئەر V-IV ; ! ""
 
@@ -26635,6 +26635,7 @@ EX360:EX360 N1 ; !
 چۈنكى:چۈنكى ADV ; !
 شۈكۈر% قىل:شۈكۈر% قىل V-IV ; !
 ئىئانە% قىل:ئىئانە% قىل V-TV ; !
+لوگو:لوگو N1 ; ! "logo"
 
 
 
