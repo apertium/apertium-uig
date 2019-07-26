@@ -882,7 +882,7 @@ LEXICON Pronouns
 
 
 ئۇ:ئۇ PRON-PERS-U ; ! "he/she/it"
-ئۇ:ئو PRON-PERS-U ; ! "he/she/it"
+ئۇ:ئو PRON-PERS-U ; ! "he/she/it" Dir/LR
 ئا:ئا PRON-PERS-U2 ; !
 ئول:ئول PRON-PERS-U3 ; !
 
@@ -3450,7 +3450,7 @@ LEXICON Check
 توققۇز:توققۇز NUM ; ! "nine"
 بەش:بەش NUM ; ! "five"
 ئونبەش:ئونبەش NUM ; ! "fifteen"
-ئون:ئون NUM ; ! "ten"
+
 يەتتە:يەتتە NUM ; ! "seven"
 ئىككى:ئىككى NUM ; ! "two"
 تۆت:تۆت NUM ; ! "four"
