@@ -961,11 +961,11 @@ LEXICON Numerals
 ئۈچ:ئۈچ NUM ; ! "three"
 تۆرت:تۆرت NUM ; ! "four"
 بەش:بەش NUM ; ! "five"
-بەش:بەش%{☫%} NUM ; ! "five"
+بەش:بەش%{☫%} NUM ; ! "five" Dir/LR
 ئالتە:ئالتە NUM ; ! "six"
-ئالتى:ئالتى NUM ; ! "six"
+ئالتە:ئالتى NUM ; ! "six" Dir/LR
 يەتتە:يەتتە NUM ; ! "seven"
-يەتتى:يەتتى NUM ; !
+يەتتە:يەتتى NUM ; ! Dir/LR
 سەككىز:سەككىز NUM ; ! "eight"
 توققۇز:توققۇز NUM ; ! "nine"
 مىڭ:مىڭ NUM ; ! "thousand"
@@ -984,7 +984,7 @@ LEXICON Numerals
 مىليارد:مىليارد NUM ; ! "milliard"
 ترىليون:ترىليون NUM ; ! "billion"
 !مىليارد:مىليارد N1 ; ! "billion"
-تىرىليون:تىرىليون N1 ; !
+تىرىليون:تىرىليون NUM ; !
 !مىليون:مىليون N1 ; ! "million"
 
 يېرىم:يېرىم NUM ; ! "half"
@@ -3454,7 +3454,6 @@ LEXICON Check
 ئونبەش:ئونبەش NUM ; ! "fifteen"
 
 يەتتە:يەتتە NUM ; ! "seven"
-ئىككى:ئىككى NUM ; ! "two"
 تۆت:تۆت NUM ; ! "four"
 سەككىز:سەككىز NUM ; ! "eight"
 ئالتە:ئالتە NUM ; ! "six"
