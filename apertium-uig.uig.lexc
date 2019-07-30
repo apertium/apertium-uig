@@ -607,7 +607,7 @@ LEXICON V-GER
 %<ger%>:%>%{U%}ش SUBST-2 ; 
 %<ger%>:%>%{U%}ش N-COMMON ;  ! Dir/RL
 %<ger%>:%>ي%{U%}ش SUBST-2 ; ! Dir/LR
-%<ger_inf%>:%>م%{A%}%{K%} CASE-2 ;
+%<ger_inf%>:%>م%{A%}%{K%} N-COMMON ;
 
 
 
@@ -747,7 +747,7 @@ V-IVER ;
 
 LEXICON V-AUX
 
-%<vaux%>: V-COMMON ;
+%<vaux%>: V-COMMON ; 
 
 LEXICON V-IV 
 
@@ -2225,20 +2225,20 @@ LEXICON Verbs
 
 %{🂡%}%<guess%>:%{🂡%} V-TD ; ! ""
 
-ئال:ئال%{☫%} V-AUX ; !
-چىق:چىق V-AUX ; ! ""
-كەل:كە%{l%} V-AUX ; ! ""
-بول:بو%{l%} V-AUX ; ! ""
+!ئال:ئال%{☫%} V-AUX ; !
+!چىق:چىق V-AUX ; ! ""
+!كەل:كە%{l%} V-AUX ; ! ""
+!بول:بو%{l%} V-AUX ; ! ""
 
-بەر:بەر V-AUX ; ! ""
-بېجىر:بېجىر V-AUX ; ! ""
-كۆر:كۆر V-AUX ; ! ""
-يۈر:يۈر V-AUX ; ! ""
-تۇر:تۇر V-AUX ; ! ""
-ئولتۇر:ئولتۇر V-AUX ; ! ""
-يات:يات V-AUX ; ! ""
-كەت:كەت V-AUX ; ! ""
-تۈگى:تۈگى V-AUX ; ! ""
+!بەر:بەر V-AUX ; ! ""
+!بېجىر:بېجىر V-AUX ; ! ""
+!كۆر:كۆر V-AUX ; ! ""
+!يۈر:يۈر V-AUX ; ! ""
+!تۇر:تۇر V-AUX ; ! ""
+!ئولتۇر:ئولتۇر V-AUX ; ! ""
+!يات:يات V-AUX ; ! ""
+!كەت:كەت V-AUX ; ! ""
+!تۈگى:تۈگى V-AUX ; ! ""
 
 
 
