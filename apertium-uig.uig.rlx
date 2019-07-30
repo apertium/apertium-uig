@@ -52,7 +52,7 @@ LIST Punct = guio ;
 ##LIST Ger = ger_past ;
 
 LIST Vfin = past aor fut ifi imp; 
-
+LIST Finite = evid ifi past aor pres fut ;
 LIST Prc/perf = prc_perf ;
 LIST Prc/impf = prc_impf ;
 LIST Prc/fut = prc_fut ;
@@ -81,6 +81,8 @@ SET Ger  = Ger/past | Ger/fut2 | Ger/fut ;
 SET Nonfin = Prc | Gna | Gpr | Ger ;
 
 SET Fin = V - Nonfin ; 
+SET PHRASEMARK =  ("\\") | ("\;") ; #"
+
 
 LIST CC = cnjcoo ; 
 
@@ -115,14 +117,16 @@ LIST Terep = "تەرەپ" ;
 
 SECTION
 
+REMOVE vaux ;
+
+REMOVE TD IF (0 TD ) ; 
+
 REMOVE Che IF (0 Adv) ; 
 ##meningche = adverb
 
 SELECT Pers IF (0 Pers) ;
 
-Remove vaux If (NOT -1 Gna) ;
 
-REMOVE TD IF (0 TD ) ; 
 
 SELECT Lang IF (0 Lang) ; 
 
@@ -186,8 +190,6 @@ REMOVE Nonfin IF (NOT -1* Fin) (1 EOS) ;
 REMOVE Gpr IF (0C Gpr OR Ger OR Vfin) (1 EOS) ;
 
 REMOVE Det IF (1 CC) ;
-
-REMOVE vaux IF (-1 N) ;
 
 REMOVE imp IF (-1 Ger) ;
  ##giriş-çıkış
@@ -259,5 +261,8 @@ REMOVE Px3Pl IF (NOT -1* Pl3 BARRIER N) ;
 
 SELECT A IF (-1 N) (0 Post) (1 N); 
 # yol
+
+SELECT Sub:1 Finite IF (1 EOS OR PHRASEMARK) ;
+	# Hayattaki son dersi "kendi ölümü" [0]olacakmış.
 
 REMOVE Guess ;
