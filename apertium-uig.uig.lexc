@@ -622,11 +622,10 @@ V-FUT ;
 LEXICON V-ABIL-NEG-POS
 
 %<neg%>:%>م%{A%} V-ABIL-COMMON ;
-V-ABIL-COMMON ;
 
 LEXICON V-ABIL
 
-%<abil%>:%>%{A%}ل V-ABIL-NEG-POS ;
+%<abil%>:%>%{A%}ل V-ABIL-NEG-POS ; 
 %<abil%>:%>%{A%}ل%{A%} V-ABIL-COMMON ;
 
 LEXICON V-AOR
@@ -5236,6 +5235,7 @@ LEXICON Check
 ھېچ:ھېچ PRON-MISC ; ! "any"
 ھېچقايسى:ھېچقايسى PRON-QNT ; ! "any"
 
+بىرەر% نەرسە:بىرەر% نەرسە PRON-QNT ; ! "birşey" Use/MT
 سىىلوس:سىىلوس N1 ; ! "silage"
 ياپون:ياپون N1 ; ! "Japanese"
 فرانسۇز:فرانسۇز N1 ; ! "French"
@@ -20658,7 +20658,7 @@ LEXICON Check
 سات:سات V-TV ; ! ""
 يوقات:يوقات V-TV ; ! ""
 ئاڭلات:ئاڭلات V-TV ; ! ""
-يات:يات%{☫%} V-IV ; ! ""
+يات:يات%{☫%} V-IV ; ! "" Dir/LR
 پۈت:پۈت V-TV ; ! ""
 تۇت:تۇت V-TV ; ! ""
 ئاقارت:ئاقارت V-TV ; ! ""
