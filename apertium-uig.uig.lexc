@@ -912,9 +912,9 @@ LEXICON Pronouns
 
 
 ئۆز:ئۆز%{e%} PRON-REFL ; ! "own"
-ئۈز:ئۈز%{e%} PRON-REFL ; ! "own"
-ئوز:ئوز PRON-REFL ; !
-ئۆزە:ئۆزە PRON-REFL ; !
+ئۆز:ئۈز%{e%} PRON-REFL ; ! "own" Dir/LR
+ئۆز:ئوز PRON-REFL ; ! Dir/LR
+ئۆزە:ئۆزە PRON-REFL ; ! Dir/LR
 
 
 بۇ:بۇ PRON-DEM-BU ; ! "this"
