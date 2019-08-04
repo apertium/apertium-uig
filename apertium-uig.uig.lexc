@@ -86,6 +86,7 @@ Multichar_Symbols
 %<gna_perf%>      ! Perfect verbal adverb
 %<abil%>          ! Abilitative
 %<aor%>           ! Aorist
+%<evid%>		! evidential
 %<prc_impf%>      ! Imperfect participle
 %<ger%>           ! Gerund (aorist)
 %<ger_inf%>       !
@@ -577,9 +578,9 @@ LEXICON PP-PERS
 LEXICON V-PAST
 
 %<past%>:%>%{G%}%{A%}ن V-COP-PERS ;
-%<past2%>:%>%{U%}پ V-PAST-PERS ;
+%<past%>%<evid%>:%>%{U%}پ V-PAST-PERS ;
 %<past3%>:%>%{G%}%{A%}نىد V-IFI-PERS ; 
-%<past3%>:%>%{G%}ەنىد V-IFI-PERS ; 
+%<past3%>:%>%{G%}ەنىد V-IFI-PERS ; !Dir/LR 
 %<past4%>:%>%{U%}پ%>تىكەن V-COP-PERS ;
 %<past5%>:%>%{G%}%{A%}نىكەن V-COP-PERS ;
 
