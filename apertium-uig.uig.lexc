@@ -461,7 +461,7 @@ LEXICON PRON-NEG
 
 LEXICON PRON-ADV
 
-%<prn%>: CASE-2 ;
+%<prn%>%<adv%>: CASE-2 ;
 
 
 LEXICON PRON-ITG
@@ -518,7 +518,7 @@ LEXICON V-COND-PERS
 %<p1%>%<sg%>:%>م CLITICS ; 
 %<p2%>%<sg%>:%>ڭ CLITICS ; ! Dir/LR
 %<p3%>%<sg%>: CLITICS ; 
-%<p1%>%<sg%>:%>%{K%} CLITICS ; 
+%<p1%>%<pl%>:%>%{K%} CLITICS ; 
 %<p2%>%<sg%>:%>ڭىز CLITICS ; 
 %<p2%>%<pl%>:%>ڭلار CLITICS ; 
 %<p3%>%<pl%>:%>ل%{A%}ر CLITICS ; 
@@ -2299,7 +2299,7 @@ LEXICON Verbs
 ئولتۇر:ئولتۇر V-IV ; ! "sit"
 يات:يات V-IV ; ! "lie"
 كەت:كەت V-IV ; ! "leave"
-كەت:كېت%{e%} V-IV ; ! "leave" Dir/LR
+كەت:كېت%{e%} V-IV ; ! "leave" Dir/LR 
 كەت:كىت%{e%} V-IV ; ! "leave" Dir/LR
 تۈگى:تۈگى V-IV ; ! "finish"
 قارا:قارا V-IV ; ! "look at"
@@ -20713,7 +20713,6 @@ LEXICON Check
 قاچ:قاچ V-IV ; ! ""
 ئاچ:ئاچ V-TV ; ! ""
 كەچ:كەچ V-IV ; ! ""
-ئىچ:ئىچ V-TV ; ! ""
 تۇخۇ:تۇخۇ V-TV ; ! ""
 
 چىقار:چىقار V-TV ; ! ""
