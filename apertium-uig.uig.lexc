@@ -86,7 +86,7 @@ Multichar_Symbols
 %<gna_perf%>      ! Perfect verbal adverb
 %<abil%>          ! Abilitative
 %<aor%>           ! Aorist
-%<evid%>		! evidential
+%<evid%>		! evidential"
 %<prc_impf%>      ! Imperfect participle
 %<ger%>           ! Gerund (aorist)
 %<ger_inf%>       !
@@ -687,7 +687,7 @@ LEXICON IMP-PERS
 %<p3%>%<sg%>:%>سۇن CLITICS ;
 %<p3%>%<sg%>:%>%{G%}%{A%}ي CLITICS ;
 %<p1%>%<pl%>:%>%{A%}يلى CLITICS ;
-%<p2%>%<pl%>:%>%{U%}ڭلار CLITICS ; ! Dir/LR
+%<p2%>%<pl%>:%>%{U%}ڭلار CLITICS ; 
 %<p3%>%<pl%>:%>سۇن CLITICS ; 
 %<p3%>%<pl%>:%>سۇنلار CLITICS ; ! Dir/LR
 %<p3%>%<pl%>:%>%{U%}شسۇن CLITICS ; ! Dir/LR
@@ -2613,6 +2613,7 @@ LEXICON Verbs
 جارسال:جارسال V-IV ; ! ""
 يېلىن:يېلىن V-IV ; ! ""
 يوشۇرۇن:يوشۇرۇن V-IV ; ! ""
+سۇن:سۇن V-TV ; ! ""
 سۇن:سۇن V-IV ; ! ""
 توختى:توختى V-IV ; ! ""
 ئويغان:ئويغان V-IV ; ! ""
