@@ -27,6 +27,7 @@ Multichar_Symbols
 %<guess%>         ! Guess
 
 %<dub%>           ! dubitative
+%<nec%>           ! necessitive
 
 %<p1%>            ! First person
 %<p2%>            ! Second person
@@ -635,6 +636,26 @@ LEXICON V-AOR
 %<aor%>%<qst%>:%>%{A%}م V-AOR-QST-PERS ;
 %<aor2%>:%>%{A%}ر V-COP-PERS ; 
 %<neg%>%<aor%>:%>م%{A%}س V-COP-PERS ; ! Dir/LR
+
+
+!LEXICON V-NEC i'll try handling this in transfer with cond+kérek as that seems more natural
+!%<nec%>:%>%{U%}ش V-NEC-PERS ; 
+!%<nec%>:%>س%{A%} V-NEC-PERS ; 
+
+!LEXICON V-NEC-PERS
+
+!%<p1%>%<sg%>:%>%{U%}م CASE ; 
+!%<p1%>%<sg%>:%>%{i%}ڭ CASE ; ! Dir/LR
+!%<p2%>%<sg%>:%>%{U%}ڭ CASE ; 
+!%<p2%>%<pl%>:%>%{i%}ڭلار CASE ; ! Dir/LR
+!%<p2%>%<pl%>:%>%{U%}ڭلار CASE ;
+!%<p3%>%<sg%>:%> CASE ; 
+!%<p3%>%<sg%>:%>%{s%}ى CASE ;
+!%<p1%>%<pl%>:%>%{i%}م%{I%}ز CASE ; ! Dir/LR
+!%<p1%>%<pl%>:%>%{U%}م%{I%}ز CASE ; 
+!%<p2%>%<pl%>%<frm%>:%>%{i%}ڭ%{I%}ز CASE ; ! Dir/LR
+!%<p2%>%<pl%>%<frm%>:%>%{U%}ڭ%{I%}ز CASE ; 
+!%<px3sg%>%<frm%>:%>‫لىرى‬ CASE ;
 
 LEXICON V-COND
 
@@ -1936,7 +1957,7 @@ LEXICON Nouns
 تىۋىش:تىۋىش N1 ; ! ""
 تاۋۇش:تاۋۇش N1 ; ! ""
 نۇرغۇن:نۇرغۇن N1 ; ! ""
-ئىبادەت:ئىبادەت N1 ; ! ""
+ئىبادەت:ئىبادەت N1 ; ! "" Dir/LR
 ئىبادەت:ئىبادىت%{e%} N1 ; ! ""
 مائاش:مائاش%{☫%} N1 ; ! ""
 مائاش:مائاش N1 ; ! ""
