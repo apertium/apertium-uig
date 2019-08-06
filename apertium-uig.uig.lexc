@@ -368,7 +368,7 @@ LEXICON PRON-PERS-SILI
 %<prn%>%<pers%>%<p2%>%<frm%>%<sg%>: CASE-2 ; 
 
 LEXICON PRON-PERS-U
-
+%<prn%>%<pers%>%<p3%>%<sg%>%<nom%>: CLITICS ; 
 %<prn%>%<pers%>%<p3%>%<sg%>%<acc%>:نى CLITICS ; 
 %<prn%>%<pers%>%<p3%>%<sg%>%<gen%>:نىڭ CLITICS ; 
 %<prn%>%<pers%>%<p3%>%<sg%>%<loc%>:نىڭدا CLITICS ; ! 
@@ -866,7 +866,7 @@ LEXICON Conjunctions
 
 ۋە:ۋە CC ; ! "and"
 ھەم:ھەم CC ; ! "and"
-مۇ:مۇ CC ; !
+%+مۇ:مۇ CC ; !
 ياكى:ياكى CC ; ! "or"
 
 ئەمما:ئەمما CC ; ! "but"  ! FIXME: not CC
@@ -24591,7 +24591,6 @@ EX360:EX360 N1 ; !
 مۇرشىد:مۇرشىد N1 ; !
 تۈمۈر:تۈمۈر N1 ; !
 سەئۇدىي:سەئۇدىي N1 ; !
-مۇ:مۇ CC ; !
 ﺋﻪﻣﻤﺎ:ﺋﻪﻣﻤﺎ CC ; !
 مەدىنە:مەدىنە NP-TOP ; !
 بۇرۇنلا:بۇرۇنلا ADV ; !
