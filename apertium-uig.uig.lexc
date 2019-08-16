@@ -680,8 +680,8 @@ LEXICON V-PROG
 
 %<prog%>:%>%{U%}ۋاتى V-PROG-PERS ;
 %<prog2%>:%>%{U%}ۋاتات V-AORP-PERS ;
-%<prog%>:%>%{i%}ۋاتى V-PROG-PERS ;
-%<prog2%>:%>%{i%}ۋاتات V-AORP-PERS ;
+%<prog%>:%>%{i%}ۋاتى V-PROG-PERS ; !Dir/LR
+%<prog2%>:%>%{i%}ۋاتات V-AORP-PERS ; !Dir/LR
 
 LEXICON V-FUT
 %<fut%>:%>%م%{A%}%{K%}چى V-COP-PERS ;
@@ -1234,7 +1234,7 @@ LEXICON Nouns
 ئويۇن:ئويۇن N1 ; ! ""
 لەقەم:لەقەم N1 ; ! ""
 ئەل:ئەل N1 ; ! ""
-ئەل:ئەل%{a%} N1 ; ! ""
+ئەل:ئەل%{a%} N1 ; ! "" Dir/LR
 زېھىن:زېھىن N1 ; ! ""
 تالانت:تالانت N1 ; ! ""
 ئەرز:ئەرز N1 ; ! ""
@@ -2771,7 +2771,7 @@ LEXICON Check
 ھاۋا:ھاۋا N1 ; ! "weather, air"
 ھايات:ھايات%{☫%} N1 ; ! "life"
 بازار:بازار N1 ; ! "market, bazaar"
-باش:باش N1 ; ! "head"
+باش:باش N1 ; ! "head" Dir/LR
 باغ:باغ N1 ; ! "garden, orchard"
 باغۋەنچىلىك:باغۋەنچىلىك N1 ; ! "horticulture"
 بالا:بالا N1 ; ! "disaster, child, cub; young animal"
@@ -26661,6 +26661,9 @@ EX360:EX360 N1 ; !
 شۈكۈر% قىل:شۈكۈر% قىل V-IV ; !
 ئىئانە% قىل:ئىئانە% قىل V-TV ; !
 لوگو:لوگو N1 ; ! "logo"
+ئوسۇرۇق:ئوسۇرۇق N1 ;! "fart"
+ئوسۇر:ئوسۇر V-IV ; !
+
 
 
 
