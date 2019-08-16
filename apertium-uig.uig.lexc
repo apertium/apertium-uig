@@ -413,7 +413,7 @@ LEXICON PRON-PERS-ULAR
 LEXICON PRON-REFL-INFL
 CASE-2 ;
 %<px1sg%>:%>%{i%}م%{e%} CASE-2 ;
-%<px1sg%>:%>ۈم%{e%} CASE-2 ;
+%<px1sg%>:%>ۈم%{e%} CASE-2 ; ! Dir/LR
 %<px2sg%>:%>%{i%}ڭ%{e%} CASE-2 ;
 %<px2pl%>:%>%{i%}ڭلار CASE-2 ;
 %<px3sp%>:%>%{s%}ى%{e%} CASE-2 ;
