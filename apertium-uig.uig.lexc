@@ -720,7 +720,7 @@ LEXICON V-IMP
 LEXICON V-IVER
 
 %<iver%>:%>%{i%}ۋەر V-COMMON ; 
-%<iver%>:%>%{i%}ۋېر V-COMMON ; 
+%<iver%>:%>%{i%}ۋېر V-COMMON ; !Dir/LR
 
 LEXICON V-NEG
 
