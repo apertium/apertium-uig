@@ -2270,8 +2270,8 @@ LEXICON Verbs
 !تۈگى:تۈگى V-AUX ; ! ""
 
 
-
-بول:بو%{l%} V-IV ; ! "be"
+بول:بول V-IV ; ! "be" !
+بول:بو%{l%} V-IV ; ! "be" Dir/LR
 ئوينا:ئوينا V-TV ; ! "play"
 ئوينا:ئوينا V-IV ; ! "play"
 قىل:قىل%{a%} V-TV ; ! "do/make" 
