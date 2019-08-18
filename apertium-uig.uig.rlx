@@ -130,7 +130,8 @@ REMOVE Che IF (0 Adv) ;
 
 SELECT Pers IF (0 Pers) ;
 
-
+SELECT Gpr/fut (0 Finite) (0 Nom) (1 N) ;
+	# kabul bolunmaydığan duağa
 
 SELECT Lang IF (0 Lang) ; 
 
@@ -272,10 +273,6 @@ SELECT Sub:1 Finite IF (1 EOS OR PHRASEMARK) ;
 REMOVE Subst + Nom IF (0 (*) - Subst - Nom) ;
 #275 milyon, 
 
-SELECT Gpr if
-	(0 Finite)
-	(0 Nom)
-	(1 N) ;
-	# kabul bolunmaydığan duağa
+
 
 REMOVE Guess ;
