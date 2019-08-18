@@ -43,6 +43,7 @@ LIST Nom = nom ;
 LIST Abl = abl ;
 LIST Loc = loc ; 
 
+LIST Subst = subst ; 
 LIST Attr = attr ;
 LIST Padv = postadv ; 
 LIST Punct = guio ; 
@@ -264,5 +265,10 @@ SELECT A IF (-1 N) (0 Post) (1 N);
 
 SELECT Sub:1 Finite IF (1 EOS OR PHRASEMARK) ;
 	# Hayattaki son dersi "kendi ölümü" [0]olacakmış.
+
+REMOVE Subst + Nom IF (0 (*) - Subst - Nom) ;
+#275 milyon, 
+
+
 
 REMOVE Guess ;
