@@ -28,6 +28,7 @@ LIST pass = pass ;
 LIST neg = neg ; 
 LIST TD = TD ; 
 LIST Top = top ;
+LIST Fut = fut ;
 LIST Pass = pass ; 
 LIST Qnt = qnt ;
 LIST Che = che ; 
@@ -36,6 +37,8 @@ LIST Dub = dub ;
 LIST Abil = abil ; 
 LIST Ant = ant ; 
 LIST Cog = cog ; 
+
+LIST Case = nom gen acc abe loc dat abl ;
 
 LIST Guess = guess ;
 
@@ -269,6 +272,10 @@ SELECT Sub:1 Finite IF (1 EOS OR PHRASEMARK) ;
 REMOVE Subst + Nom IF (0 (*) - Subst - Nom) ;
 #275 milyon, 
 
-
+SELECT Gpr if
+	(0 Finite)
+	(0 Nom)
+	(1 N) ;
+	# kabul bolunmaydığan duağa
 
 REMOVE Guess ;
