@@ -186,9 +186,15 @@ LEXICON CLITICS
 %<dek%>:%>%{D%}ەك # ;
 %<che%>:%>چە # ;
 
-
 %+مۇ%<postadv%>:%>مۇ # ;
 %+كى%<cnjadv%>:%>كى # ; ! 
+
+
+LEXICON CLITICS-COP
+
+CLITICS ;
+%+ئى%<cop%>%<aor%>: V-COP-PERS ; ! 
+
 
 LEXICON COMP
 %<comp%>:%>ر%{A%}%{K%} # ; 
@@ -199,21 +205,21 @@ LEXICON POST-SUFFIX
 
 
 LEXICON CASE
-%<nom%>: Copula ;
-%<nom%>: CLITICS ;
-%<dat%>:%>%{G%}%{A%} Copula ;
+!%<nom%>: Copula ;
+%<nom%>: CLITICS-COP ;
+!%<dat%>:%>%{G%}%{A%} Copula ;
 %<dat%>:%>%{G%}%{A%} CLITICS ;
-%<loc%>:%>%{D%}%{A%} CLITICS ;
-%<loc%>:%>%{D%}%{A%} Copula ;
+%<loc%>:%>%{D%}%{A%} CLITICS-COP ;
+!%<loc%>:%>%{D%}%{A%} Copula ;
 %<loc%>%<attr%>:%>%{D%}%{A%}%>كى CLITICS ;
 %<loc%>%<subst%>:%>%{D%}%{A%}%>كى SUBST-2 ;
 %<loc%>%<subst%>%<pl%>:%>%{D%}%{A%}%>كى%>ل%{A%}ر SUBST-2 ;
-%<abl%>:%>%{D%}ىن CLITICS ;
-%<gen%>:%>نىڭ Copula ;
+%<abl%>:%>%{D%}ىن CLITICS-COP ;
+!%<gen%>:%>نىڭ Copula ;
 %<gen%>:%>نىڭ CLITICS ;
 %<gen%>%<subst%>:%>نىڭكى SUBST-2 ;
 %<gen%>%<subst%>%<pl%>:%>نىڭكى%>ل%{A%}ر SUBST-2 ;
-%<acc%>:%>نى # ;
+!%<acc%>:%>نى # ;
 %<acc%>:%>نى CLITICS ;
 %<ter%>:%>%{G%}ىچە CLITICS ;
 
@@ -2693,7 +2699,7 @@ LEXICON Verbs
 
 LEXICON Copula
 
-%+ئى: COP ; 
+!%+ئى: COP ; 
 !ئى:ئى COP ; !!!" FIXME"
 ئې:ئې COP ; ! Dir/LR
 ئى%<cop%>%<neg%>:ئەمەس V-COP-PERS ; !
