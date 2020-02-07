@@ -1,0 +1,79 @@
+Multichar_Symbols 
+
+%<n%> 
+
+
+LEXICON Root 
+
+Alpha ; 
+Punct ; 
+!Exceptions ;
+Digits ;
+
+LEXICON AlphaLoop 
+
+Alpha ;
+!Punct ; 
+ # ;
+
+LEXICON Alpha
+
+ئ:0 AlphaLoop ;
+ا:а AlphaLoop ;
+ە:ә AlphaLoop ;
+ب:б AlphaLoop ;
+پ:п AlphaLoop ;
+ت:т AlphaLoop ;
+ج:ж AlphaLoop ;
+چ:ч AlphaLoop ;
+خ:х AlphaLoop ;
+د:д AlphaLoop ;
+ر:р AlphaLoop ;
+ز:з AlphaLoop ;
+ژ:з AlphaLoop ;
+س:с AlphaLoop ;
+ش:ш AlphaLoop ;
+غ:ғ AlphaLoop ;
+ف:ф AlphaLoop ;
+ق:қ AlphaLoop ;
+ك:к AlphaLoop ;
+گ:г AlphaLoop ;
+ڭ:ң AlphaLoop ;
+ل:л AlphaLoop ;
+م:м AlphaLoop ;
+ن:н AlphaLoop ;
+ھ:һ AlphaLoop ;
+و:о AlphaLoop ;
+ۇ:у AlphaLoop ;
+ۆ:ө AlphaLoop ;
+ۈ:ү AlphaLoop ;
+ۋ:в AlphaLoop ;
+ې:е AlphaLoop ;
+!ې:э AlphaLoop ;
+ى:и AlphaLoop ;
+ي:й AlphaLoop ;
+ک:к AlphaLoop ;
+
+LEXICON Digits
+
+<[%0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9]+> # ;
+
+LEXICON Punct
+
+%.:%. # ; 
+%-:%- # ; 
+%,:%, # ; 
+!%,:%، # ;  ! Arabic comma
+!،:، # ;
+!,:، # ;
+%;:%; # ; 
+%::%: # ; 
+%!:%! # ; 
+%?:%? # ; 
+%“:%“ # ; 
+%”:%” # ; 
+%«:%« # ; 
+%»:%» # ; 
+%(:%( # ; 
+%):%) # ; 
+%–:%– # ; 
