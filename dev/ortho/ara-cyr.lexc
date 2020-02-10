@@ -5,7 +5,9 @@ Multichar_Symbols
 
 LEXICON Root 
 
-Alpha ; 
+AlphaOne ; 
+ئ:0 AlphaOne ;
+
 Punct ; 
 !Exceptions ;
 Digits ;
@@ -14,11 +16,10 @@ LEXICON AlphaLoop
 
 Alpha ;
 !Punct ; 
- # ;
+# ;
 
-LEXICON Alpha
+LEXICON AlphaOne
 
-ئ:0 AlphaLoop ;
 ا:а AlphaLoop ;
 ە:ә AlphaLoop ;
 ب:б AlphaLoop ;
@@ -53,6 +54,80 @@ LEXICON Alpha
 ى:и AlphaLoop ;
 ي:й AlphaLoop ;
 ک:к AlphaLoop ;
+
+ا:А AlphaLoop ;
+ە:Ә AlphaLoop ;
+ب:Б AlphaLoop ;
+پ:П AlphaLoop ;
+ت:Т AlphaLoop ;
+ج:Ж AlphaLoop ;
+چ:Ч AlphaLoop ;
+خ:Х AlphaLoop ;
+د:Д AlphaLoop ;
+ر:Р AlphaLoop ;
+ز:З AlphaLoop ;
+ژ:З AlphaLoop ;
+س:С AlphaLoop ;
+ش:Ш AlphaLoop ;
+غ:Ғ AlphaLoop ;
+ف:Ф AlphaLoop ;
+ق:Қ AlphaLoop ;
+ك:К AlphaLoop ;
+گ:Г AlphaLoop ;
+ڭ:Ң AlphaLoop ;
+ل:Л AlphaLoop ;
+م:М AlphaLoop ;
+ن:Н AlphaLoop ;
+ھ:Һ AlphaLoop ;
+و:О AlphaLoop ;
+ۇ:У AlphaLoop ;
+ۆ:Ө AlphaLoop ;
+ۈ:Ү AlphaLoop ;
+ۋ:В AlphaLoop ;
+ې:У AlphaLoop ;
+!ې:э AlphaLoop ;
+ى:И AlphaLoop ;
+ي:Й AlphaLoop ;
+ک:К AlphaLoop ;
+
+LEXICON Alpha
+
+ا:а AlphaLoop ;
+ە:ә AlphaLoop ;
+ب:б AlphaLoop ;
+پ:п AlphaLoop ;
+ت:т AlphaLoop ;
+ج:ж AlphaLoop ;
+چ:ч AlphaLoop ;
+خ:х AlphaLoop ;
+د:д AlphaLoop ;
+ر:р AlphaLoop ;
+ز:з AlphaLoop ;
+ژ:з AlphaLoop ;
+س:с AlphaLoop ;
+ش:ш AlphaLoop ;
+غ:ғ AlphaLoop ;
+ف:ф AlphaLoop ;
+ق:қ AlphaLoop ;
+ك:к AlphaLoop ;
+گ:г AlphaLoop ;
+ڭ:ң AlphaLoop ;
+ل:л AlphaLoop ;
+م:м AlphaLoop ;
+ن:н AlphaLoop ;
+ھ:һ AlphaLoop ;
+و:о AlphaLoop ;
+ۇ:у AlphaLoop ;
+ۆ:ө AlphaLoop ;
+ۈ:ү AlphaLoop ;
+ۋ:в AlphaLoop ;
+ې:е AlphaLoop ;
+!ې:э AlphaLoop ;
+ى:и AlphaLoop ;
+ي:й AlphaLoop ;
+ک:к AlphaLoop ;
+
+# ;
 
 LEXICON Digits
 
