@@ -585,11 +585,13 @@ LEXICON PP-PERS
 LEXICON V-PAST
 
 %<past%>:%>%{G%}%{A%}ن V-COP-PERS ;
-%<past%>%<evid%>:%>%{U%}پ V-PAST-PERS ;
-%<past3%>:%>%{G%}%{A%}نىد V-IFI-PERS ; 
-%<past3%>:%>%{G%}ەنىد V-IFI-PERS ; !Dir/LR 
-%<past4%>:%>%{U%}پ%>تىكەن V-COP-PERS ;
-%<past5%>:%>%{G%}%{A%}نىكەن V-COP-PERS ;
+%<past%>%<evid%>:%>%{G%}%{A%}نىكەن V-COP-PERS ;
+
+%<ifi%>%<evid%>:%>%{U%}پ V-PAST-PERS ;
+
+%<past3%>:%>%{G%}%{A%}نىد V-IFI-PERS ;       ! FIXME: pluperfect
+%<past3%>:%>%{G%}ەنىد V-IFI-PERS ; !Dir/LR
+%<past4%>:%>%{U%}پ%>تىكەن V-COP-PERS ;       ! FIXME: pluperfect evidential
 
 LEXICON V-PRC
 
