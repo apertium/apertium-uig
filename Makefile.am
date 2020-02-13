@@ -54,6 +54,28 @@ $(LANG1)_guesser.automorf.bin: $(LANG1)_guesser.automorf.hfst .deps/.d
 	hfst-fst2txt $(LANG1)_guesser.automorf.hfst   > .deps/$(LANG1)_guesser.autogen.att
 	lt-comp lr .deps/$(LANG1)_guesser.autogen.att $@
 
+## For orthogrpahic/phonological "errors"
+
+.deps/$(LANG1).err.hfst: $(BASENAME).err.twol .deps/.d
+	hfst-twolc $< -o $@
+
+# We make an uig.LR.err.hfst by taking the transducer produced from the 
+# twol file with error rules (apertium-uig.err.twol), we then remove all the
+# strings from that which are in the normative orthography transducer.
+# After that we append <err_orth> to the tag string.
+.deps/$(LANG1).LR.err.hfst: .deps/$(LANG1).LR.lexc.hfst .deps/$(LANG1).err.hfst .deps/$(LANG1).LR.hfst
+# lexc + error model twol
+	hfst-compose-intersect -1 .deps/$(LANG1).LR.lexc.hfst -2 .deps/$(LANG1).err.hfst | hfst-minimise -o .deps/$(LANG1).LR.err.hfst.tmp
+# extract valid surface forms
+	hfst-project -p output .deps/uig.LR.hfst | hfst-minimise -o .deps/$(LANG1).LR.corr.hfst.tmp
+# get the valid surface forms that are in the error model
+	hfst-invert .deps/$(LANG1).LR.err.hfst.tmp | hfst-compose -1 .deps/$(LANG1).LR.corr.hfst.tmp -2 - | hfst-invert -o .deps/$(LANG1).LR.err.hfst.tmp2
+# subtract the valid surface forms from the error model
+	hfst-subtract -1 .deps/$(LANG1).LR.err.hfst.tmp -2 .deps/$(LANG1).LR.err.hfst.tmp2 -o .deps/$(LANG1).LR.err.hfst.tmp3
+# append the error tag to the error model strings
+	echo "<err_orth>:0" | hfst-strings2fst -e 0 -S | hfst-concatenate -1 .deps/$(LANG1).LR.err.hfst.tmp3 -2 - -o $@
+
+
 ## Spellrelax
 
 .deps/spellrelax.hfst: dev/spellrelax.twol .deps/.d
@@ -83,8 +105,8 @@ $(LANG1)_guesser.automorf.bin: $(LANG1)_guesser.automorf.hfst .deps/.d
 $(LANG1).autogen.hfst: .deps/$(LANG1).RL.hfst
 	hfst-fst2fst -O $< -o $@
 
-$(LANG1).automorf.hfst: .deps/$(LANG1).LR.hfst .deps/spellrelax.hfst .deps/cjk.hfst
-	hfst-compose-intersect -1 $< -2 .deps/spellrelax.hfst |	hfst-substitute -f '{乚}:{乚}' -T .deps/cjk.hfst | hfst-invert | hfst-fst2fst -O -o $@
+$(LANG1).automorf.hfst: .deps/$(LANG1).LR.hfst .deps/spellrelax.hfst .deps/cjk.hfst .deps/$(LANG1).LR.err.hfst
+	hfst-compose-intersect -1 $< -2 .deps/spellrelax.hfst |	hfst-substitute -f '{乚}:{乚}' -T .deps/cjk.hfst | hfst-union -1 - -2 .deps/$(LANG1).LR.err.hfst | hfst-invert | hfst-fst2fst -O -o $@
 
 $(LANG1).autogen.att.gz: $(LANG1).autogen.hfst
 	hfst-fst2txt $< | gzip -9 -c -n > $@
