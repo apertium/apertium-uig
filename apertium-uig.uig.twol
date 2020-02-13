@@ -66,10 +66,12 @@ Rules
 
 "{A} becomes ە in front vowel contexts"
 %{A%}:ە <=> [ :FrontVow [ :ى | :Cns ]* :Cns ]/[ :0 - Abstract: ] _ ;
- [ %{e%}: [ :ى | :Cns ]* :Cns ]/[ :0 - Abstract: ] _ ;
-%{e%}: %>: _ ; 
+               [ %{e%}: [ :ى | :Cns ]* :Cns ]/[ :0 - Abstract: ] _ ;
+                                                      %{e%}: %>: _ ;
        except
-          _ [ :Cns :Vow ]/:0 ;
+!          _ [ :Cns :Vow ]/:0 ;
+          _ %>: :Cns [ :0 - %{☫%}: ]* :Vow ;
+          _ :Cns %>: [ :0 - %{☫%}: ]* :Vow ;
 
 "{E} becomes ە in front vowel contexts"
 %{E%}:ە <=> [ :FrontVow [ :ى | :Cns ]* :Cns ]/[ :0 - Abstract: ] _ ;
