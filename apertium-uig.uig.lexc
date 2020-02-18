@@ -6,7 +6,7 @@ Multichar_Symbols
 
 %<n%>             ! Noun
 %<post%>          ! Postposition
-%<det%>
+%<det%>         ! Determiner
 %<v%>             ! Verb
 %<vaux%>          ! Auxiliary verb
 %<cnjcoo%>        ! Co-ordinating conjunction

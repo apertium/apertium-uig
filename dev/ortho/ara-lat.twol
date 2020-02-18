@@ -1,0 +1,93 @@
+Alphabet
+
+ا:a
+ە:e
+ب:b
+پ:p
+ت:t
+ج:j
+چ:ch
+خ:x
+د:d
+ر:r
+ز:z
+ژ:zh
+س:s
+ش:sh
+غ:gh
+ف:f
+ق:q
+ك:k
+گ:g
+ڭ:ng
+ل:l
+م:m
+ن:n
+ھ:h
+و:o
+ۇ:u
+ۆ:ö
+ۈ:ü
+ۋ:w
+ې:é
+ى:i
+ي:y
+ک:k
+ئ:'
+
+ا:A
+ە:E
+ب:B
+پ:P
+ت:T
+ج:J
+چ:CH
+خ:X
+د:D
+ر:R
+ز:Z
+ژ:ZH
+س:S
+ش:SH
+غ:GH
+ف:F
+ق:Q
+ك:K
+گ:G
+ڭ:NG
+ل:L
+م:M
+ن:N
+ھ:H
+و:O
+ۇ:U
+ۆ:Ö
+ۈ:Ü
+ۋ:W
+ې:É
+ى:I
+ي:Y
+ک:K
+
+%{n%}:0 ;
+
+Sets
+
+Vows = i é ü ö e u o a  ;
+
+Caps = A E B P T J CH X D R Z W S SH GH F Q K G NG L M N H I O U Ö Ü É I Y ;
+
+Gsounds = g G ;
+
+Rules
+
+"Remove word-initial hamzas"
+ئ:0 <=> .#. _ :Vows ;
+
+! Do we need to wory about other potentially ambiguous sequences?
+! gh, sh, zh, ngh
+"Split n-g sequences with apostrophe"
+%{n%}:' <=>_ :Gsounds ;
+
+"Only capitalize word-initially"
+:Caps => .#. _ ;
