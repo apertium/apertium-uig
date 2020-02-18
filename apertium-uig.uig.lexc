@@ -585,11 +585,13 @@ LEXICON PP-PERS
 LEXICON V-PAST
 
 %<past%>:%>%{G%}%{A%}ن V-COP-PERS ;
-%<past%>%<evid%>:%>%{U%}پ V-PAST-PERS ;
-%<past3%>:%>%{G%}%{A%}نىد V-IFI-PERS ; 
-%<past3%>:%>%{G%}ەنىد V-IFI-PERS ; !Dir/LR 
-%<past4%>:%>%{U%}پ%>تىكەن V-COP-PERS ;
-%<past5%>:%>%{G%}%{A%}نىكەن V-COP-PERS ;
+%<past%>%<evid%>:%>%{G%}%{A%}نىكەن V-COP-PERS ;
+
+%<ifi%>%<evid%>:%>%{U%}پ V-PAST-PERS ;
+
+%<past3%>:%>%{G%}%{A%}نىد V-IFI-PERS ;       ! FIXME: pluperfect
+%<past3%>:%>%{G%}ەنىد V-IFI-PERS ; !Dir/LR
+%<past4%>:%>%{U%}پ%>تىكەن V-COP-PERS ;       ! FIXME: pluperfect evidential?
 
 LEXICON V-PRC
 
@@ -2007,8 +2009,8 @@ LEXICON Nouns
 ئويدۇرما:ئويدۇرما N1 ; ! ""
 يىلتىز:يىلتىز N1 ; ! ""
 مېھىرسىز:مېھىرسىز N1 ; ! ""
-قىسىم:قىس%{û%}م N1 ; ! ""
-قىسىم:قىسىم N1 ; ! ""
+قىسىم:قىس%{û%}م N1 ; ! "piece, part, chapter"
+قىسىم:قىسىم N1 ; ! "piece, part, chapter" Dir/LR
 تۈر:تۈر N1 ; ! ""
 ئەيىپسىز:ئەيىپسىز N1 ; ! ""
 ئىزمە:ئىزمە N1 ; ! ""
@@ -2704,7 +2706,7 @@ LEXICON Copula
 ئې:ئې COP ; ! Dir/LR
 ئى%<cop%>%<neg%>:ئەمەس V-COP-PERS ; !
 ئى%<cop%>%<dub%>%<aor%>:ئىكەن V-COP-PERS ; ! 
-ئى%<cop%>:ئى V-IFI ; ! 
+ئى%<cop%>:ئى V-IFI ; !  FIXME: this is super wrong 
 
 
 LEXICON Adjectives
@@ -8197,7 +8199,7 @@ LEXICON Check
 تويۇن:تويۇن V-IV ; ! ""
 تىپىك:تىپىك V-TD ; ! ""
 تىپىكلەش:تىپىكلەش V-IV ; ! ""
-تىترى:تىترى V-TD ; ! ""
+!تىترى:تىترى V-TD ; ! ""  ! This is a regular alternation of تىترە
 تىت:تىت V-TV ; ! ""
 تىتملى:تىتملى V-TV ; ! ""
 تىتىتلى:تىتىتلى V-TV ; ! ""
