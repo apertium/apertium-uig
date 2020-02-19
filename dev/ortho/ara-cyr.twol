@@ -34,8 +34,8 @@ Alphabet
 ي:й 
 ک:к 
 ئ:0
-%{ja%}:я
-%{ju%}:ю
+ا:я
+ۇ:ю
 
 ا:А 
 ە:Ә 
@@ -70,25 +70,49 @@ Alphabet
 ى:И 
 ي:Й 
 ک:К 
-%{ja%}:Я
-%{ju%}:Ю
+ا:Я
+ۇ:Ю
+
+
 ;
 
 Sets
 
-Caps =  А  Ә  Б  П  Т  Җ  Ч  Х  Д  Р  З  Ж  С  Ш  Ғ  Ф  Қ  К  Г  Ң  Л  М  Н  Һ  О  У  Ө  Ү  В  У И  Й Я Ю ;
+Locs = а ә б п т җ ч х д р з ж с ш ғ ф қ к г ң л м н һ о у ө ү в е и й я ю ;
 
-Vows = а ә о у ө ү е и А Ә  О  У  Ө  Ү  У И ;
+Caps = А Ә Б П Т Җ Ч Х Д Р З Ж С Ш Ғ Ф Қ К Г Ң Л М Н Һ О У Ө Ү В Е И Й Я Ю ;
+
+Vows = а ә о у ө ү е и
+       А Ә О У Ө Ү Е И ;
+
 
 Rules
 
-! This rule is actually a heuristic. Most words with VV sequences have a hamza 
-! between them, but certain (mostly Mandarin?) loanwords don't: e.g., ئيۈەن
-"Mandatory hamza between vowels"
-ئ:0 <=> :Vows _ :Vows ;
-
-"Mandatory hamza word-initially before vowel"
-ئ:0 <=> .#.  _ :Vows ;
+!! This rule is actually a heuristic. Most words with VV sequences have a hamza 
+!! between them, but certain (mostly Mandarin?) loanwords don't: e.g., ئيۈەن
+!"Mandatory hamza between vowels"
+!ئ:0 <=> :Vows _ :Vows ;
+!
+!"Mandatory hamza word-initially before vowel"
+!ئ:0 <=> .#.  _ :Vows ;
 
 "Only capitalize word-initially"
 :Caps => .#. _ ;
+!Sx:Sy <=> .#. _ ;
+!      where
+!         Sx in Locs
+!         Sy in Caps
+!      matched ;
+
+"Vowels after y to Cyrillic yot vowels"
+Vx:Vy <=> ي: _ ;
+      where
+          Vx in ( ا ۇ )
+          Vy in ( я ю )
+      matched ;
+
+"Y deletes before yot vowels"
+ي:0 <=> _ [ ا: | ۇ: ] ;
+
+!""
+!Vx:Vy <=> \ي: _ ;
