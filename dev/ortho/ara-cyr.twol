@@ -106,8 +106,6 @@ Rules
 
 "Vowels after y to Cyrillic yot vowels"
 Vx:Vy <=> ي: _ ;
-      except
-          .#. ي: _ ;
       where
           Vx in ( ا ۇ )
           Vy in ( я ю )
@@ -116,5 +114,3 @@ Vx:Vy <=> ي: _ ;
 "Y deletes before yot vowels"
 ي:0 <=> _ [ ا: | ۇ: ] ;
 
-!""
-!Vx:Vy <=> \ي: _ ;
