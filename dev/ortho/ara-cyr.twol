@@ -97,20 +97,57 @@ Rules
 !ئ:0 <=> .#.  _ :Vows ;
 
 "Only capitalize word-initially"
-:Caps => .#. _ ;
+:Caps => .#. :0* _ ;
 !Sx:Sy <=> .#. _ ;
 !      where
 !         Sx in Locs
 !         Sy in Caps
 !      matched ;
 
-"Vowels after y to Cyrillic yot vowels"
-Vx:Vy <=> ي: _ ;
+"If we have yot letter mappings, has to be after ي"
+Vx:Vy => ي: _ ;
+!      except
+!          .#. ي: _ ;
       where
           Vx in ( ا ۇ )
           Vy in ( я ю )
       matched ;
 
+"If we have Yot letter mappings, has to be after word-initial ي"
+Vx:Vy => .#. ي: _ ;
+      where
+          Vx in ( ا ۇ )
+          Vy in ( Я Ю )
+      matched ;
+
+"If we get vowels after after non-word-initial ي, they have to be yot letters"
+Vx:Vy <= ي: _ ;
+      except
+          .#. ي: _ ;
+      where
+          Vx in ( ا ۇ )
+          Vy in ( я ю )
+      matched ;
+
+"Can't have non-yoticised letters after ي"
+Vx:Vy /<= ي: _ ;
+      where
+          Vx in ( ا ۇ ا ۇ )
+          Vy in ( а у А У )
+      matched ;
+
+"Vowels are never realised as yot vowels after something other than ي or at the beginning of a word"
+Vx:Vy /<= \ي: _ ;
+          .#. _ ;
+      where
+          Vx in ( ا ۇ ا ۇ )
+          Vy in ( я ю Я Ю )
+      matched ;
+
+
+
 "Y deletes before yot vowels"
 ي:0 <=> _ [ ا: | ۇ: ] ;
 
+!""
+!Vx:Vy <=> \ي: _ ;
