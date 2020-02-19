@@ -1,9 +1,6 @@
 Multichar_Symbols 
 
-يا
-يۇ
-%{ja%}
-%{ju%}
+%{n%} ! possible apostrophe to disambiguate ڭ from نگ
 
 LEXICON Root 
 
@@ -43,7 +40,7 @@ LEXICON Alpha
 ڭ:ڭ AlphaLoop ;
 ل:ل AlphaLoop ;
 م:م AlphaLoop ;
-ن:ن AlphaLoop ;
+ن:ن%{n%} AlphaLoop ;
 ھ:ھ AlphaLoop ;
 و:و AlphaLoop ;
 ۇ:ۇ AlphaLoop ;
@@ -55,9 +52,6 @@ LEXICON Alpha
 ي:ي AlphaLoop ;
 ک:ک AlphaLoop ;
 ئ:ئ AlphaLoop ;
-
-يۇ:%{ju%} AlphaLoop ;
-يا:%{ja%} AlphaLoop ;
 
 # ;
 

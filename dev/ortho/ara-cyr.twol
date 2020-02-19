@@ -1,0 +1,94 @@
+Alphabet
+
+ا:а 
+ە:ә 
+ب:б 
+پ:п 
+ت:т 
+ج:җ 
+چ:ч 
+خ:х 
+د:д 
+ر:р 
+ز:з 
+ژ:ж 
+س:с 
+ش:ш 
+غ:ғ 
+ف:ф 
+ق:қ 
+ك:к 
+گ:г 
+ڭ:ң 
+ل:л 
+م:м 
+ن:н 
+ھ:һ 
+و:о 
+ۇ:у 
+ۆ:ө 
+ۈ:ү 
+ۋ:в 
+ې:е 
+ى:и 
+ي:й 
+ک:к 
+ئ:0
+%{ja%}:я
+%{ju%}:ю
+
+ا:А 
+ە:Ә 
+ب:Б 
+پ:П 
+ت:Т 
+ج:Җ 
+چ:Ч 
+خ:Х 
+د:Д 
+ر:Р 
+ز:З 
+ژ:Ж 
+س:С 
+ش:Ш 
+غ:Ғ 
+ف:Ф 
+ق:Қ 
+ك:К 
+گ:Г 
+ڭ:Ң 
+ل:Л 
+م:М 
+ن:Н 
+ھ:Һ 
+و:О 
+ۇ:У 
+ۆ:Ө 
+ۈ:Ү 
+ۋ:В 
+ې:Е 
+ى:И 
+ي:Й 
+ک:К 
+%{ja%}:Я
+%{ju%}:Ю
+;
+
+Sets
+
+Caps =  А  Ә  Б  П  Т  Җ  Ч  Х  Д  Р  З  Ж  С  Ш  Ғ  Ф  Қ  К  Г  Ң  Л  М  Н  Һ  О  У  Ө  Ү  В  У И  Й Я Ю ;
+
+Vows = а ә о у ө ү е и А Ә  О  У  Ө  Ү  У И ;
+
+Rules
+
+! This rule is actually a heuristic. Most words with VV sequences have a hamza 
+! between them, but certain (mostly Mandarin?) loanwords don't: e.g., ئيۈەن
+"Mandatory hamza between vowels"
+ئ:0 <=> :Vows _ :Vows ;
+
+"Mandatory hamza word-initially before vowel"
+ئ:0 <=> .#.  _ :Vows ;
+
+"Only capitalize word-initially"
+:Caps => .#. _ ;
