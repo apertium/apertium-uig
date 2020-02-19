@@ -26,7 +26,7 @@ all: uig-MULTI.automorf.hfst uig-CYR.automorf.bin uig-CYR.autogen.hfst uig-LAT.a
 uig-CYR.autogen.hfst: ../../.deps/uig.LR.hfst ara-cyr.hfst
 	hfst-minimise $< | hfst-compose-intersect -1 - -2 $(word 2,$^) -o $@
 
-uig-CYR.REVautomorf.hfst: ../../.deps/uig.RL.hfst ara-cyr.hfst
+uig-CYR.REVautomorf.hfst: ../../.deps/uig.LR.hfst ara-cyr.hfst
 	hfst-minimise $< | hfst-compose-intersect -1 - -2 $(word 2,$^) -o $@
 
 uig-CYR.automorf.hfst: uig-CYR.REVautomorf.hfst
@@ -35,14 +35,20 @@ uig-CYR.automorf.hfst: uig-CYR.REVautomorf.hfst
 uig-LAT.autogen.hfst: ../../.deps/uig.LR.hfst ara-lat.hfst
 	hfst-minimise $< | hfst-compose-intersect -1 - -2 $(word 2,$^) -o $@
 
-uig-LAT.REVautomorf.hfst: ../../.deps/uig.RL.hfst ara-lat.hfst
+uig-LAT.REVautomorf.hfst: ../../.deps/uig.LR.hfst ara-lat.hfst
 	hfst-minimise $< | hfst-compose-intersect -1 - -2 $(word 2,$^) -o $@
 
 uig-LAT.automorf.hfst: uig-LAT.REVautomorf.hfst
 	hfst-invert $< -o $@
 
-uig-MULTI.automorf.hfst: ../../.deps/uig.LR.hfst uig-LAT.automorf.hfst uig-CYR.automorf.hfst
+uig-MULTI.automorf.hfst: uig.LR.hfst uig-LAT.automorf.hfst uig-CYR.automorf.hfst
 	hfst-invert $< | hfst-minimise | hfst-union -1 - -2 $(word 2,$^) | hfst-union -1 - -2 $(word 3,$^) | hfst-fst2fst -O -i - -o $@
+
+uig.LR.lexc.hfst: ../../apertium-uig.uig.lexc
+	cat $< | grep -v 'Use/Ortho' | hfst-lexc - -o $@ -v
+
+uig.LR.hfst: uig.LR.lexc.hfst ../../.deps/uig.twol.hfst ../../.deps/spellrelax.hfst ../../.deps/cjk.hfst ../../.deps/uig.LR.err.hfst
+	hfst-compose-intersect -1 $< -2 $(word 2,$^) | hfst-compose-intersect -1 - -2 $(word 3,$^) | hfst-substitute -f '{乚}:{乚}' -T $(word 4,$^) | hfst-union -1 - -2 $(word 5,$^) -o $@
 
 %.att.gz: %.hfst
 	hfst-fst2txt $< | gzip -9 -c -n > $@
