@@ -1,4 +1,4 @@
-all: uig-MULTI.automorf.hfst uig-CYR.automorf.bin uig-CYR.autogen.hfst uig-LAT.automorf.hfst uig-LAT.autogen.hfst
+all: uig-MULTI.automorf.hfst uig-CYR.automorf.bin uig-CYR.autogen.hfst uig-LAT.automorf.hfst uig-LAT.autogen.hfst uig-MULTI.automorf.bin
 
 #all: ara-lat.hfst ara-cyr.hfst ara-lat-rev.hfst ara-cyr-rev.hfst
 
@@ -42,7 +42,7 @@ uig-LAT.automorf.hfst: uig-LAT.REVautomorf.hfst
 	hfst-invert $< -o $@
 
 uig-MULTI.automorf.hfst: ../../.deps/uig.LR.hfst uig-LAT.automorf.hfst uig-CYR.automorf.hfst
-	hfst-minimise $< | hfst-union -1 - -2 $(word 2,$^) | hfst-union -1 - -2 $(word 3,$^) | hfst-fst2fst -O -i - -o $@
+	hfst-invert $< | hfst-minimise | hfst-union -1 - -2 $(word 2,$^) | hfst-union -1 - -2 $(word 3,$^) | hfst-fst2fst -O -i - -o $@
 
 %.att.gz: %.hfst
 	hfst-fst2txt $< | gzip -9 -c -n > $@

@@ -1,9 +1,6 @@
 Multichar_Symbols 
 
-يا
-يۇ
-%{ja%}
-%{ju%}
+%<n%>  ! dummy symbol
 
 LEXICON Root 
 
