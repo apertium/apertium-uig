@@ -1,6 +1,8 @@
 Multichar_Symbols 
 
-%{n%} ! possible apostrophe to disambiguate ڭ from نگ
+!%{n%} ! possible apostrophe to disambiguate ڭ from نگ
+%{h%}
+%{g%}
 
 LEXICON Root 
 
@@ -24,23 +26,23 @@ LEXICON Alpha
 پ:پ AlphaLoop ;
 ت:ت AlphaLoop ;
 ج:ج AlphaLoop ;
-چ:چ AlphaLoop ;
+چ:چ%{h%} AlphaLoop ;
 خ:خ AlphaLoop ;
 د:د AlphaLoop ;
 ر:ر AlphaLoop ;
 ز:ز AlphaLoop ;
-ژ:ژ AlphaLoop ;
+ژ:ژ%{h%} AlphaLoop ;
 س:س AlphaLoop ;
-ش:ش AlphaLoop ;
-غ:غ AlphaLoop ;
+ش:ش%{h%} AlphaLoop ;
+غ:غ%{h%} AlphaLoop ;
 ف:ف AlphaLoop ;
 ق:ق AlphaLoop ;
-ك:ك AlphaLoop ;
+ك:ك%{g%} AlphaLoop ;
 گ:گ AlphaLoop ;
 ڭ:ڭ AlphaLoop ;
 ل:ل AlphaLoop ;
 م:م AlphaLoop ;
-ن:ن%{n%} AlphaLoop ;
+ن:ن AlphaLoop ;
 ھ:ھ AlphaLoop ;
 و:و AlphaLoop ;
 ۇ:ۇ AlphaLoop ;

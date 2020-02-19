@@ -6,20 +6,20 @@ Alphabet
 پ:p
 ت:t
 ج:j
-چ:ch
+چ:c ! ch
 خ:x
 د:d
 ر:r
 ز:z
-ژ:zh
+ژ:z ! zh
 س:s
-ش:sh
-غ:gh
+ش:s ! sh
+غ:g ! gh
 ف:f
 ق:q
 ك:k
 گ:g
-ڭ:ng
+ڭ:n ! ng
 ل:l
 م:m
 ن:n
@@ -41,20 +41,20 @@ Alphabet
 پ:P
 ت:T
 ج:J
-چ:CH
+چ:C ! CH
 خ:X
 د:D
 ر:R
 ز:Z
-ژ:ZH
+ژ:Z ! ZH
 س:S
-ش:SH
-غ:GH
+ش:S ! SH
+غ:G ! GH
 ف:F
 ق:Q
 ك:K
 گ:G
-ڭ:NG
+ڭ:N ! NG
 ل:L
 م:M
 ن:N
@@ -69,7 +69,11 @@ Alphabet
 ي:Y
 ک:K
 
-%{n%}:0 ;
+!%{n%}:0 ;
+%{h%}:h
+%{g%}:g
+
+;
 
 Sets
 
@@ -84,10 +88,10 @@ Rules
 "Remove word-initial hamzas"
 ئ:0 <=> .#. _ :Vows ;
 
-! Do we need to wory about other potentially ambiguous sequences?
-! gh, sh, zh, ngh
-"Split n-g sequences with apostrophe"
-%{n%}:' <=>_ :Gsounds ;
+!! Do we need to wory about other potentially ambiguous sequences?
+!! gh, sh, zh, ngh
+!"Split n-g sequences with apostrophe"
+!%{n%}:' <=>_ :Gsounds ;
 
 "Only capitalize word-initially"
 :Caps => .#. _ ;
