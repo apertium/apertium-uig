@@ -1,6 +1,5 @@
 Multichar_Symbols 
 
-!%{n%} ! possible apostrophe to disambiguate ڭ from نگ
 %{h%}
 %{g%}
 
@@ -9,13 +8,11 @@ LEXICON Root
 Alpha ; 
 
 Punct ; 
-!Exceptions ;
 Digits ;
 
 LEXICON AlphaLoop 
 
-Alpha ;
-!Punct ; 
+Alpha ; 
 # ;
 
 LEXICON Alpha

@@ -1,6 +1,4 @@
-all: uig-MULTI.automorf.hfst uig-CYR.automorf.bin uig-CYR.autogen.hfst uig-LAT.automorf.hfst uig-LAT.autogen.hfst uig-MULTI.automorf.bin
-
-#all: ara-lat.hfst ara-cyr.hfst ara-lat-rev.hfst ara-cyr-rev.hfst
+all:  uig-MULTI.automorf.hfst uig-CYR.automorf.bin uig-CYR.autogen.hfst uig-LAT.automorf.hfst uig-LAT.autogen.hfst uig-MULTI.automorf.bin
 
 %.lexc.hfst: %.lexc
 	hfst-lexc $< -o $@
@@ -20,6 +18,9 @@ all: uig-MULTI.automorf.hfst uig-CYR.automorf.bin uig-CYR.autogen.hfst uig-LAT.a
 # ara-lat.hfst: ara-lat.twol.hfst ara-lat.lexc.hfst
 # 	hfst-compose-intersect -1 $(word 2,$^) -2 $<  | hfst-fst2fst -o $@ -O
 
+# lat-ara-test.hfst: lat-ara.twol.hfst lat-ara.lexc.hfst
+# 	hfst-compose-intersect -1 $(word 2,$^) -2 $<  | hfst-fst2fst -o $@ -O
+
 # ara-lat-rev.hfst: ara-lat.twol.hfst ara-lat.lexc.hfst
 # 	hfst-compose-intersect -1 $(word 2,$^) -2 $<  | hfst-invert | hfst-fst2fst -o $@ -O
 
@@ -29,8 +30,13 @@ uig-CYR.autogen.hfst: ../../.deps/uig.LR.hfst ara-cyr.hfst
 uig-CYR.REVautomorf.hfst: ../../.deps/uig.LR.hfst ara-cyr.hfst
 	hfst-minimise $< | hfst-compose-intersect -1 - -2 $(word 2,$^) -o $@
 
-uig-CYR.automorf.hfst: uig-CYR.REVautomorf.hfst
-	hfst-invert $< -o $@
+# uig-CYR.automorf.hfst: uig-CYR.REVautomorf.hfst
+# 	hfst-invert $< -o $@
+
+# This works fine as an hfst using hfst-proc, but I get "Error: Invalid dictionary (hint: the left side of an entry is empty)"
+# if I run it as a .bin using lt-proc.
+# uig-CYR.automorf.hfst: ../../.deps/uig.LR.hfst cyr-ara.hfst
+# 	hfst-invert $< | hfst-minimise | hfst-compose-intersect -1 $(word 2,$^) -2 - -o $@
 
 uig-LAT.autogen.hfst: ../../.deps/uig.LR.hfst ara-lat.hfst
 	hfst-minimise $< | hfst-compose-intersect -1 - -2 $(word 2,$^) -o $@
@@ -40,6 +46,11 @@ uig-LAT.REVautomorf.hfst: ../../.deps/uig.LR.hfst ara-lat.hfst
 
 uig-LAT.automorf.hfst: uig-LAT.REVautomorf.hfst
 	hfst-invert $< -o $@
+
+# This works fine as an hfst using hfst-proc, but it finds no analyses for any vowel-initial word when run as a .bin
+# e..g, 'adem' won't return an analysis.
+# uig-LAT.automorf.hfst: ../../.deps/uig.LR.hfst lat-ara.hfst
+# 	hfst-invert $< | hfst-minimise | hfst-compose-intersect -1 $(word 2,$^) -2 - -o $@
 
 uig-MULTI.automorf.hfst: uig.LR.hfst uig-LAT.automorf.hfst uig-CYR.automorf.hfst
 	hfst-invert $< | hfst-minimise | hfst-union -1 - -2 $(word 2,$^) | hfst-union -1 - -2 $(word 3,$^) | hfst-fst2fst -O -i - -o $@

@@ -1,0 +1,98 @@
+LEXICON Root 
+
+Alpha ; 
+
+Punct ; 
+Digits ;
+
+LEXICON AlphaLoop 
+
+Alpha ; 
+# ;
+
+LEXICON Alpha
+
+a:a AlphaLoop ; 
+e:e AlphaLoop ; 
+b:b AlphaLoop ; 
+p:p AlphaLoop ; 
+t:t AlphaLoop ; 
+j:j AlphaLoop ; 
+c:c AlphaLoop ; 
+x:x AlphaLoop ; 
+d:d AlphaLoop ; 
+r:r AlphaLoop ; 
+z:z AlphaLoop ; 
+s:s AlphaLoop ; 
+g:g AlphaLoop ; 
+f:f AlphaLoop ; 
+q:q AlphaLoop ; 
+k:k AlphaLoop ; 
+n:n AlphaLoop ; 
+l:l AlphaLoop ; 
+m:m AlphaLoop ; 
+h:h AlphaLoop ; 
+o:o AlphaLoop ; 
+u:u AlphaLoop ; 
+ö:ö AlphaLoop ; 
+ü:ü AlphaLoop ; 
+w:w AlphaLoop ; 
+é:é AlphaLoop ; 
+i:i AlphaLoop ; 
+y:y AlphaLoop ; 
+':' AlphaLoop ; 
+
+A:a AlphaLoop ; 
+E:e AlphaLoop ; 
+B:b AlphaLoop ; 
+P:p AlphaLoop ; 
+T:t AlphaLoop ; 
+J:j AlphaLoop ; 
+C:c AlphaLoop ; 
+X:x AlphaLoop ; 
+D:d AlphaLoop ; 
+R:r AlphaLoop ; 
+Z:z AlphaLoop ; 
+S:s AlphaLoop ; 
+G:g AlphaLoop ; 
+F:f AlphaLoop ; 
+Q:q AlphaLoop ; 
+K:k AlphaLoop ; 
+N:n AlphaLoop ; 
+L:l AlphaLoop ; 
+M:m AlphaLoop ; 
+H:h AlphaLoop ; 
+O:o AlphaLoop ; 
+U:u AlphaLoop ; 
+Ö:ö AlphaLoop ;
+Ü:ü AlphaLoop ; 
+W:w AlphaLoop ; 
+É:é AlphaLoop ; 
+I:i AlphaLoop ; 
+Y:y AlphaLoop ; 
+
+# ;
+
+LEXICON Digits
+
+<[%0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9]+> # ;
+
+LEXICON Punct
+
+%.:%. # ; 
+%-:%- # ; 
+%,:%, # ; 
+!%,:%، # ;  ! Arabic comma
+!،:، # ;
+!,:، # ;
+%;:%; # ; 
+%::%: # ; 
+%!:%! # ; 
+%?:%? # ; 
+%“:%“ # ; 
+%”:%” # ; 
+%«:%« # ; 
+%»:%» # ; 
+%(:%( # ; 
+%):%) # ; 
+%–:%– # ; 

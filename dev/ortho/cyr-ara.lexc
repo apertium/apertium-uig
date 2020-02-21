@@ -1,0 +1,109 @@
+LEXICON Root 
+
+Alpha ; 
+
+Punct ; 
+Digits ;
+
+LEXICON AlphaLoop 
+
+Alpha ;
+# ;
+
+LEXICON Alpha
+
+а:а AlphaLoop ;
+ә:ә AlphaLoop ;
+б:б AlphaLoop ;
+п:п AlphaLoop ;
+т:т AlphaLoop ;
+җ:җ AlphaLoop ;
+ч:ч AlphaLoop ;
+х:х AlphaLoop ;
+д:д AlphaLoop ;
+р:р AlphaLoop ;
+з:з AlphaLoop ;
+ж:ж AlphaLoop ;
+с:с AlphaLoop ;
+ш:ш AlphaLoop ;
+ғ:ғ AlphaLoop ;
+ф:ф AlphaLoop ;
+қ:қ AlphaLoop ;
+к:к AlphaLoop ;
+г:г AlphaLoop ;
+ң:ң AlphaLoop ;
+л:л AlphaLoop ;
+м:м AlphaLoop ;
+н:н AlphaLoop ;
+һ:һ AlphaLoop ;
+о:о AlphaLoop ;
+у:у AlphaLoop ;
+ө:ө AlphaLoop ;
+ү:ү AlphaLoop ;
+в:в AlphaLoop ;
+е:е AlphaLoop ;
+и:и AlphaLoop ;
+й:й AlphaLoop ;
+я:я AlphaLoop ;
+ю:ю AlphaLoop ;
+
+А:а AlphaLoop ;
+Ә:ә AlphaLoop ;
+Б:б AlphaLoop ;
+П:п AlphaLoop ;
+Т:т AlphaLoop ;
+Җ:җ AlphaLoop ;
+Ч:ч AlphaLoop ;
+Х:х AlphaLoop ;
+Д:д AlphaLoop ;
+Р:р AlphaLoop ;
+З:з AlphaLoop ;
+Ж:ж AlphaLoop ;
+С:с AlphaLoop ;
+Ш:ш AlphaLoop ;
+Ғ:ғ AlphaLoop ;
+Ф:ф AlphaLoop ;
+Қ:қ AlphaLoop ;
+К:к AlphaLoop ;
+Г:г AlphaLoop ;
+Ң:ң AlphaLoop ;
+Л:л AlphaLoop ;
+М:м AlphaLoop ;
+Н:н AlphaLoop ;
+Һ:һ AlphaLoop ;
+О:о AlphaLoop ;
+У:у AlphaLoop ;
+Ө:ө AlphaLoop ;
+Ү:ү AlphaLoop ;
+В:в AlphaLoop ;
+Е:е AlphaLoop ;
+И:и AlphaLoop ;
+Й:й AlphaLoop ;
+Я:я AlphaLoop ;
+Ю:ю AlphaLoop ;
+
+# ;
+
+LEXICON Digits
+
+<[%0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9]+> # ;
+
+LEXICON Punct
+
+%.:%. # ; 
+%-:%- # ; 
+%,:%, # ; 
+!%,:%، # ;  ! Arabic comma
+!،:، # ;
+!,:، # ;
+%;:%; # ; 
+%::%: # ; 
+%!:%! # ; 
+%?:%? # ; 
+%“:%“ # ; 
+%”:%” # ; 
+%«:%« # ; 
+%»:%» # ; 
+%(:%( # ; 
+%):%) # ; 
+%–:%– # ; 
