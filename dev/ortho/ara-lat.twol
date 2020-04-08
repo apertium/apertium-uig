@@ -6,20 +6,20 @@ Alphabet
 پ:p
 ت:t
 ج:j
-چ:c ! ch
+چ:c 
 خ:x
 د:d
 ر:r
 ز:z
-ژ:z ! zh
+ژ:z 
 س:s
-ش:s ! sh
-غ:g ! gh
+ش:s 
+غ:g 
 ف:f
 ق:q
 ك:k
 گ:g
-ڭ:n ! ng
+ڭ:n 
 ل:l
 م:m
 ن:n
@@ -41,27 +41,27 @@ Alphabet
 پ:P
 ت:T
 ج:J
-چ:C ! CH
+چ:C 
 خ:X
 د:D
 ر:R
 ز:Z
-ژ:Z ! ZH
+ژ:Z 
 س:S
-ش:S ! SH
-غ:G ! GH
+ش:S 
+غ:G 
 ف:F
 ق:Q
 ك:K
 گ:G
-ڭ:N ! NG
+ڭ:N 
 ل:L
 م:M
 ن:N
 ھ:H
 و:O
 ۇ:U
-ۆ:Ö
+ۆ:Ö
 ۈ:Ü
 ۋ:W
 ې:É
@@ -69,7 +69,6 @@ Alphabet
 ي:Y
 ک:K
 
-!%{n%}:0 ;
 %{h%}:h
 %{g%}:g
 
@@ -77,21 +76,16 @@ Alphabet
 
 Sets
 
-Vows = i é ü ö e u o a  ;
-
-Caps = A E B P T J C X D R Z W S F Q K G L M N H I O U Ö Ü É I Y ;
-
-Gsounds = g G ;
+Caps = A E B P T J C X D R Z W S F Q K G L M N H I O U Ö Ü É I Y ;
 
 Rules
 
 "Remove word-initial hamzas"
-ئ:0 <=> .#. _ :Vows ;
+ئ:0 <=> .#. _  ;
 
-!! Do we need to wory about other potentially ambiguous sequences?
-!! gh, sh, zh, ngh
-!"Split n-g sequences with apostrophe"
-!%{n%}:' <=>_ :Gsounds ;
+! The latin orthography distinguishes between ڭ and نگ with an apostrophe (ng vs. n'g)
+"Split نگ with with apostrophe"
+0:' <=> ن: _ گ:  ;
 
-"Only capitalize word-initially"
-:Caps => .#. _ ;
+"Only capitalize word-initially (including after hamza)"
+:Caps => .#. ( ئ: ) _ ;

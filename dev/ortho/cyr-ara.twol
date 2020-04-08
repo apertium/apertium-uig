@@ -1,0 +1,60 @@
+Alphabet
+
+а:ا 
+ә:ە 
+б:ب 
+п:پ 
+т:ت 
+җ:ج 
+ч:چ 
+х:خ 
+д:د 
+р:ر 
+з:ز 
+ж:ژ 
+с:س 
+ш:ش 
+ғ:غ 
+ф:ف 
+қ:ق 
+к:ك 
+г:گ 
+ң:ڭ 
+л:ل 
+м:م 
+н:ن 
+һ:ھ 
+о:و 
+у:ۇ 
+ө:ۆ 
+ү:ۈ 
+в:ۋ 
+е:ې 
+и:ى 
+й:ي 
+к:ک 
+0:ئ
+0:ي 
+я:ا
+ю:ۇ
+;
+
+Sets
+
+AllInputs = а ә б п т җ ч х д р з ж с ш ғ ф қ к г ң л м н һ о у ө ү в е и й к я ю  ;
+
+Vows = а ә о у ө ү е и ;
+    
+VowsYots =  а ә о у ө ү е и  я ю  ;
+
+Yots = я ю ;
+
+Rules
+
+! This rule is actually a heuristic. Most words with VV sequences have a hamza 
+! between them, but certain (mostly Mandarin?) loanwords don't: e.g., يۈەن
+"Insert hamza before a vowel preceded by a vowel or word boundary"
+0:ئ <=> [ .#. | VowsYots: ]  _ Vows: ;
+
+"Insert y before yots" 
+0:ي <=> [ .#. | AllInputs: ] _ Yots: ;

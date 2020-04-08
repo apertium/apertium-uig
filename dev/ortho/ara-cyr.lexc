@@ -1,19 +1,13 @@
-Multichar_Symbols 
-
-%<n%>  ! dummy symbol
-
 LEXICON Root 
 
 Alpha ; 
 
 Punct ; 
-!Exceptions ;
 Digits ;
 
 LEXICON AlphaLoop 
 
 Alpha ;
-!Punct ; 
 # ;
 
 LEXICON Alpha

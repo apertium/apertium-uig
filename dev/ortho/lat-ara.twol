@@ -1,0 +1,74 @@
+Alphabet
+
+a:ا 
+e:ە 
+b:ب 
+p:پ 
+t:ت 
+j:ج 
+c:چ 
+x:خ 
+d:د 
+r:ر 
+z:ز 
+s:س 
+g:غ 
+f:ف 
+q:ق 
+k:ك 
+g:گ 
+n:ڭ 
+l:ل 
+m:م 
+n:ن 
+h:ھ 
+o:و 
+u:ۇ 
+ö:ۆ 
+ü:ۈ 
+w:ۋ 
+é:ې 
+i:ى 
+y:ي 
+k:ک 
+':ئ 
+
+;
+
+Sets
+
+Vows = a e o u ö ü é i ;
+
+HDeleters = چ غ ش ژ ;
+
+Rules
+
+"Insert word-initial hamzas before vowels"
+0:ئ <=> .#.  _ Vows: ;
+
+! The latin orthography distinguishes between ڭ and نگ with an apostrophe (ng vs. n'g)
+"Delete apostrophes between n and g"
+':0 <=> n: _ g:  ;
+
+! In principle there are ambiguities in the Latin orthography:
+! sh -> سھ or ش?
+! zh -> زھ or ژ?
+! gh -> گھ or غ?
+! The two-character output are much less common, but we allow both here.
+"sh/zh/gh bigram rule"
+[ s:ش | z:ژ | g:غ]  => _ h: ;
+
+"h deletion rule"
+h:0 <=> :HDeleters _ ;
+
+! The sequence "ng" is not ambiguous in isolation, but the sequence "ngh" is:
+! ngh -> ڭھ or نغ? (but never نگھ)
+! The latter mapping is much more common, but we allow both.
+"ng bigam rule"
+n:ڭ => _ g: ;
+
+"Never map g:گ when the immediately precending segment is mapping to ن"
+g:گ /<= :ن _ ;
+
+"g deletion rule"
+g:0 <=> :ڭ _ ;

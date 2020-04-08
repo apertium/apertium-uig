@@ -72,8 +72,6 @@ Alphabet
 ک:К 
 ا:Я
 ۇ:Ю
-
-
 ;
 
 Sets
@@ -88,26 +86,11 @@ Vows = а ә о у ө ү е и
 
 Rules
 
-!! This rule is actually a heuristic. Most words with VV sequences have a hamza 
-!! between them, but certain (mostly Mandarin?) loanwords don't: e.g., ئيۈەن
-!"Mandatory hamza between vowels"
-!ئ:0 <=> :Vows _ :Vows ;
-!
-!"Mandatory hamza word-initially before vowel"
-!ئ:0 <=> .#.  _ :Vows ;
-
 "Only capitalize word-initially"
 :Caps => .#. :0* _ ;
-!Sx:Sy <=> .#. _ ;
-!      where
-!         Sx in Locs
-!         Sy in Caps
-!      matched ;
 
 "If we have yot letter mappings, has to be after ي"
 Vx:Vy => ي: _ ;
-!      except
-!          .#. ي: _ ;
       where
           Vx in ( ا ۇ )
           Vy in ( я ю )
@@ -144,10 +127,5 @@ Vx:Vy /<= \ي: _ ;
           Vy in ( я ю Я Ю )
       matched ;
 
-
-
 "Y deletes before yot vowels"
 ي:0 <=> _ [ ا: | ۇ: ] ;
-
-!""
-!Vx:Vy <=> \ي: _ ;
