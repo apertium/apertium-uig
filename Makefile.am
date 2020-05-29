@@ -2,8 +2,6 @@
 ## Makefile for apertium-uig
 ###############################################################################
 
-RELEASE=0.1
-VERSION=0.1.0
 LANG1=uig
 BASENAME=apertium-$(LANG1)
 
@@ -11,7 +9,7 @@ TARGETS_COMMON = $(LANG1).automorf.hfst $(LANG1).autogen.hfst \
 	$(LANG1)_guesser.automorf.hfst \
 	$(LANG1).automorf.bin $(LANG1).autogen.bin \
 	$(LANG1).autopgen.bin \
-	$(LANG1).automorf.bin $(LANG1)_guesser.automorf.bin $(LANG1).autogen.bin \
+	$(LANG1)_guesser.automorf.bin \
 	$(LANG1).automorf.att.gz $(LANG1).autogen.att.gz
 
 if HAVE_VISLCG3
