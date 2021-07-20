@@ -1,0 +1,21 @@
+# [twol] ا raises to ې
+^باش<n><px3sp><nom>$
+^باش<n><loc>$
+# [twol] ا reduces to ى
+^باقچا<n><px3sp><nom>$
+^باقچا<n><loc>$
+^بالا<n><px3sp><nom>$
+^بالا<n><loc>$
+^بالا<n><pl><nom>$
+# [twol] ا doesn't reduce in closed syllables
+^باقچا<n><px1sg><loc>$
+# [twol] ا doesn't reduce in (borrowed) stems
+^ئالىم<np><ant><m><nom>$
+^ئالىم<np><ant><m><abl>$
+^دائىم<adv>$
+^باھايىتى<adv>$
+# [twol] {A} reduces in open syllables
+^باقچا<n><pl><px3sp><nom>$
+^ئالد<n><px3sp><loc><attr>$
+# [twol] {A} doesn't reduce in closed syllables
+^باقچا<n><pl><acc>$

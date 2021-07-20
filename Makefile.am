@@ -223,3 +223,6 @@ install-data-local: install-modes
 CLEANFILES = $(TARGETS_COMMON)
 clean-local:
 	-rm -rf .deps modes
+
+test: all
+	apertium-regtest test

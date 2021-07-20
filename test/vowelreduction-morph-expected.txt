@@ -1,0 +1,30 @@
+[2n8FEmFrV46G#0] ^باشتا/باش<n><loc>/باشتا<adv>/باش<n><loc>+ئى<cop><aor><p3><sg>$
+[/2n8FEmFrV46G]
+[3NU5GQrdnC-s#0] ^دائىم/دائىم<adv>/دائىم<adj>/دائىم<adj><advl>/دائىم<adj><subst><nom>/دائىم<adj><subst><nom>+ئى<cop><aor><p3><sg>$
+[/3NU5GQrdnC-s]
+[3wysxkcxqTWe#0] ^بالىلار/بالا<n><nom>+ئى<cop><aor><p3><pl>/بالا<n><pl><nom>/بالا<n><pl><nom>+ئى<cop><aor><p3><sg>$
+[/3wysxkcxqTWe]
+[8lPi-KejTObp#0] ^ئالدىندىكى/*ئالدىندىكى$
+[/8lPi-KejTObp]
+[BxDwc2-WwPna#0] ^ئالىم/ئالى<np><ant><m><px1sg><nom>/ئالىم<n><nom>/ئالىم<n><attr>/ئالىم<np><ant><m><nom>/ئالى<np><ant><m><px1sg><nom>+ئى<cop><aor><p3><sg>/ئالىم<n><nom>+ئى<cop><aor><p3><sg>/ئالىم<np><ant><m><nom>+ئى<cop><aor><p3><sg>$
+[/BxDwc2-WwPna]
+[FffEoSEzw8Em#0] ^باھايىتى/*باھايىتى$
+[/FffEoSEzw8Em]
+[HeEZHecqEfpv#0] ^باقچىدا/باقچا<n><loc>/باقچا<n><loc>+ئى<cop><aor><p3><sg>$
+[/HeEZHecqEfpv]
+[LTghUEihrUl5#0] ^باقچامدا/باقچا<n><px1sg><loc>/باقچا<n><px1sg><loc>+ئى<cop><aor><p3><sg>$
+[/LTghUEihrUl5]
+[_3EVNHNRQdyx#0] ^بېشى/باش<n><px3sp><nom>/بەش<num><subst><px3sp><nom>/باش<n><px3sp><nom>+ئى<cop><aor><p3><sg>/بەش<num><subst><px3sp><nom>+ئى<cop><aor><p3><sg>$
+[/_3EVNHNRQdyx]
+[_HiW1YUeBH2B#0] ^ئالىمدىن/ئالى<np><ant><m><px1sg><abl>/ئالىم<n><abl>/ئالىم<np><ant><m><abl>/ئالى<np><ant><m><px1sg><abl>+ئى<cop><aor><p3><sg>/ئالىم<n><abl>+ئى<cop><aor><p3><sg>/ئالىم<np><ant><m><abl>+ئى<cop><aor><p3><sg>$
+[/_HiW1YUeBH2B]
+[avX8V_uKXUzE#0] ^بالىسى/بالا<n><px3sp><nom>/بالا<n><px3sp><nom>+ئى<cop><aor><p3><sg>$
+[/avX8V_uKXUzE]
+[bnJOol-xwRp2#0] ^بالىدا/بالا<n><loc>/بالا<n><loc>+ئى<cop><aor><p3><sg>$
+[/bnJOol-xwRp2]
+[jHmIkdt5X0Tp#0] ^باقچىسى/باقچا<n><px3sp><nom>/باقچا<n><px3sp><nom>+ئى<cop><aor><p3><sg>$
+[/jHmIkdt5X0Tp]
+[tqruWJVQgvhk#0] ^باقچىلارنى/باقچا<n><pl><acc>$
+[/tqruWJVQgvhk]
+[twKTq6NNAAvG#0] ^باقچىلىرى/باقچا<n><pl><px3sp><nom>/باقچا<n>\<px3pl\><nom>/باقچا<n><pl><px3sp><nom>+ئى<cop><aor><p3><sg>/باقچا<n>\<px3pl\><nom>+ئى<cop><aor><p3><sg>$
+[/twKTq6NNAAvG]

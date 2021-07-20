@@ -1,0 +1,21 @@
+# [twol] ا raises to ې
+بېشى
+باشتا
+# [twol] ا reduces to ى
+باقچىسى
+باقچىدا
+بالىسى
+بالىدا
+بالىلار
+# [twol] ا doesn't reduce in closed syllables
+باقچامدا
+# [twol] ا doesn't reduce in (borrowed) stems
+ئالىم
+ئالىمدىن
+دائىم
+باھايىتى
+# [twol] {A} reduces in open syllables
+باقچىلىرى
+ئالدىندىكى
+# [twol] {A} doesn't reduce in closed syllables
+باقچىلارنى

@@ -1,0 +1,10 @@
+[4e5CRfoGUzlj#0] ^ئىسمىم/ئىسىم<n><px1sg><nom>/ئىسىم<n><px1sg><nom>+ئى<cop><aor><p3><sg>$
+[/4e5CRfoGUzlj]
+[8Z-RMyhTMRm7#0] ^ئىسىمغا/ئىس<n><px1sg><dat>/ئىسىم<n><dat>$
+[/8Z-RMyhTMRm7]
+[JDIXzNTb46Md#0] ^ئىسمى/ئىسىم<n><px3sp><nom>/ئىسىم<n><px3sp><nom>+ئى<cop><aor><p3><sg>$
+[/JDIXzNTb46Md]
+[Op5CGTOYuReF#0] ^ئىسىملار/ئىس<n><px1sg><nom>+ئى<cop><aor><p3><pl>/ئىسىم<n><nom>+ئى<cop><aor><p3><pl>/ئىسىم<n><pl><nom>/ئىسىم<n><pl><nom>+ئى<cop><aor><p3><sg>$
+[/Op5CGTOYuReF]
+[arMzQAM82gqe#0] ^ئىسىم/ئىس<n><px1sg><nom>/ئىسىم<n><nom>/ئىسىم<n><attr>/ئىس<n><px1sg><nom>+ئى<cop><aor><p3><sg>/ئىسىم<n><nom>+ئى<cop><aor><p3><sg>$
+[/arMzQAM82gqe]

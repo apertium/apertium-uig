@@ -1,0 +1,18 @@
+{
+  "epenthesis": {
+    "input": "epenthesis-input.txt",
+    "mode": "uig-morph"
+  },
+  "epenthesis-gen": {
+    "input": "epenthesis-gen-input.txt",
+    "mode": "uig-gener"
+  },
+  "vowelreduction": {
+    "input": "vowelreduction-input.txt",
+    "mode": "uig-morph"
+  },
+  "vowelreduction-gen": {
+    "input": "vowelreduction-gen-input.txt",
+    "mode": "uig-gener"
+  }
+}
