@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <modes>
 
-  <mode name="uig-twol" install="yes">
+  <mode name="uig-twol" install="no">
     <pipeline>
       <program name="hfst-strings2fst -S"/>
       <program name="hfst-compose-intersect">
@@ -19,7 +19,7 @@
     </pipeline>
   </mode>
 
-  <mode name="uig-lexc" install="yes">
+  <mode name="uig-lexc" install="no">
     <pipeline>
       <program name="hfst-lookup">
         <file name=".deps/uig.LR.lexc.hfst"/>
